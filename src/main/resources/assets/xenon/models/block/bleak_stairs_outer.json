@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "xenon:block/bleak_planks",
+    "side": "xenon:block/bleak_planks",
+    "top": "xenon:block/bleak_planks"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "xenon:block/fir_slab"
+    },
+    "type=double": {
+      "model": "xenon:block/fir_planks"
+    },
+    "type=top": {
+      "model": "xenon:block/fir_slab_top"
+    }
+  }
+}

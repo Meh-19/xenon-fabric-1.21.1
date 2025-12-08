@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "xenon:block/orange_fungal_pressure_plate"
+    },
+    "powered=true": {
+      "model": "xenon:block/orange_fungal_pressure_plate_down"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "xenon:block/chiseled_blue_nether_bricks_top",
+    "side": "xenon:block/chiseled_blue_nether_bricks_side"
+  }
+}

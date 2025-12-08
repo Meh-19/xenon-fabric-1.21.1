@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "xenon:block/dark_oak_planks_carved_top",
+    "side": "xenon:block/dark_oak_planks_carved_side"
+  }
+}

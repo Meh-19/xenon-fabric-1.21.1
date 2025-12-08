@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "xenon:block/possessed_chiseled_soul_bricks_top",
+    "side": "xenon:block/possessed_chiseled_soul_bricks_side"
+  }
+}

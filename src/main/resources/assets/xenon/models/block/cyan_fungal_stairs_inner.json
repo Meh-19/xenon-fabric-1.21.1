@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "xenon:block/cyan_fungal_planks",
+    "side": "xenon:block/cyan_fungal_planks",
+    "top": "xenon:block/cyan_fungal_planks"
+  }
+}

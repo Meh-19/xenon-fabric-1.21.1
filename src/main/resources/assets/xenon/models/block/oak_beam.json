@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "xenon:block/oak_beam_top",
+    "side": "xenon:block/oak_beam"
+  }
+}

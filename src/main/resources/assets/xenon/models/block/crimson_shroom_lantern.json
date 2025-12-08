@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "xenon:block/crimson_shroom_lantern_top",
+    "side": "xenon:block/crimson_shroom_lantern_side"
+  }
+}

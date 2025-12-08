@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "xenon:block/brown_fungal_planks",
+    "side": "xenon:block/brown_fungal_planks",
+    "top": "xenon:block/brown_fungal_planks"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "xenon:block/chiseled_limestone_top",
+    "side": "xenon:block/chiseled_limestone_side"
+  }
+}

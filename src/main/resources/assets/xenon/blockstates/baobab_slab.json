@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "xenon:block/baobab_slab"
+    },
+    "type=double": {
+      "model": "xenon:block/baobab_planks"
+    },
+    "type=top": {
+      "model": "xenon:block/baobab_slab_top"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "xenon:block/stripped_wisteria_log",
+    "side": "xenon:block/stripped_wisteria_log"
+  }
+}
