@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_column",
-  "textures": {
-    "end": "xenon:block/chiseled_slate_top",
-    "side": "xenon:block/chiseled_slate_side"
-  }
-}

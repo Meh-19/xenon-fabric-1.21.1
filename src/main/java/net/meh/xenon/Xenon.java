@@ -3,6 +3,7 @@ package net.meh.xenon;
 import net.fabricmc.api.ModInitializer;
 
 import net.meh.xenon.block.ModBlocks;
+import net.meh.xenon.item.ModItemGroups;
 import net.meh.xenon.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -13,6 +14,8 @@ public class Xenon implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModItemGroups.registerItemGroups();
+
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 	}

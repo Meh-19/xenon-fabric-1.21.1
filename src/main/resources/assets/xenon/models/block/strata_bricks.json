@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "xenon:block/diorite_bricks"
+    "all": "xenon:block/strata_bricks"
   }
 }
