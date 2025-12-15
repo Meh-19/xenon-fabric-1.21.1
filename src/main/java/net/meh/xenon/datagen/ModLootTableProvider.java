@@ -431,7 +431,6 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.ASHEN_SANDSTONE);
         addDrop(ModBlocks.CHISELED_ASHEN_SANDSTONE);
         addDrop(ModBlocks.CHISELED_GRIMROCK);
-        addDrop(ModBlocks.CHISELED_PACKED_LOAM);
         addDrop(ModBlocks.COBBLED_GRIMROCK);
         addDrop(ModBlocks.CUT_ASHEN_SANDSTONE);
 //        addDrop(ModBlocks.DAMP_MOSS_BLOCK); //TODO
@@ -439,12 +438,8 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.GRIMROCK);
         addDrop(ModBlocks.GRIMROCK_BRICKS);
         addDrop(ModBlocks.GRIMWEED_BLOCK);
-        addDrop(ModBlocks.LOAM);
         addDrop(ModBlocks.MOSSY_GRIMROCK_BRICKS);
-        addDrop(ModBlocks.MOSSY_PACKED_LOAM_BRICKS);
         addDrop(ModBlocks.PACKED_ASHEN_SAND);
-        addDrop(ModBlocks.PACKED_LOAM);
-        addDrop(ModBlocks.PACKED_LOAM_BRICKS);
         addDrop(ModBlocks.PALE_GRIMWEED_BLOCK);
         addDrop(ModBlocks.POLISHED_GRIMROCK);
         addDrop(ModBlocks.BLIGHTED_SHROOMLIGHT);
@@ -492,6 +487,36 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.POLISHED_GRIMROCK_STAIRS);
         addDrop(ModBlocks.POLISHED_GRIMROCK_SLAB, slabDrops(ModBlocks.POLISHED_GRIMROCK_SLAB));
         addDrop(ModBlocks.POLISHED_GRIMROCK_WALL);
+
+        addDrop(ModBlocks.LOAM);
+        addDrop(ModBlocks.CHISELED_PACKED_LOAM);
+        addDrop(ModBlocks.MOSSY_PACKED_LOAM_BRICKS);
+        addDrop(ModBlocks.MOSSY_PACKED_LOAM_BRICKS_STAIRS);
+        addDrop(ModBlocks.MOSSY_PACKED_LOAM_BRICKS_SLAB, slabDrops(ModBlocks.MOSSY_PACKED_LOAM_BRICKS_SLAB));
+        addDrop(ModBlocks.MOSSY_PACKED_LOAM_BRICKS_WALL);
+        addDrop(ModBlocks.PACKED_LOAM);
+        addDrop(ModBlocks.PACKED_LOAM_STAIRS);
+        addDrop(ModBlocks.PACKED_LOAM_SLAB, slabDrops(ModBlocks.PACKED_LOAM_SLAB));
+        addDrop(ModBlocks.PACKED_LOAM_WALL);
+        addDrop(ModBlocks.PACKED_LOAM_BRICKS);
+        addDrop(ModBlocks.PACKED_LOAM_BRICKS_STAIRS);
+        addDrop(ModBlocks.PACKED_LOAM_BRICKS_SLAB, slabDrops(ModBlocks.PACKED_LOAM_BRICKS_SLAB));
+        addDrop(ModBlocks.PACKED_LOAM_BRICKS_WALL);
+
+        addDrop(ModBlocks.SILT);
+        addDrop(ModBlocks.DRIED_SILT);
+        addDrop(ModBlocks.DRIED_SILT_STAIRS);
+        addDrop(ModBlocks.DRIED_SILT_SLAB, slabDrops(ModBlocks.DRIED_SILT_SLAB));
+        addDrop(ModBlocks.DRIED_SILT_WALL);
+        addDrop(ModBlocks.POLISHED_SILT);
+        addDrop(ModBlocks.POLISHED_SILT_STAIRS);
+        addDrop(ModBlocks.POLISHED_SILT_SLAB, slabDrops(ModBlocks.POLISHED_SILT_SLAB));
+        addDrop(ModBlocks.POLISHED_SILT_WALL);
+        addDrop(ModBlocks.SILT_BRICKS);
+        addDrop(ModBlocks.SILT_BRICKS_STAIRS);
+        addDrop(ModBlocks.SILT_BRICKS_SLAB, slabDrops(ModBlocks.SILT_BRICKS_SLAB));
+        addDrop(ModBlocks.SILT_BRICKS_WALL);
+
 
 
 

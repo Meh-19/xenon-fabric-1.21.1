@@ -26,6 +26,38 @@ public class ModModelProvider extends FabricModelProvider {
         var mossy_grimrock_bricks = gen.registerCubeAllModelTexturePool(ModBlocks.MOSSY_GRIMROCK_BRICKS);
         var polished_grimrock_bricks = gen.registerCubeAllModelTexturePool(ModBlocks.POLISHED_GRIMROCK);
 
+        var mossy_packed_loam_bricks = gen.registerCubeAllModelTexturePool(ModBlocks.MOSSY_PACKED_LOAM_BRICKS);
+        var packed_loam = gen.registerCubeAllModelTexturePool(ModBlocks.PACKED_LOAM);
+        var packed_loam_bricks = gen.registerCubeAllModelTexturePool(ModBlocks.PACKED_LOAM_BRICKS);
+
+        var dried_silt = gen.registerCubeAllModelTexturePool(ModBlocks.DRIED_SILT);
+        var polished_silt = gen.registerCubeAllModelTexturePool(ModBlocks.POLISHED_SILT);
+        var silt_bricks = gen.registerCubeAllModelTexturePool(ModBlocks.SILT_BRICKS);
+
+        dried_silt.wall(ModBlocks.DRIED_SILT_WALL);
+        dried_silt.slab(ModBlocks.DRIED_SILT_SLAB);
+        dried_silt.stairs(ModBlocks.DRIED_SILT_STAIRS);
+
+        polished_silt.wall(ModBlocks.POLISHED_SILT_WALL);
+        polished_silt.slab(ModBlocks.POLISHED_SILT_SLAB);
+        polished_silt.stairs(ModBlocks.POLISHED_SILT_STAIRS);
+
+        silt_bricks.wall(ModBlocks.SILT_BRICKS_WALL);
+        silt_bricks.slab(ModBlocks.SILT_BRICKS_SLAB);
+        silt_bricks.stairs(ModBlocks.SILT_BRICKS_STAIRS);
+
+        mossy_packed_loam_bricks.wall(ModBlocks.MOSSY_PACKED_LOAM_BRICKS_WALL);
+        mossy_packed_loam_bricks.slab(ModBlocks.MOSSY_PACKED_LOAM_BRICKS_SLAB);
+        mossy_packed_loam_bricks.stairs(ModBlocks.MOSSY_PACKED_LOAM_BRICKS_STAIRS);
+
+        packed_loam.wall(ModBlocks.PACKED_LOAM_BRICKS_WALL);
+        packed_loam.slab(ModBlocks.PACKED_LOAM_BRICKS_SLAB);
+        packed_loam.stairs(ModBlocks.PACKED_LOAM_BRICKS_STAIRS);
+
+        packed_loam_bricks.wall(ModBlocks.PACKED_LOAM_WALL);
+        packed_loam_bricks.slab(ModBlocks.PACKED_LOAM_SLAB);
+        packed_loam_bricks.stairs(ModBlocks.PACKED_LOAM_STAIRS);
+
         limestone_bricks.wall(ModBlocks.LIMESTONE_BRICKS_WALL);
         limestone_bricks.slab(ModBlocks.LIMESTONE_BRICKS_SLAB);
         limestone_bricks.stairs(ModBlocks.LIMESTONE_BRICKS_STAIRS);

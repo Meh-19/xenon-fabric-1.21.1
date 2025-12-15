@@ -2,6 +2,7 @@ package net.meh.xenon.item;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.meh.xenon.Xenon;
+import net.meh.xenon.block.ModBlocks;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
@@ -24,6 +25,7 @@ private static Item registerItem(String name, Item item) {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
             entries.add(PLATINUM);
             entries.add(RUBY);
+            entries.add(ModBlocks.GRIMOSS);
 
         });
     }

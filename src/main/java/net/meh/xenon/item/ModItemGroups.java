@@ -221,12 +221,21 @@ public static final ItemGroup XENON_ITEMS_GROUP = Registry.register(Registries.I
                         entries.add(ModBlocks.SANDY_LIMESTONE_BRICKS_SLAB);
                         entries.add(ModBlocks.SANDY_LIMESTONE_BRICKS_WALL);
 
-
                         entries.add(ModBlocks.SILT);
                         entries.add(ModBlocks.DRIED_SILT);
-                        entries.add(ModBlocks.SILT_BRICKS);
-                        entries.add(ModBlocks.CHISELED_SILT_BRICKS);
+                        entries.add(ModBlocks.DRIED_SILT_STAIRS);
+                        entries.add(ModBlocks.DRIED_SILT_SLAB);
+                        entries.add(ModBlocks.DRIED_SILT_WALL);
                         entries.add(ModBlocks.POLISHED_SILT);
+                        entries.add(ModBlocks.POLISHED_SILT_STAIRS);
+                        entries.add(ModBlocks.POLISHED_SILT_SLAB);
+                        entries.add(ModBlocks.POLISHED_SILT_WALL);
+                        entries.add(ModBlocks.CHISELED_SILT_BRICKS);
+                        entries.add(ModBlocks.SILT_BRICKS);
+                        entries.add(ModBlocks.SILT_BRICKS_STAIRS);
+                        entries.add(ModBlocks.SILT_BRICKS_SLAB);
+                        entries.add(ModBlocks.SILT_BRICKS_WALL);
+
 
                         /* --- NETHER BLOCKS --- */
 
@@ -253,10 +262,19 @@ public static final ItemGroup XENON_ITEMS_GROUP = Registry.register(Registries.I
                         /* --- CUSTOM EARTHY BLOCKS --- */
 
                         entries.add(ModBlocks.LOAM);
-                        entries.add(ModBlocks.PACKED_LOAM);
-                        entries.add(ModBlocks.PACKED_LOAM_BRICKS);
                         entries.add(ModBlocks.CHISELED_PACKED_LOAM);
                         entries.add(ModBlocks.MOSSY_PACKED_LOAM_BRICKS);
+                        entries.add(ModBlocks.MOSSY_PACKED_LOAM_BRICKS_STAIRS);
+                        entries.add(ModBlocks.MOSSY_PACKED_LOAM_BRICKS_SLAB);
+                        entries.add(ModBlocks.MOSSY_PACKED_LOAM_BRICKS_WALL);
+                        entries.add(ModBlocks.PACKED_LOAM);
+                        entries.add(ModBlocks.PACKED_LOAM_STAIRS);
+                        entries.add(ModBlocks.PACKED_LOAM_SLAB);
+                        entries.add(ModBlocks.PACKED_LOAM_WALL);
+                        entries.add(ModBlocks.PACKED_LOAM_BRICKS);
+                        entries.add(ModBlocks.PACKED_LOAM_BRICKS_STAIRS);
+                        entries.add(ModBlocks.PACKED_LOAM_BRICKS_SLAB);
+                        entries.add(ModBlocks.PACKED_LOAM_BRICKS_WALL);
 
                         entries.add(ModBlocks.PACKED_ASHEN_SAND);
                         entries.add(ModBlocks.ASHEN_SAND);
@@ -296,6 +314,7 @@ public static final ItemGroup XENON_ITEMS_GROUP = Registry.register(Registries.I
                         entries.add(ModBlocks.POLISHED_GRIMROCK_STAIRS);
                         entries.add(ModBlocks.POLISHED_GRIMROCK_SLAB);
                         entries.add(ModBlocks.POLISHED_GRIMROCK_WALL);
+
 
 
                         /* --- ORGANIC BLOCKS --- */

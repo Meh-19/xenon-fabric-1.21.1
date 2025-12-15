@@ -281,6 +281,62 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
         getOrCreateTagBuilder(ItemTags.WALLS)
                 .add(ModBlocks.POLISHED_GRIMROCK_WALL.asItem());
 
+        getOrCreateTagBuilder(ItemTags.STAIRS)
+                .add(ModBlocks.MOSSY_PACKED_LOAM_BRICKS_STAIRS.asItem());
+
+        getOrCreateTagBuilder(ItemTags.SLABS)
+                .add(ModBlocks.MOSSY_PACKED_LOAM_BRICKS_SLAB.asItem());
+
+        getOrCreateTagBuilder(ItemTags.WALLS)
+                .add(ModBlocks.MOSSY_PACKED_LOAM_BRICKS_WALL.asItem());
+
+        getOrCreateTagBuilder(ItemTags.STAIRS)
+                .add(ModBlocks.PACKED_LOAM_STAIRS.asItem());
+
+        getOrCreateTagBuilder(ItemTags.SLABS)
+                .add(ModBlocks.PACKED_LOAM_SLAB.asItem());
+
+        getOrCreateTagBuilder(ItemTags.WALLS)
+                .add(ModBlocks.PACKED_LOAM_WALL.asItem());
+
+        getOrCreateTagBuilder(ItemTags.STAIRS)
+                .add(ModBlocks.PACKED_LOAM_BRICKS_STAIRS.asItem());
+
+        getOrCreateTagBuilder(ItemTags.SLABS)
+                .add(ModBlocks.PACKED_LOAM_BRICKS_SLAB.asItem());
+
+        getOrCreateTagBuilder(ItemTags.WALLS)
+                .add(ModBlocks.PACKED_LOAM_BRICKS_WALL.asItem());
+
+        getOrCreateTagBuilder(ItemTags.STAIRS)
+                .add(ModBlocks.DRIED_SILT_STAIRS.asItem());
+
+        getOrCreateTagBuilder(ItemTags.SLABS)
+                .add(ModBlocks.DRIED_SILT_SLAB.asItem());
+
+        getOrCreateTagBuilder(ItemTags.WALLS)
+                .add(ModBlocks.DRIED_SILT_WALL.asItem());
+
+        getOrCreateTagBuilder(ItemTags.STAIRS)
+                .add(ModBlocks.POLISHED_SILT_STAIRS.asItem());
+
+        getOrCreateTagBuilder(ItemTags.SLABS)
+                .add(ModBlocks.POLISHED_SILT_SLAB.asItem());
+
+        getOrCreateTagBuilder(ItemTags.WALLS)
+                .add(ModBlocks.POLISHED_SILT_WALL.asItem());
+
+        getOrCreateTagBuilder(ItemTags.STAIRS)
+                .add(ModBlocks.SILT_BRICKS_STAIRS.asItem());
+
+        getOrCreateTagBuilder(ItemTags.SLABS)
+                .add(ModBlocks.SILT_BRICKS_SLAB.asItem());
+
+        getOrCreateTagBuilder(ItemTags.WALLS)
+                .add(ModBlocks.SILT_BRICKS_WALL.asItem());
+
+
+
 
 
 

@@ -2748,34 +2748,6 @@ public class ModBlocks {
                     .strength(0.5F, 0.5F)
                     .sounds(BlockSoundGroup.SAND)));
 
-    // Silt Variants
-    public static final Block SILT = registerBlock("silt",
-            new Block(AbstractBlock.Settings.create()
-                    .strength(0.5F, 0.5F)
-                    .sounds(BlockSoundGroup.GRAVEL)));
-
-    public static final Block DRIED_SILT = registerBlock("dried_silt",
-            new Block(AbstractBlock.Settings.create()
-                    .strength(1.5F, 6.0F)
-                    .sounds(BlockSoundGroup.STONE)));
-
-    public static final Block SILT_BRICKS = registerBlock("silt_bricks",
-            new Block(AbstractBlock.Settings.create()
-                    .requiresTool()
-                    .strength(1.5F, 6.0F)
-                    .sounds(BlockSoundGroup.STONE)));
-
-    public static final Block CHISELED_SILT_BRICKS = registerBlock("chiseled_silt_bricks",
-            new Block(AbstractBlock.Settings.create()
-                    .requiresTool()
-                    .strength(1.5F, 6.0F)
-                    .sounds(BlockSoundGroup.STONE)));
-
-    public static final Block POLISHED_SILT = registerBlock("polished_silt",
-            new Block(AbstractBlock.Settings.create()
-                    .requiresTool()
-                    .strength(1.5F, 6.0F)
-                    .sounds(BlockSoundGroup.STONE)));
 
     // Nether Brick Variants
     public static final Block BLUE_NETHER_BRICKS = registerBlock("blue_nether_bricks",
@@ -2967,14 +2939,6 @@ public class ModBlocks {
                     .strength(1.5F, 6.0F)
                     .sounds(BlockSoundGroup.STONE)));
 
-    // Chiseled Packed Loam (mud/dirt → NO requiresTool)
-    public static final Block CHISELED_PACKED_LOAM = registerBlock("chiseled_packed_loam",
-            new Block(AbstractBlock.Settings.create()
-                    .instrument(NoteBlockInstrument.BASEDRUM)
-                    .strength(0.8F, 0.8F)
-                    .sounds(BlockSoundGroup.MUD)));
-
-
     // Cut Ashen Sandstone (stone → requiresTool)
     public static final Block CUT_ASHEN_SANDSTONE = registerBlock("cut_ashen_sandstone",
             new Block(AbstractBlock.Settings.create()
@@ -3017,21 +2981,6 @@ public class ModBlocks {
                     .strength(0.5F)
                     .sounds(BlockSoundGroup.GRASS)));
 
-    // Loam (dirt → NO requiresTool)
-    public static final Block LOAM = registerBlock("loam",
-            new Block(AbstractBlock.Settings.create()
-                    .instrument(NoteBlockInstrument.BASEDRUM)
-                    .strength(0.6F)
-                    .sounds(BlockSoundGroup.ROOTED_DIRT)));
-
-    // Mossy Grimrock Bricks (stone → requiresTool)
-    // Mossy Packed Loam Bricks (mud/dirt → NO requiresTool)
-    public static final Block MOSSY_PACKED_LOAM_BRICKS = registerBlock("mossy_packed_loam_bricks",
-            new Block(AbstractBlock.Settings.create()
-                    .instrument(NoteBlockInstrument.BASEDRUM)
-                    .strength(0.8F)
-                    .sounds(BlockSoundGroup.MUD)));
-
     // Packed Ashen Sand (sand → NO requiresTool)
     public static final Block PACKED_ASHEN_SAND = registerBlock("packed_ashen_sand",
             new Block(AbstractBlock.Settings.create()
@@ -3039,19 +2988,6 @@ public class ModBlocks {
                     .strength(1.0F)
                     .sounds(BlockSoundGroup.SAND)));
 
-    // Packed Loam (dirt → NO requiresTool)
-    public static final Block PACKED_LOAM = registerBlock("packed_loam",
-            new Block(AbstractBlock.Settings.create()
-                    .instrument(NoteBlockInstrument.BASEDRUM)
-                    .strength(0.8F)
-                    .sounds(BlockSoundGroup.MUD)));
-
-    // Packed Loam Bricks (dirt/mud → NO requiresTool)
-    public static final Block PACKED_LOAM_BRICKS = registerBlock("packed_loam_bricks",
-            new Block(AbstractBlock.Settings.create()
-                    .instrument(NoteBlockInstrument.BASEDRUM)
-                    .strength(1.2F)
-                    .sounds(BlockSoundGroup.MUD)));
 
     // Pale Grimweed Block (grass → NO requiresTool)
     public static final Block PALE_GRIMWEED_BLOCK = registerBlock("pale_grimweed_block",
@@ -3372,6 +3308,193 @@ public class ModBlocks {
                     .strength(1.5F, 6.0F)
                     .sounds(BlockSoundGroup.STONE)));
 
+    public static final Block LOAM = registerBlock("loam",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block CHISELED_PACKED_LOAM = registerBlock("chiseled_packed_loam",
+            new Block(AbstractBlock.Settings.create()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(0.8F, 0.8F)
+                    .sounds(BlockSoundGroup.MUD)));
+
+    public static final Block MOSSY_PACKED_LOAM_BRICKS = registerBlock("mossy_packed_loam_bricks",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block MOSSY_PACKED_LOAM_BRICKS_STAIRS = registerBlock("mossy_packed_loam_bricks_stairs",
+            new StairsBlock(ModBlocks.MOSSY_PACKED_LOAM_BRICKS.getDefaultState(),
+                    AbstractBlock.Settings.create()
+                            .requiresTool()
+                            .instrument(NoteBlockInstrument.BASEDRUM)
+                            .strength(1.5F, 6.0F)
+                            .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block MOSSY_PACKED_LOAM_BRICKS_SLAB = registerBlock("mossy_packed_loam_bricks_slab",
+            new SlabBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block MOSSY_PACKED_LOAM_BRICKS_WALL = registerBlock("mossy_packed_loam_bricks_wall",
+            new WallBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block PACKED_LOAM = registerBlock("packed_loam",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block PACKED_LOAM_STAIRS = registerBlock("packed_loam_stairs",
+            new StairsBlock(ModBlocks.PACKED_LOAM.getDefaultState(),
+                    AbstractBlock.Settings.create()
+                            .requiresTool()
+                            .instrument(NoteBlockInstrument.BASEDRUM)
+                            .strength(1.5F, 6.0F)
+                            .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block PACKED_LOAM_SLAB = registerBlock("packed_loam_slab",
+            new SlabBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block PACKED_LOAM_WALL = registerBlock("packed_loam_wall",
+            new WallBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block PACKED_LOAM_BRICKS = registerBlock("packed_loam_bricks",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block PACKED_LOAM_BRICKS_STAIRS = registerBlock("packed_loam_bricks_stairs",
+            new StairsBlock(ModBlocks.PACKED_LOAM_BRICKS.getDefaultState(),
+                    AbstractBlock.Settings.create()
+                            .requiresTool()
+                            .instrument(NoteBlockInstrument.BASEDRUM)
+                            .strength(1.5F, 6.0F)
+                            .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block PACKED_LOAM_BRICKS_SLAB = registerBlock("packed_loam_bricks_slab",
+            new SlabBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block PACKED_LOAM_BRICKS_WALL = registerBlock("packed_loam_bricks_wall",
+            new WallBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block DRIED_SILT = registerBlock("dried_silt",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block DRIED_SILT_STAIRS = registerBlock("dried_silt_stairs",
+            new StairsBlock(ModBlocks.DRIED_SILT.getDefaultState(),
+                    AbstractBlock.Settings.create()
+                            .requiresTool()
+                            .instrument(NoteBlockInstrument.BASEDRUM)
+                            .strength(1.5F, 6.0F)
+                            .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block DRIED_SILT_SLAB = registerBlock("dried_silt_slab",
+            new SlabBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block DRIED_SILT_WALL = registerBlock("dried_silt_wall",
+            new WallBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block POLISHED_SILT = registerBlock("polished_silt",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block POLISHED_SILT_STAIRS = registerBlock("polished_silt_stairs",
+            new StairsBlock(ModBlocks.POLISHED_SILT.getDefaultState(),
+                    AbstractBlock.Settings.create()
+                            .requiresTool()
+                            .instrument(NoteBlockInstrument.BASEDRUM)
+                            .strength(1.5F, 6.0F)
+                            .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block POLISHED_SILT_SLAB = registerBlock("polished_silt_slab",
+            new SlabBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block POLISHED_SILT_WALL = registerBlock("polished_silt_wall",
+            new WallBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block SILT_BRICKS = registerBlock("silt_bricks",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block SILT_BRICKS_STAIRS = registerBlock("silt_bricks_stairs",
+            new StairsBlock(ModBlocks.SILT_BRICKS.getDefaultState(),
+                    AbstractBlock.Settings.create()
+                            .requiresTool()
+                            .instrument(NoteBlockInstrument.BASEDRUM)
+                            .strength(1.5F, 6.0F)
+                            .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block SILT_BRICKS_SLAB = registerBlock("silt_bricks_slab",
+            new SlabBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block SILT_BRICKS_WALL = registerBlock("silt_bricks_wall",
+            new WallBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
 
 
 
@@ -3384,6 +3507,20 @@ public class ModBlocks {
         Registry.register(Registries.ITEM, Identifier.of(Xenon.MOD_ID, name),
                 new BlockItem(block, new Item.Settings()));
     }
+
+
+    // Silt Variants
+    public static final Block SILT = registerBlock("silt",
+            new Block(AbstractBlock.Settings.create()
+                    .strength(0.5F, 0.5F)
+                    .sounds(BlockSoundGroup.GRAVEL)));
+
+    public static final Block CHISELED_SILT_BRICKS = registerBlock("chiseled_silt_bricks",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
 
     public static void registerModBlocks() {
         Xenon.LOGGER.info("Registering Mod Blocks for " + Xenon.MOD_ID);
