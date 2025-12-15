@@ -3689,6 +3689,106 @@ public class ModBlocks {
                     .strength(1.5F, 6.0F)
                     .sounds(BlockSoundGroup.STONE)));
 
+    public static final Block DOLOMITE = registerBlock("dolomite",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block DOLOMITE_STAIRS = registerBlock("dolomite_stairs",
+            new StairsBlock(ModBlocks.DOLOMITE.getDefaultState(),
+                    AbstractBlock.Settings.create()
+                            .requiresTool()
+                            .instrument(NoteBlockInstrument.BASEDRUM)
+                            .strength(1.5F, 6.0F)
+                            .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block DOLOMITE_SLAB = registerBlock("dolomite_slab",
+            new SlabBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block DOLOMITE_WALL = registerBlock("dolomite_wall",
+            new WallBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block CHISELED_DOLOMITE = registerBlock("chiseled_dolomite",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block POLISHED_DOLOMITE = registerBlock("polished_dolomite",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block POLISHED_DOLOMITE_STAIRS = registerBlock("polished_dolomite_stairs",
+            new StairsBlock(ModBlocks.POLISHED_DOLOMITE.getDefaultState(),
+                    AbstractBlock.Settings.create()
+                            .requiresTool()
+                            .instrument(NoteBlockInstrument.BASEDRUM)
+                            .strength(1.5F, 6.0F)
+                            .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block POLISHED_DOLOMITE_SLAB = registerBlock("polished_dolomite_slab",
+            new SlabBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block POLISHED_DOLOMITE_WALL = registerBlock("polished_dolomite_wall",
+            new WallBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block DOLOMITE_BRICKS = registerBlock("dolomite_bricks",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block DOLOMITE_BRICKS_STAIRS = registerBlock("dolomite_bricks_stairs",
+            new StairsBlock(ModBlocks.DOLOMITE_BRICKS.getDefaultState(),
+                    AbstractBlock.Settings.create()
+                            .requiresTool()
+                            .instrument(NoteBlockInstrument.BASEDRUM)
+                            .strength(1.5F, 6.0F)
+                            .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block DOLOMITE_BRICKS_SLAB = registerBlock("dolomite_bricks_slab",
+            new SlabBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block DOLOMITE_BRICKS_WALL = registerBlock("dolomite_bricks_wall",
+            new WallBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block DOLOMITE_PILLAR = registerBlock("dolomite_pillar",
+            new PillarBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
 
 
 

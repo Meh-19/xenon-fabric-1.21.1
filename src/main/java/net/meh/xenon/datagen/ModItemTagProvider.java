@@ -391,6 +391,35 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModBlocks.STRATA_BRICKS_WALL.asItem());
 
 
+        getOrCreateTagBuilder(ItemTags.STAIRS)
+                .add(ModBlocks.DOLOMITE_STAIRS.asItem());
+
+        getOrCreateTagBuilder(ItemTags.SLABS)
+                .add(ModBlocks.DOLOMITE_SLAB.asItem());
+
+        getOrCreateTagBuilder(ItemTags.WALLS)
+                .add(ModBlocks.DOLOMITE_WALL.asItem());
+
+        getOrCreateTagBuilder(ItemTags.STAIRS)
+                .add(ModBlocks.POLISHED_DOLOMITE_STAIRS.asItem());
+
+        getOrCreateTagBuilder(ItemTags.SLABS)
+                .add(ModBlocks.POLISHED_DOLOMITE_SLAB.asItem());
+
+        getOrCreateTagBuilder(ItemTags.WALLS)
+                .add(ModBlocks.POLISHED_DOLOMITE_WALL.asItem());
+
+        getOrCreateTagBuilder(ItemTags.STAIRS)
+                .add(ModBlocks.DOLOMITE_BRICKS_STAIRS.asItem());
+
+        getOrCreateTagBuilder(ItemTags.SLABS)
+                .add(ModBlocks.DOLOMITE_BRICKS_SLAB.asItem());
+
+        getOrCreateTagBuilder(ItemTags.WALLS)
+                .add(ModBlocks.DOLOMITE_BRICKS_WALL.asItem());
+
+
+
 
 
 

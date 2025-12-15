@@ -44,6 +44,22 @@ public class ModModelProvider extends FabricModelProvider {
         var polished_strata = gen.registerCubeAllModelTexturePool(ModBlocks.POLISHED_STRATA);
         var strata_bricks = gen.registerCubeAllModelTexturePool(ModBlocks.STRATA_BRICKS);
 
+        var dolomite = gen.registerCubeAllModelTexturePool(ModBlocks.DOLOMITE);
+        var polished_dolomite = gen.registerCubeAllModelTexturePool(ModBlocks.POLISHED_DOLOMITE);
+        var dolomite_bricks = gen.registerCubeAllModelTexturePool(ModBlocks.DOLOMITE_BRICKS);
+
+        dolomite.wall(ModBlocks.DOLOMITE_WALL);
+        dolomite.slab(ModBlocks.DOLOMITE_SLAB);
+        dolomite.stairs(ModBlocks.DOLOMITE_STAIRS);
+
+        polished_dolomite.wall(ModBlocks.POLISHED_DOLOMITE_WALL);
+        polished_dolomite.slab(ModBlocks.POLISHED_DOLOMITE_SLAB);
+        polished_dolomite.stairs(ModBlocks.POLISHED_DOLOMITE_STAIRS);
+
+        dolomite_bricks.wall(ModBlocks.DOLOMITE_BRICKS_WALL);
+        dolomite_bricks.slab(ModBlocks.DOLOMITE_BRICKS_SLAB);
+        dolomite_bricks.stairs(ModBlocks.DOLOMITE_BRICKS_STAIRS);
+
         strata.wall(ModBlocks.STRATA_WALL);
         strata.slab(ModBlocks.STRATA_SLAB);
         strata.stairs(ModBlocks.STRATA_STAIRS);

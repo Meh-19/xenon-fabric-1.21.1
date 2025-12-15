@@ -226,8 +226,6 @@ public static final ItemGroup XENON_ITEMS_GROUP = Registry.register(Registries.I
                         entries.add(ModBlocks.STRATA_BRICKS_SLAB);
                         entries.add(ModBlocks.STRATA_BRICKS_WALL);
 
-
-
                         entries.add(ModBlocks.LIMESTONE);
                         entries.add(ModBlocks.LIMESTONE_STAIRS);
                         entries.add(ModBlocks.LIMESTONE_SLAB);
@@ -245,6 +243,21 @@ public static final ItemGroup XENON_ITEMS_GROUP = Registry.register(Registries.I
                         entries.add(ModBlocks.SANDY_LIMESTONE_BRICKS_STAIRS);
                         entries.add(ModBlocks.SANDY_LIMESTONE_BRICKS_SLAB);
                         entries.add(ModBlocks.SANDY_LIMESTONE_BRICKS_WALL);
+
+                        entries.add(ModBlocks.DOLOMITE);
+                        entries.add(ModBlocks.DOLOMITE_PILLAR);
+                        entries.add(ModBlocks.DOLOMITE_STAIRS);
+                        entries.add(ModBlocks.DOLOMITE_SLAB);
+                        entries.add(ModBlocks.DOLOMITE_WALL);
+                        entries.add(ModBlocks.CHISELED_DOLOMITE);
+                        entries.add(ModBlocks.POLISHED_DOLOMITE);
+                        entries.add(ModBlocks.POLISHED_DOLOMITE_STAIRS);
+                        entries.add(ModBlocks.POLISHED_DOLOMITE_SLAB);
+                        entries.add(ModBlocks.POLISHED_DOLOMITE_WALL);
+                        entries.add(ModBlocks.DOLOMITE_BRICKS);
+                        entries.add(ModBlocks.DOLOMITE_BRICKS_STAIRS);
+                        entries.add(ModBlocks.DOLOMITE_BRICKS_SLAB);
+                        entries.add(ModBlocks.DOLOMITE_BRICKS_WALL);
 
                         entries.add(ModBlocks.SILT);
                         entries.add(ModBlocks.DRIED_SILT);
