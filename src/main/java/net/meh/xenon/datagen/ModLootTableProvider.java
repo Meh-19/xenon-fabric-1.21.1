@@ -400,10 +400,6 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.POLISHED_DRIPSTONE);
         addDrop(ModBlocks.CHISELED_MUD);
         addDrop(ModBlocks.POLISHED_MUD);
-        addDrop(ModBlocks.SLATE);
-        addDrop(ModBlocks.SLATE_BRICKS);
-        addDrop(ModBlocks.CHISELED_SLATE);
-        addDrop(ModBlocks.POLISHED_SLATE);
         addDrop(ModBlocks.PACKED_DIRT);
         addDrop(ModBlocks.PACKED_SAND);
         addDrop(ModBlocks.PACKED_RED_SAND);
@@ -507,6 +503,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.DRIED_SILT);
         addDrop(ModBlocks.DRIED_SILT_STAIRS);
         addDrop(ModBlocks.DRIED_SILT_SLAB, slabDrops(ModBlocks.DRIED_SILT_SLAB));
+        addDrop(ModBlocks.PACKED_DIRT_SLAB, slabDrops(ModBlocks.PACKED_DIRT_SLAB));
         addDrop(ModBlocks.DRIED_SILT_WALL);
         addDrop(ModBlocks.POLISHED_SILT);
         addDrop(ModBlocks.POLISHED_SILT_STAIRS);
@@ -516,6 +513,35 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.SILT_BRICKS_STAIRS);
         addDrop(ModBlocks.SILT_BRICKS_SLAB, slabDrops(ModBlocks.SILT_BRICKS_SLAB));
         addDrop(ModBlocks.SILT_BRICKS_WALL);
+
+        addDrop(ModBlocks.SLATE);
+        addDrop(ModBlocks.SLATE_STAIRS);
+        addDrop(ModBlocks.SLATE_SLAB, slabDrops(ModBlocks.SLATE_SLAB));
+        addDrop(ModBlocks.SLATE_WALL);
+        addDrop(ModBlocks.CHISELED_SLATE);
+        addDrop(ModBlocks.POLISHED_SLATE);
+        addDrop(ModBlocks.POLISHED_SLATE_STAIRS);
+        addDrop(ModBlocks.POLISHED_SLATE_SLAB, slabDrops(ModBlocks.POLISHED_SLATE_SLAB));
+        addDrop(ModBlocks.POLISHED_SLATE_WALL);
+        addDrop(ModBlocks.SLATE_BRICKS);
+        addDrop(ModBlocks.SLATE_BRICKS_STAIRS);
+        addDrop(ModBlocks.SLATE_BRICKS_SLAB, slabDrops(ModBlocks.SLATE_BRICKS_SLAB));
+        addDrop(ModBlocks.SLATE_BRICKS_WALL);
+
+        addDrop(ModBlocks.STRATA);
+        addDrop(ModBlocks.STRATA_STAIRS);
+        addDrop(ModBlocks.STRATA_SLAB, slabDrops(ModBlocks.STRATA_SLAB));
+        addDrop(ModBlocks.STRATA_WALL);
+        addDrop(ModBlocks.CHISELED_STRATA);
+        addDrop(ModBlocks.POLISHED_STRATA);
+        addDrop(ModBlocks.POLISHED_STRATA_STAIRS);
+        addDrop(ModBlocks.POLISHED_STRATA_SLAB, slabDrops(ModBlocks.POLISHED_STRATA_SLAB));
+        addDrop(ModBlocks.POLISHED_STRATA_WALL);
+        addDrop(ModBlocks.STRATA_BRICKS);
+        addDrop(ModBlocks.STRATA_BRICKS_STAIRS);
+        addDrop(ModBlocks.STRATA_BRICKS_SLAB, slabDrops(ModBlocks.STRATA_BRICKS_SLAB));
+        addDrop(ModBlocks.STRATA_BRICKS_WALL);
+
 
 
 

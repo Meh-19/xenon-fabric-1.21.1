@@ -199,9 +199,34 @@ public static final ItemGroup XENON_ITEMS_GROUP = Registry.register(Registries.I
                         entries.add(ModBlocks.POLISHED_DRIPSTONE);
 
                         entries.add(ModBlocks.SLATE);
-                        entries.add(ModBlocks.SLATE_BRICKS);
+                        entries.add(ModBlocks.SLATE_STAIRS);
+                        entries.add(ModBlocks.SLATE_SLAB);
+                        entries.add(ModBlocks.SLATE_WALL);
                         entries.add(ModBlocks.CHISELED_SLATE);
                         entries.add(ModBlocks.POLISHED_SLATE);
+                        entries.add(ModBlocks.POLISHED_SLATE_STAIRS);
+                        entries.add(ModBlocks.POLISHED_SLATE_SLAB);
+                        entries.add(ModBlocks.POLISHED_SLATE_WALL);
+                        entries.add(ModBlocks.SLATE_BRICKS);
+                        entries.add(ModBlocks.SLATE_BRICKS_STAIRS);
+                        entries.add(ModBlocks.SLATE_BRICKS_SLAB);
+                        entries.add(ModBlocks.SLATE_BRICKS_WALL);
+
+                        entries.add(ModBlocks.STRATA);
+                        entries.add(ModBlocks.STRATA_STAIRS);
+                        entries.add(ModBlocks.STRATA_SLAB);
+                        entries.add(ModBlocks.STRATA_WALL);
+                        entries.add(ModBlocks.CHISELED_STRATA);
+                        entries.add(ModBlocks.POLISHED_STRATA);
+                        entries.add(ModBlocks.POLISHED_STRATA_STAIRS);
+                        entries.add(ModBlocks.POLISHED_STRATA_SLAB);
+                        entries.add(ModBlocks.POLISHED_STRATA_WALL);
+                        entries.add(ModBlocks.STRATA_BRICKS);
+                        entries.add(ModBlocks.STRATA_BRICKS_STAIRS);
+                        entries.add(ModBlocks.STRATA_BRICKS_SLAB);
+                        entries.add(ModBlocks.STRATA_BRICKS_WALL);
+
+
 
                         entries.add(ModBlocks.LIMESTONE);
                         entries.add(ModBlocks.LIMESTONE_STAIRS);
@@ -284,6 +309,7 @@ public static final ItemGroup XENON_ITEMS_GROUP = Registry.register(Registries.I
                         entries.add(ModBlocks.SMOOTH_ASHEN_SANDSTONE);
 
                         entries.add(ModBlocks.PACKED_DIRT);
+                        entries.add(ModBlocks.PACKED_DIRT_SLAB);
                         entries.add(ModBlocks.PACKED_SAND);
                         entries.add(ModBlocks.PACKED_RED_SAND);
 

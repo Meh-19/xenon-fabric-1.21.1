@@ -34,6 +34,44 @@ public class ModModelProvider extends FabricModelProvider {
         var polished_silt = gen.registerCubeAllModelTexturePool(ModBlocks.POLISHED_SILT);
         var silt_bricks = gen.registerCubeAllModelTexturePool(ModBlocks.SILT_BRICKS);
 
+        var packed_dirt = gen.registerCubeAllModelTexturePool(ModBlocks.PACKED_DIRT);
+
+        var slate = gen.registerCubeAllModelTexturePool(ModBlocks.SLATE);
+        var polished_slate = gen.registerCubeAllModelTexturePool(ModBlocks.POLISHED_SLATE);
+        var slate_bricks = gen.registerCubeAllModelTexturePool(ModBlocks.SLATE_BRICKS);
+
+        var strata = gen.registerCubeAllModelTexturePool(ModBlocks.STRATA);
+        var polished_strata = gen.registerCubeAllModelTexturePool(ModBlocks.POLISHED_STRATA);
+        var strata_bricks = gen.registerCubeAllModelTexturePool(ModBlocks.STRATA_BRICKS);
+
+        strata.wall(ModBlocks.STRATA_WALL);
+        strata.slab(ModBlocks.STRATA_SLAB);
+        strata.stairs(ModBlocks.STRATA_STAIRS);
+
+        polished_strata.wall(ModBlocks.POLISHED_STRATA_WALL);
+        polished_strata.slab(ModBlocks.POLISHED_STRATA_SLAB);
+        polished_strata.stairs(ModBlocks.POLISHED_STRATA_STAIRS);
+
+        strata_bricks.wall(ModBlocks.STRATA_BRICKS_WALL);
+        strata_bricks.slab(ModBlocks.STRATA_BRICKS_SLAB);
+        strata_bricks.stairs(ModBlocks.STRATA_BRICKS_STAIRS);
+
+        slate.wall(ModBlocks.SLATE_WALL);
+        slate.slab(ModBlocks.SLATE_SLAB);
+        slate.stairs(ModBlocks.SLATE_STAIRS);
+
+
+
+        polished_slate.wall(ModBlocks.POLISHED_SLATE_WALL);
+        polished_slate.slab(ModBlocks.POLISHED_SLATE_SLAB);
+        polished_slate.stairs(ModBlocks.POLISHED_SLATE_STAIRS);
+
+        slate_bricks.wall(ModBlocks.SLATE_BRICKS_WALL);
+        slate_bricks.slab(ModBlocks.SLATE_BRICKS_SLAB);
+        slate_bricks.stairs(ModBlocks.SLATE_BRICKS_STAIRS);
+
+        packed_dirt.slab(ModBlocks.PACKED_DIRT_SLAB);
+
         dried_silt.wall(ModBlocks.DRIED_SILT_WALL);
         dried_silt.slab(ModBlocks.DRIED_SILT_SLAB);
         dried_silt.stairs(ModBlocks.DRIED_SILT_STAIRS);
