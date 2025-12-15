@@ -227,6 +227,62 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
         getOrCreateTagBuilder(ItemTags.WALLS)
                 .add(ModBlocks.SANDY_LIMESTONE_BRICKS_WALL.asItem());
 
+        getOrCreateTagBuilder(ItemTags.STAIRS)
+                .add(ModBlocks.GRIMROCK_STAIRS.asItem());
+
+        getOrCreateTagBuilder(ItemTags.SLABS)
+                .add(ModBlocks.GRIMROCK_SLAB.asItem());
+
+        getOrCreateTagBuilder(ItemTags.WALLS)
+                .add(ModBlocks.GRIMROCK_WALL.asItem());
+
+        getOrCreateTagBuilder(ItemTags.STAIRS)
+                .add(ModBlocks.COBBLED_GRIMROCK_STAIRS.asItem());
+
+        getOrCreateTagBuilder(ItemTags.SLABS)
+                .add(ModBlocks.COBBLED_GRIMROCK_SLAB.asItem());
+
+        getOrCreateTagBuilder(ItemTags.WALLS)
+                .add(ModBlocks.COBBLED_GRIMROCK_WALL.asItem());
+
+        getOrCreateTagBuilder(ItemTags.STAIRS)
+                .add(ModBlocks.CRACKED_GRIMROCK_BRICKS_STAIRS.asItem());
+
+        getOrCreateTagBuilder(ItemTags.SLABS)
+                .add(ModBlocks.CRACKED_GRIMROCK_BRICKS_SLAB.asItem());
+
+        getOrCreateTagBuilder(ItemTags.WALLS)
+                .add(ModBlocks.CRACKED_GRIMROCK_BRICKS_WALL.asItem());
+
+        getOrCreateTagBuilder(ItemTags.STAIRS)
+                .add(ModBlocks.GRIMROCK_BRICKS_STAIRS.asItem());
+
+        getOrCreateTagBuilder(ItemTags.SLABS)
+                .add(ModBlocks.GRIMROCK_BRICKS_SLAB.asItem());
+
+        getOrCreateTagBuilder(ItemTags.WALLS)
+                .add(ModBlocks.GRIMROCK_BRICKS_WALL.asItem());
+
+        getOrCreateTagBuilder(ItemTags.STAIRS)
+                .add(ModBlocks.MOSSY_GRIMROCK_BRICKS_STAIRS.asItem());
+
+        getOrCreateTagBuilder(ItemTags.SLABS)
+                .add(ModBlocks.MOSSY_GRIMROCK_BRICKS_SLAB.asItem());
+
+        getOrCreateTagBuilder(ItemTags.WALLS)
+                .add(ModBlocks.MOSSY_GRIMROCK_BRICKS_WALL.asItem());
+
+        getOrCreateTagBuilder(ItemTags.STAIRS)
+                .add(ModBlocks.POLISHED_GRIMROCK_STAIRS.asItem());
+
+        getOrCreateTagBuilder(ItemTags.SLABS)
+                .add(ModBlocks.POLISHED_GRIMROCK_SLAB.asItem());
+
+        getOrCreateTagBuilder(ItemTags.WALLS)
+                .add(ModBlocks.POLISHED_GRIMROCK_WALL.asItem());
+
+
+
 
 
     }

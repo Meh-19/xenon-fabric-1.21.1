@@ -2967,14 +2967,6 @@ public class ModBlocks {
                     .strength(1.5F, 6.0F)
                     .sounds(BlockSoundGroup.STONE)));
 
-    // Chiseled Grimrock (stone → requiresTool)
-    public static final Block CHISELED_GRIMROCK = registerBlock("chiseled_grimrock",
-            new Block(AbstractBlock.Settings.create()
-                    .instrument(NoteBlockInstrument.BASEDRUM)
-                    .requiresTool()
-                    .strength(1.5F, 6.0F)
-                    .sounds(BlockSoundGroup.STONE)));
-
     // Chiseled Packed Loam (mud/dirt → NO requiresTool)
     public static final Block CHISELED_PACKED_LOAM = registerBlock("chiseled_packed_loam",
             new Block(AbstractBlock.Settings.create()
@@ -2982,13 +2974,6 @@ public class ModBlocks {
                     .strength(0.8F, 0.8F)
                     .sounds(BlockSoundGroup.MUD)));
 
-    // Cobbled Grimrock (stone → requiresTool)
-    public static final Block COBBLED_GRIMROCK = registerBlock("cobbled_grimrock",
-            new Block(AbstractBlock.Settings.create()
-                    .instrument(NoteBlockInstrument.BASEDRUM)
-                    .requiresTool()
-                    .strength(2.0F, 6.0F)
-                    .sounds(BlockSoundGroup.STONE)));
 
     // Cut Ashen Sandstone (stone → requiresTool)
     public static final Block CUT_ASHEN_SANDSTONE = registerBlock("cut_ashen_sandstone",
@@ -3023,36 +3008,6 @@ public class ModBlocks {
                     .instrument(NoteBlockInstrument.BASEDRUM)
                     .strength(0.6F)
                     .sounds(BlockSoundGroup.MOSS_BLOCK)));
-
-    // Grimrock (stone → requiresTool)
-    public static final Block GRIMROCK = registerBlock("grimrock",
-            new Block(AbstractBlock.Settings.create()
-                    .instrument(NoteBlockInstrument.BASEDRUM)
-                    .requiresTool()
-                    .strength(1.8F, 6.0F)
-                    .sounds(BlockSoundGroup.STONE)));
-
-    // Grimrock Bricks (stone → requiresTool)
-    public static final Block GRIMROCK_BRICKS = registerBlock("grimrock_bricks",
-            new Block(AbstractBlock.Settings.create()
-                    .instrument(NoteBlockInstrument.BASEDRUM)
-                    .requiresTool()
-                    .strength(2.0F, 6.0F)
-                    .sounds(BlockSoundGroup.STONE)));
-
-    public static final Block CRACKED_GRIMROCK_BRICKS = registerBlock("cracked_grimrock_bricks",
-            new Block(AbstractBlock.Settings.create()
-                    .instrument(NoteBlockInstrument.BASEDRUM)
-                    .requiresTool()
-                    .strength(2.0F, 6.0F)
-                    .sounds(BlockSoundGroup.STONE)));
-
-    public static final Block MOSSY_GRIMROCK_BRICKS = registerBlock("mossy_grimrock_bricks",
-            new Block(AbstractBlock.Settings.create()
-                    .instrument(NoteBlockInstrument.BASEDRUM)
-                    .requiresTool()
-                    .strength(2.0F, 6.0F)
-                    .sounds(BlockSoundGroup.STONE)));
 
 
     // Grimweed Block (grass → NO requiresTool)
@@ -3104,14 +3059,6 @@ public class ModBlocks {
                     .instrument(NoteBlockInstrument.BASEDRUM)
                     .strength(0.5F)
                     .sounds(BlockSoundGroup.GRASS)));
-
-    // Polished Grimrock (stone → requiresTool)
-    public static final Block POLISHED_GRIMROCK = registerBlock("polished_grimrock",
-            new Block(AbstractBlock.Settings.create()
-                    .instrument(NoteBlockInstrument.BASEDRUM)
-                    .requiresTool()
-                    .strength(2.0F, 6.0F)
-                    .sounds(BlockSoundGroup.STONE)));
 
     // Blighted Shroomlight (shroomlight → NO requiresTool)
     public static final Block BLIGHTED_SHROOMLIGHT = registerBlock("blighted_shroomlight",
@@ -3238,6 +3185,187 @@ public class ModBlocks {
                     .sounds(BlockSoundGroup.STONE)));
 
     public static final Block SANDY_LIMESTONE_BRICKS_WALL = registerBlock("sandy_limestone_bricks_wall",
+            new WallBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block GRIMROCK = registerBlock("grimrock",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block GRIMROCK_STAIRS = registerBlock("grimrock_stairs",
+            new StairsBlock(ModBlocks.GRIMROCK.getDefaultState(),
+                    AbstractBlock.Settings.create()
+                            .requiresTool()
+                            .instrument(NoteBlockInstrument.BASEDRUM)
+                            .strength(1.5F, 6.0F)
+                            .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block GRIMROCK_SLAB = registerBlock("grimrock_slab",
+            new SlabBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block GRIMROCK_WALL = registerBlock("grimrock_wall",
+            new WallBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block CHISELED_GRIMROCK = registerBlock("chiseled_grimrock",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block COBBLED_GRIMROCK = registerBlock("cobbled_grimrock",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block COBBLED_GRIMROCK_STAIRS = registerBlock("cobbled_grimrock_stairs",
+            new StairsBlock(ModBlocks.COBBLED_GRIMROCK.getDefaultState(),
+                    AbstractBlock.Settings.create()
+                            .requiresTool()
+                            .instrument(NoteBlockInstrument.BASEDRUM)
+                            .strength(1.5F, 6.0F)
+                            .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block COBBLED_GRIMROCK_SLAB = registerBlock("cobbled_grimrock_slab",
+            new SlabBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block COBBLED_GRIMROCK_WALL = registerBlock("cobbled_grimrock_wall",
+            new WallBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block CRACKED_GRIMROCK_BRICKS = registerBlock("cracked_grimrock_bricks",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block CRACKED_GRIMROCK_BRICKS_STAIRS = registerBlock("cracked_grimrock_bricks_stairs",
+            new StairsBlock(ModBlocks.CRACKED_GRIMROCK_BRICKS.getDefaultState(),
+                    AbstractBlock.Settings.create()
+                            .requiresTool()
+                            .instrument(NoteBlockInstrument.BASEDRUM)
+                            .strength(1.5F, 6.0F)
+                            .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block CRACKED_GRIMROCK_BRICKS_SLAB = registerBlock("cracked_grimrock_bricks_slab",
+            new SlabBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block CRACKED_GRIMROCK_BRICKS_WALL = registerBlock("cracked_grimrock_bricks_wall",
+            new WallBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block GRIMROCK_BRICKS = registerBlock("grimrock_bricks",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block GRIMROCK_BRICKS_STAIRS = registerBlock("grimrock_bricks_stairs",
+            new StairsBlock(ModBlocks.GRIMROCK_BRICKS.getDefaultState(),
+                    AbstractBlock.Settings.create()
+                            .requiresTool()
+                            .instrument(NoteBlockInstrument.BASEDRUM)
+                            .strength(1.5F, 6.0F)
+                            .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block GRIMROCK_BRICKS_SLAB = registerBlock("grimrock_bricks_slab",
+            new SlabBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block GRIMROCK_BRICKS_WALL = registerBlock("grimrock_bricks_wall",
+            new WallBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block MOSSY_GRIMROCK_BRICKS = registerBlock("mossy_grimrock_bricks",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block MOSSY_GRIMROCK_BRICKS_STAIRS = registerBlock("mossy_grimrock_bricks_stairs",
+            new StairsBlock(ModBlocks.MOSSY_GRIMROCK_BRICKS.getDefaultState(),
+                    AbstractBlock.Settings.create()
+                            .requiresTool()
+                            .instrument(NoteBlockInstrument.BASEDRUM)
+                            .strength(1.5F, 6.0F)
+                            .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block MOSSY_GRIMROCK_BRICKS_SLAB = registerBlock("mossy_grimrock_bricks_slab",
+            new SlabBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block MOSSY_GRIMROCK_BRICKS_WALL = registerBlock("mossy_grimrock_bricks_wall",
+            new WallBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block POLISHED_GRIMROCK = registerBlock("polished_grimrock",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block POLISHED_GRIMROCK_STAIRS = registerBlock("polished_grimrock_stairs",
+            new StairsBlock(ModBlocks.POLISHED_GRIMROCK.getDefaultState(),
+                    AbstractBlock.Settings.create()
+                            .requiresTool()
+                            .instrument(NoteBlockInstrument.BASEDRUM)
+                            .strength(1.5F, 6.0F)
+                            .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block POLISHED_GRIMROCK_SLAB = registerBlock("polished_grimrock_slab",
+            new SlabBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block POLISHED_GRIMROCK_WALL = registerBlock("polished_grimrock_wall",
             new WallBlock(AbstractBlock.Settings.create()
                     .requiresTool()
                     .instrument(NoteBlockInstrument.BASEDRUM)

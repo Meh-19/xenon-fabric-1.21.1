@@ -9,7 +9,6 @@ import net.minecraft.block.Blocks;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.item.Item;
-import net.minecraft.item.Items;
 import net.minecraft.loot.LootTable;
 import net.minecraft.loot.entry.ItemEntry;
 import net.minecraft.loot.entry.LeafEntry;
@@ -435,7 +434,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.CHISELED_PACKED_LOAM);
         addDrop(ModBlocks.COBBLED_GRIMROCK);
         addDrop(ModBlocks.CUT_ASHEN_SANDSTONE);
-//        addDrop(ModBlocks.DAMP_MOSS_BLOCK);
+//        addDrop(ModBlocks.DAMP_MOSS_BLOCK); //TODO
         addDrop(ModBlocks.GRIMOSS_BLOCK);
         addDrop(ModBlocks.GRIMROCK);
         addDrop(ModBlocks.GRIMROCK_BRICKS);
@@ -467,6 +466,33 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.SANDY_LIMESTONE_BRICKS_STAIRS);
         addDrop(ModBlocks.SANDY_LIMESTONE_BRICKS_SLAB, slabDrops(ModBlocks.SANDY_LIMESTONE_BRICKS_SLAB));
         addDrop(ModBlocks.SANDY_LIMESTONE_BRICKS_WALL);
+
+        addDrop(ModBlocks.GRIMROCK);
+        addDrop(ModBlocks.GRIMROCK_STAIRS);
+        addDrop(ModBlocks.GRIMROCK_SLAB, slabDrops(ModBlocks.GRIMROCK_SLAB));
+        addDrop(ModBlocks.GRIMROCK_WALL);
+        addDrop(ModBlocks.CHISELED_GRIMROCK);
+        addDrop(ModBlocks.COBBLED_GRIMROCK);
+        addDrop(ModBlocks.COBBLED_GRIMROCK_STAIRS);
+        addDrop(ModBlocks.COBBLED_GRIMROCK_SLAB, slabDrops(ModBlocks.COBBLED_GRIMROCK_SLAB));
+        addDrop(ModBlocks.COBBLED_GRIMROCK_WALL);
+        addDrop(ModBlocks.CRACKED_GRIMROCK_BRICKS);
+        addDrop(ModBlocks.CRACKED_GRIMROCK_BRICKS_STAIRS);
+        addDrop(ModBlocks.CRACKED_GRIMROCK_BRICKS_SLAB, slabDrops(ModBlocks.CRACKED_GRIMROCK_BRICKS_SLAB));
+        addDrop(ModBlocks.CRACKED_GRIMROCK_BRICKS_WALL);
+        addDrop(ModBlocks.GRIMROCK_BRICKS);
+        addDrop(ModBlocks.GRIMROCK_BRICKS_STAIRS);
+        addDrop(ModBlocks.GRIMROCK_BRICKS_SLAB, slabDrops(ModBlocks.GRIMROCK_BRICKS_SLAB));
+        addDrop(ModBlocks.GRIMROCK_BRICKS_WALL);
+        addDrop(ModBlocks.MOSSY_GRIMROCK_BRICKS);
+        addDrop(ModBlocks.MOSSY_GRIMROCK_BRICKS_STAIRS);
+        addDrop(ModBlocks.MOSSY_GRIMROCK_BRICKS_SLAB, slabDrops(ModBlocks.MOSSY_GRIMROCK_BRICKS_SLAB));
+        addDrop(ModBlocks.MOSSY_GRIMROCK_BRICKS_WALL);
+        addDrop(ModBlocks.POLISHED_GRIMROCK);
+        addDrop(ModBlocks.POLISHED_GRIMROCK_STAIRS);
+        addDrop(ModBlocks.POLISHED_GRIMROCK_SLAB, slabDrops(ModBlocks.POLISHED_GRIMROCK_SLAB));
+        addDrop(ModBlocks.POLISHED_GRIMROCK_WALL);
+
 
 
 

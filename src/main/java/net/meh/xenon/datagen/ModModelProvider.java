@@ -3,10 +3,8 @@ package net.meh.xenon.datagen;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.meh.xenon.block.ModBlocks;
-import net.meh.xenon.item.ModItems;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
-import net.minecraft.data.client.Models;
 
 public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricDataOutput output) {
@@ -21,6 +19,13 @@ public class ModModelProvider extends FabricModelProvider {
         var sandy_limestone = gen.registerCubeAllModelTexturePool(ModBlocks.SANDY_LIMESTONE_BRICKS);
         var limestone_bricks = gen.registerCubeAllModelTexturePool(ModBlocks.LIMESTONE_BRICKS);
 
+        var grimrock = gen.registerCubeAllModelTexturePool(ModBlocks.GRIMROCK);
+        var cobbled_grimrock = gen.registerCubeAllModelTexturePool(ModBlocks.COBBLED_GRIMROCK);
+        var cracked_grimrock_bricks = gen.registerCubeAllModelTexturePool(ModBlocks.CRACKED_GRIMROCK_BRICKS);
+        var grimrock_bricks = gen.registerCubeAllModelTexturePool(ModBlocks.GRIMROCK_BRICKS);
+        var mossy_grimrock_bricks = gen.registerCubeAllModelTexturePool(ModBlocks.MOSSY_GRIMROCK_BRICKS);
+        var polished_grimrock_bricks = gen.registerCubeAllModelTexturePool(ModBlocks.POLISHED_GRIMROCK);
+
         limestone_bricks.wall(ModBlocks.LIMESTONE_BRICKS_WALL);
         limestone_bricks.slab(ModBlocks.LIMESTONE_BRICKS_SLAB);
         limestone_bricks.stairs(ModBlocks.LIMESTONE_BRICKS_STAIRS);
@@ -33,6 +38,31 @@ public class ModModelProvider extends FabricModelProvider {
         limestone.wall(ModBlocks.LIMESTONE_WALL);
         limestone.slab(ModBlocks.LIMESTONE_SLAB);
         limestone.stairs(ModBlocks.LIMESTONE_STAIRS);
+
+        grimrock.wall(ModBlocks.GRIMROCK_WALL);
+        grimrock.slab(ModBlocks.GRIMROCK_SLAB);
+        grimrock.stairs(ModBlocks.GRIMROCK_STAIRS);
+
+        cobbled_grimrock.wall(ModBlocks.COBBLED_GRIMROCK_WALL);
+        cobbled_grimrock.slab(ModBlocks.COBBLED_GRIMROCK_SLAB);
+        cobbled_grimrock.stairs(ModBlocks.COBBLED_GRIMROCK_STAIRS);
+
+        cracked_grimrock_bricks.wall(ModBlocks.CRACKED_GRIMROCK_BRICKS_WALL);
+        cracked_grimrock_bricks.slab(ModBlocks.CRACKED_GRIMROCK_BRICKS_SLAB);
+        cracked_grimrock_bricks.stairs(ModBlocks.CRACKED_GRIMROCK_BRICKS_STAIRS);
+
+        grimrock_bricks.wall(ModBlocks.GRIMROCK_BRICKS_WALL);
+        grimrock_bricks.slab(ModBlocks.GRIMROCK_BRICKS_SLAB);
+        grimrock_bricks.stairs(ModBlocks.GRIMROCK_BRICKS_STAIRS);
+
+        mossy_grimrock_bricks.wall(ModBlocks.MOSSY_GRIMROCK_BRICKS_WALL);
+        mossy_grimrock_bricks.slab(ModBlocks.MOSSY_GRIMROCK_BRICKS_SLAB);
+        mossy_grimrock_bricks.stairs(ModBlocks.MOSSY_GRIMROCK_BRICKS_STAIRS);
+
+        polished_grimrock_bricks.wall(ModBlocks.POLISHED_GRIMROCK_WALL);
+        polished_grimrock_bricks.slab(ModBlocks.POLISHED_GRIMROCK_SLAB);
+        polished_grimrock_bricks.stairs(ModBlocks.POLISHED_GRIMROCK_STAIRS);
+
 
     }
 

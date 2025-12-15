@@ -272,11 +272,31 @@ public static final ItemGroup XENON_ITEMS_GROUP = Registry.register(Registries.I
                         /* --- GRIMROCK SET --- */
 
                         entries.add(ModBlocks.GRIMROCK);
-                        entries.add(ModBlocks.GRIMROCK_BRICKS);
+                        entries.add(ModBlocks.GRIMROCK_STAIRS);
+                        entries.add(ModBlocks.GRIMROCK_SLAB);
+                        entries.add(ModBlocks.GRIMROCK_WALL);
                         entries.add(ModBlocks.CHISELED_GRIMROCK);
-                        entries.add(ModBlocks.MOSSY_GRIMROCK_BRICKS);
                         entries.add(ModBlocks.COBBLED_GRIMROCK);
+                        entries.add(ModBlocks.COBBLED_GRIMROCK_STAIRS);
+                        entries.add(ModBlocks.COBBLED_GRIMROCK_SLAB);
+                        entries.add(ModBlocks.COBBLED_GRIMROCK_WALL);
+                        entries.add(ModBlocks.CRACKED_GRIMROCK_BRICKS);
+                        entries.add(ModBlocks.CRACKED_GRIMROCK_BRICKS_STAIRS);
+                        entries.add(ModBlocks.CRACKED_GRIMROCK_BRICKS_SLAB);
+                        entries.add(ModBlocks.CRACKED_GRIMROCK_BRICKS_WALL);
+                        entries.add(ModBlocks.GRIMROCK_BRICKS);
+                        entries.add(ModBlocks.GRIMROCK_BRICKS_STAIRS);
+                        entries.add(ModBlocks.GRIMROCK_BRICKS_SLAB);
+                        entries.add(ModBlocks.GRIMROCK_BRICKS_WALL);
+                        entries.add(ModBlocks.MOSSY_GRIMROCK_BRICKS);
+                        entries.add(ModBlocks.MOSSY_GRIMROCK_BRICKS_STAIRS);
+                        entries.add(ModBlocks.MOSSY_GRIMROCK_BRICKS_SLAB);
+                        entries.add(ModBlocks.MOSSY_GRIMROCK_BRICKS_WALL);
                         entries.add(ModBlocks.POLISHED_GRIMROCK);
+                        entries.add(ModBlocks.POLISHED_GRIMROCK_STAIRS);
+                        entries.add(ModBlocks.POLISHED_GRIMROCK_SLAB);
+                        entries.add(ModBlocks.POLISHED_GRIMROCK_WALL);
+
 
                         /* --- ORGANIC BLOCKS --- */
 
