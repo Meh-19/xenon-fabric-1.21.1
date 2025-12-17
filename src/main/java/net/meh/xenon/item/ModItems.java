@@ -35,6 +35,7 @@ public static final Item PLATINUM = registerItem("platinum", new Item(new Item.S
             entries.add(RUBY);
             entries.add(ModBlocks.GRIMOSS);
             entries.add(ModBlocks.DAMP_MOSS);
+            entries.add(ModBlocks.PERMAFROST);
 
         });
     }

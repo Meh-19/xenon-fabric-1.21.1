@@ -417,6 +417,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.CUT_ASHEN_SANDSTONE);
         addDrop(ModBlocks.DAMP_MOSS_BLOCK);
         addDrop(ModBlocks.GRIMOSS_BLOCK);
+        addDropWithSilkTouch(ModBlocks.PERMAFROST, Blocks.DIRT);
         addDrop(ModBlocks.GRIMROCK);
         addDrop(ModBlocks.GRIMROCK_BRICKS);
         addDrop(ModBlocks.GRIMWEED_BLOCK);
@@ -604,6 +605,37 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.SOUL_BRICKS_STAIRS);
         addDrop(ModBlocks.SOUL_BRICKS_SLAB, slabDrops(ModBlocks.SOUL_BRICKS_SLAB));
         addDrop(ModBlocks.SOUL_BRICKS_WALL);
+
+        addDrop(ModBlocks.CHISELED_SNOW_BRICKS);
+        addDrop(ModBlocks.PACKED_SNOW);
+        addDrop(ModBlocks.PACKED_SNOW_STAIRS);
+        addDrop(ModBlocks.PACKED_SNOW_SLAB, slabDrops(ModBlocks.PACKED_SNOW_SLAB));
+        addDrop(ModBlocks.PACKED_SNOW_WALL);
+        addDrop(ModBlocks.SNOW_BRICKS);
+        addDrop(ModBlocks.SNOW_BRICKS_STAIRS);
+        addDrop(ModBlocks.SNOW_BRICKS_SLAB, slabDrops(ModBlocks.SNOW_BRICKS_SLAB));
+        addDrop(ModBlocks.SNOW_BRICKS_WALL);
+
+        addDrop(ModBlocks.CHISELED_PACKED_ICE_BRICKS);
+        addDrop(ModBlocks.PACKED_ICE_BRICKS);
+        addDrop(ModBlocks.PACKED_ICE_BRICKS_STAIRS);
+        addDrop(ModBlocks.PACKED_ICE_BRICKS_SLAB, slabDrops(ModBlocks.PACKED_ICE_BRICKS_SLAB));
+        addDrop(ModBlocks.PACKED_ICE_BRICKS_WALL);
+        addDrop(ModBlocks.POLISHED_PACKED_ICE);
+        addDrop(ModBlocks.POLISHED_PACKED_ICE_STAIRS);
+        addDrop(ModBlocks.POLISHED_PACKED_ICE_SLAB, slabDrops(ModBlocks.POLISHED_PACKED_ICE_SLAB));
+        addDrop(ModBlocks.POLISHED_PACKED_ICE_WALL);
+
+        addDrop(ModBlocks.CHISELED_PRISMARINE);
+        addDrop(ModBlocks.POLISHED_PRISMARINE);
+        addDrop(ModBlocks.POLISHED_PRISMARINE_STAIRS);
+        addDrop(ModBlocks.POLISHED_PRISMARINE_SLAB, slabDrops(ModBlocks.POLISHED_PRISMARINE_SLAB));
+        addDrop(ModBlocks.POLISHED_PRISMARINE_WALL);
+        addDrop(ModBlocks.PRISMARINE_PILLAR);
+        addDrop(ModBlocks.PRISMARINE_TILES);
+        addDrop(ModBlocks.PRISMARINE_TILES_STAIRS);
+        addDrop(ModBlocks.PRISMARINE_TILES_SLAB, slabDrops(ModBlocks.PRISMARINE_TILES_SLAB));
+        addDrop(ModBlocks.PRISMARINE_TILES_WALL);
 
 
 

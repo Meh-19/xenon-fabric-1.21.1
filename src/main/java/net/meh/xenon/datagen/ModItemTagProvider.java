@@ -472,6 +472,41 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModBlocks.POLISHED_SOULSAND_WALL.asItem())
                 .add(ModBlocks.SOUL_BRICKS_WALL.asItem());
 
+        getOrCreateTagBuilder(ItemTags.STAIRS)
+                .add(ModBlocks.PACKED_SNOW_STAIRS.asItem())
+                .add(ModBlocks.SNOW_BRICKS_STAIRS.asItem());
+
+        getOrCreateTagBuilder(ItemTags.SLABS)
+                .add(ModBlocks.PACKED_SNOW_SLAB.asItem())
+                .add(ModBlocks.SNOW_BRICKS_SLAB.asItem());
+
+        getOrCreateTagBuilder(ItemTags.WALLS)
+                .add(ModBlocks.PACKED_SNOW_WALL.asItem())
+                .add(ModBlocks.SNOW_BRICKS_WALL.asItem());
+
+        getOrCreateTagBuilder(ItemTags.STAIRS)
+                .add(ModBlocks.PACKED_ICE_BRICKS_STAIRS.asItem())
+                .add(ModBlocks.POLISHED_PACKED_ICE_STAIRS.asItem());
+
+        getOrCreateTagBuilder(ItemTags.SLABS)
+                .add(ModBlocks.PACKED_ICE_BRICKS_SLAB.asItem())
+                .add(ModBlocks.POLISHED_PACKED_ICE_SLAB.asItem());
+
+        getOrCreateTagBuilder(ItemTags.WALLS)
+                .add(ModBlocks.PACKED_ICE_BRICKS_WALL.asItem())
+                .add(ModBlocks.POLISHED_PACKED_ICE_WALL.asItem());
+
+        getOrCreateTagBuilder(ItemTags.STAIRS)
+                .add(ModBlocks.POLISHED_PRISMARINE_STAIRS.asItem())
+                .add(ModBlocks.PRISMARINE_TILES_STAIRS.asItem());
+
+        getOrCreateTagBuilder(ItemTags.SLABS)
+                .add(ModBlocks.POLISHED_PRISMARINE_SLAB.asItem())
+                .add(ModBlocks.PRISMARINE_TILES_SLAB.asItem());
+
+        getOrCreateTagBuilder(ItemTags.WALLS)
+                .add(ModBlocks.POLISHED_PRISMARINE_WALL.asItem())
+                .add(ModBlocks.PRISMARINE_TILES_WALL.asItem());
 
 
 

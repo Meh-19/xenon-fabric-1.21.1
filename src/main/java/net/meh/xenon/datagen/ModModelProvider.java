@@ -72,6 +72,42 @@ public class ModModelProvider extends FabricModelProvider {
         var polished_soulsand = gen.registerCubeAllModelTexturePool(ModBlocks.POLISHED_SOULSAND);
         var soul_bricks = gen.registerCubeAllModelTexturePool(ModBlocks.SOUL_BRICKS);
 
+        var packed_snow = gen.registerCubeAllModelTexturePool(ModBlocks.PACKED_SNOW);
+        var snow_bricks = gen.registerCubeAllModelTexturePool(ModBlocks.SNOW_BRICKS);
+
+        var packed_ice_bricks = gen.registerCubeAllModelTexturePool(ModBlocks.PACKED_ICE_BRICKS);
+        var polished_packed_ice = gen.registerCubeAllModelTexturePool(ModBlocks.POLISHED_PACKED_ICE);
+
+        var polished_prismarine = gen.registerCubeAllModelTexturePool(ModBlocks.POLISHED_PRISMARINE);
+        var prismarine_tiles = gen.registerCubeAllModelTexturePool(ModBlocks.PRISMARINE_TILES);
+
+        polished_prismarine.wall(ModBlocks.POLISHED_PRISMARINE_WALL);
+        polished_prismarine.slab(ModBlocks.POLISHED_PRISMARINE_SLAB);
+        polished_prismarine.stairs(ModBlocks.POLISHED_PRISMARINE_STAIRS);
+
+        prismarine_tiles.wall(ModBlocks.PRISMARINE_TILES_WALL);
+        prismarine_tiles.slab(ModBlocks.PRISMARINE_TILES_SLAB);
+        prismarine_tiles.stairs(ModBlocks.PRISMARINE_TILES_STAIRS);
+
+
+        packed_ice_bricks.wall(ModBlocks.PACKED_ICE_BRICKS_WALL);
+        packed_ice_bricks.slab(ModBlocks.PACKED_ICE_BRICKS_SLAB);
+        packed_ice_bricks.stairs(ModBlocks.PACKED_ICE_BRICKS_STAIRS);
+
+        polished_packed_ice.wall(ModBlocks.POLISHED_PACKED_ICE_WALL);
+        polished_packed_ice.slab(ModBlocks.POLISHED_PACKED_ICE_SLAB);
+        polished_packed_ice.stairs(ModBlocks.POLISHED_PACKED_ICE_STAIRS);
+
+
+        packed_snow.wall(ModBlocks.PACKED_SNOW_WALL);
+        packed_snow.slab(ModBlocks.PACKED_SNOW_SLAB);
+        packed_snow.stairs(ModBlocks.PACKED_SNOW_STAIRS);
+
+        snow_bricks.wall(ModBlocks.SNOW_BRICKS_WALL);
+        snow_bricks.slab(ModBlocks.SNOW_BRICKS_SLAB);
+        snow_bricks.stairs(ModBlocks.SNOW_BRICKS_STAIRS);
+
+
         polished_soulsand.wall(ModBlocks.POLISHED_SOULSAND_WALL);
         polished_soulsand.slab(ModBlocks.POLISHED_SOULSAND_SLAB);
         polished_soulsand.stairs(ModBlocks.POLISHED_SOULSAND_STAIRS);

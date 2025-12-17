@@ -538,6 +538,38 @@ public static final ItemGroup XENON_ITEMS_GROUP = Registry.register(Registries.I
                         entries.add(ModBlocks.SOUL_BRICKS_SLAB);
                         entries.add(ModBlocks.SOUL_BRICKS_WALL);
 
+                        entries.add(ModBlocks.CHISELED_SNOW_BRICKS);
+                        entries.add(ModBlocks.PACKED_SNOW);
+                        entries.add(ModBlocks.PACKED_SNOW_STAIRS);
+                        entries.add(ModBlocks.PACKED_SNOW_SLAB);
+                        entries.add(ModBlocks.PACKED_SNOW_WALL);
+                        entries.add(ModBlocks.SNOW_BRICKS);
+                        entries.add(ModBlocks.SNOW_BRICKS_STAIRS);
+                        entries.add(ModBlocks.SNOW_BRICKS_SLAB);
+                        entries.add(ModBlocks.SNOW_BRICKS_WALL);
+                        entries.add(ModBlocks.PERMAFROST);
+                        entries.add(ModBlocks.FROST);
+
+                        entries.add(ModBlocks.CHISELED_PACKED_ICE_BRICKS);
+                        entries.add(ModBlocks.PACKED_ICE_BRICKS);
+                        entries.add(ModBlocks.PACKED_ICE_BRICKS_STAIRS);
+                        entries.add(ModBlocks.PACKED_ICE_BRICKS_SLAB);
+                        entries.add(ModBlocks.PACKED_ICE_BRICKS_WALL);
+                        entries.add(ModBlocks.POLISHED_PACKED_ICE);
+                        entries.add(ModBlocks.POLISHED_PACKED_ICE_STAIRS);
+                        entries.add(ModBlocks.POLISHED_PACKED_ICE_SLAB);
+                        entries.add(ModBlocks.POLISHED_PACKED_ICE_WALL);
+
+                        entries.add(ModBlocks.CHISELED_PRISMARINE);
+                        entries.add(ModBlocks.POLISHED_PRISMARINE);
+                        entries.add(ModBlocks.POLISHED_PRISMARINE_STAIRS);
+                        entries.add(ModBlocks.POLISHED_PRISMARINE_SLAB);
+                        entries.add(ModBlocks.POLISHED_PRISMARINE_WALL);
+                        entries.add(ModBlocks.PRISMARINE_PILLAR);
+                        entries.add(ModBlocks.PRISMARINE_TILES);
+                        entries.add(ModBlocks.PRISMARINE_TILES_STAIRS);
+                        entries.add(ModBlocks.PRISMARINE_TILES_SLAB);
+                        entries.add(ModBlocks.PRISMARINE_TILES_WALL);
 
 
                         entries.add(ModBlocks.ECHO_GLASS);

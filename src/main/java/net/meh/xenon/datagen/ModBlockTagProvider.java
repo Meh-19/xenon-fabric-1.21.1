@@ -286,6 +286,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 ModBlocks.PACKED_LOAM_SLAB,
                 ModBlocks.PACKED_LOAM_WALL,
 
+                ModBlocks.PERMAFROST,
                 ModBlocks.PACKED_DIRT,
                 ModBlocks.PACKED_DIRT_SLAB,
 
@@ -298,6 +299,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         hoe.add(
                 ModBlocks.GRIMOSS_BLOCK,
                 ModBlocks.GRIMOSS,
+                ModBlocks.FROST,
                 ModBlocks.DAMP_MOSS_BLOCK,
                 ModBlocks.DAMP_MOSS,
                 ModBlocks.GRIMWEED_BLOCK,
@@ -597,7 +599,93 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.SOUL_BRICKS_WALL)
         ;
 
+        getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
+                .add(ModBlocks.CHISELED_SNOW_BRICKS)
+                .add(ModBlocks.PACKED_SNOW)
+                .add(ModBlocks.PACKED_SNOW_STAIRS)
+                .add(ModBlocks.PACKED_SNOW_SLAB)
+                .add(ModBlocks.PACKED_SNOW_WALL)
+                .add(ModBlocks.SNOW_BRICKS)
+                .add(ModBlocks.SNOW_BRICKS_STAIRS)
+                .add(ModBlocks.SNOW_BRICKS_SLAB)
+                .add(ModBlocks.SNOW_BRICKS_WALL)
+        ;
 
+        getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
+                .add(ModBlocks.CHISELED_SNOW_BRICKS)
+                .add(ModBlocks.PACKED_SNOW)
+                .add(ModBlocks.PACKED_SNOW_STAIRS)
+                .add(ModBlocks.PACKED_SNOW_SLAB)
+                .add(ModBlocks.PACKED_SNOW_WALL)
+                .add(ModBlocks.SNOW_BRICKS)
+                .add(ModBlocks.SNOW_BRICKS_STAIRS)
+                .add(ModBlocks.SNOW_BRICKS_SLAB)
+                .add(ModBlocks.SNOW_BRICKS_WALL)
+        ;
+
+        getOrCreateTagBuilder(BlockTags.WALLS)
+                .add(ModBlocks.PACKED_SNOW_WALL)
+                .add(ModBlocks.SNOW_BRICKS_WALL)
+        ;
+        getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
+                .add(ModBlocks.CHISELED_PACKED_ICE_BRICKS)
+                .add(ModBlocks.PACKED_ICE_BRICKS)
+                .add(ModBlocks.PACKED_ICE_BRICKS_STAIRS)
+                .add(ModBlocks.PACKED_ICE_BRICKS_SLAB)
+                .add(ModBlocks.PACKED_ICE_BRICKS_WALL)
+                .add(ModBlocks.POLISHED_PACKED_ICE)
+                .add(ModBlocks.POLISHED_PACKED_ICE_STAIRS)
+                .add(ModBlocks.POLISHED_PACKED_ICE_SLAB)
+                .add(ModBlocks.POLISHED_PACKED_ICE_WALL)
+        ;
+
+        getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
+                .add(ModBlocks.CHISELED_PACKED_ICE_BRICKS)
+                .add(ModBlocks.PACKED_ICE_BRICKS)
+                .add(ModBlocks.PACKED_ICE_BRICKS_STAIRS)
+                .add(ModBlocks.PACKED_ICE_BRICKS_SLAB)
+                .add(ModBlocks.PACKED_ICE_BRICKS_WALL)
+                .add(ModBlocks.POLISHED_PACKED_ICE)
+                .add(ModBlocks.POLISHED_PACKED_ICE_STAIRS)
+                .add(ModBlocks.POLISHED_PACKED_ICE_SLAB)
+                .add(ModBlocks.POLISHED_PACKED_ICE_WALL)
+        ;
+
+        getOrCreateTagBuilder(BlockTags.WALLS)
+                .add(ModBlocks.PACKED_ICE_BRICKS_WALL)
+                .add(ModBlocks.POLISHED_PACKED_ICE_WALL)
+        ;
+
+        getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
+                .add(ModBlocks.CHISELED_PRISMARINE)
+                .add(ModBlocks.POLISHED_PRISMARINE)
+                .add(ModBlocks.POLISHED_PRISMARINE_STAIRS)
+                .add(ModBlocks.POLISHED_PRISMARINE_SLAB)
+                .add(ModBlocks.POLISHED_PRISMARINE_WALL)
+                .add(ModBlocks.PRISMARINE_PILLAR)
+                .add(ModBlocks.PRISMARINE_TILES)
+                .add(ModBlocks.PRISMARINE_TILES_STAIRS)
+                .add(ModBlocks.PRISMARINE_TILES_SLAB)
+                .add(ModBlocks.PRISMARINE_TILES_WALL)
+        ;
+
+        getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
+                .add(ModBlocks.CHISELED_PRISMARINE)
+                .add(ModBlocks.POLISHED_PRISMARINE)
+                .add(ModBlocks.POLISHED_PRISMARINE_STAIRS)
+                .add(ModBlocks.POLISHED_PRISMARINE_SLAB)
+                .add(ModBlocks.POLISHED_PRISMARINE_WALL)
+                .add(ModBlocks.PRISMARINE_PILLAR)
+                .add(ModBlocks.PRISMARINE_TILES)
+                .add(ModBlocks.PRISMARINE_TILES_STAIRS)
+                .add(ModBlocks.PRISMARINE_TILES_SLAB)
+                .add(ModBlocks.PRISMARINE_TILES_WALL)
+        ;
+
+        getOrCreateTagBuilder(BlockTags.WALLS)
+                .add(ModBlocks.POLISHED_PRISMARINE_WALL)
+                .add(ModBlocks.PRISMARINE_TILES_WALL)
+        ;
 
 
 
