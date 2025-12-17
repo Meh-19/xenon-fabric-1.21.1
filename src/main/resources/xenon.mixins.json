@@ -1,5 +1,6 @@
 {
 	"required": true,
+	"minVersion": "0.8",
 	"package": "net.meh.xenon.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
@@ -8,7 +9,7 @@
 	"injectors": {
 		"defaultRequire": 1
 	},
-	"overwrites": {
+"overwrites": {
 		"requireAnnotations": true
 	}
 }

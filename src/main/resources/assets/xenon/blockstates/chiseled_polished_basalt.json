@@ -1,7 +1,5 @@
 {
   "variants": {
-    "": {
-      "model": "xenon:block/chiseled_polished_basalt"
-    }
+    "": { "model": "xenon:block/chiseled_polished_basalt" }
   }
 }

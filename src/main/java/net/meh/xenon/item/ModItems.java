@@ -3,6 +3,7 @@ package net.meh.xenon.item;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.meh.xenon.Xenon;
 import net.meh.xenon.block.ModBlocks;
+import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
@@ -14,8 +15,15 @@ public static final Item PLATINUM = registerItem("platinum", new Item(new Item.S
     public static final Item RUBY = registerItem("ruby", new Item(new Item.Settings()));
     public static final Item BLIGHT_ESSENCE = registerItem("blight_essence", new Item(new Item.Settings()));
 
+    public static final Item ECHO_GLASS_ITEM = Registry.register(
+            Registries.ITEM,
+            Identifier.of(Xenon.MOD_ID, "echo_glass"),
+            new BlockItem(ModBlocks.ECHO_GLASS, new Item.Settings())
+    );
 
-private static Item registerItem(String name, Item item) {
+
+
+    private static Item registerItem(String name, Item item) {
     return Registry.register(Registries.ITEM, Identifier.of(Xenon.MOD_ID, name), item);
 }
 
@@ -26,6 +34,7 @@ private static Item registerItem(String name, Item item) {
             entries.add(PLATINUM);
             entries.add(RUBY);
             entries.add(ModBlocks.GRIMOSS);
+            entries.add(ModBlocks.DAMP_MOSS);
 
         });
     }

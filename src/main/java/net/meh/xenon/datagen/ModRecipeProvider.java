@@ -1358,6 +1358,14 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion("has_grimrock_bricks", conditionsFromItem(ModBlocks.GRIMROCK_BRICKS))
                 .offerTo(exporter);
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ECHO_GLASS, 1)
+                .pattern("PPP")
+                .pattern("PIP")
+                .pattern("PPP")
+                .input('P', Items.ECHO_SHARD)
+                .input('I', Blocks.GLASS)
+                .criterion("has_echo_shard", conditionsFromItem(Items.ECHO_SHARD))
+                .offerTo(exporter);
     }
 
 }

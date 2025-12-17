@@ -3,8 +3,14 @@ package net.meh.xenon.datagen;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.meh.xenon.block.ModBlocks;
+import net.meh.xenon.item.ModItems;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
+import net.minecraft.data.client.Model;
+import net.minecraft.data.client.Models;
+import net.minecraft.util.Identifier;
+
+import java.util.Optional;
 
 public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricDataOutput output) {
@@ -47,6 +53,78 @@ public class ModModelProvider extends FabricModelProvider {
         var dolomite = gen.registerCubeAllModelTexturePool(ModBlocks.DOLOMITE);
         var polished_dolomite = gen.registerCubeAllModelTexturePool(ModBlocks.POLISHED_DOLOMITE);
         var dolomite_bricks = gen.registerCubeAllModelTexturePool(ModBlocks.DOLOMITE_BRICKS);
+
+        var gravestone = gen.registerCubeAllModelTexturePool(ModBlocks.GRAVESTONE);
+        var polished_gravestone = gen.registerCubeAllModelTexturePool(ModBlocks.POLISHED_GRAVESTONE);
+        var gravestone_bricks = gen.registerCubeAllModelTexturePool(ModBlocks.GRAVESTONE_BRICKS);
+
+        gen.registerCubeAllModelTexturePool(ModBlocks.CHISELED_DRIPSTONE); //CHISELED ALWAYS GETS EXPORTED LIKE THIS
+        var dripstone_bricks = gen.registerCubeAllModelTexturePool(ModBlocks.DRIPSTONE_BRICKS);
+        var polished_dripstone = gen.registerCubeAllModelTexturePool(ModBlocks.POLISHED_DRIPSTONE);
+
+        var cut_polished_basalt = gen.registerCubeAllModelTexturePool(ModBlocks.CUT_POLISHED_BASALT);
+        var polished_basalt_bricks = gen.registerCubeAllModelTexturePool(ModBlocks.POLISHED_BASALT_BRICKS);
+        var polished_basalt_tiles = gen.registerCubeAllModelTexturePool(ModBlocks.POLISHED_BASALT_TILES);
+
+        var blue_nether_bricks = gen.registerCubeAllModelTexturePool(ModBlocks.BLUE_NETHER_BRICKS);
+        var tainted_nether_bricks = gen.registerCubeAllModelTexturePool(ModBlocks.TAINTED_NETHER_BRICKS);
+
+        var polished_soulsand = gen.registerCubeAllModelTexturePool(ModBlocks.POLISHED_SOULSAND);
+        var soul_bricks = gen.registerCubeAllModelTexturePool(ModBlocks.SOUL_BRICKS);
+
+        polished_soulsand.wall(ModBlocks.POLISHED_SOULSAND_WALL);
+        polished_soulsand.slab(ModBlocks.POLISHED_SOULSAND_SLAB);
+        polished_soulsand.stairs(ModBlocks.POLISHED_SOULSAND_STAIRS);
+
+        soul_bricks.wall(ModBlocks.SOUL_BRICKS_WALL);
+        soul_bricks.slab(ModBlocks.SOUL_BRICKS_SLAB);
+        soul_bricks.stairs(ModBlocks.SOUL_BRICKS_STAIRS);
+
+
+        blue_nether_bricks.wall(ModBlocks.BLUE_NETHER_BRICKS_WALL);
+        blue_nether_bricks.slab(ModBlocks.BLUE_NETHER_BRICKS_SLAB);
+        blue_nether_bricks.stairs(ModBlocks.BLUE_NETHER_BRICKS_STAIRS);
+
+        tainted_nether_bricks.wall(ModBlocks.TAINTED_NETHER_BRICKS_WALL);
+        tainted_nether_bricks.slab(ModBlocks.TAINTED_NETHER_BRICKS_SLAB);
+        tainted_nether_bricks.stairs(ModBlocks.TAINTED_NETHER_BRICKS_STAIRS);
+
+
+        cut_polished_basalt.wall(ModBlocks.CUT_POLISHED_BASALT_WALL);
+        cut_polished_basalt.slab(ModBlocks.CUT_POLISHED_BASALT_SLAB);
+        cut_polished_basalt.stairs(ModBlocks.CUT_POLISHED_BASALT_STAIRS);
+
+        polished_basalt_bricks.wall(ModBlocks.POLISHED_BASALT_BRICKS_WALL);
+        polished_basalt_bricks.slab(ModBlocks.POLISHED_BASALT_BRICKS_SLAB);
+        polished_basalt_bricks.stairs(ModBlocks.POLISHED_BASALT_BRICKS_STAIRS);
+
+        polished_basalt_tiles.wall(ModBlocks.POLISHED_BASALT_TILES_WALL);
+        polished_basalt_tiles.slab(ModBlocks.POLISHED_BASALT_TILES_SLAB);
+        polished_basalt_tiles.stairs(ModBlocks.POLISHED_BASALT_TILES_STAIRS);
+
+
+        dripstone_bricks.wall(ModBlocks.DRIPSTONE_BRICKS_WALL);
+        dripstone_bricks.slab(ModBlocks.DRIPSTONE_BRICKS_SLAB);
+        dripstone_bricks.stairs(ModBlocks.DRIPSTONE_BRICKS_STAIRS);
+
+        polished_dripstone.wall(ModBlocks.POLISHED_DRIPSTONE_WALL);
+        polished_dripstone.slab(ModBlocks.POLISHED_DRIPSTONE_SLAB);
+        polished_dripstone.stairs(ModBlocks.POLISHED_DRIPSTONE_STAIRS);
+
+
+
+
+        gravestone.wall(ModBlocks.GRAVESTONE_WALL);
+        gravestone.slab(ModBlocks.GRAVESTONE_SLAB);
+        gravestone.stairs(ModBlocks.GRAVESTONE_STAIRS);
+
+        polished_gravestone.wall(ModBlocks.POLISHED_GRAVESTONE_WALL);
+        polished_gravestone.slab(ModBlocks.POLISHED_GRAVESTONE_SLAB);
+        polished_gravestone.stairs(ModBlocks.POLISHED_GRAVESTONE_STAIRS);
+
+        gravestone_bricks.wall(ModBlocks.GRAVESTONE_BRICKS_WALL);
+        gravestone_bricks.slab(ModBlocks.GRAVESTONE_BRICKS_SLAB);
+        gravestone_bricks.stairs(ModBlocks.GRAVESTONE_BRICKS_STAIRS);
 
         dolomite.wall(ModBlocks.DOLOMITE_WALL);
         dolomite.slab(ModBlocks.DOLOMITE_SLAB);
@@ -150,11 +228,15 @@ public class ModModelProvider extends FabricModelProvider {
         polished_grimrock_bricks.stairs(ModBlocks.POLISHED_GRIMROCK_STAIRS);
 
 
+
     }
 
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
+        itemModelGenerator.register(
 
+        );
     }
+
 }

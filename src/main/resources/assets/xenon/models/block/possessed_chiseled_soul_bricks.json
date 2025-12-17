@@ -2,7 +2,6 @@
   "parent": "minecraft:block/cube_column",
   "textures": {
     "side": "xenon:block/possessed_chiseled_soul_bricks_side",
-    "end": "xenon:block/possessed_chiseled_soul_bricks_top",
-    "particle": "xenon:block/possessed_chiseled_soul_bricks_side"
+    "end": "xenon:block/possessed_chiseled_soul_bricks_top"
   }
 }

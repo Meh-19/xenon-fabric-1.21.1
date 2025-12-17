@@ -1,7 +1,5 @@
 {
   "variants": {
-    "": {
-      "model": "xenon:block/chiseled_blue_nether_bricks"
-    }
+    "": { "model": "xenon:block/chiseled_blue_nether_bricks" }
   }
 }

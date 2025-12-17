@@ -418,6 +418,60 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
         getOrCreateTagBuilder(ItemTags.WALLS)
                 .add(ModBlocks.DOLOMITE_BRICKS_WALL.asItem());
 
+        getOrCreateTagBuilder(ItemTags.STAIRS)
+                .add(ModBlocks.GRAVESTONE_BRICKS_STAIRS.asItem());
+
+        getOrCreateTagBuilder(ItemTags.SLABS)
+                .add(ModBlocks.GRAVESTONE_BRICKS_SLAB.asItem());
+
+        getOrCreateTagBuilder(ItemTags.WALLS)
+                .add(ModBlocks.GRAVESTONE_BRICKS_WALL.asItem());
+
+        getOrCreateTagBuilder(ItemTags.STAIRS)
+                .add(ModBlocks.POLISHED_GRAVESTONE_STAIRS.asItem());
+
+        getOrCreateTagBuilder(ItemTags.SLABS)
+                .add(ModBlocks.POLISHED_GRAVESTONE_SLAB.asItem());
+
+        getOrCreateTagBuilder(ItemTags.WALLS)
+                .add(ModBlocks.POLISHED_GRAVESTONE_WALL.asItem());
+
+        getOrCreateTagBuilder(ItemTags.STAIRS)
+                .add(ModBlocks.DRIPSTONE_BRICKS_STAIRS.asItem())
+                .add(ModBlocks.POLISHED_DRIPSTONE_STAIRS.asItem());
+
+        getOrCreateTagBuilder(ItemTags.SLABS)
+                .add(ModBlocks.DRIPSTONE_BRICKS_SLAB.asItem())
+                .add(ModBlocks.POLISHED_DRIPSTONE_SLAB.asItem());
+
+        getOrCreateTagBuilder(ItemTags.WALLS)
+                .add(ModBlocks.DRIPSTONE_BRICKS_WALL.asItem())
+                .add(ModBlocks.POLISHED_DRIPSTONE_WALL.asItem());
+
+        getOrCreateTagBuilder(ItemTags.STAIRS)
+                .add(ModBlocks.BLUE_NETHER_BRICKS_STAIRS.asItem())
+                .add(ModBlocks.TAINTED_NETHER_BRICKS_STAIRS.asItem());
+
+        getOrCreateTagBuilder(ItemTags.SLABS)
+                .add(ModBlocks.BLUE_NETHER_BRICKS_SLAB.asItem())
+                .add(ModBlocks.TAINTED_NETHER_BRICKS_SLAB.asItem());
+
+        getOrCreateTagBuilder(ItemTags.WALLS)
+                .add(ModBlocks.BLUE_NETHER_BRICKS_WALL.asItem())
+                .add(ModBlocks.TAINTED_NETHER_BRICKS_WALL.asItem());
+
+        getOrCreateTagBuilder(ItemTags.STAIRS)
+                .add(ModBlocks.POLISHED_SOULSAND_STAIRS.asItem())
+                .add(ModBlocks.SOUL_BRICKS_STAIRS.asItem());
+
+        getOrCreateTagBuilder(ItemTags.SLABS)
+                .add(ModBlocks.POLISHED_SOULSAND_SLAB.asItem())
+                .add(ModBlocks.SOUL_BRICKS_SLAB.asItem());
+
+        getOrCreateTagBuilder(ItemTags.WALLS)
+                .add(ModBlocks.POLISHED_SOULSAND_WALL.asItem())
+                .add(ModBlocks.SOUL_BRICKS_WALL.asItem());
+
 
 
 

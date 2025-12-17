@@ -3,8 +3,10 @@ package net.meh.xenon.block;
 import com.mojang.serialization.MapCodec;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.meh.xenon.Xenon;
+import net.meh.xenon.block.custom.EchoGlassBlock;
 import net.minecraft.block.*;
 import net.minecraft.block.enums.NoteBlockInstrument;
+import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -2377,25 +2379,6 @@ public class ModBlocks {
                     .strength(1.5F, 6.0F)
                     .sounds(BlockSoundGroup.STONE)));
 
-    // Dripstone
-    public static final Block DRIPSTONE_BRICKS = registerBlock("dripstone_bricks",
-            new Block(AbstractBlock.Settings.create()
-                    .instrument(NoteBlockInstrument.BASEDRUM)
-                    .strength(1.5F, 6.0F)
-                    .sounds(BlockSoundGroup.STONE)));
-
-    public static final Block CHISELED_DRIPSTONE = registerBlock("chiseled_dripstone",
-            new Block(AbstractBlock.Settings.create()
-                    .instrument(NoteBlockInstrument.BASEDRUM)
-                    .strength(1.5F, 6.0F)
-                    .sounds(BlockSoundGroup.STONE)));
-
-    public static final Block POLISHED_DRIPSTONE = registerBlock("polished_dripstone",
-            new Block(AbstractBlock.Settings.create()
-                    .instrument(NoteBlockInstrument.BASEDRUM)
-                    .strength(1.5F, 6.0F)
-                    .sounds(BlockSoundGroup.STONE)));
-
     // Mud
     public static final Block CHISELED_MUD = registerBlock("chiseled_mud",
             new Block(AbstractBlock.Settings.create()
@@ -2729,94 +2712,6 @@ public class ModBlocks {
                     .sounds(BlockSoundGroup.SAND)));
 
 
-    // Nether Brick Variants
-    public static final Block BLUE_NETHER_BRICKS = registerBlock("blue_nether_bricks",
-            new Block(AbstractBlock.Settings.create()
-                    .requiresTool()
-                    .strength(2.0F, 6.0F)
-                    .sounds(BlockSoundGroup.NETHER_BRICKS)));
-
-    public static final Block CHISELED_BLUE_NETHER_BRICKS = registerBlock("chiseled_blue_nether_bricks",
-            new Block(AbstractBlock.Settings.create()
-                    .requiresTool()
-                    .strength(2.0F, 6.0F)
-                    .sounds(BlockSoundGroup.NETHER_BRICKS)));
-
-    public static final Block POLISHED_BLUE_NETHER_BRICKS = registerBlock("polished_blue_nether_bricks",
-            new Block(AbstractBlock.Settings.create()
-                    .requiresTool()
-                    .strength(2.0F, 6.0F)
-                    .sounds(BlockSoundGroup.NETHER_BRICKS)));
-
-    public static final Block TAINTED_NETHER_BRICKS = registerBlock("tainted_nether_bricks",
-            new Block(AbstractBlock.Settings.create()
-                    .requiresTool()
-                    .strength(2.0F, 6.0F)
-                    .sounds(BlockSoundGroup.NETHER_BRICKS)));
-
-    public static final Block CHISELED_RED_NETHER_BRICKS = registerBlock("chiseled_red_nether_bricks",
-            new Block(AbstractBlock.Settings.create()
-                    .requiresTool()
-                    .strength(2.0F, 6.0F)
-                    .sounds(BlockSoundGroup.NETHER_BRICKS)));
-
-    public static final Block POLISHED_RED_NETHER_BRICKS = registerBlock("polished_red_nether_bricks",
-            new Block(AbstractBlock.Settings.create()
-                    .requiresTool()
-                    .strength(2.0F, 6.0F)
-                    .sounds(BlockSoundGroup.NETHER_BRICKS)));
-
-    // Soul Bricks
-    public static final Block SOUL_BRICKS = registerBlock("soul_bricks",
-            new Block(AbstractBlock.Settings.create()
-                    .requiresTool()
-                    .strength(1.5F, 6.0F)
-                    .sounds(BlockSoundGroup.STONE)));
-
-    public static final Block POLISHED_SOUL_SAND = registerBlock("polished_soul_sand",
-            new Block(AbstractBlock.Settings.create()
-                    .requiresTool()
-                    .strength(1.5F, 6.0F)
-                    .sounds(BlockSoundGroup.STONE)));
-
-    public static final Block CHISELED_SOUL_BRICKS = registerBlock("chiseled_soul_bricks",
-            new Block(AbstractBlock.Settings.create()
-                    .requiresTool()
-                    .strength(1.5F, 6.0F)
-                    .sounds(BlockSoundGroup.STONE)));
-
-    public static final Block POSSESSED_CHISELED_SOUL_BRICKS = registerBlock("possessed_chiseled_soul_bricks",
-            new Block(AbstractBlock.Settings.create()
-                    .requiresTool()
-                    .strength(1.5F, 6.0F)
-                    .luminance(state -> 7)
-                    .sounds(BlockSoundGroup.STONE)));
-
-    // Polished Basalt Variants
-    public static final Block POLISHED_BASALT_BRICKS = registerBlock("polished_basalt_bricks",
-            new Block(AbstractBlock.Settings.create()
-                    .requiresTool()
-                    .strength(1.5F, 6.0F)
-                    .sounds(BlockSoundGroup.STONE)));
-
-    public static final Block POLISHED_BASALT_TILES = registerBlock("polished_basalt_tiles",
-            new Block(AbstractBlock.Settings.create()
-                    .requiresTool()
-                    .strength(1.5F, 6.0F)
-                    .sounds(BlockSoundGroup.STONE)));
-
-    public static final Block CUT_POLISHED_BASALT = registerBlock("cut_polished_basalt",
-            new Block(AbstractBlock.Settings.create()
-                    .requiresTool()
-                    .strength(1.5F, 6.0F)
-                    .sounds(BlockSoundGroup.STONE)));
-
-    public static final Block CHISELED_POLISHED_BASALT = registerBlock("chiseled_polished_basalt",
-            new Block(AbstractBlock.Settings.create()
-                    .requiresTool()
-                    .strength(1.5F, 6.0F)
-                    .sounds(BlockSoundGroup.STONE)));
-
     // Minerals
     public static final Block DIAMOND_BRICK = registerBlock("diamond_brick",
             new Block(AbstractBlock.Settings.create()
@@ -2928,30 +2823,34 @@ public class ModBlocks {
                     .sounds(BlockSoundGroup.STONE)));
 
     // Damp Moss Block (moss → NO requiresTool)
- //   public static final Block DAMP_MOSS_BLOCK = registerBlock("damp_moss_block",
-      //      new Block(AbstractBlock.Settings.create()
-      //              .instrument(NoteBlockInstrument.BASEDRUM)
-       //             .strength(0.6F)
-       //             .sounds(BlockSoundGroup.MOSS_BLOCK)));
+    public static final Block DAMP_MOSS_BLOCK = registerBlock("damp_moss_block",
+            new Block(AbstractBlock.Settings.create()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(0.1F)
+                    .sounds(BlockSoundGroup.MOSS_BLOCK)
+                    .pistonBehavior(PistonBehavior.DESTROY)));
 
     public static final Block GRIMOSS = registerBlock("grimoss",
             new CarpetBlock(AbstractBlock.Settings.create()
                     .instrument(NoteBlockInstrument.BASEDRUM)
-                    .strength(0.6F)
-                    .sounds(BlockSoundGroup.MOSS_BLOCK)));
+                    .strength(0.1F)
+                    .sounds(BlockSoundGroup.MOSS_BLOCK)
+                    .pistonBehavior(PistonBehavior.DESTROY)));
 
-  //  public static final Block DAMP_MOSS = registerBlock("damp_moss",
-         //   new CarpetBlock(AbstractBlock.Settings.create()
-          //          .instrument(NoteBlockInstrument.BASEDRUM)
-          //          .strength(0.6F)
-           //         .sounds(BlockSoundGroup.MOSS_BLOCK)));
+    public static final Block DAMP_MOSS = registerBlock("damp_moss",
+            new CarpetBlock(AbstractBlock.Settings.create()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(0.1F)
+                    .sounds(BlockSoundGroup.MOSS_BLOCK)
+                    .pistonBehavior(PistonBehavior.DESTROY)));
 
     // Grimoss Block (moss → NO requiresTool)
     public static final Block GRIMOSS_BLOCK = registerBlock("grimoss_block",
             new Block(AbstractBlock.Settings.create()
                     .instrument(NoteBlockInstrument.BASEDRUM)
-                    .strength(0.6F)
-                    .sounds(BlockSoundGroup.MOSS_BLOCK)));
+                    .strength(0.1F)
+                    .sounds(BlockSoundGroup.MOSS_BLOCK)
+                    .pistonBehavior(PistonBehavior.DESTROY)));
 
 
     // Grimweed Block (grass → NO requiresTool)
@@ -3789,6 +3688,447 @@ public class ModBlocks {
                     .instrument(NoteBlockInstrument.BASEDRUM)
                     .strength(1.5F, 6.0F)
                     .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block CHISELED_POLISHED_BASALT = registerBlock("chiseled_polished_basalt",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block CUT_POLISHED_BASALT = registerBlock("cut_polished_basalt",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block CUT_POLISHED_BASALT_STAIRS = registerBlock("cut_polished_basalt_stairs",
+            new StairsBlock(ModBlocks.CUT_POLISHED_BASALT.getDefaultState(),
+                    AbstractBlock.Settings.create()
+                            .requiresTool()
+                            .instrument(NoteBlockInstrument.BASEDRUM)
+                            .strength(1.5F, 6.0F)
+                            .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block CUT_POLISHED_BASALT_SLAB = registerBlock("cut_polished_basalt_slab",
+            new SlabBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block CUT_POLISHED_BASALT_WALL = registerBlock("cut_polished_basalt_wall",
+            new WallBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block POLISHED_BASALT_BRICKS = registerBlock("polished_basalt_bricks",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block POLISHED_BASALT_BRICKS_STAIRS = registerBlock("polished_basalt_bricks_stairs",
+            new StairsBlock(ModBlocks.POLISHED_BASALT_BRICKS.getDefaultState(),
+                    AbstractBlock.Settings.create()
+                            .requiresTool()
+                            .instrument(NoteBlockInstrument.BASEDRUM)
+                            .strength(1.5F, 6.0F)
+                            .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block POLISHED_BASALT_BRICKS_SLAB = registerBlock("polished_basalt_bricks_slab",
+            new SlabBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block POLISHED_BASALT_BRICKS_WALL = registerBlock("polished_basalt_bricks_wall",
+            new WallBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block POLISHED_BASALT_TILES = registerBlock("polished_basalt_tiles",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block POLISHED_BASALT_TILES_STAIRS = registerBlock("polished_basalt_tiles_stairs",
+            new StairsBlock(ModBlocks.POLISHED_BASALT_TILES.getDefaultState(),
+                    AbstractBlock.Settings.create()
+                            .requiresTool()
+                            .instrument(NoteBlockInstrument.BASEDRUM)
+                            .strength(1.5F, 6.0F)
+                            .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block POLISHED_BASALT_TILES_SLAB = registerBlock("polished_basalt_tiles_slab",
+            new SlabBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block POLISHED_BASALT_TILES_WALL = registerBlock("polished_basalt_tiles_wall",
+            new WallBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+
+    public static final Block ECHO_GLASS = Registry.register(
+            Registries.BLOCK,
+            Identifier.of(Xenon.MOD_ID, "echo_glass"),
+            new EchoGlassBlock(
+                    AbstractBlock.Settings.create()
+                            .pistonBehavior(PistonBehavior.BLOCK)
+                            .instrument(NoteBlockInstrument.HAT)
+                            .strength(0.3F)
+                            .sounds(BlockSoundGroup.STONE)
+                            .allowsSpawning(Blocks::never)
+                            .solidBlock(Blocks::never)
+                            .nonOpaque()
+                            .blockVision((s, w, p) -> false)
+                            .suffocates((s, w, p) -> false)
+
+            )
+
+    );
+
+    public static final Block GRAVESTONE = registerBlock("gravestone",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block GRAVESTONE_STAIRS = registerBlock("gravestone_stairs",
+            new StairsBlock(ModBlocks.GRAVESTONE.getDefaultState(),
+                    AbstractBlock.Settings.create()
+                            .requiresTool()
+                            .instrument(NoteBlockInstrument.BASEDRUM)
+                            .strength(1.5F, 6.0F)
+                            .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block GRAVESTONE_SLAB = registerBlock("gravestone_slab",
+            new SlabBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block GRAVESTONE_WALL = registerBlock("gravestone_wall",
+            new WallBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block CHISELED_GRAVESTONE = registerBlock("chiseled_gravestone",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block GRAVESTONE_BRICKS = registerBlock("gravestone_bricks",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block GRAVESTONE_BRICKS_STAIRS = registerBlock("gravestone_bricks_stairs",
+            new StairsBlock(ModBlocks.GRAVESTONE_BRICKS.getDefaultState(),
+                    AbstractBlock.Settings.create()
+                            .requiresTool()
+                            .instrument(NoteBlockInstrument.BASEDRUM)
+                            .strength(1.5F, 6.0F)
+                            .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block GRAVESTONE_BRICKS_SLAB = registerBlock("gravestone_bricks_slab",
+            new SlabBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block GRAVESTONE_BRICKS_WALL = registerBlock("gravestone_bricks_wall",
+            new WallBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block POLISHED_GRAVESTONE = registerBlock("polished_gravestone",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block POLISHED_GRAVESTONE_STAIRS = registerBlock("polished_gravestone_stairs",
+            new StairsBlock(ModBlocks.POLISHED_GRAVESTONE.getDefaultState(),
+                    AbstractBlock.Settings.create()
+                            .requiresTool()
+                            .instrument(NoteBlockInstrument.BASEDRUM)
+                            .strength(1.5F, 6.0F)
+                            .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block POLISHED_GRAVESTONE_SLAB = registerBlock("polished_gravestone_slab",
+            new SlabBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block POLISHED_GRAVESTONE_WALL = registerBlock("polished_gravestone_wall",
+            new WallBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block CHISELED_DRIPSTONE = registerBlock("chiseled_dripstone",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block DRIPSTONE_BRICKS = registerBlock("dripstone_bricks",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block DRIPSTONE_BRICKS_STAIRS = registerBlock("dripstone_bricks_stairs",
+            new StairsBlock(ModBlocks.DRIPSTONE_BRICKS.getDefaultState(),
+                    AbstractBlock.Settings.create()
+                            .requiresTool()
+                            .instrument(NoteBlockInstrument.BASEDRUM)
+                            .strength(1.5F, 6.0F)
+                            .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block DRIPSTONE_BRICKS_SLAB = registerBlock("dripstone_bricks_slab",
+            new SlabBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block DRIPSTONE_BRICKS_WALL = registerBlock("dripstone_bricks_wall",
+            new WallBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block POLISHED_DRIPSTONE = registerBlock("polished_dripstone",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block POLISHED_DRIPSTONE_STAIRS = registerBlock("polished_dripstone_stairs",
+            new StairsBlock(ModBlocks.POLISHED_DRIPSTONE.getDefaultState(),
+                    AbstractBlock.Settings.create()
+                            .requiresTool()
+                            .instrument(NoteBlockInstrument.BASEDRUM)
+                            .strength(1.5F, 6.0F)
+                            .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block POLISHED_DRIPSTONE_SLAB = registerBlock("polished_dripstone_slab",
+            new SlabBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block POLISHED_DRIPSTONE_WALL = registerBlock("polished_dripstone_wall",
+            new WallBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block BLUE_NETHER_BRICKS = registerBlock("blue_nether_bricks",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.NETHER_BRICKS)));
+
+    public static final Block BLUE_NETHER_BRICKS_STAIRS = registerBlock("blue_nether_bricks_stairs",
+            new StairsBlock(ModBlocks.BLUE_NETHER_BRICKS.getDefaultState(),
+                    AbstractBlock.Settings.create()
+                            .requiresTool()
+                            .instrument(NoteBlockInstrument.BASEDRUM)
+                            .strength(1.5F, 6.0F)
+                            .sounds(BlockSoundGroup.NETHER_BRICKS)));
+
+    public static final Block BLUE_NETHER_BRICKS_SLAB = registerBlock("blue_nether_bricks_slab",
+            new SlabBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.NETHER_BRICKS)));
+
+    public static final Block BLUE_NETHER_BRICKS_WALL = registerBlock("blue_nether_bricks_wall",
+            new WallBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.NETHER_BRICKS)));
+
+    public static final Block CHISELED_BLUE_NETHER_BRICKS = registerBlock("chiseled_blue_nether_bricks",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.NETHER_BRICKS)));
+
+    public static final Block CHISELED_RED_NETHER_BRICKS = registerBlock("chiseled_red_nether_bricks",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.NETHER_BRICKS)));
+
+    public static final Block POLISHED_BLUE_NETHER_BRICKS = registerBlock("polished_blue_nether_bricks",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.NETHER_BRICKS)));
+
+    public static final Block POLISHED_NETHER_BRICKS = registerBlock("polished_nether_bricks",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.NETHER_BRICKS)));
+
+    public static final Block POLISHED_RED_NETHER_BRICKS = registerBlock("polished_red_nether_bricks",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.NETHER_BRICKS)));
+
+    public static final Block TAINTED_NETHER_BRICKS = registerBlock("tainted_nether_bricks",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.NETHER_BRICKS)));
+
+    public static final Block TAINTED_NETHER_BRICKS_STAIRS = registerBlock("tainted_nether_bricks_stairs",
+            new StairsBlock(ModBlocks.TAINTED_NETHER_BRICKS.getDefaultState(),
+                    AbstractBlock.Settings.create()
+                            .requiresTool()
+                            .instrument(NoteBlockInstrument.BASEDRUM)
+                            .strength(1.5F, 6.0F)
+                            .sounds(BlockSoundGroup.NETHER_BRICKS)));
+
+    public static final Block TAINTED_NETHER_BRICKS_SLAB = registerBlock("tainted_nether_bricks_slab",
+            new SlabBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.NETHER_BRICKS)));
+
+    public static final Block TAINTED_NETHER_BRICKS_WALL = registerBlock("tainted_nether_bricks_wall",
+            new WallBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.NETHER_BRICKS)));
+
+    public static final Block CHISELED_SOUL_BRICKS = registerBlock("chiseled_soul_bricks",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block POLISHED_SOULSAND = registerBlock("polished_soulsand",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block POLISHED_SOULSAND_STAIRS = registerBlock("polished_soulsand_stairs",
+            new StairsBlock(ModBlocks.POLISHED_SOULSAND.getDefaultState(),
+                    AbstractBlock.Settings.create()
+                            .requiresTool()
+                            .instrument(NoteBlockInstrument.BASEDRUM)
+                            .strength(1.5F, 6.0F)
+                            .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block POLISHED_SOULSAND_SLAB = registerBlock("polished_soulsand_slab",
+            new SlabBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block POLISHED_SOULSAND_WALL = registerBlock("polished_soulsand_wall",
+            new WallBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block POSSESSED_CHISELED_SOUL_BRICKS = registerBlock("possessed_chiseled_soul_bricks",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .luminance(state -> 7)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block SOUL_BRICKS = registerBlock("soul_bricks",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block SOUL_BRICKS_STAIRS = registerBlock("soul_bricks_stairs",
+            new StairsBlock(ModBlocks.SOUL_BRICKS.getDefaultState(),
+                    AbstractBlock.Settings.create()
+                            .requiresTool()
+                            .instrument(NoteBlockInstrument.BASEDRUM)
+                            .strength(1.5F, 6.0F)
+                            .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block SOUL_BRICKS_SLAB = registerBlock("soul_bricks_slab",
+            new SlabBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block SOUL_BRICKS_WALL = registerBlock("soul_bricks_wall",
+            new WallBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+
 
 
 

@@ -408,20 +408,6 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.SILT_BRICKS);
         addDrop(ModBlocks.CHISELED_SILT_BRICKS);
         addDrop(ModBlocks.POLISHED_SILT);
-        addDrop(ModBlocks.BLUE_NETHER_BRICKS);
-        addDrop(ModBlocks.CHISELED_BLUE_NETHER_BRICKS);
-        addDrop(ModBlocks.POLISHED_BLUE_NETHER_BRICKS);
-        addDrop(ModBlocks.TAINTED_NETHER_BRICKS);
-        addDrop(ModBlocks.CHISELED_RED_NETHER_BRICKS);
-        addDrop(ModBlocks.POLISHED_RED_NETHER_BRICKS);
-        addDrop(ModBlocks.SOUL_BRICKS);
-        addDrop(ModBlocks.POLISHED_SOUL_SAND);
-        addDrop(ModBlocks.CHISELED_SOUL_BRICKS);
-        addDrop(ModBlocks.POSSESSED_CHISELED_SOUL_BRICKS);
-        addDrop(ModBlocks.POLISHED_BASALT_BRICKS);
-        addDrop(ModBlocks.POLISHED_BASALT_TILES);
-        addDrop(ModBlocks.CUT_POLISHED_BASALT);
-        addDrop(ModBlocks.CHISELED_POLISHED_BASALT);
 
         addDrop(ModBlocks.ASHEN_SAND);
         addDrop(ModBlocks.ASHEN_SANDSTONE);
@@ -429,7 +415,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.CHISELED_GRIMROCK);
         addDrop(ModBlocks.COBBLED_GRIMROCK);
         addDrop(ModBlocks.CUT_ASHEN_SANDSTONE);
-//        addDrop(ModBlocks.DAMP_MOSS_BLOCK); //TODO
+        addDrop(ModBlocks.DAMP_MOSS_BLOCK);
         addDrop(ModBlocks.GRIMOSS_BLOCK);
         addDrop(ModBlocks.GRIMROCK);
         addDrop(ModBlocks.GRIMROCK_BRICKS);
@@ -556,6 +542,68 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.DOLOMITE_BRICKS_SLAB, slabDrops(ModBlocks.DOLOMITE_BRICKS_SLAB));
         addDrop(ModBlocks.DOLOMITE_BRICKS_WALL);
         addDrop(ModBlocks.DOLOMITE_PILLAR);
+
+        addDrop(ModBlocks.ECHO_GLASS, dropsWithSilkTouch(ModBlocks.ECHO_GLASS));
+
+        addDrop(ModBlocks.GRAVESTONE);
+        addDrop(ModBlocks.CHISELED_GRAVESTONE);
+        addDrop(ModBlocks.GRAVESTONE_BRICKS);
+        addDrop(ModBlocks.GRAVESTONE_BRICKS_STAIRS);
+        addDrop(ModBlocks.GRAVESTONE_BRICKS_SLAB, slabDrops(ModBlocks.GRAVESTONE_BRICKS_SLAB));
+        addDrop(ModBlocks.GRAVESTONE_BRICKS_WALL);
+        addDrop(ModBlocks.POLISHED_GRAVESTONE);
+        addDrop(ModBlocks.POLISHED_GRAVESTONE_STAIRS);
+        addDrop(ModBlocks.POLISHED_GRAVESTONE_SLAB, slabDrops(ModBlocks.POLISHED_GRAVESTONE_SLAB));
+        addDrop(ModBlocks.POLISHED_GRAVESTONE_WALL);
+
+        addDrop(ModBlocks.CHISELED_DRIPSTONE);
+        addDrop(ModBlocks.DRIPSTONE_BRICKS);
+        addDrop(ModBlocks.DRIPSTONE_BRICKS_STAIRS);
+        addDrop(ModBlocks.DRIPSTONE_BRICKS_SLAB, slabDrops(ModBlocks.DRIPSTONE_BRICKS_SLAB));
+        addDrop(ModBlocks.DRIPSTONE_BRICKS_WALL);
+        addDrop(ModBlocks.POLISHED_DRIPSTONE);
+        addDrop(ModBlocks.POLISHED_DRIPSTONE_STAIRS);
+        addDrop(ModBlocks.POLISHED_DRIPSTONE_SLAB, slabDrops(ModBlocks.POLISHED_DRIPSTONE_SLAB));
+        addDrop(ModBlocks.POLISHED_DRIPSTONE_WALL);
+
+        addDrop(ModBlocks.CHISELED_POLISHED_BASALT);
+        addDrop(ModBlocks.CUT_POLISHED_BASALT);
+        addDrop(ModBlocks.CUT_POLISHED_BASALT_STAIRS);
+        addDrop(ModBlocks.CUT_POLISHED_BASALT_SLAB, slabDrops(ModBlocks.CUT_POLISHED_BASALT_SLAB));
+        addDrop(ModBlocks.CUT_POLISHED_BASALT_WALL);
+        addDrop(ModBlocks.POLISHED_BASALT_BRICKS);
+        addDrop(ModBlocks.POLISHED_BASALT_BRICKS_STAIRS);
+        addDrop(ModBlocks.POLISHED_BASALT_BRICKS_SLAB, slabDrops(ModBlocks.POLISHED_BASALT_BRICKS_SLAB));
+        addDrop(ModBlocks.POLISHED_BASALT_BRICKS_WALL);
+        addDrop(ModBlocks.POLISHED_BASALT_TILES);
+        addDrop(ModBlocks.POLISHED_BASALT_TILES_STAIRS);
+        addDrop(ModBlocks.POLISHED_BASALT_TILES_SLAB, slabDrops(ModBlocks.POLISHED_BASALT_TILES_SLAB));
+        addDrop(ModBlocks.POLISHED_BASALT_TILES_WALL);
+
+        addDrop(ModBlocks.BLUE_NETHER_BRICKS);
+        addDrop(ModBlocks.BLUE_NETHER_BRICKS_STAIRS);
+        addDrop(ModBlocks.BLUE_NETHER_BRICKS_SLAB, slabDrops(ModBlocks.BLUE_NETHER_BRICKS_SLAB));
+        addDrop(ModBlocks.BLUE_NETHER_BRICKS_WALL);
+        addDrop(ModBlocks.CHISELED_BLUE_NETHER_BRICKS);
+        addDrop(ModBlocks.CHISELED_RED_NETHER_BRICKS);
+        addDrop(ModBlocks.POLISHED_BLUE_NETHER_BRICKS);
+        addDrop(ModBlocks.POLISHED_NETHER_BRICKS);
+        addDrop(ModBlocks.POLISHED_RED_NETHER_BRICKS);
+        addDrop(ModBlocks.TAINTED_NETHER_BRICKS);
+        addDrop(ModBlocks.TAINTED_NETHER_BRICKS_STAIRS);
+        addDrop(ModBlocks.TAINTED_NETHER_BRICKS_SLAB, slabDrops(ModBlocks.TAINTED_NETHER_BRICKS_SLAB));
+        addDrop(ModBlocks.TAINTED_NETHER_BRICKS_WALL);
+
+        addDrop(ModBlocks.CHISELED_SOUL_BRICKS);
+        addDrop(ModBlocks.POLISHED_SOULSAND);
+        addDrop(ModBlocks.POLISHED_SOULSAND_STAIRS);
+        addDrop(ModBlocks.POLISHED_SOULSAND_SLAB, slabDrops(ModBlocks.POLISHED_SOULSAND_SLAB));
+        addDrop(ModBlocks.POLISHED_SOULSAND_WALL);
+        addDrop(ModBlocks.POSSESSED_CHISELED_SOUL_BRICKS);
+        addDrop(ModBlocks.SOUL_BRICKS);
+        addDrop(ModBlocks.SOUL_BRICKS_STAIRS);
+        addDrop(ModBlocks.SOUL_BRICKS_SLAB, slabDrops(ModBlocks.SOUL_BRICKS_SLAB));
+        addDrop(ModBlocks.SOUL_BRICKS_WALL);
 
 
 
