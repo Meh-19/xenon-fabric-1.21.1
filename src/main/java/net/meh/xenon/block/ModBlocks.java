@@ -1,5 +1,6 @@
 package net.meh.xenon.block;
 
+import net.meh.xenon.block.custom.PorousDolomiteBlock;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.AbstractBlock;
 import com.mojang.serialization.MapCodec;
@@ -3692,6 +3693,7 @@ public class ModBlocks {
                             .allowsSpawning(Blocks::never)
                             .solidBlock(Blocks::never)
                             .nonOpaque()
+                            .allowsSpawning(Blocks::never)
                             .blockVision((s, w, p) -> false)
                             .suffocates((s, w, p) -> false)
 
@@ -4254,6 +4256,14 @@ public class ModBlocks {
                     .instrument(NoteBlockInstrument.BASEDRUM)
                     .strength(1.5F, 6.0F)
                     .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block POROUS_DOLOMITE = registerBlock("porous_dolomite",
+            new PorousDolomiteBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
 
     public static final Block DOLOMITE_STAIRS = registerBlock("dolomite_stairs",
             new StairsBlock(ModBlocks.DOLOMITE.getDefaultState(),

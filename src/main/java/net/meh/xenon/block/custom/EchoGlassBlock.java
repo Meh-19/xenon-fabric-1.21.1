@@ -35,4 +35,3 @@ public class EchoGlassBlock extends BlockWithEntity {
         return new EchoGlassBlockEntity(pos, state);
     }
 }
-

@@ -22,6 +22,7 @@ public final class CoralSupport {
             Block block = world.getBlockState(pos.offset(dir)).getBlock();
 
             if (block == ModBlocks.DOLOMITE
+                    || block == ModBlocks.POROUS_DOLOMITE
                     || block == ModBlocks.DOLOMITE_SLAB
                     || block == ModBlocks.DOLOMITE_STAIRS
                     || block == ModBlocks.DOLOMITE_PILLAR

@@ -3,14 +3,8 @@ package net.meh.xenon.datagen;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.meh.xenon.block.ModBlocks;
-import net.meh.xenon.item.ModItems;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
-import net.minecraft.data.client.Model;
-import net.minecraft.data.client.Models;
-import net.minecraft.util.Identifier;
-
-import java.util.Optional;
 
 public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricDataOutput output) {
@@ -162,6 +156,7 @@ public class ModModelProvider extends FabricModelProvider {
         gravestone_bricks.slab(ModBlocks.GRAVESTONE_BRICKS_SLAB);
         gravestone_bricks.stairs(ModBlocks.GRAVESTONE_BRICKS_STAIRS);
 
+        gen.registerCubeAllModelTexturePool(ModBlocks.POROUS_DOLOMITE);
         dolomite.wall(ModBlocks.DOLOMITE_WALL);
         dolomite.slab(ModBlocks.DOLOMITE_SLAB);
         dolomite.stairs(ModBlocks.DOLOMITE_STAIRS);

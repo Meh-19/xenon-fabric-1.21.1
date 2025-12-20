@@ -23,6 +23,7 @@ public static final ItemGroup XENON_ITEMS_GROUP = Registry.register(Registries.I
                     entries.add(ModBlocks.PEBBLES);
 
                     entries.add(ModItems.DOLOMITE_DUST);
+                    entries.add(ModItems.BLIGHT_ESSENCE);
 
 
                 })
@@ -470,6 +471,7 @@ public static final ItemGroup XENON_ITEMS_GROUP = Registry.register(Registries.I
                         entries.add(ModBlocks.STRATA_BRICKS_SLAB);
                         entries.add(ModBlocks.STRATA_BRICKS_WALL);
                         entries.add(ModBlocks.DOLOMITE);
+                        entries.add(ModBlocks.POROUS_DOLOMITE);
                         entries.add(ModBlocks.DOLOMITE_STAIRS);
                         entries.add(ModBlocks.DOLOMITE_SLAB);
                         entries.add(ModBlocks.DOLOMITE_WALL);
@@ -485,6 +487,9 @@ public static final ItemGroup XENON_ITEMS_GROUP = Registry.register(Registries.I
                         entries.add(ModBlocks.DOLOMITE_PILLAR);
 
                         entries.add(ModBlocks.GRAVESTONE);
+                        entries.add(ModBlocks.GRAVESTONE_SLAB);
+                        entries.add(ModBlocks.GRAVESTONE_STAIRS);
+                        entries.add(ModBlocks.GRAVESTONE_WALL);
                         entries.add(ModBlocks.CHISELED_GRAVESTONE);
                         entries.add(ModBlocks.GRAVESTONE_BRICKS);
                         entries.add(ModBlocks.GRAVESTONE_BRICKS_STAIRS);

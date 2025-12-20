@@ -3,520 +3,500 @@ package net.meh.xenon.datagen;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.meh.xenon.block.ModBlocks;
+import net.meh.xenon.item.ModItems;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.ItemTags;
 
 import java.util.concurrent.CompletableFuture;
 
 public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
+
     public ModItemTagProvider(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> completableFuture) {
         super(output, completableFuture);
     }
 
     @Override
-    protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
-// Planks
-
-        getOrCreateTagBuilder(ItemTags.PLANKS)
-                .add(ModBlocks.VERTICAL_OAK_PLANKS.asItem())
-                .add(ModBlocks.VERTICAL_SPRUCE_PLANKS.asItem())
-                .add(ModBlocks.VERTICAL_BIRCH_PLANKS.asItem())
-                .add(ModBlocks.VERTICAL_JUNGLE_PLANKS.asItem())
-                .add(ModBlocks.VERTICAL_ACACIA_PLANKS.asItem())
-                .add(ModBlocks.VERTICAL_DARK_OAK_PLANKS.asItem())
-                .add(ModBlocks.VERTICAL_MANGROVE_PLANKS.asItem())
-                .add(ModBlocks.VERTICAL_CHERRY_PLANKS.asItem())
-                .add(ModBlocks.VERTICAL_CRIMSON_PLANKS.asItem())
-                .add(ModBlocks.VERTICAL_WARPED_PLANKS.asItem())
-                .add(ModBlocks.VERTICAL_BAMBOO_PLANKS.asItem())
-                .add(ModBlocks.MAPLE_PLANKS.asItem())
-                .add(ModBlocks.VERTICAL_MAPLE_PLANKS.asItem())
-                .add(ModBlocks.BLEAK_PLANKS.asItem())
-                .add(ModBlocks.VERTICAL_BLEAK_PLANKS.asItem())
-                .add(ModBlocks.FIR_PLANKS.asItem())
-                .add(ModBlocks.VERTICAL_FIR_PLANKS.asItem())
-                .add(ModBlocks.PALM_PLANKS.asItem())
-                .add(ModBlocks.VERTICAL_PALM_PLANKS.asItem())
-                .add(ModBlocks.BAYOU_PLANKS.asItem())
-                .add(ModBlocks.VERTICAL_BAYOU_PLANKS.asItem())
-                .add(ModBlocks.WISTERIA_PLANKS.asItem())
-                .add(ModBlocks.VERTICAL_WISTERIA_PLANKS.asItem())
-                .add(ModBlocks.BAOBAB_PLANKS.asItem())
-                .add(ModBlocks.VERTICAL_BAOBAB_PLANKS.asItem())
-                .add(ModBlocks.FUNGAL_PLANKS.asItem())
-                .add(ModBlocks.VERTICAL_FUNGAL_PLANKS.asItem())
-                .add(ModBlocks.WHITE_FUNGAL_PLANKS.asItem())
-                .add(ModBlocks.LIGHT_GRAY_FUNGAL_PLANKS.asItem())
-                .add(ModBlocks.GRAY_FUNGAL_PLANKS.asItem())
-                .add(ModBlocks.BLACK_FUNGAL_PLANKS.asItem())
-                .add(ModBlocks.BROWN_FUNGAL_PLANKS.asItem())
-                .add(ModBlocks.RED_FUNGAL_PLANKS.asItem())
-                .add(ModBlocks.ORANGE_FUNGAL_PLANKS.asItem())
-                .add(ModBlocks.YELLOW_FUNGAL_PLANKS.asItem())
-                .add(ModBlocks.LIME_FUNGAL_PLANKS.asItem())
-                .add(ModBlocks.GREEN_FUNGAL_PLANKS.asItem())
-                .add(ModBlocks.CYAN_FUNGAL_PLANKS.asItem())
-                .add(ModBlocks.LIGHT_BLUE_FUNGAL_PLANKS.asItem())
-                .add(ModBlocks.BLUE_FUNGAL_PLANKS.asItem())
-                .add(ModBlocks.PURPLE_FUNGAL_PLANKS.asItem())
-                .add(ModBlocks.MAGENTA_FUNGAL_PLANKS.asItem())
-                .add(ModBlocks.PINK_FUNGAL_PLANKS.asItem());
-
-
-// Wooden Stairs
-        getOrCreateTagBuilder(ItemTags.WOODEN_STAIRS)
-                .add(
-                        ModBlocks.MAPLE_STAIRS.asItem(), ModBlocks.FIR_STAIRS.asItem(), ModBlocks.BLEAK_STAIRS.asItem(),
-                        ModBlocks.PALM_STAIRS.asItem(), ModBlocks.BAYOU_STAIRS.asItem(), ModBlocks.WISTERIA_STAIRS.asItem(),
-                        ModBlocks.BAOBAB_STAIRS.asItem(), ModBlocks.FUNGAL_STAIRS.asItem(),
-                        ModBlocks.WHITE_FUNGAL_STAIRS.asItem(), ModBlocks.LIGHT_GRAY_FUNGAL_STAIRS.asItem(),
-                        ModBlocks.GRAY_FUNGAL_STAIRS.asItem(), ModBlocks.BLACK_FUNGAL_STAIRS.asItem(),
-                        ModBlocks.BROWN_FUNGAL_STAIRS.asItem(), ModBlocks.RED_FUNGAL_STAIRS.asItem(),
-                        ModBlocks.ORANGE_FUNGAL_STAIRS.asItem(), ModBlocks.YELLOW_FUNGAL_STAIRS.asItem(),
-                        ModBlocks.LIME_FUNGAL_STAIRS.asItem(), ModBlocks.GREEN_FUNGAL_STAIRS.asItem(),
-                        ModBlocks.CYAN_FUNGAL_STAIRS.asItem(), ModBlocks.LIGHT_BLUE_FUNGAL_STAIRS.asItem(),
-                        ModBlocks.BLUE_FUNGAL_STAIRS.asItem(), ModBlocks.PURPLE_FUNGAL_STAIRS.asItem(),
-                        ModBlocks.MAGENTA_FUNGAL_STAIRS.asItem(), ModBlocks.PINK_FUNGAL_STAIRS.asItem()
-                );
-
-// Wooden Slabs
-        getOrCreateTagBuilder(ItemTags.WOODEN_SLABS)
-                .add(
-                        ModBlocks.MAPLE_SLAB.asItem(), ModBlocks.FIR_SLAB.asItem(), ModBlocks.BLEAK_SLAB.asItem(),
-                        ModBlocks.PALM_SLAB.asItem(), ModBlocks.BAYOU_SLAB.asItem(), ModBlocks.WISTERIA_SLAB.asItem(),
-                        ModBlocks.BAOBAB_SLAB.asItem(), ModBlocks.FUNGAL_SLAB.asItem(),
-                        ModBlocks.WHITE_FUNGAL_SLAB.asItem(), ModBlocks.LIGHT_GRAY_FUNGAL_SLAB.asItem(),
-                        ModBlocks.GRAY_FUNGAL_SLAB.asItem(), ModBlocks.BLACK_FUNGAL_SLAB.asItem(),
-                        ModBlocks.BROWN_FUNGAL_SLAB.asItem(), ModBlocks.RED_FUNGAL_SLAB.asItem(),
-                        ModBlocks.ORANGE_FUNGAL_SLAB.asItem(), ModBlocks.YELLOW_FUNGAL_SLAB.asItem(),
-                        ModBlocks.LIME_FUNGAL_SLAB.asItem(), ModBlocks.GREEN_FUNGAL_SLAB.asItem(),
-                        ModBlocks.CYAN_FUNGAL_SLAB.asItem(), ModBlocks.LIGHT_BLUE_FUNGAL_SLAB.asItem(),
-                        ModBlocks.BLUE_FUNGAL_SLAB.asItem(), ModBlocks.PURPLE_FUNGAL_SLAB.asItem(),
-                        ModBlocks.MAGENTA_FUNGAL_SLAB.asItem(), ModBlocks.PINK_FUNGAL_SLAB.asItem()
-                );
-
-// Wooden Fences
-        getOrCreateTagBuilder(ItemTags.WOODEN_FENCES)
-                .add(
-                        ModBlocks.MAPLE_FENCE.asItem(), ModBlocks.FIR_FENCE.asItem(), ModBlocks.BLEAK_FENCE.asItem(),
-                        ModBlocks.PALM_FENCE.asItem(), ModBlocks.BAYOU_FENCE.asItem(), ModBlocks.WISTERIA_FENCE.asItem(),
-                        ModBlocks.BAOBAB_FENCE.asItem(), ModBlocks.FUNGAL_FENCE.asItem(),
-                        ModBlocks.WHITE_FUNGAL_FENCE.asItem(), ModBlocks.LIGHT_GRAY_FUNGAL_FENCE.asItem(),
-                        ModBlocks.GRAY_FUNGAL_FENCE.asItem(), ModBlocks.BLACK_FUNGAL_FENCE.asItem(),
-                        ModBlocks.BROWN_FUNGAL_FENCE.asItem(), ModBlocks.RED_FUNGAL_FENCE.asItem(),
-                        ModBlocks.ORANGE_FUNGAL_FENCE.asItem(), ModBlocks.YELLOW_FUNGAL_FENCE.asItem(),
-                        ModBlocks.LIME_FUNGAL_FENCE.asItem(), ModBlocks.GREEN_FUNGAL_FENCE.asItem(),
-                        ModBlocks.CYAN_FUNGAL_FENCE.asItem(), ModBlocks.LIGHT_BLUE_FUNGAL_FENCE.asItem(),
-                        ModBlocks.BLUE_FUNGAL_FENCE.asItem(), ModBlocks.PURPLE_FUNGAL_FENCE.asItem(),
-                        ModBlocks.MAGENTA_FUNGAL_FENCE.asItem(), ModBlocks.PINK_FUNGAL_FENCE.asItem()
-                );
-
-        getOrCreateTagBuilder(ItemTags.FENCES)
-                .add(
-                        ModBlocks.MAPLE_FENCE.asItem(), ModBlocks.FIR_FENCE.asItem(), ModBlocks.BLEAK_FENCE.asItem(),
-                        ModBlocks.PALM_FENCE.asItem(), ModBlocks.BAYOU_FENCE.asItem(), ModBlocks.WISTERIA_FENCE.asItem(),
-                        ModBlocks.BAOBAB_FENCE.asItem(), ModBlocks.FUNGAL_FENCE.asItem(),
-                        ModBlocks.WHITE_FUNGAL_FENCE.asItem(), ModBlocks.LIGHT_GRAY_FUNGAL_FENCE.asItem(),
-                        ModBlocks.GRAY_FUNGAL_FENCE.asItem(), ModBlocks.BLACK_FUNGAL_FENCE.asItem(),
-                        ModBlocks.BROWN_FUNGAL_FENCE.asItem(), ModBlocks.RED_FUNGAL_FENCE.asItem(),
-                        ModBlocks.ORANGE_FUNGAL_FENCE.asItem(), ModBlocks.YELLOW_FUNGAL_FENCE.asItem(),
-                        ModBlocks.LIME_FUNGAL_FENCE.asItem(), ModBlocks.GREEN_FUNGAL_FENCE.asItem(),
-                        ModBlocks.CYAN_FUNGAL_FENCE.asItem(), ModBlocks.LIGHT_BLUE_FUNGAL_FENCE.asItem(),
-                        ModBlocks.BLUE_FUNGAL_FENCE.asItem(), ModBlocks.PURPLE_FUNGAL_FENCE.asItem(),
-                        ModBlocks.MAGENTA_FUNGAL_FENCE.asItem(), ModBlocks.PINK_FUNGAL_FENCE.asItem()
-                );
-
-// Wooden Buttons
-        getOrCreateTagBuilder(ItemTags.BUTTONS)
-                .add(
-                        ModBlocks.MAPLE_BUTTON.asItem(), ModBlocks.FIR_BUTTON.asItem(), ModBlocks.BLEAK_BUTTON.asItem(),
-                        ModBlocks.PALM_BUTTON.asItem(), ModBlocks.BAYOU_BUTTON.asItem(), ModBlocks.WISTERIA_BUTTON.asItem(),
-                        ModBlocks.BAOBAB_BUTTON.asItem(), ModBlocks.FUNGAL_BUTTON.asItem(),
-                        ModBlocks.WHITE_FUNGAL_BUTTON.asItem(), ModBlocks.LIGHT_GRAY_FUNGAL_BUTTON.asItem(),
-                        ModBlocks.GRAY_FUNGAL_BUTTON.asItem(), ModBlocks.BLACK_FUNGAL_BUTTON.asItem(),
-                        ModBlocks.BROWN_FUNGAL_BUTTON.asItem(), ModBlocks.RED_FUNGAL_BUTTON.asItem(),
-                        ModBlocks.ORANGE_FUNGAL_BUTTON.asItem(), ModBlocks.YELLOW_FUNGAL_BUTTON.asItem(),
-                        ModBlocks.LIME_FUNGAL_BUTTON.asItem(), ModBlocks.GREEN_FUNGAL_BUTTON.asItem(),
-                        ModBlocks.CYAN_FUNGAL_BUTTON.asItem(), ModBlocks.LIGHT_BLUE_FUNGAL_BUTTON.asItem(),
-                        ModBlocks.BLUE_FUNGAL_BUTTON.asItem(), ModBlocks.PURPLE_FUNGAL_BUTTON.asItem(),
-                        ModBlocks.MAGENTA_FUNGAL_BUTTON.asItem(), ModBlocks.PINK_FUNGAL_BUTTON.asItem()
-                );
-
-// Wooden Pressure Plates
-        getOrCreateTagBuilder(ItemTags.WOODEN_PRESSURE_PLATES)
-                .add(
-                        ModBlocks.MAPLE_PRESSURE_PLATE.asItem(), ModBlocks.FIR_PRESSURE_PLATE.asItem(), ModBlocks.BLEAK_PRESSURE_PLATE.asItem(),
-                        ModBlocks.PALM_PRESSURE_PLATE.asItem(), ModBlocks.BAYOU_PRESSURE_PLATE.asItem(), ModBlocks.WISTERIA_PRESSURE_PLATE.asItem(),
-                        ModBlocks.BAOBAB_PRESSURE_PLATE.asItem(), ModBlocks.FUNGAL_PRESSURE_PLATE.asItem(),
-                        ModBlocks.WHITE_FUNGAL_PRESSURE_PLATE.asItem(), ModBlocks.LIGHT_GRAY_FUNGAL_PRESSURE_PLATE.asItem(),
-                        ModBlocks.GRAY_FUNGAL_PRESSURE_PLATE.asItem(), ModBlocks.BLACK_FUNGAL_PRESSURE_PLATE.asItem(),
-                        ModBlocks.BROWN_FUNGAL_PRESSURE_PLATE.asItem(), ModBlocks.RED_FUNGAL_PRESSURE_PLATE.asItem(),
-                        ModBlocks.ORANGE_FUNGAL_PRESSURE_PLATE.asItem(), ModBlocks.YELLOW_FUNGAL_PRESSURE_PLATE.asItem(),
-                        ModBlocks.LIME_FUNGAL_PRESSURE_PLATE.asItem(), ModBlocks.GREEN_FUNGAL_PRESSURE_PLATE.asItem(),
-                        ModBlocks.CYAN_FUNGAL_PRESSURE_PLATE.asItem(), ModBlocks.LIGHT_BLUE_FUNGAL_PRESSURE_PLATE.asItem(),
-                        ModBlocks.BLUE_FUNGAL_PRESSURE_PLATE.asItem(), ModBlocks.PURPLE_FUNGAL_PRESSURE_PLATE.asItem(),
-                        ModBlocks.MAGENTA_FUNGAL_PRESSURE_PLATE.asItem(), ModBlocks.PINK_FUNGAL_PRESSURE_PLATE.asItem()
-                );
-        getOrCreateTagBuilder(ItemTags.LOGS_THAT_BURN)
-                .add(ModBlocks.MAPLE_LOG.asItem())
-                .add(ModBlocks.STRIPPED_MAPLE_LOG.asItem())
-                .add(ModBlocks.MAPLE_WOOD.asItem())
-                .add(ModBlocks.STRIPPED_MAPLE_WOOD.asItem())
-                .add(ModBlocks.BLEAK_LOG.asItem())
-                .add(ModBlocks.STRIPPED_BLEAK_LOG.asItem())
-                .add(ModBlocks.BLEAK_WOOD.asItem())
-                .add(ModBlocks.STRIPPED_BLEAK_WOOD.asItem())
-                .add(ModBlocks.FIR_LOG.asItem())
-                .add(ModBlocks.STRIPPED_FIR_LOG.asItem())
-                .add(ModBlocks.FIR_WOOD.asItem())
-                .add(ModBlocks.STRIPPED_FIR_WOOD.asItem())
-                .add(ModBlocks.PALM_LOG.asItem())
-                .add(ModBlocks.STRIPPED_PALM_LOG.asItem())
-                .add(ModBlocks.PALM_WOOD.asItem())
-                .add(ModBlocks.STRIPPED_PALM_WOOD.asItem())
-                .add(ModBlocks.BAYOU_LOG.asItem())
-                .add(ModBlocks.STRIPPED_BAYOU_LOG.asItem())
-                .add(ModBlocks.BAYOU_WOOD.asItem())
-                .add(ModBlocks.STRIPPED_BAYOU_WOOD.asItem())
-                .add(ModBlocks.WISTERIA_LOG.asItem())
-                .add(ModBlocks.STRIPPED_WISTERIA_LOG.asItem())
-                .add(ModBlocks.WISTERIA_WOOD.asItem())
-                .add(ModBlocks.STRIPPED_WISTERIA_WOOD.asItem())
-                .add(ModBlocks.BAOBAB_LOG.asItem())
-                .add(ModBlocks.STRIPPED_BAOBAB_LOG.asItem())
-                .add(ModBlocks.BAOBAB_WOOD.asItem())
-                .add(ModBlocks.STRIPPED_BAOBAB_WOOD.asItem());
-
-        getOrCreateTagBuilder(ItemTags.WALLS);
-
-        getOrCreateTagBuilder(ItemTags.STONE_BUTTONS);
-
-        getOrCreateTagBuilder(ItemTags.STAIRS)
-                .add(ModBlocks.LIMESTONE_STAIRS.asItem());
-
-        getOrCreateTagBuilder(ItemTags.SLABS)
-                .add(ModBlocks.LIMESTONE_SLAB.asItem());
-
-        getOrCreateTagBuilder(ItemTags.WALLS)
-                .add(ModBlocks.LIMESTONE_WALL.asItem());
-
-        getOrCreateTagBuilder(ItemTags.STAIRS)
-                .add(ModBlocks.LIMESTONE_BRICKS_STAIRS.asItem());
-
-        getOrCreateTagBuilder(ItemTags.SLABS)
-                .add(ModBlocks.LIMESTONE_BRICKS_SLAB.asItem());
-
-        getOrCreateTagBuilder(ItemTags.WALLS)
-                .add(ModBlocks.LIMESTONE_BRICKS_WALL.asItem());
-
-        getOrCreateTagBuilder(ItemTags.STAIRS)
-                .add(ModBlocks.POLISHED_LIMESTONE_STAIRS.asItem());
-
-        getOrCreateTagBuilder(ItemTags.SLABS)
-                .add(ModBlocks.POLISHED_LIMESTONE_SLAB.asItem());
-
-        getOrCreateTagBuilder(ItemTags.WALLS)
-                .add(ModBlocks.POLISHED_LIMESTONE_WALL.asItem());
-
-        getOrCreateTagBuilder(ItemTags.STAIRS)
-                .add(ModBlocks.SANDY_LIMESTONE_BRICKS_STAIRS.asItem());
-
-        getOrCreateTagBuilder(ItemTags.SLABS)
-                .add(ModBlocks.SANDY_LIMESTONE_BRICKS_SLAB.asItem());
-
-        getOrCreateTagBuilder(ItemTags.WALLS)
-                .add(ModBlocks.SANDY_LIMESTONE_BRICKS_WALL.asItem());
-
-        getOrCreateTagBuilder(ItemTags.STAIRS)
-                .add(ModBlocks.GRIMROCK_STAIRS.asItem());
-
-        getOrCreateTagBuilder(ItemTags.SLABS)
-                .add(ModBlocks.GRIMROCK_SLAB.asItem());
-
-        getOrCreateTagBuilder(ItemTags.WALLS)
-                .add(ModBlocks.GRIMROCK_WALL.asItem());
-
-        getOrCreateTagBuilder(ItemTags.STAIRS)
-                .add(ModBlocks.COBBLED_GRIMROCK_STAIRS.asItem());
-
-        getOrCreateTagBuilder(ItemTags.SLABS)
-                .add(ModBlocks.COBBLED_GRIMROCK_SLAB.asItem());
-
-        getOrCreateTagBuilder(ItemTags.WALLS)
-                .add(ModBlocks.COBBLED_GRIMROCK_WALL.asItem());
-
-        getOrCreateTagBuilder(ItemTags.STAIRS)
-                .add(ModBlocks.CRACKED_GRIMROCK_BRICKS_STAIRS.asItem());
-
-        getOrCreateTagBuilder(ItemTags.SLABS)
-                .add(ModBlocks.CRACKED_GRIMROCK_BRICKS_SLAB.asItem());
-
-        getOrCreateTagBuilder(ItemTags.WALLS)
-                .add(ModBlocks.CRACKED_GRIMROCK_BRICKS_WALL.asItem());
-
-        getOrCreateTagBuilder(ItemTags.STAIRS)
-                .add(ModBlocks.GRIMROCK_BRICKS_STAIRS.asItem());
-
-        getOrCreateTagBuilder(ItemTags.SLABS)
-                .add(ModBlocks.GRIMROCK_BRICKS_SLAB.asItem());
-
-        getOrCreateTagBuilder(ItemTags.WALLS)
-                .add(ModBlocks.GRIMROCK_BRICKS_WALL.asItem());
-
-        getOrCreateTagBuilder(ItemTags.STAIRS)
-                .add(ModBlocks.MOSSY_GRIMROCK_BRICKS_STAIRS.asItem());
-
-        getOrCreateTagBuilder(ItemTags.SLABS)
-                .add(ModBlocks.MOSSY_GRIMROCK_BRICKS_SLAB.asItem());
-
-        getOrCreateTagBuilder(ItemTags.WALLS)
-                .add(ModBlocks.MOSSY_GRIMROCK_BRICKS_WALL.asItem());
-
-        getOrCreateTagBuilder(ItemTags.STAIRS)
-                .add(ModBlocks.POLISHED_GRIMROCK_STAIRS.asItem());
-
-        getOrCreateTagBuilder(ItemTags.SLABS)
-                .add(ModBlocks.POLISHED_GRIMROCK_SLAB.asItem());
-
-        getOrCreateTagBuilder(ItemTags.WALLS)
-                .add(ModBlocks.POLISHED_GRIMROCK_WALL.asItem());
-
-        getOrCreateTagBuilder(ItemTags.STAIRS)
-                .add(ModBlocks.MOSSY_PACKED_LOAM_BRICKS_STAIRS.asItem());
-
-        getOrCreateTagBuilder(ItemTags.SLABS)
-                .add(ModBlocks.MOSSY_PACKED_LOAM_BRICKS_SLAB.asItem());
-
-        getOrCreateTagBuilder(ItemTags.WALLS)
-                .add(ModBlocks.MOSSY_PACKED_LOAM_BRICKS_WALL.asItem());
-
-        getOrCreateTagBuilder(ItemTags.STAIRS)
-                .add(ModBlocks.PACKED_LOAM_STAIRS.asItem());
-
-        getOrCreateTagBuilder(ItemTags.SLABS)
-                .add(ModBlocks.PACKED_LOAM_SLAB.asItem());
-
-        getOrCreateTagBuilder(ItemTags.WALLS)
-                .add(ModBlocks.PACKED_LOAM_WALL.asItem());
-
-        getOrCreateTagBuilder(ItemTags.STAIRS)
-                .add(ModBlocks.PACKED_LOAM_BRICKS_STAIRS.asItem());
-
-        getOrCreateTagBuilder(ItemTags.SLABS)
-                .add(ModBlocks.PACKED_LOAM_BRICKS_SLAB.asItem());
-
-        getOrCreateTagBuilder(ItemTags.WALLS)
-                .add(ModBlocks.PACKED_LOAM_BRICKS_WALL.asItem());
-
-        getOrCreateTagBuilder(ItemTags.STAIRS)
-                .add(ModBlocks.DRIED_SILT_STAIRS.asItem());
-
-        getOrCreateTagBuilder(ItemTags.SLABS)
-                .add(ModBlocks.DRIED_SILT_SLAB.asItem());
-
-        getOrCreateTagBuilder(ItemTags.WALLS)
-                .add(ModBlocks.DRIED_SILT_WALL.asItem());
-
-        getOrCreateTagBuilder(ItemTags.STAIRS)
-                .add(ModBlocks.POLISHED_SILT_STAIRS.asItem());
-
-        getOrCreateTagBuilder(ItemTags.SLABS)
-                .add(ModBlocks.POLISHED_SILT_SLAB.asItem());
-
-        getOrCreateTagBuilder(ItemTags.WALLS)
-                .add(ModBlocks.POLISHED_SILT_WALL.asItem());
-
-        getOrCreateTagBuilder(ItemTags.STAIRS)
-                .add(ModBlocks.SILT_BRICKS_STAIRS.asItem());
-
-        getOrCreateTagBuilder(ItemTags.SLABS)
-                .add(ModBlocks.SILT_BRICKS_SLAB.asItem())
-                .add(ModBlocks.PACKED_DIRT_SLAB.asItem());
-
-        getOrCreateTagBuilder(ItemTags.WALLS)
-                .add(ModBlocks.SILT_BRICKS_WALL.asItem());
-
-        getOrCreateTagBuilder(ItemTags.STAIRS)
-                .add(ModBlocks.SLATE_STAIRS.asItem());
-
-        getOrCreateTagBuilder(ItemTags.SLABS)
-                .add(ModBlocks.SLATE_SLAB.asItem());
-
-        getOrCreateTagBuilder(ItemTags.WALLS)
-                .add(ModBlocks.SLATE_WALL.asItem());
-
-        getOrCreateTagBuilder(ItemTags.STAIRS)
-                .add(ModBlocks.POLISHED_SLATE_STAIRS.asItem());
-
-        getOrCreateTagBuilder(ItemTags.SLABS)
-                .add(ModBlocks.POLISHED_SLATE_SLAB.asItem());
-
-        getOrCreateTagBuilder(ItemTags.WALLS)
-                .add(ModBlocks.POLISHED_SLATE_WALL.asItem());
-
-        getOrCreateTagBuilder(ItemTags.STAIRS)
-                .add(ModBlocks.SLATE_BRICKS_STAIRS.asItem());
-
-        getOrCreateTagBuilder(ItemTags.SLABS)
-                .add(ModBlocks.SLATE_BRICKS_SLAB.asItem());
-
-        getOrCreateTagBuilder(ItemTags.WALLS)
-                .add(ModBlocks.SLATE_BRICKS_WALL.asItem());
-
-        getOrCreateTagBuilder(ItemTags.STAIRS)
-                .add(ModBlocks.STRATA_STAIRS.asItem());
-
-        getOrCreateTagBuilder(ItemTags.SLABS)
-                .add(ModBlocks.STRATA_SLAB.asItem());
-
-        getOrCreateTagBuilder(ItemTags.WALLS)
-                .add(ModBlocks.STRATA_WALL.asItem());
-
-        getOrCreateTagBuilder(ItemTags.STAIRS)
-                .add(ModBlocks.POLISHED_STRATA_STAIRS.asItem());
-
-        getOrCreateTagBuilder(ItemTags.SLABS)
-                .add(ModBlocks.POLISHED_STRATA_SLAB.asItem());
-
-        getOrCreateTagBuilder(ItemTags.WALLS)
-                .add(ModBlocks.POLISHED_STRATA_WALL.asItem());
-
-        getOrCreateTagBuilder(ItemTags.STAIRS)
-                .add(ModBlocks.STRATA_BRICKS_STAIRS.asItem());
-
-        getOrCreateTagBuilder(ItemTags.SLABS)
-                .add(ModBlocks.STRATA_BRICKS_SLAB.asItem());
-
-        getOrCreateTagBuilder(ItemTags.WALLS)
-                .add(ModBlocks.STRATA_BRICKS_WALL.asItem());
-
-
-        getOrCreateTagBuilder(ItemTags.STAIRS)
-                .add(ModBlocks.DOLOMITE_STAIRS.asItem());
-
-        getOrCreateTagBuilder(ItemTags.SLABS)
-                .add(ModBlocks.DOLOMITE_SLAB.asItem());
-
-        getOrCreateTagBuilder(ItemTags.WALLS)
-                .add(ModBlocks.DOLOMITE_WALL.asItem());
-
-        getOrCreateTagBuilder(ItemTags.STAIRS)
-                .add(ModBlocks.POLISHED_DOLOMITE_STAIRS.asItem());
-
-        getOrCreateTagBuilder(ItemTags.SLABS)
-                .add(ModBlocks.POLISHED_DOLOMITE_SLAB.asItem());
-
-        getOrCreateTagBuilder(ItemTags.WALLS)
-                .add(ModBlocks.POLISHED_DOLOMITE_WALL.asItem());
-
-        getOrCreateTagBuilder(ItemTags.STAIRS)
-                .add(ModBlocks.DOLOMITE_BRICKS_STAIRS.asItem());
-
-        getOrCreateTagBuilder(ItemTags.SLABS)
-                .add(ModBlocks.DOLOMITE_BRICKS_SLAB.asItem());
-
-        getOrCreateTagBuilder(ItemTags.WALLS)
-                .add(ModBlocks.DOLOMITE_BRICKS_WALL.asItem());
-
-        getOrCreateTagBuilder(ItemTags.STAIRS)
-                .add(ModBlocks.GRAVESTONE_BRICKS_STAIRS.asItem());
-
-        getOrCreateTagBuilder(ItemTags.SLABS)
-                .add(ModBlocks.GRAVESTONE_BRICKS_SLAB.asItem());
-
-        getOrCreateTagBuilder(ItemTags.WALLS)
-                .add(ModBlocks.GRAVESTONE_BRICKS_WALL.asItem());
-
-        getOrCreateTagBuilder(ItemTags.STAIRS)
-                .add(ModBlocks.POLISHED_GRAVESTONE_STAIRS.asItem());
-
-        getOrCreateTagBuilder(ItemTags.SLABS)
-                .add(ModBlocks.POLISHED_GRAVESTONE_SLAB.asItem());
-
-        getOrCreateTagBuilder(ItemTags.WALLS)
-                .add(ModBlocks.POLISHED_GRAVESTONE_WALL.asItem());
-
-        getOrCreateTagBuilder(ItemTags.STAIRS)
-                .add(ModBlocks.DRIPSTONE_BRICKS_STAIRS.asItem())
-                .add(ModBlocks.POLISHED_DRIPSTONE_STAIRS.asItem());
-
-        getOrCreateTagBuilder(ItemTags.SLABS)
-                .add(ModBlocks.DRIPSTONE_BRICKS_SLAB.asItem())
-                .add(ModBlocks.POLISHED_DRIPSTONE_SLAB.asItem());
-
-        getOrCreateTagBuilder(ItemTags.WALLS)
-                .add(ModBlocks.DRIPSTONE_BRICKS_WALL.asItem())
-                .add(ModBlocks.POLISHED_DRIPSTONE_WALL.asItem());
-
-        getOrCreateTagBuilder(ItemTags.STAIRS)
-                .add(ModBlocks.BLUE_NETHER_BRICKS_STAIRS.asItem())
-                .add(ModBlocks.TAINTED_NETHER_BRICKS_STAIRS.asItem());
-
-        getOrCreateTagBuilder(ItemTags.SLABS)
-                .add(ModBlocks.BLUE_NETHER_BRICKS_SLAB.asItem())
-                .add(ModBlocks.TAINTED_NETHER_BRICKS_SLAB.asItem());
-
-        getOrCreateTagBuilder(ItemTags.WALLS)
-                .add(ModBlocks.BLUE_NETHER_BRICKS_WALL.asItem())
-                .add(ModBlocks.TAINTED_NETHER_BRICKS_WALL.asItem());
-
-        getOrCreateTagBuilder(ItemTags.STAIRS)
-                .add(ModBlocks.POLISHED_SOULSAND_STAIRS.asItem())
-                .add(ModBlocks.SOUL_BRICKS_STAIRS.asItem());
-
-        getOrCreateTagBuilder(ItemTags.SLABS)
-                .add(ModBlocks.POLISHED_SOULSAND_SLAB.asItem())
-                .add(ModBlocks.SOUL_BRICKS_SLAB.asItem());
-
-        getOrCreateTagBuilder(ItemTags.WALLS)
-                .add(ModBlocks.POLISHED_SOULSAND_WALL.asItem())
-                .add(ModBlocks.SOUL_BRICKS_WALL.asItem());
-
-        getOrCreateTagBuilder(ItemTags.STAIRS)
-                .add(ModBlocks.PACKED_SNOW_STAIRS.asItem())
-                .add(ModBlocks.SNOW_BRICKS_STAIRS.asItem());
-
-        getOrCreateTagBuilder(ItemTags.SLABS)
-                .add(ModBlocks.PACKED_SNOW_SLAB.asItem())
-                .add(ModBlocks.SNOW_BRICKS_SLAB.asItem());
-
-        getOrCreateTagBuilder(ItemTags.WALLS)
-                .add(ModBlocks.PACKED_SNOW_WALL.asItem())
-                .add(ModBlocks.SNOW_BRICKS_WALL.asItem());
-
-        getOrCreateTagBuilder(ItemTags.STAIRS)
-                .add(ModBlocks.PACKED_ICE_BRICKS_STAIRS.asItem())
-                .add(ModBlocks.POLISHED_PACKED_ICE_STAIRS.asItem());
-
-        getOrCreateTagBuilder(ItemTags.SLABS)
-                .add(ModBlocks.PACKED_ICE_BRICKS_SLAB.asItem())
-                .add(ModBlocks.POLISHED_PACKED_ICE_SLAB.asItem());
-
-        getOrCreateTagBuilder(ItemTags.WALLS)
-                .add(ModBlocks.PACKED_ICE_BRICKS_WALL.asItem())
-                .add(ModBlocks.POLISHED_PACKED_ICE_WALL.asItem());
-
-        getOrCreateTagBuilder(ItemTags.STAIRS)
-                .add(ModBlocks.POLISHED_PRISMARINE_STAIRS.asItem())
-                .add(ModBlocks.PRISMARINE_TILES_STAIRS.asItem());
-
-        getOrCreateTagBuilder(ItemTags.SLABS)
-                .add(ModBlocks.POLISHED_PRISMARINE_SLAB.asItem())
-                .add(ModBlocks.PRISMARINE_TILES_SLAB.asItem());
-
-        getOrCreateTagBuilder(ItemTags.WALLS)
-                .add(ModBlocks.POLISHED_PRISMARINE_WALL.asItem())
-                .add(ModBlocks.PRISMARINE_TILES_WALL.asItem());
-
-
-
-
-
-
-
-
-
-
+    protected void configure(RegistryWrapper.WrapperLookup lookup) {
+
+        //region TAG BUILDERS
+        var logs = getOrCreateTagBuilder(ItemTags.LOGS);
+        var logsThatBurn = getOrCreateTagBuilder(ItemTags.LOGS_THAT_BURN);
+        var planks = getOrCreateTagBuilder(ItemTags.PLANKS);
+
+        var fences = getOrCreateTagBuilder(ItemTags.FENCES);
+        var fenceGates = getOrCreateTagBuilder(ItemTags.FENCE_GATES);
+
+        var stairs = getOrCreateTagBuilder(ItemTags.STAIRS);
+        var slabs = getOrCreateTagBuilder(ItemTags.SLABS);
+        var walls = getOrCreateTagBuilder(ItemTags.WALLS);
+
+        var buttons = getOrCreateTagBuilder(ItemTags.BUTTONS);
+        var pressurePlates = getOrCreateTagBuilder(ItemTags.WOODEN_PRESSURE_PLATES);
+        var beacon = getOrCreateTagBuilder(ItemTags.BEACON_PAYMENT_ITEMS);
+
+        var natural = getOrCreateTagBuilder(ItemTags.DIRT);
+
+        //endregion\
+
+        //region beacon
+        beacon.add(
+                ModItems.PLATINUM,
+                ModItems.RUBY
+        );
+        //endregion\
+        //region buttons
+        buttons.add(
+                ModBlocks.BAOBAB_BUTTON.asItem(),
+                ModBlocks.BAYOU_BUTTON.asItem(),
+                ModBlocks.BLACK_FUNGAL_BUTTON.asItem(),
+                ModBlocks.BLEAK_BUTTON.asItem(),
+                ModBlocks.BLUE_FUNGAL_BUTTON.asItem(),
+                ModBlocks.BROWN_FUNGAL_BUTTON.asItem(),
+                ModBlocks.CYAN_FUNGAL_BUTTON.asItem(),
+                ModBlocks.FIR_BUTTON.asItem(),
+                ModBlocks.FUNGAL_BUTTON.asItem(),
+                ModBlocks.GRAY_FUNGAL_BUTTON.asItem(),
+                ModBlocks.GREEN_FUNGAL_BUTTON.asItem(),
+                ModBlocks.LIGHT_BLUE_FUNGAL_BUTTON.asItem(),
+                ModBlocks.LIGHT_GRAY_FUNGAL_BUTTON.asItem(),
+                ModBlocks.LIME_FUNGAL_BUTTON.asItem(),
+                ModBlocks.MAGENTA_FUNGAL_BUTTON.asItem(),
+                ModBlocks.MAPLE_BUTTON.asItem(),
+                ModBlocks.ORANGE_FUNGAL_BUTTON.asItem(),
+                ModBlocks.PALM_BUTTON.asItem(),
+                ModBlocks.PINK_FUNGAL_BUTTON.asItem(),
+                ModBlocks.PURPLE_FUNGAL_BUTTON.asItem(),
+                ModBlocks.RED_FUNGAL_BUTTON.asItem(),
+                ModBlocks.WHITE_FUNGAL_BUTTON.asItem(),
+                ModBlocks.WISTERIA_BUTTON.asItem(),
+                ModBlocks.YELLOW_FUNGAL_BUTTON.asItem()
+        );
+        //endregion\
+        //region fenceGates
+        fenceGates.add(
+                ModBlocks.BAOBAB_FENCE_GATE.asItem(),
+                ModBlocks.BAYOU_FENCE_GATE.asItem(),
+                ModBlocks.BLACK_FUNGAL_FENCE_GATE.asItem(),
+                ModBlocks.BLEAK_FENCE_GATE.asItem(),
+                ModBlocks.BLUE_FUNGAL_FENCE_GATE.asItem(),
+                ModBlocks.BROWN_FUNGAL_FENCE_GATE.asItem(),
+                ModBlocks.CYAN_FUNGAL_FENCE_GATE.asItem(),
+                ModBlocks.FIR_FENCE_GATE.asItem(),
+                ModBlocks.FUNGAL_FENCE_GATE.asItem(),
+                ModBlocks.GRAY_FUNGAL_FENCE_GATE.asItem(),
+                ModBlocks.GREEN_FUNGAL_FENCE_GATE.asItem(),
+                ModBlocks.LIGHT_BLUE_FUNGAL_FENCE_GATE.asItem(),
+                ModBlocks.LIGHT_GRAY_FUNGAL_FENCE_GATE.asItem(),
+                ModBlocks.LIME_FUNGAL_FENCE_GATE.asItem(),
+                ModBlocks.MAGENTA_FUNGAL_FENCE_GATE.asItem(),
+                ModBlocks.MAPLE_FENCE_GATE.asItem(),
+                ModBlocks.ORANGE_FUNGAL_FENCE_GATE.asItem(),
+                ModBlocks.PALM_FENCE_GATE.asItem(),
+                ModBlocks.PINK_FUNGAL_FENCE_GATE.asItem(),
+                ModBlocks.PURPLE_FUNGAL_FENCE_GATE.asItem(),
+                ModBlocks.RED_FUNGAL_FENCE_GATE.asItem(),
+                ModBlocks.WHITE_FUNGAL_FENCE_GATE.asItem(),
+                ModBlocks.WISTERIA_FENCE_GATE.asItem(),
+                ModBlocks.YELLOW_FUNGAL_FENCE_GATE.asItem()
+        );
+        //endregion\
+        //region  fences
+        fences.add(
+                ModBlocks.BAOBAB_FENCE.asItem(),
+                ModBlocks.BAYOU_FENCE.asItem(),
+                ModBlocks.BLACK_FUNGAL_FENCE.asItem(),
+                ModBlocks.BLEAK_FENCE.asItem(),
+                ModBlocks.BLUE_FUNGAL_FENCE.asItem(),
+                ModBlocks.BROWN_FUNGAL_FENCE.asItem(),
+                ModBlocks.CYAN_FUNGAL_FENCE.asItem(),
+                ModBlocks.FIR_FENCE.asItem(),
+                ModBlocks.FUNGAL_FENCE.asItem(),
+                ModBlocks.GRAY_FUNGAL_FENCE.asItem(),
+                ModBlocks.GREEN_FUNGAL_FENCE.asItem(),
+                ModBlocks.LIGHT_BLUE_FUNGAL_FENCE.asItem(),
+                ModBlocks.LIGHT_GRAY_FUNGAL_FENCE.asItem(),
+                ModBlocks.LIME_FUNGAL_FENCE.asItem(),
+                ModBlocks.MAGENTA_FUNGAL_FENCE.asItem(),
+                ModBlocks.MAPLE_FENCE.asItem(),
+                ModBlocks.ORANGE_FUNGAL_FENCE.asItem(),
+                ModBlocks.PALM_FENCE.asItem(),
+                ModBlocks.PINK_FUNGAL_FENCE.asItem(),
+                ModBlocks.PURPLE_FUNGAL_FENCE.asItem(),
+                ModBlocks.RED_FUNGAL_FENCE.asItem(),
+                ModBlocks.WHITE_FUNGAL_FENCE.asItem(),
+                ModBlocks.WISTERIA_FENCE.asItem(),
+                ModBlocks.YELLOW_FUNGAL_FENCE.asItem()
+        );
+        //endregion\
+        //region logs
+        logs.add(
+                ModBlocks.ACACIA_BEAM.asItem(),
+                ModBlocks.BAOBAB_BEAM.asItem(),
+                ModBlocks.BAOBAB_LOG.asItem(),
+                ModBlocks.BAOBAB_WOOD.asItem(),
+                ModBlocks.BAYOU_BEAM.asItem(),
+                ModBlocks.BAYOU_LOG.asItem(),
+                ModBlocks.BAYOU_WOOD.asItem(),
+                ModBlocks.BIRCH_BEAM.asItem(),
+                ModBlocks.BLEAK_BEAM.asItem(),
+                ModBlocks.BLEAK_LOG.asItem(),
+                ModBlocks.BLEAK_WOOD.asItem(),
+                ModBlocks.CHERRY_BEAM.asItem(),
+                ModBlocks.CRIMSON_BEAM.asItem(),
+                ModBlocks.DARK_OAK_BEAM.asItem(),
+                ModBlocks.FIR_BEAM.asItem(),
+                ModBlocks.FIR_LOG.asItem(),
+                ModBlocks.FIR_WOOD.asItem(),
+                ModBlocks.JUNGLE_BEAM.asItem(),
+                ModBlocks.MANGROVE_BEAM.asItem(),
+                ModBlocks.MAPLE_BEAM.asItem(),
+                ModBlocks.MAPLE_LOG.asItem(),
+                ModBlocks.MAPLE_WOOD.asItem(),
+                ModBlocks.OAK_BEAM.asItem(),
+                ModBlocks.PALM_BEAM.asItem(),
+                ModBlocks.PALM_LOG.asItem(),
+                ModBlocks.PALM_WOOD.asItem(),
+                ModBlocks.SPRUCE_BEAM.asItem(),
+                ModBlocks.STRIPPED_BAOBAB_LOG.asItem(),
+                ModBlocks.STRIPPED_BAOBAB_WOOD.asItem(),
+                ModBlocks.STRIPPED_BAYOU_LOG.asItem(),
+                ModBlocks.STRIPPED_BAYOU_WOOD.asItem(),
+                ModBlocks.STRIPPED_BLEAK_LOG.asItem(),
+                ModBlocks.STRIPPED_BLEAK_WOOD.asItem(),
+                ModBlocks.STRIPPED_FIR_LOG.asItem(),
+                ModBlocks.STRIPPED_FIR_WOOD.asItem(),
+                ModBlocks.STRIPPED_MAPLE_LOG.asItem(),
+                ModBlocks.STRIPPED_MAPLE_WOOD.asItem(),
+                ModBlocks.STRIPPED_PALM_LOG.asItem(),
+                ModBlocks.STRIPPED_PALM_WOOD.asItem(),
+                ModBlocks.STRIPPED_WISTERIA_LOG.asItem(),
+                ModBlocks.STRIPPED_WISTERIA_WOOD.asItem(),
+                ModBlocks.WARPED_BEAM.asItem(),
+                ModBlocks.WISTERIA_BEAM.asItem(),
+                ModBlocks.WISTERIA_LOG.asItem(),
+                ModBlocks.WISTERIA_WOOD.asItem()
+        );
+        //endregion\
+        //region logsThatBurn
+        logsThatBurn.add(
+                ModBlocks.ACACIA_BEAM.asItem(),
+                ModBlocks.BAOBAB_BEAM.asItem(),
+                ModBlocks.BAOBAB_LOG.asItem(),
+                ModBlocks.BAOBAB_WOOD.asItem(),
+                ModBlocks.BAYOU_BEAM.asItem(),
+                ModBlocks.BAYOU_LOG.asItem(),
+                ModBlocks.BAYOU_WOOD.asItem(),
+                ModBlocks.BIRCH_BEAM.asItem(),
+                ModBlocks.BLEAK_BEAM.asItem(),
+                ModBlocks.BLEAK_LOG.asItem(),
+                ModBlocks.BLEAK_WOOD.asItem(),
+                ModBlocks.CHERRY_BEAM.asItem(),
+                ModBlocks.CRIMSON_BEAM.asItem(),
+                ModBlocks.DARK_OAK_BEAM.asItem(),
+                ModBlocks.FIR_BEAM.asItem(),
+                ModBlocks.FIR_LOG.asItem(),
+                ModBlocks.FIR_WOOD.asItem(),
+                ModBlocks.JUNGLE_BEAM.asItem(),
+                ModBlocks.MANGROVE_BEAM.asItem(),
+                ModBlocks.MAPLE_BEAM.asItem(),
+                ModBlocks.MAPLE_LOG.asItem(),
+                ModBlocks.MAPLE_WOOD.asItem(),
+                ModBlocks.OAK_BEAM.asItem(),
+                ModBlocks.PALM_BEAM.asItem(),
+                ModBlocks.PALM_LOG.asItem(),
+                ModBlocks.PALM_WOOD.asItem(),
+                ModBlocks.SPRUCE_BEAM.asItem(),
+                ModBlocks.STRIPPED_BAOBAB_LOG.asItem(),
+                ModBlocks.STRIPPED_BAOBAB_WOOD.asItem(),
+                ModBlocks.STRIPPED_BAYOU_LOG.asItem(),
+                ModBlocks.STRIPPED_BAYOU_WOOD.asItem(),
+                ModBlocks.STRIPPED_BLEAK_LOG.asItem(),
+                ModBlocks.STRIPPED_BLEAK_WOOD.asItem(),
+                ModBlocks.STRIPPED_FIR_LOG.asItem(),
+                ModBlocks.STRIPPED_FIR_WOOD.asItem(),
+                ModBlocks.STRIPPED_MAPLE_LOG.asItem(),
+                ModBlocks.STRIPPED_MAPLE_WOOD.asItem(),
+                ModBlocks.STRIPPED_PALM_LOG.asItem(),
+                ModBlocks.STRIPPED_PALM_WOOD.asItem(),
+                ModBlocks.STRIPPED_WISTERIA_LOG.asItem(),
+                ModBlocks.STRIPPED_WISTERIA_WOOD.asItem(),
+                ModBlocks.WARPED_BEAM.asItem(),
+                ModBlocks.WISTERIA_BEAM.asItem(),
+                ModBlocks.WISTERIA_LOG.asItem(),
+                ModBlocks.WISTERIA_WOOD.asItem()
+        );
+        //endregion\
+        //region planks
+        planks.add(
+                ModBlocks.BAOBAB_PLANKS.asItem(),
+                ModBlocks.BAYOU_PLANKS.asItem(),
+                ModBlocks.BLACK_FUNGAL_PLANKS.asItem(),
+                ModBlocks.BLEAK_PLANKS.asItem(),
+                ModBlocks.BLUE_FUNGAL_PLANKS.asItem(),
+                ModBlocks.BROWN_FUNGAL_PLANKS.asItem(),
+                ModBlocks.CYAN_FUNGAL_PLANKS.asItem(),
+                ModBlocks.FIR_PLANKS.asItem(),
+                ModBlocks.FUNGAL_PLANKS.asItem(),
+                ModBlocks.GRAY_FUNGAL_PLANKS.asItem(),
+                ModBlocks.GREEN_FUNGAL_PLANKS.asItem(),
+                ModBlocks.LIGHT_BLUE_FUNGAL_PLANKS.asItem(),
+                ModBlocks.LIGHT_GRAY_FUNGAL_PLANKS.asItem(),
+                ModBlocks.LIME_FUNGAL_PLANKS.asItem(),
+                ModBlocks.MAGENTA_FUNGAL_PLANKS.asItem(),
+                ModBlocks.MAPLE_PLANKS.asItem(),
+                ModBlocks.ORANGE_FUNGAL_PLANKS.asItem(),
+                ModBlocks.PALM_PLANKS.asItem(),
+                ModBlocks.PINK_FUNGAL_PLANKS.asItem(),
+                ModBlocks.PURPLE_FUNGAL_PLANKS.asItem(),
+                ModBlocks.RED_FUNGAL_PLANKS.asItem(),
+                ModBlocks.VERTICAL_ACACIA_PLANKS.asItem(),
+                ModBlocks.VERTICAL_BAMBOO_PLANKS.asItem(),
+                ModBlocks.VERTICAL_BAOBAB_PLANKS.asItem(),
+                ModBlocks.VERTICAL_BAYOU_PLANKS.asItem(),
+                ModBlocks.VERTICAL_BIRCH_PLANKS.asItem(),
+                ModBlocks.VERTICAL_BLEAK_PLANKS.asItem(),
+                ModBlocks.VERTICAL_CHERRY_PLANKS.asItem(),
+                ModBlocks.VERTICAL_CRIMSON_PLANKS.asItem(),
+                ModBlocks.VERTICAL_DARK_OAK_PLANKS.asItem(),
+                ModBlocks.VERTICAL_FIR_PLANKS.asItem(),
+                ModBlocks.VERTICAL_FUNGAL_PLANKS.asItem(),
+                ModBlocks.VERTICAL_JUNGLE_PLANKS.asItem(),
+                ModBlocks.VERTICAL_MANGROVE_PLANKS.asItem(),
+                ModBlocks.VERTICAL_MAPLE_PLANKS.asItem(),
+                ModBlocks.VERTICAL_OAK_PLANKS.asItem(),
+                ModBlocks.VERTICAL_PALM_PLANKS.asItem(),
+                ModBlocks.VERTICAL_SPRUCE_PLANKS.asItem(),
+                ModBlocks.VERTICAL_WARPED_PLANKS.asItem(),
+                ModBlocks.VERTICAL_WISTERIA_PLANKS.asItem(),
+                ModBlocks.WHITE_FUNGAL_PLANKS.asItem(),
+                ModBlocks.WISTERIA_PLANKS.asItem(),
+                ModBlocks.YELLOW_FUNGAL_PLANKS.asItem()
+        );
+        //endregion\
+        //region natural
+        natural.add(
+                ModBlocks.GRIMWEED_BLOCK.asItem(),
+                ModBlocks.PALE_GRIMWEED_BLOCK.asItem()
+        );
+        //endregion\
+        //region pressurePlates
+        pressurePlates.add(
+                ModBlocks.BAOBAB_PRESSURE_PLATE.asItem(),
+                ModBlocks.BAYOU_PRESSURE_PLATE.asItem(),
+                ModBlocks.BLACK_FUNGAL_PRESSURE_PLATE.asItem(),
+                ModBlocks.BLEAK_PRESSURE_PLATE.asItem(),
+                ModBlocks.BLUE_FUNGAL_PRESSURE_PLATE.asItem(),
+                ModBlocks.BROWN_FUNGAL_PRESSURE_PLATE.asItem(),
+                ModBlocks.CYAN_FUNGAL_PRESSURE_PLATE.asItem(),
+                ModBlocks.FIR_PRESSURE_PLATE.asItem(),
+                ModBlocks.FUNGAL_PRESSURE_PLATE.asItem(),
+                ModBlocks.GRAY_FUNGAL_PRESSURE_PLATE.asItem(),
+                ModBlocks.GREEN_FUNGAL_PRESSURE_PLATE.asItem(),
+                ModBlocks.LIGHT_BLUE_FUNGAL_PRESSURE_PLATE.asItem(),
+                ModBlocks.LIGHT_GRAY_FUNGAL_PRESSURE_PLATE.asItem(),
+                ModBlocks.LIME_FUNGAL_PRESSURE_PLATE.asItem(),
+                ModBlocks.MAGENTA_FUNGAL_PRESSURE_PLATE.asItem(),
+                ModBlocks.MAPLE_PRESSURE_PLATE.asItem(),
+                ModBlocks.ORANGE_FUNGAL_PRESSURE_PLATE.asItem(),
+                ModBlocks.PALM_PRESSURE_PLATE.asItem(),
+                ModBlocks.PINK_FUNGAL_PRESSURE_PLATE.asItem(),
+                ModBlocks.PURPLE_FUNGAL_PRESSURE_PLATE.asItem(),
+                ModBlocks.RED_FUNGAL_PRESSURE_PLATE.asItem(),
+                ModBlocks.WHITE_FUNGAL_PRESSURE_PLATE.asItem(),
+                ModBlocks.WISTERIA_PRESSURE_PLATE.asItem(),
+                ModBlocks.YELLOW_FUNGAL_PRESSURE_PLATE.asItem()
+        );
+        //endregion\
+        //region slabs
+        slabs.add(
+                ModBlocks.BAOBAB_SLAB.asItem(),
+                ModBlocks.BAYOU_SLAB.asItem(),
+                ModBlocks.BLACK_FUNGAL_SLAB.asItem(),
+                ModBlocks.BLEAK_SLAB.asItem(),
+                ModBlocks.BLUE_FUNGAL_SLAB.asItem(),
+                ModBlocks.BLUE_NETHER_BRICKS_SLAB.asItem(),
+                ModBlocks.BROWN_FUNGAL_SLAB.asItem(),
+                ModBlocks.COBBLED_GRIMROCK_SLAB.asItem(),
+                ModBlocks.CRACKED_GRIMROCK_BRICKS_SLAB.asItem(),
+                ModBlocks.CUT_POLISHED_BASALT_SLAB.asItem(),
+                ModBlocks.CYAN_FUNGAL_SLAB.asItem(),
+                ModBlocks.DOLOMITE_BRICKS_SLAB.asItem(),
+                ModBlocks.DOLOMITE_SLAB.asItem(),
+                ModBlocks.DRIED_SILT_SLAB.asItem(),
+                ModBlocks.DRIPSTONE_BRICKS_SLAB.asItem(),
+                ModBlocks.FIR_SLAB.asItem(),
+                ModBlocks.FUNGAL_SLAB.asItem(),
+                ModBlocks.GRAVESTONE_BRICKS_SLAB.asItem(),
+                ModBlocks.GRAVESTONE_SLAB.asItem(),
+                ModBlocks.GRAY_FUNGAL_SLAB.asItem(),
+                ModBlocks.GREEN_FUNGAL_SLAB.asItem(),
+                ModBlocks.GRIMROCK_BRICKS_SLAB.asItem(),
+                ModBlocks.GRIMROCK_SLAB.asItem(),
+                ModBlocks.LIGHT_BLUE_FUNGAL_SLAB.asItem(),
+                ModBlocks.LIGHT_GRAY_FUNGAL_SLAB.asItem(),
+                ModBlocks.LIMESTONE_BRICKS_SLAB.asItem(),
+                ModBlocks.LIMESTONE_SLAB.asItem(),
+                ModBlocks.LIME_FUNGAL_SLAB.asItem(),
+                ModBlocks.MAGENTA_FUNGAL_SLAB.asItem(),
+                ModBlocks.MAPLE_SLAB.asItem(),
+                ModBlocks.MOSSY_GRIMROCK_BRICKS_SLAB.asItem(),
+                ModBlocks.MOSSY_PACKED_LOAM_BRICKS_SLAB.asItem(),
+                ModBlocks.ORANGE_FUNGAL_SLAB.asItem(),
+                ModBlocks.PACKED_DIRT_SLAB.asItem(),
+                ModBlocks.PACKED_ICE_BRICKS_SLAB.asItem(),
+                ModBlocks.PACKED_LOAM_BRICKS_SLAB.asItem(),
+                ModBlocks.PACKED_LOAM_SLAB.asItem(),
+                ModBlocks.PACKED_SNOW_SLAB.asItem(),
+                ModBlocks.PALM_SLAB.asItem(),
+                ModBlocks.PINK_FUNGAL_SLAB.asItem(),
+                ModBlocks.POLISHED_BASALT_BRICKS_SLAB.asItem(),
+                ModBlocks.POLISHED_BASALT_TILES_SLAB.asItem(),
+                ModBlocks.POLISHED_DOLOMITE_SLAB.asItem(),
+                ModBlocks.POLISHED_DRIPSTONE_SLAB.asItem(),
+                ModBlocks.POLISHED_GRAVESTONE_SLAB.asItem(),
+                ModBlocks.POLISHED_GRIMROCK_SLAB.asItem(),
+                ModBlocks.POLISHED_LIMESTONE_SLAB.asItem(),
+                ModBlocks.POLISHED_PACKED_ICE_SLAB.asItem(),
+                ModBlocks.POLISHED_PRISMARINE_SLAB.asItem(),
+                ModBlocks.POLISHED_SILT_SLAB.asItem(),
+                ModBlocks.POLISHED_SLATE_SLAB.asItem(),
+                ModBlocks.POLISHED_SOULSAND_SLAB.asItem(),
+                ModBlocks.POLISHED_STRATA_SLAB.asItem(),
+                ModBlocks.PRISMARINE_TILES_SLAB.asItem(),
+                ModBlocks.PURPLE_FUNGAL_SLAB.asItem(),
+                ModBlocks.RED_FUNGAL_SLAB.asItem(),
+                ModBlocks.SANDY_LIMESTONE_BRICKS_SLAB.asItem(),
+                ModBlocks.SILT_BRICKS_SLAB.asItem(),
+                ModBlocks.SLATE_BRICKS_SLAB.asItem(),
+                ModBlocks.SLATE_SLAB.asItem(),
+                ModBlocks.SNOW_BRICKS_SLAB.asItem(),
+                ModBlocks.SOUL_BRICKS_SLAB.asItem(),
+                ModBlocks.STRATA_BRICKS_SLAB.asItem(),
+                ModBlocks.STRATA_SLAB.asItem(),
+                ModBlocks.TAINTED_NETHER_BRICKS_SLAB.asItem(),
+                ModBlocks.WHITE_FUNGAL_SLAB.asItem(),
+                ModBlocks.WISTERIA_SLAB.asItem(),
+                ModBlocks.YELLOW_FUNGAL_SLAB.asItem()
+        );
+        //endregion\
+        //region stairs
+        stairs.add(
+                ModBlocks.BAOBAB_STAIRS.asItem(),
+                ModBlocks.BAYOU_STAIRS.asItem(),
+                ModBlocks.BLACK_FUNGAL_STAIRS.asItem(),
+                ModBlocks.BLEAK_STAIRS.asItem(),
+                ModBlocks.BLUE_FUNGAL_STAIRS.asItem(),
+                ModBlocks.BLUE_NETHER_BRICKS_STAIRS.asItem(),
+                ModBlocks.BROWN_FUNGAL_STAIRS.asItem(),
+                ModBlocks.COBBLED_GRIMROCK_STAIRS.asItem(),
+                ModBlocks.CRACKED_GRIMROCK_BRICKS_STAIRS.asItem(),
+                ModBlocks.CUT_POLISHED_BASALT_STAIRS.asItem(),
+                ModBlocks.CYAN_FUNGAL_STAIRS.asItem(),
+                ModBlocks.DOLOMITE_BRICKS_STAIRS.asItem(),
+                ModBlocks.DOLOMITE_STAIRS.asItem(),
+                ModBlocks.DRIED_SILT_STAIRS.asItem(),
+                ModBlocks.DRIPSTONE_BRICKS_STAIRS.asItem(),
+                ModBlocks.FIR_STAIRS.asItem(),
+                ModBlocks.FUNGAL_STAIRS.asItem(),
+                ModBlocks.GRAVESTONE_BRICKS_STAIRS.asItem(),
+                ModBlocks.GRAVESTONE_STAIRS.asItem(),
+                ModBlocks.GRAY_FUNGAL_STAIRS.asItem(),
+                ModBlocks.GREEN_FUNGAL_STAIRS.asItem(),
+                ModBlocks.GRIMROCK_BRICKS_STAIRS.asItem(),
+                ModBlocks.GRIMROCK_STAIRS.asItem(),
+                ModBlocks.LIGHT_BLUE_FUNGAL_STAIRS.asItem(),
+                ModBlocks.LIGHT_GRAY_FUNGAL_STAIRS.asItem(),
+                ModBlocks.LIMESTONE_BRICKS_STAIRS.asItem(),
+                ModBlocks.LIMESTONE_STAIRS.asItem(),
+                ModBlocks.LIME_FUNGAL_STAIRS.asItem(),
+                ModBlocks.MAGENTA_FUNGAL_STAIRS.asItem(),
+                ModBlocks.MAPLE_STAIRS.asItem(),
+                ModBlocks.MOSSY_GRIMROCK_BRICKS_STAIRS.asItem(),
+                ModBlocks.MOSSY_PACKED_LOAM_BRICKS_STAIRS.asItem(),
+                ModBlocks.ORANGE_FUNGAL_STAIRS.asItem(),
+                ModBlocks.PACKED_ICE_BRICKS_STAIRS.asItem(),
+                ModBlocks.PACKED_LOAM_BRICKS_STAIRS.asItem(),
+                ModBlocks.PACKED_LOAM_STAIRS.asItem(),
+                ModBlocks.PACKED_SNOW_STAIRS.asItem(),
+                ModBlocks.PALM_STAIRS.asItem(),
+                ModBlocks.PINK_FUNGAL_STAIRS.asItem(),
+                ModBlocks.POLISHED_BASALT_BRICKS_STAIRS.asItem(),
+                ModBlocks.POLISHED_BASALT_TILES_STAIRS.asItem(),
+                ModBlocks.POLISHED_DOLOMITE_STAIRS.asItem(),
+                ModBlocks.POLISHED_DRIPSTONE_STAIRS.asItem(),
+                ModBlocks.POLISHED_GRAVESTONE_STAIRS.asItem(),
+                ModBlocks.POLISHED_GRIMROCK_STAIRS.asItem(),
+                ModBlocks.POLISHED_LIMESTONE_STAIRS.asItem(),
+                ModBlocks.POLISHED_PACKED_ICE_STAIRS.asItem(),
+                ModBlocks.POLISHED_PRISMARINE_STAIRS.asItem(),
+                ModBlocks.POLISHED_SILT_STAIRS.asItem(),
+                ModBlocks.POLISHED_SLATE_STAIRS.asItem(),
+                ModBlocks.POLISHED_SOULSAND_STAIRS.asItem(),
+                ModBlocks.POLISHED_STRATA_STAIRS.asItem(),
+                ModBlocks.PRISMARINE_TILES_STAIRS.asItem(),
+                ModBlocks.PURPLE_FUNGAL_STAIRS.asItem(),
+                ModBlocks.RED_FUNGAL_STAIRS.asItem(),
+                ModBlocks.SANDY_LIMESTONE_BRICKS_STAIRS.asItem(),
+                ModBlocks.SILT_BRICKS_STAIRS.asItem(),
+                ModBlocks.SLATE_BRICKS_STAIRS.asItem(),
+                ModBlocks.SLATE_STAIRS.asItem(),
+                ModBlocks.SNOW_BRICKS_STAIRS.asItem(),
+                ModBlocks.SOUL_BRICKS_STAIRS.asItem(),
+                ModBlocks.STRATA_BRICKS_STAIRS.asItem(),
+                ModBlocks.STRATA_STAIRS.asItem(),
+                ModBlocks.TAINTED_NETHER_BRICKS_STAIRS.asItem(),
+                ModBlocks.WHITE_FUNGAL_STAIRS.asItem(),
+                ModBlocks.WISTERIA_STAIRS.asItem(),
+                ModBlocks.YELLOW_FUNGAL_STAIRS.asItem()
+        );
+        //endregion\
+        //region walls
+        walls.add(
+                ModBlocks.BLUE_NETHER_BRICKS_WALL.asItem(),
+                ModBlocks.COBBLED_GRIMROCK_WALL.asItem(),
+                ModBlocks.CRACKED_GRIMROCK_BRICKS_WALL.asItem(),
+                ModBlocks.CUT_POLISHED_BASALT_WALL.asItem(),
+                ModBlocks.DOLOMITE_BRICKS_WALL.asItem(),
+                ModBlocks.DOLOMITE_WALL.asItem(),
+                ModBlocks.DRIED_SILT_WALL.asItem(),
+                ModBlocks.DRIPSTONE_BRICKS_WALL.asItem(),
+                ModBlocks.GRAVESTONE_BRICKS_WALL.asItem(),
+                ModBlocks.GRAVESTONE_WALL.asItem(),
+                ModBlocks.GRIMROCK_BRICKS_WALL.asItem(),
+                ModBlocks.GRIMROCK_WALL.asItem(),
+                ModBlocks.LIMESTONE_BRICKS_WALL.asItem(),
+                ModBlocks.LIMESTONE_WALL.asItem(),
+                ModBlocks.MOSSY_GRIMROCK_BRICKS_WALL.asItem(),
+                ModBlocks.MOSSY_PACKED_LOAM_BRICKS_WALL.asItem(),
+                ModBlocks.PACKED_ICE_BRICKS_WALL.asItem(),
+                ModBlocks.PACKED_LOAM_BRICKS_WALL.asItem(),
+                ModBlocks.PACKED_LOAM_WALL.asItem(),
+                ModBlocks.PACKED_SNOW_WALL.asItem(),
+                ModBlocks.POLISHED_BASALT_BRICKS_WALL.asItem(),
+                ModBlocks.POLISHED_BASALT_TILES_WALL.asItem(),
+                ModBlocks.POLISHED_DOLOMITE_WALL.asItem(),
+                ModBlocks.POLISHED_DRIPSTONE_WALL.asItem(),
+                ModBlocks.POLISHED_GRAVESTONE_WALL.asItem(),
+                ModBlocks.POLISHED_GRIMROCK_WALL.asItem(),
+                ModBlocks.POLISHED_LIMESTONE_WALL.asItem(),
+                ModBlocks.POLISHED_PACKED_ICE_WALL.asItem(),
+                ModBlocks.POLISHED_PRISMARINE_WALL.asItem(),
+                ModBlocks.POLISHED_SILT_WALL.asItem(),
+                ModBlocks.POLISHED_SLATE_WALL.asItem(),
+                ModBlocks.POLISHED_SOULSAND_WALL.asItem(),
+                ModBlocks.POLISHED_STRATA_WALL.asItem(),
+                ModBlocks.PRISMARINE_TILES_WALL.asItem(),
+                ModBlocks.SANDY_LIMESTONE_BRICKS_WALL.asItem(),
+                ModBlocks.SILT_BRICKS_WALL.asItem(),
+                ModBlocks.SLATE_BRICKS_WALL.asItem(),
+                ModBlocks.SLATE_WALL.asItem(),
+                ModBlocks.SNOW_BRICKS_WALL.asItem(),
+                ModBlocks.SOUL_BRICKS_WALL.asItem(),
+                ModBlocks.STRATA_BRICKS_WALL.asItem(),
+                ModBlocks.STRATA_WALL.asItem(),
+                ModBlocks.TAINTED_NETHER_BRICKS_WALL.asItem()
+        );
+        //endregion\
 
     }
 }
