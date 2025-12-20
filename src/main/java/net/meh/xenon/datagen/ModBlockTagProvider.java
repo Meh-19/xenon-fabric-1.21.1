@@ -64,7 +64,6 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         );
 
         pickaxe.add(
-                // Ashen sandstone
 
                 ModBlocks.ECHO_GLASS,
                 ModBlocks.ASHEN_SANDSTONE,
@@ -72,7 +71,6 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 ModBlocks.CHISELED_ASHEN_SANDSTONE,
                 ModBlocks.SMOOTH_ASHEN_SANDSTONE,
 
-                // Packed loam bricks
                 ModBlocks.PACKED_LOAM_BRICKS,
                 ModBlocks.PACKED_LOAM_BRICKS_STAIRS,
                 ModBlocks.PACKED_LOAM_BRICKS_SLAB,
@@ -82,14 +80,28 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 ModBlocks.MOSSY_PACKED_LOAM_BRICKS,
                 ModBlocks.MOSSY_PACKED_LOAM_BRICKS_STAIRS,
                 ModBlocks.MOSSY_PACKED_LOAM_BRICKS_SLAB,
-                ModBlocks.MOSSY_PACKED_LOAM_BRICKS_WALL
+                ModBlocks.MOSSY_PACKED_LOAM_BRICKS_WALL,
 
+                ModBlocks.DOLOMITE,
+                ModBlocks.DOLOMITE_SLAB,
+                ModBlocks.DOLOMITE_STAIRS,
+                ModBlocks.DOLOMITE_WALL,
+
+                ModBlocks.DOLOMITE_PILLAR,
+                ModBlocks.CHISELED_DOLOMITE,
+
+
+                ModBlocks.DOLOMITE_BRICKS,
+                ModBlocks.DOLOMITE_BRICKS_SLAB,
+                ModBlocks.DOLOMITE_BRICKS_STAIRS,
+                ModBlocks.DOLOMITE_BRICKS_WALL,
+
+                ModBlocks.POLISHED_DOLOMITE,
+                ModBlocks.POLISHED_DOLOMITE_SLAB,
+                ModBlocks.POLISHED_DOLOMITE_STAIRS,
+                ModBlocks.POLISHED_DOLOMITE_WALL
 
         );
-
-        /* =========================
-           AXE MINEABLE (ALL WOODS)
-           ========================= */
 
         axe.add(
                 ModBlocks.WHITE_FUNGAL_PLANKS,
@@ -109,7 +121,6 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 ModBlocks.MAGENTA_FUNGAL_PLANKS,
                 ModBlocks.PINK_FUNGAL_PLANKS,
 
-                // Paper lanterns
                 ModBlocks.OAK_PAPER_LANTERN,
                 ModBlocks.SPRUCE_PAPER_LANTERN,
                 ModBlocks.BIRCH_PAPER_LANTERN,
@@ -122,7 +133,6 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 ModBlocks.CRIMSON_SHROOM_LANTERN,
                 ModBlocks.WARPED_SHROOM_LANTERN,
 
-                // Vanilla-style beams
                 ModBlocks.OAK_BEAM,
                 ModBlocks.SPRUCE_BEAM,
                 ModBlocks.BIRCH_BEAM,
@@ -134,7 +144,6 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 ModBlocks.CRIMSON_BEAM,
                 ModBlocks.WARPED_BEAM,
 
-                // Vertical vanilla planks
                 ModBlocks.VERTICAL_OAK_PLANKS,
                 ModBlocks.VERTICAL_SPRUCE_PLANKS,
                 ModBlocks.VERTICAL_BIRCH_PLANKS,
@@ -147,9 +156,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 ModBlocks.VERTICAL_WARPED_PLANKS,
                 ModBlocks.VERTICAL_BAMBOO_PLANKS,
 
-                // Palm crown
                 ModBlocks.PALM_CROWN,
-                // MAPLE
                 ModBlocks.MAPLE_PLANKS, ModBlocks.VERTICAL_MAPLE_PLANKS, ModBlocks.MAPLE_PLANKS_CARVED,
                 ModBlocks.MAPLE_BEAM, ModBlocks.MAPLE_LOG, ModBlocks.STRIPPED_MAPLE_LOG,
                 ModBlocks.MAPLE_WOOD, ModBlocks.STRIPPED_MAPLE_WOOD,
@@ -157,7 +164,6 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 ModBlocks.MAPLE_PRESSURE_PLATE, ModBlocks.MAPLE_FENCE, ModBlocks.MAPLE_FENCE_GATE,
                 ModBlocks.MAPLE_PAPER_LANTERN,
 
-                // BLEAK
                 ModBlocks.BLEAK_PLANKS, ModBlocks.VERTICAL_BLEAK_PLANKS, ModBlocks.BLEAK_PLANKS_CARVED,
                 ModBlocks.BLEAK_BEAM, ModBlocks.BLEAK_LOG, ModBlocks.STRIPPED_BLEAK_LOG,
                 ModBlocks.BLEAK_WOOD, ModBlocks.STRIPPED_BLEAK_WOOD,
@@ -165,7 +171,6 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 ModBlocks.BLEAK_PRESSURE_PLATE, ModBlocks.BLEAK_FENCE, ModBlocks.BLEAK_FENCE_GATE,
                 ModBlocks.BLEAK_PAPER_LANTERN,
 
-                // FIR
                 ModBlocks.FIR_PLANKS, ModBlocks.VERTICAL_FIR_PLANKS, ModBlocks.FIR_PLANKS_CARVED,
                 ModBlocks.FIR_BEAM, ModBlocks.FIR_LOG, ModBlocks.STRIPPED_FIR_LOG,
                 ModBlocks.FIR_WOOD, ModBlocks.STRIPPED_FIR_WOOD,
@@ -173,7 +178,6 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 ModBlocks.FIR_PRESSURE_PLATE, ModBlocks.FIR_FENCE, ModBlocks.FIR_FENCE_GATE,
                 ModBlocks.FIR_PAPER_LANTERN,
 
-                // PALM
                 ModBlocks.PALM_PLANKS, ModBlocks.VERTICAL_PALM_PLANKS, ModBlocks.PALM_PLANKS_CARVED,
                 ModBlocks.PALM_BEAM, ModBlocks.PALM_LOG, ModBlocks.STRIPPED_PALM_LOG,
                 ModBlocks.PALM_WOOD, ModBlocks.STRIPPED_PALM_WOOD,
@@ -181,7 +185,6 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 ModBlocks.PALM_PRESSURE_PLATE, ModBlocks.PALM_FENCE, ModBlocks.PALM_FENCE_GATE,
                 ModBlocks.PALM_PAPER_LANTERN,
 
-                // BAYOU
                 ModBlocks.BAYOU_PLANKS, ModBlocks.VERTICAL_BAYOU_PLANKS, ModBlocks.BAYOU_PLANKS_CARVED,
                 ModBlocks.BAYOU_BEAM, ModBlocks.BAYOU_LOG, ModBlocks.STRIPPED_BAYOU_LOG,
                 ModBlocks.BAYOU_WOOD, ModBlocks.STRIPPED_BAYOU_WOOD,
@@ -189,7 +192,6 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 ModBlocks.BAYOU_PRESSURE_PLATE, ModBlocks.BAYOU_FENCE, ModBlocks.BAYOU_FENCE_GATE,
                 ModBlocks.BAYOU_PAPER_LANTERN,
 
-                // WISTERIA
                 ModBlocks.WISTERIA_PLANKS, ModBlocks.VERTICAL_WISTERIA_PLANKS, ModBlocks.WISTERIA_PLANKS_CARVED,
                 ModBlocks.WISTERIA_BEAM, ModBlocks.WISTERIA_LOG, ModBlocks.STRIPPED_WISTERIA_LOG,
                 ModBlocks.WISTERIA_WOOD, ModBlocks.STRIPPED_WISTERIA_WOOD,
@@ -197,7 +199,6 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 ModBlocks.WISTERIA_PRESSURE_PLATE, ModBlocks.WISTERIA_FENCE, ModBlocks.WISTERIA_FENCE_GATE,
                 ModBlocks.WISTERIA_PAPER_LANTERN,
 
-                // BAOBAB
                 ModBlocks.BAOBAB_PLANKS, ModBlocks.VERTICAL_BAOBAB_PLANKS, ModBlocks.BAOBAB_PLANKS_CARVED,
                 ModBlocks.BAOBAB_BEAM, ModBlocks.BAOBAB_LOG, ModBlocks.STRIPPED_BAOBAB_LOG,
                 ModBlocks.BAOBAB_WOOD, ModBlocks.STRIPPED_BAOBAB_WOOD,
@@ -205,7 +206,6 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 ModBlocks.BAOBAB_PRESSURE_PLATE, ModBlocks.BAOBAB_FENCE, ModBlocks.BAOBAB_FENCE_GATE,
                 ModBlocks.BAOBAB_PAPER_LANTERN,
 
-                // FUNGAL (ALL COLORS)
                 ModBlocks.FUNGAL_PLANKS, ModBlocks.VERTICAL_FUNGAL_PLANKS, ModBlocks.FUNGAL_PLANKS_CARVED,
                 ModBlocks.FUNGAL_STAIRS, ModBlocks.FUNGAL_SLAB, ModBlocks.FUNGAL_BUTTON,
                 ModBlocks.FUNGAL_PRESSURE_PLATE, ModBlocks.FUNGAL_FENCE, ModBlocks.FUNGAL_FENCE_GATE,
@@ -276,10 +276,6 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 ModBlocks.PINK_FUNGAL_FENCE, ModBlocks.PINK_FUNGAL_FENCE_GATE
         );
 
-        /* =========================
-           SHOVEL / HOE
-           ========================= */
-
         shovel.add(
                 ModBlocks.PACKED_LOAM,
                 ModBlocks.PACKED_LOAM_STAIRS,
@@ -312,10 +308,6 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 ModBlocks.BAOBAB_LEAVES
         );
 
-        /* =========================
-           TOOL LEVELS
-           ========================= */
-
         needsStone.add(
                 ModBlocks.ASHEN_SANDSTONE,
                 ModBlocks.CUT_ASHEN_SANDSTONE,
@@ -332,17 +324,23 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 ModBlocks.PLATINUM_ORE, ModBlocks.RUBY_ORE,
                 ModBlocks.LIMESTONE, ModBlocks.GRIMROCK, ModBlocks.SLATE,
                 ModBlocks.STRATA, ModBlocks.DOLOMITE,
-                ModBlocks.SILT, ModBlocks.DRIED_SILT, ModBlocks.LOAM
+                ModBlocks.SILT, ModBlocks.DRIED_SILT, ModBlocks.LOAM,
+
+                ModBlocks.DOLOMITE_BRICKS,
+                ModBlocks.DOLOMITE_BRICKS_SLAB,
+                ModBlocks.DOLOMITE_BRICKS_STAIRS,
+                ModBlocks.DOLOMITE_BRICKS_WALL,
+
+                ModBlocks.POLISHED_DOLOMITE,
+                ModBlocks.POLISHED_DOLOMITE_SLAB,
+                ModBlocks.POLISHED_DOLOMITE_STAIRS,
+                ModBlocks.POLISHED_DOLOMITE_WALL
         );
 
         needsIron.add(
                 ModBlocks.DEEPSLATE_PLATINUM_ORE,
                 ModBlocks.DEEPSLATE_RUBY_ORE
         );
-
-        /* =========================
-           FENCES / GATES / WALLS
-           ========================= */
 
         fences.add(
                 ModBlocks.MAPLE_FENCE, ModBlocks.BLEAK_FENCE, ModBlocks.FIR_FENCE,

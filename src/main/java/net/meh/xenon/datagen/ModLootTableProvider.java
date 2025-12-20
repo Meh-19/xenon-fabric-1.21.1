@@ -17,7 +17,6 @@ import net.minecraft.loot.function.SetCountLootFunction;
 import net.minecraft.loot.provider.number.UniformLootNumberProvider;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.RegistryWrapper;
-
 import java.util.concurrent.CompletableFuture;
 
 public class ModLootTableProvider extends FabricBlockLootTableProvider {
@@ -27,6 +26,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
     @Override
     public void generate() {
+
         addDrop(ModBlocks.PLATINUM_BLOCK);
         addDrop(ModBlocks.PLATINUM_BRICKS);
         addDrop(ModBlocks.PLATINUM_PILLAR);
@@ -529,7 +529,6 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.STRATA_BRICKS_SLAB, slabDrops(ModBlocks.STRATA_BRICKS_SLAB));
         addDrop(ModBlocks.STRATA_BRICKS_WALL);
 
-        addDrop(ModBlocks.DOLOMITE);
         addDrop(ModBlocks.DOLOMITE_STAIRS);
         addDrop(ModBlocks.DOLOMITE_SLAB, slabDrops(ModBlocks.DOLOMITE_SLAB));
         addDrop(ModBlocks.DOLOMITE_WALL);
@@ -637,13 +636,9 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.PRISMARINE_TILES_SLAB, slabDrops(ModBlocks.PRISMARINE_TILES_SLAB));
         addDrop(ModBlocks.PRISMARINE_TILES_WALL);
 
-
-
-
-
-
-
     }
+
+
     public LootTable.Builder multipleOreDrops(Block drop, Item item, float minDrops, float maxDrops) {
         RegistryWrapper.Impl<Enchantment> impl = this.registryLookup.getWrapperOrThrow(RegistryKeys.ENCHANTMENT);
         return this.dropsWithSilkTouch(drop, this.applyExplosionDecay(drop, ((LeafEntry.Builder<?>)

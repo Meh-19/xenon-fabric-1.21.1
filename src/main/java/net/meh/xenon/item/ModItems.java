@@ -3,6 +3,7 @@ package net.meh.xenon.item;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.meh.xenon.Xenon;
 import net.meh.xenon.block.ModBlocks;
+import net.meh.xenon.item.custom.DolomiteDustItem;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -19,6 +20,11 @@ public static final Item PLATINUM = registerItem("platinum", new Item(new Item.S
             Registries.ITEM,
             Identifier.of(Xenon.MOD_ID, "echo_glass"),
             new BlockItem(ModBlocks.ECHO_GLASS, new Item.Settings())
+    );
+    public static final Item DOLOMITE_DUST = Registry.register(
+            Registries.ITEM,
+            Identifier.of("xenon", "dolomite_dust"),
+            new DolomiteDustItem(new Item.Settings())
     );
 
 

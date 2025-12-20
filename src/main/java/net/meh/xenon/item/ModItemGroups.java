@@ -19,6 +19,12 @@ public static final ItemGroup XENON_ITEMS_GROUP = Registry.register(Registries.I
                     entries.add(ModItems.PLATINUM);
                     entries.add(ModItems.RUBY);
 
+                    entries.add(ModBlocks.ROCK);
+                    entries.add(ModBlocks.PEBBLES);
+
+                    entries.add(ModItems.DOLOMITE_DUST);
+
+
                 })
 
                 .build());

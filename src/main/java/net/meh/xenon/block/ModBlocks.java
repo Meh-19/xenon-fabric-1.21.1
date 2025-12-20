@@ -1,9 +1,12 @@
 package net.meh.xenon.block;
 
+import net.minecraft.block.Blocks;
+import net.minecraft.block.AbstractBlock;
 import com.mojang.serialization.MapCodec;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.meh.xenon.Xenon;
 import net.meh.xenon.block.custom.EchoGlassBlock;
+import net.meh.xenon.block.custom.DecorationBlock;
 import net.minecraft.block.*;
 import net.minecraft.block.enums.NoteBlockInstrument;
 import net.minecraft.block.piston.PistonBehavior;
@@ -17,6 +20,18 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 
 public class ModBlocks {
+
+    private static Block registerBlock(String name, Block block) {
+        registerBlockItem(name, block);
+        return Registry.register(Registries.BLOCK, Identifier.of(Xenon.MOD_ID, name), block);
+    }
+
+    private static void registerBlockItem(String name, Block block) {
+        Registry.register(Registries.ITEM, Identifier.of(Xenon.MOD_ID, name),
+                new BlockItem(block, new Item.Settings()));
+    }
+
+
 
     //<editor-fold desc="Platinum">
     public static final Block PLATINUM_BLOCK = registerBlock("platinum_block",
@@ -114,7 +129,7 @@ public class ModBlocks {
             ));
     //</editor-fold>
 
-    //<editor-fold desc="Finished, Dont Touch">
+    //<editor-fold desc="1.5.6 Finished">
     public static final Block MAPLE_LOG = registerBlock("maple_log",
             new PillarBlock(AbstractBlock.Settings.create()
                     .burnable()
@@ -218,7 +233,7 @@ public class ModBlocks {
     public static final Block MAPLE_BUTTON = registerBlock("maple_button",
             new ButtonBlock(
                     BlockSetType.OAK,
-                    30, //30 is for wood
+                    30,
                     AbstractBlock.Settings.create()
                             .burnable()
                             .strength(2.0F, 3.0F)
@@ -358,7 +373,7 @@ public class ModBlocks {
     public static final Block BLEAK_BUTTON = registerBlock("bleak_button",
             new ButtonBlock(
                     BlockSetType.OAK,
-                    30, //30 is for wood
+                    30,
                     AbstractBlock.Settings.create()
                             .burnable()
                             .strength(2.0F, 3.0F)
@@ -490,7 +505,7 @@ public class ModBlocks {
     public static final Block FIR_BUTTON = registerBlock("fir_button",
             new ButtonBlock(
                     BlockSetType.OAK,
-                    30, //30 is for wood
+                    30,
                     AbstractBlock.Settings.create()
                             .burnable()
                             .strength(2.0F, 3.0F)
@@ -632,7 +647,7 @@ public class ModBlocks {
     public static final Block PALM_BUTTON = registerBlock("palm_button",
             new ButtonBlock(
                     BlockSetType.OAK,
-                    30, //30 is for wood
+                    30,
                     AbstractBlock.Settings.create()
                             .burnable()
                             .strength(2.0F, 3.0F)
@@ -772,7 +787,7 @@ public class ModBlocks {
     public static final Block BAYOU_BUTTON = registerBlock("bayou_button",
             new ButtonBlock(
                     BlockSetType.OAK,
-                    30, //30 is for wood
+                    30,
                     AbstractBlock.Settings.create()
                             .burnable()
                             .strength(2.0F, 3.0F)
@@ -904,7 +919,7 @@ public class ModBlocks {
     public static final Block WISTERIA_BUTTON = registerBlock("wisteria_button",
             new ButtonBlock(
                     BlockSetType.OAK,
-                    30, //30 is for wood
+                    30,
                     AbstractBlock.Settings.create()
                             .burnable()
                             .strength(2.0F, 3.0F)
@@ -1076,7 +1091,7 @@ public class ModBlocks {
     public static final Block BAOBAB_BUTTON = registerBlock("baobab_button",
             new ButtonBlock(
                     BlockSetType.OAK,
-                    30, //30 is for wood
+                    30,
                     AbstractBlock.Settings.create()
                             .burnable()
                             .strength(2.0F, 3.0F)
@@ -1176,7 +1191,7 @@ public class ModBlocks {
     public static final Block FUNGAL_BUTTON = registerBlock("fungal_button",
             new ButtonBlock(
                     BlockSetType.OAK,
-                    30, //30 is for wood
+                    30,
                     AbstractBlock.Settings.create()
                             .burnable()
                             .strength(2.0F, 3.0F)
@@ -1242,7 +1257,7 @@ public class ModBlocks {
     public static final Block WHITE_FUNGAL_BUTTON = registerBlock("white_fungal_button",
             new ButtonBlock(
                     BlockSetType.OAK,
-                    30, //30 is for wood
+                    30,
                     AbstractBlock.Settings.create()
                             .burnable()
                             .strength(2.0F, 3.0F)
@@ -1308,7 +1323,7 @@ public class ModBlocks {
     public static final Block LIGHT_GRAY_FUNGAL_BUTTON = registerBlock("light_gray_fungal_button",
             new ButtonBlock(
                     BlockSetType.OAK,
-                    30, //30 is for wood
+                    30,
                     AbstractBlock.Settings.create()
                             .burnable()
                             .strength(2.0F, 3.0F)
@@ -1374,7 +1389,7 @@ public class ModBlocks {
     public static final Block GRAY_FUNGAL_BUTTON = registerBlock("gray_fungal_button",
             new ButtonBlock(
                     BlockSetType.OAK,
-                    30, //30 is for wood
+                    30,
                     AbstractBlock.Settings.create()
                             .burnable()
                             .strength(2.0F, 3.0F)
@@ -1440,7 +1455,7 @@ public class ModBlocks {
     public static final Block BLACK_FUNGAL_BUTTON = registerBlock("black_fungal_button",
             new ButtonBlock(
                     BlockSetType.OAK,
-                    30, //30 is for wood
+                    30,
                     AbstractBlock.Settings.create()
                             .burnable()
                             .strength(2.0F, 3.0F)
@@ -1506,7 +1521,7 @@ public class ModBlocks {
     public static final Block BROWN_FUNGAL_BUTTON = registerBlock("brown_fungal_button",
             new ButtonBlock(
                     BlockSetType.OAK,
-                    30, //30 is for wood
+                    30,
                     AbstractBlock.Settings.create()
                             .burnable()
                             .strength(2.0F, 3.0F)
@@ -1572,7 +1587,7 @@ public class ModBlocks {
     public static final Block RED_FUNGAL_BUTTON = registerBlock("red_fungal_button",
             new ButtonBlock(
                     BlockSetType.OAK,
-                    30, //30 is for wood
+                    30,
                     AbstractBlock.Settings.create()
                             .burnable()
                             .strength(2.0F, 3.0F)
@@ -1638,7 +1653,7 @@ public class ModBlocks {
     public static final Block ORANGE_FUNGAL_BUTTON = registerBlock("orange_fungal_button",
             new ButtonBlock(
                     BlockSetType.OAK,
-                    30, //30 is for wood
+                    30,
                     AbstractBlock.Settings.create()
                             .burnable()
                             .strength(2.0F, 3.0F)
@@ -1704,7 +1719,7 @@ public class ModBlocks {
     public static final Block YELLOW_FUNGAL_BUTTON = registerBlock("yellow_fungal_button",
             new ButtonBlock(
                     BlockSetType.OAK,
-                    30, //30 is for wood
+                    30,
                     AbstractBlock.Settings.create()
                             .burnable()
                             .strength(2.0F, 3.0F)
@@ -1770,7 +1785,7 @@ public class ModBlocks {
     public static final Block LIME_FUNGAL_BUTTON = registerBlock("lime_fungal_button",
             new ButtonBlock(
                     BlockSetType.OAK,
-                    30, //30 is for wood
+                    30,
                     AbstractBlock.Settings.create()
                             .burnable()
                             .strength(2.0F, 3.0F)
@@ -1836,7 +1851,7 @@ public class ModBlocks {
     public static final Block GREEN_FUNGAL_BUTTON = registerBlock("green_fungal_button",
             new ButtonBlock(
                     BlockSetType.OAK,
-                    30, //30 is for wood
+                    30,
                     AbstractBlock.Settings.create()
                             .burnable()
                             .strength(2.0F, 3.0F)
@@ -1902,7 +1917,7 @@ public class ModBlocks {
     public static final Block CYAN_FUNGAL_BUTTON = registerBlock("cyan_fungal_button",
             new ButtonBlock(
                     BlockSetType.OAK,
-                    30, //30 is for wood
+                    30,
                     AbstractBlock.Settings.create()
                             .burnable()
                             .strength(2.0F, 3.0F)
@@ -1967,7 +1982,7 @@ public class ModBlocks {
     public static final Block LIGHT_BLUE_FUNGAL_BUTTON = registerBlock("light_blue_fungal_button",
             new ButtonBlock(
                     BlockSetType.OAK,
-                    30, //30 is for wood
+                    30,
                     AbstractBlock.Settings.create()
                             .burnable()
                             .strength(2.0F, 3.0F)
@@ -2033,7 +2048,7 @@ public class ModBlocks {
     public static final Block BLUE_FUNGAL_BUTTON = registerBlock("blue_fungal_button",
             new ButtonBlock(
                     BlockSetType.OAK,
-                    30, //30 is for wood
+                    30,
                     AbstractBlock.Settings.create()
                             .burnable()
                             .strength(2.0F, 3.0F)
@@ -2099,7 +2114,7 @@ public class ModBlocks {
     public static final Block PURPLE_FUNGAL_BUTTON = registerBlock("purple_fungal_button",
             new ButtonBlock(
                     BlockSetType.OAK,
-                    30, //30 is for wood
+                    30,
                     AbstractBlock.Settings.create()
                             .burnable()
                             .strength(2.0F, 3.0F)
@@ -2165,7 +2180,7 @@ public class ModBlocks {
     public static final Block MAGENTA_FUNGAL_BUTTON = registerBlock("magenta_fungal_button",
             new ButtonBlock(
                     BlockSetType.OAK,
-                    30, //30 is for wood
+                    30,
                     AbstractBlock.Settings.create()
                             .burnable()
                             .strength(2.0F, 3.0F)
@@ -2231,7 +2246,7 @@ public class ModBlocks {
     public static final Block PINK_FUNGAL_BUTTON = registerBlock("pink_fungal_button",
             new ButtonBlock(
                     BlockSetType.OAK,
-                    30, //30 is for wood
+                    30,
                     AbstractBlock.Settings.create()
                             .burnable()
                             .strength(2.0F, 3.0F)
@@ -2331,8 +2346,7 @@ public class ModBlocks {
                     .sounds(BlockSoundGroup.WOOD)));
     //</editor-fold>
 
-    //<editor-fold desc="Finished">
-    // Andesite
+    //<editor-fold desc="1.1.8 Finished">
     public static final Block ANDESITE_BRICKS = registerBlock("andesite_bricks",
             new Block(AbstractBlock.Settings.create()
                     .requiresTool()
@@ -2346,7 +2360,6 @@ public class ModBlocks {
                     .strength(1.5F, 6.0F)
                     .sounds(BlockSoundGroup.STONE)));
 
-    // Diorite
     public static final Block DIORITE_BRICKS = registerBlock("diorite_bricks",
             new Block(AbstractBlock.Settings.create()
                     .instrument(NoteBlockInstrument.BASEDRUM)
@@ -2359,7 +2372,6 @@ public class ModBlocks {
                     .strength(1.5F, 6.0F)
                     .sounds(BlockSoundGroup.STONE)));
 
-    // Granite
     public static final Block GRANITE_BRICKS = registerBlock("granite_bricks",
             new Block(AbstractBlock.Settings.create()
                     .instrument(NoteBlockInstrument.BASEDRUM)
@@ -2372,14 +2384,12 @@ public class ModBlocks {
                     .strength(1.5F, 6.0F)
                     .sounds(BlockSoundGroup.STONE)));
 
-    // Stone
     public static final Block CHISELED_STONE = registerBlock("chiseled_stone",
             new Block(AbstractBlock.Settings.create()
                     .instrument(NoteBlockInstrument.BASEDRUM)
                     .strength(1.5F, 6.0F)
                     .sounds(BlockSoundGroup.STONE)));
 
-    // Mud
     public static final Block CHISELED_MUD = registerBlock("chiseled_mud",
             new Block(AbstractBlock.Settings.create()
                     .instrument(NoteBlockInstrument.BASEDRUM)
@@ -2392,7 +2402,6 @@ public class ModBlocks {
                     .strength(1.5F, 6.0F)
                     .sounds(BlockSoundGroup.STONE)));
 
-    // Stained Stone
     public static final Block STAINED_STONE_LIGHT_15 = registerBlock("stained_stone_light_15",
             new Block(AbstractBlock.Settings.create()
                     .requiresTool()
@@ -2447,7 +2456,6 @@ public class ModBlocks {
                     .strength(1.5F, 6.0F)
                     .sounds(BlockSoundGroup.STONE)));
 
-    // Vertical Planks
     public static final Block VERTICAL_OAK_PLANKS = registerBlock("vertical_oak_planks",
             new Block(AbstractBlock.Settings.create()
                     .burnable()
@@ -2514,7 +2522,6 @@ public class ModBlocks {
                     .strength(2.0F, 3.0F)
                     .sounds(BlockSoundGroup.WOOD)));
 
-    // Paper Lanterns
     public static final Block OAK_PAPER_LANTERN = registerBlock("oak_paper_lantern",
             new Block(AbstractBlock.Settings.create()
                     .luminance(state -> 15)
@@ -2629,7 +2636,6 @@ public class ModBlocks {
                     .breakInstantly()
                     .sounds(BlockSoundGroup.SCAFFOLDING)));
 
-    // Carved Planks
     public static final Block OAK_PLANKS_CARVED = registerBlock("oak_planks_carved",
             new Block(AbstractBlock.Settings.create()
                     .burnable()
@@ -2690,7 +2696,6 @@ public class ModBlocks {
                     .strength(2.0F, 3.0F)
                     .sounds(BlockSoundGroup.WOOD)));
 
-    // Packed Blocks
     public static final Block PACKED_DIRT = registerBlock("packed_dirt",
             new Block(AbstractBlock.Settings.create()
                     .strength(0.5F, 0.5F)
@@ -2712,7 +2717,6 @@ public class ModBlocks {
                     .sounds(BlockSoundGroup.SAND)));
 
 
-    // Minerals
     public static final Block DIAMOND_BRICK = registerBlock("diamond_brick",
             new Block(AbstractBlock.Settings.create()
                     .strength(5.0F, 6.0F)
@@ -2778,7 +2782,7 @@ public class ModBlocks {
                     .sounds(BlockSoundGroup.NETHERITE)));
     //</editor-fold>
 
-    // Ashen Sand (sand does NOT require tool)
+    //<editor-fold desc="V1.2.1 Finished">
     public static final Block ASHEN_SAND = registerBlock("ashen_sand",
             new FallingBlock(AbstractBlock.Settings.create()
                     .instrument(NoteBlockInstrument.BASEDRUM)
@@ -2790,7 +2794,6 @@ public class ModBlocks {
                 }
             });
 
-    // Ashen Sandstone (stone → requiresTool)
     public static final Block ASHEN_SANDSTONE = registerBlock("ashen_sandstone",
             new Block(AbstractBlock.Settings.create()
                     .instrument(NoteBlockInstrument.BASEDRUM)
@@ -2806,7 +2809,6 @@ public class ModBlocks {
                     .sounds(BlockSoundGroup.STONE)));
 
 
-    // Chiseled Ashen Sandstone (stone → requiresTool)
     public static final Block CHISELED_ASHEN_SANDSTONE = registerBlock("chiseled_ashen_sandstone",
             new Block(AbstractBlock.Settings.create()
                     .instrument(NoteBlockInstrument.BASEDRUM)
@@ -2814,7 +2816,6 @@ public class ModBlocks {
                     .strength(1.5F, 6.0F)
                     .sounds(BlockSoundGroup.STONE)));
 
-    // Cut Ashen Sandstone (stone → requiresTool)
     public static final Block CUT_ASHEN_SANDSTONE = registerBlock("cut_ashen_sandstone",
             new Block(AbstractBlock.Settings.create()
                     .instrument(NoteBlockInstrument.BASEDRUM)
@@ -2822,7 +2823,6 @@ public class ModBlocks {
                     .strength(1.5F, 6.0F)
                     .sounds(BlockSoundGroup.STONE)));
 
-    // Damp Moss Block (moss → NO requiresTool)
     public static final Block DAMP_MOSS_BLOCK = registerBlock("damp_moss_block",
             new Block(AbstractBlock.Settings.create()
                     .instrument(NoteBlockInstrument.BASEDRUM)
@@ -2858,7 +2858,6 @@ public class ModBlocks {
                     .sounds(BlockSoundGroup.MOSS_BLOCK)
                     .pistonBehavior(PistonBehavior.DESTROY)));
 
-    // Grimoss Block (moss → NO requiresTool)
     public static final Block GRIMOSS_BLOCK = registerBlock("grimoss_block",
             new Block(AbstractBlock.Settings.create()
                     .instrument(NoteBlockInstrument.BASEDRUM)
@@ -2867,14 +2866,12 @@ public class ModBlocks {
                     .pistonBehavior(PistonBehavior.DESTROY)));
 
 
-    // Grimweed Block (grass → NO requiresTool)
     public static final Block GRIMWEED_BLOCK = registerBlock("grimweed_block",
             new Block(AbstractBlock.Settings.create()
                     .instrument(NoteBlockInstrument.BASEDRUM)
                     .strength(0.5F)
                     .sounds(BlockSoundGroup.GRASS)));
 
-    // Packed Ashen Sand (sand → NO requiresTool)
     public static final Block PACKED_ASHEN_SAND = registerBlock("packed_ashen_sand",
             new Block(AbstractBlock.Settings.create()
                     .instrument(NoteBlockInstrument.BASEDRUM)
@@ -2882,14 +2879,12 @@ public class ModBlocks {
                     .sounds(BlockSoundGroup.SAND)));
 
 
-    // Pale Grimweed Block (grass → NO requiresTool)
     public static final Block PALE_GRIMWEED_BLOCK = registerBlock("pale_grimweed_block",
             new Block(AbstractBlock.Settings.create()
                     .instrument(NoteBlockInstrument.BASEDRUM)
                     .strength(0.5F)
                     .sounds(BlockSoundGroup.GRASS)));
 
-    // Blighted Shroomlight (shroomlight → NO requiresTool)
     public static final Block BLIGHTED_SHROOMLIGHT = registerBlock("blighted_shroomlight",
             new Block(AbstractBlock.Settings.create()
                     .instrument(NoteBlockInstrument.BASEDRUM)
@@ -3390,19 +3385,6 @@ public class ModBlocks {
 
 
 
-
-    private static Block registerBlock(String name, Block block) {
-        registerBlockItem(name, block);
-        return Registry.register(Registries.BLOCK, Identifier.of(Xenon.MOD_ID, name), block);
-    }
-
-    private static void registerBlockItem(String name, Block block) {
-        Registry.register(Registries.ITEM, Identifier.of(Xenon.MOD_ID, name),
-                new BlockItem(block, new Item.Settings()));
-    }
-
-
-    // Silt Variants
     public static final Block SILT = registerBlock("silt",
             new Block(AbstractBlock.Settings.create()
                     .strength(0.5F, 0.5F)
@@ -3602,106 +3584,6 @@ public class ModBlocks {
                     .strength(1.5F, 6.0F)
                     .sounds(BlockSoundGroup.STONE)));
 
-    public static final Block DOLOMITE = registerBlock("dolomite",
-            new Block(AbstractBlock.Settings.create()
-                    .requiresTool()
-                    .instrument(NoteBlockInstrument.BASEDRUM)
-                    .strength(1.5F, 6.0F)
-                    .sounds(BlockSoundGroup.STONE)));
-
-    public static final Block DOLOMITE_STAIRS = registerBlock("dolomite_stairs",
-            new StairsBlock(ModBlocks.DOLOMITE.getDefaultState(),
-                    AbstractBlock.Settings.create()
-                            .requiresTool()
-                            .instrument(NoteBlockInstrument.BASEDRUM)
-                            .strength(1.5F, 6.0F)
-                            .sounds(BlockSoundGroup.STONE)));
-
-    public static final Block DOLOMITE_SLAB = registerBlock("dolomite_slab",
-            new SlabBlock(AbstractBlock.Settings.create()
-                    .requiresTool()
-                    .instrument(NoteBlockInstrument.BASEDRUM)
-                    .strength(1.5F, 6.0F)
-                    .sounds(BlockSoundGroup.STONE)));
-
-    public static final Block DOLOMITE_WALL = registerBlock("dolomite_wall",
-            new WallBlock(AbstractBlock.Settings.create()
-                    .requiresTool()
-                    .instrument(NoteBlockInstrument.BASEDRUM)
-                    .strength(1.5F, 6.0F)
-                    .sounds(BlockSoundGroup.STONE)));
-
-    public static final Block CHISELED_DOLOMITE = registerBlock("chiseled_dolomite",
-            new Block(AbstractBlock.Settings.create()
-                    .requiresTool()
-                    .instrument(NoteBlockInstrument.BASEDRUM)
-                    .strength(1.5F, 6.0F)
-                    .sounds(BlockSoundGroup.STONE)));
-
-    public static final Block POLISHED_DOLOMITE = registerBlock("polished_dolomite",
-            new Block(AbstractBlock.Settings.create()
-                    .requiresTool()
-                    .instrument(NoteBlockInstrument.BASEDRUM)
-                    .strength(1.5F, 6.0F)
-                    .sounds(BlockSoundGroup.STONE)));
-
-    public static final Block POLISHED_DOLOMITE_STAIRS = registerBlock("polished_dolomite_stairs",
-            new StairsBlock(ModBlocks.POLISHED_DOLOMITE.getDefaultState(),
-                    AbstractBlock.Settings.create()
-                            .requiresTool()
-                            .instrument(NoteBlockInstrument.BASEDRUM)
-                            .strength(1.5F, 6.0F)
-                            .sounds(BlockSoundGroup.STONE)));
-
-    public static final Block POLISHED_DOLOMITE_SLAB = registerBlock("polished_dolomite_slab",
-            new SlabBlock(AbstractBlock.Settings.create()
-                    .requiresTool()
-                    .instrument(NoteBlockInstrument.BASEDRUM)
-                    .strength(1.5F, 6.0F)
-                    .sounds(BlockSoundGroup.STONE)));
-
-    public static final Block POLISHED_DOLOMITE_WALL = registerBlock("polished_dolomite_wall",
-            new WallBlock(AbstractBlock.Settings.create()
-                    .requiresTool()
-                    .instrument(NoteBlockInstrument.BASEDRUM)
-                    .strength(1.5F, 6.0F)
-                    .sounds(BlockSoundGroup.STONE)));
-
-    public static final Block DOLOMITE_BRICKS = registerBlock("dolomite_bricks",
-            new Block(AbstractBlock.Settings.create()
-                    .requiresTool()
-                    .instrument(NoteBlockInstrument.BASEDRUM)
-                    .strength(1.5F, 6.0F)
-                    .sounds(BlockSoundGroup.STONE)));
-
-    public static final Block DOLOMITE_BRICKS_STAIRS = registerBlock("dolomite_bricks_stairs",
-            new StairsBlock(ModBlocks.DOLOMITE_BRICKS.getDefaultState(),
-                    AbstractBlock.Settings.create()
-                            .requiresTool()
-                            .instrument(NoteBlockInstrument.BASEDRUM)
-                            .strength(1.5F, 6.0F)
-                            .sounds(BlockSoundGroup.STONE)));
-
-    public static final Block DOLOMITE_BRICKS_SLAB = registerBlock("dolomite_bricks_slab",
-            new SlabBlock(AbstractBlock.Settings.create()
-                    .requiresTool()
-                    .instrument(NoteBlockInstrument.BASEDRUM)
-                    .strength(1.5F, 6.0F)
-                    .sounds(BlockSoundGroup.STONE)));
-
-    public static final Block DOLOMITE_BRICKS_WALL = registerBlock("dolomite_bricks_wall",
-            new WallBlock(AbstractBlock.Settings.create()
-                    .requiresTool()
-                    .instrument(NoteBlockInstrument.BASEDRUM)
-                    .strength(1.5F, 6.0F)
-                    .sounds(BlockSoundGroup.STONE)));
-
-    public static final Block DOLOMITE_PILLAR = registerBlock("dolomite_pillar",
-            new PillarBlock(AbstractBlock.Settings.create()
-                    .requiresTool()
-                    .instrument(NoteBlockInstrument.BASEDRUM)
-                    .strength(1.5F, 6.0F)
-                    .sounds(BlockSoundGroup.STONE)));
 
     public static final Block CHISELED_POLISHED_BASALT = registerBlock("chiseled_polished_basalt",
             new Block(AbstractBlock.Settings.create()
@@ -4344,9 +4226,129 @@ public class ModBlocks {
                     .strength(1.5F, 6.0F)
                     .sounds(BlockSoundGroup.STONE)));
 
+    public static final Block ROCK = registerBlock(
+            "rock",
+            new DecorationBlock(AbstractBlock.Settings.create()
+                    .strength(0.0F)
+                    .noCollision()
+                    .offset(AbstractBlock.OffsetType.XZ)
+                    .sounds(BlockSoundGroup.STONE)
+                    .nonOpaque())
 
+    );
 
+    public static final Block PEBBLES = registerBlock(
+            "pebbles",
+            new DecorationBlock(AbstractBlock.Settings.create()
+                    .strength(0.0F)
+                    .noCollision()
+                    .offset(AbstractBlock.OffsetType.XZ)
+                    .sounds(BlockSoundGroup.STONE)
+                    .nonOpaque())
 
+    );
+
+    public static final Block DOLOMITE = registerBlock("dolomite",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block DOLOMITE_STAIRS = registerBlock("dolomite_stairs",
+            new StairsBlock(ModBlocks.DOLOMITE.getDefaultState(),
+                    AbstractBlock.Settings.create()
+                            .requiresTool()
+                            .instrument(NoteBlockInstrument.BASEDRUM)
+                            .strength(1.5F, 6.0F)
+                            .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block DOLOMITE_SLAB = registerBlock("dolomite_slab",
+            new SlabBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block DOLOMITE_WALL = registerBlock("dolomite_wall",
+            new WallBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block CHISELED_DOLOMITE = registerBlock("chiseled_dolomite",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block POLISHED_DOLOMITE = registerBlock("polished_dolomite",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block POLISHED_DOLOMITE_STAIRS = registerBlock("polished_dolomite_stairs",
+            new StairsBlock(ModBlocks.POLISHED_DOLOMITE.getDefaultState(),
+                    AbstractBlock.Settings.create()
+                            .requiresTool()
+                            .instrument(NoteBlockInstrument.BASEDRUM)
+                            .strength(1.5F, 6.0F)
+                            .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block POLISHED_DOLOMITE_SLAB = registerBlock("polished_dolomite_slab",
+            new SlabBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block POLISHED_DOLOMITE_WALL = registerBlock("polished_dolomite_wall",
+            new WallBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block DOLOMITE_BRICKS = registerBlock("dolomite_bricks",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block DOLOMITE_BRICKS_STAIRS = registerBlock("dolomite_bricks_stairs",
+            new StairsBlock(ModBlocks.DOLOMITE_BRICKS.getDefaultState(),
+                    AbstractBlock.Settings.create()
+                            .requiresTool()
+                            .instrument(NoteBlockInstrument.BASEDRUM)
+                            .strength(1.5F, 6.0F)
+                            .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block DOLOMITE_BRICKS_SLAB = registerBlock("dolomite_bricks_slab",
+            new SlabBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block DOLOMITE_BRICKS_WALL = registerBlock("dolomite_bricks_wall",
+            new WallBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block DOLOMITE_PILLAR = registerBlock("dolomite_pillar",
+            new PillarBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+    //</editor-fold>
 
 
     public static void registerModBlocks() {

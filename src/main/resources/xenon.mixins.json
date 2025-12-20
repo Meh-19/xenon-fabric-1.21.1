@@ -4,12 +4,15 @@
 	"package": "net.meh.xenon.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
+		"CoralBlockMixin",
+		"CoralFanBlockMixin",
+		"CoralFanWallBlockMixin",
 		"ExampleMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
 	},
-"overwrites": {
+	"overwrites": {
 		"requireAnnotations": true
 	}
 }

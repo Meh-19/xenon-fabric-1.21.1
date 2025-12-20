@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "xenon:brain_coral_wall_fan_protected",
+    "xenon:fire_coral_wall_fan_protected",
+    "xenon:horn_coral_wall_fan_protected",
+    "xenon:tube_coral_wall_fan_protected",
+    "xenon:bubble_coral_wall_fan_protected"
+  ]
+}
