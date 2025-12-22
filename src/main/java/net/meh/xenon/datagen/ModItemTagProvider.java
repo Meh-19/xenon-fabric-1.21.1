@@ -35,7 +35,6 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
         var beacon = getOrCreateTagBuilder(ItemTags.BEACON_PAYMENT_ITEMS);
 
         var natural = getOrCreateTagBuilder(ItemTags.DIRT);
-
         //endregion\
 
         //region beacon
@@ -336,6 +335,10 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 ModBlocks.LIGHT_GRAY_FUNGAL_SLAB.asItem(),
                 ModBlocks.LIMESTONE_BRICKS_SLAB.asItem(),
                 ModBlocks.LIMESTONE_SLAB.asItem(),
+                ModBlocks.RHYOLITE_BRICKS_SLAB.asItem(),
+                ModBlocks.RHYOLITE_SLAB.asItem(),
+                ModBlocks.CRACKED_RHYOLITE_BRICKS_SLAB.asItem(),
+                ModBlocks.MOSSY_RHYOLITE_SLAB.asItem(),
                 ModBlocks.SCORIA_BRICKS_SLAB.asItem(),
                 ModBlocks.MOLTEN_SCORIA_BRICKS_SLAB.asItem(),
                 ModBlocks.KYANITE_BRICKS_SLAB.asItem(),
@@ -371,6 +374,8 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 ModBlocks.PURPLE_FUNGAL_SLAB.asItem(),
                 ModBlocks.RED_FUNGAL_SLAB.asItem(),
                 ModBlocks.SANDY_LIMESTONE_BRICKS_SLAB.asItem(),
+                ModBlocks.MOSSY_RHYOLITE_BRICKS_SLAB.asItem(),
+                ModBlocks.CRACKED_RHYOLITE_BRICKS_SLAB.asItem(),
                 ModBlocks.SILT_BRICKS_SLAB.asItem(),
                 ModBlocks.SLATE_BRICKS_SLAB.asItem(),
                 ModBlocks.SLATE_SLAB.asItem(),
@@ -479,6 +484,10 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 ModBlocks.LIGHT_GRAY_FUNGAL_STAIRS.asItem(),
                 ModBlocks.LIMESTONE_BRICKS_STAIRS.asItem(),
                 ModBlocks.LIMESTONE_STAIRS.asItem(),
+                ModBlocks.RHYOLITE_BRICKS_STAIRS.asItem(),
+                ModBlocks.RHYOLITE_STAIRS.asItem(),
+                ModBlocks.CRACKED_RHYOLITE_BRICKS_STAIRS.asItem(),
+                ModBlocks.MOSSY_RHYOLITE_STAIRS.asItem(),
                 ModBlocks.SCORIA_BRICKS_STAIRS.asItem(),
                 ModBlocks.MOLTEN_SCORIA_BRICKS_STAIRS.asItem(),
                 ModBlocks.KYANITE_BRICKS_STAIRS.asItem(),
@@ -513,6 +522,8 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 ModBlocks.PURPLE_FUNGAL_STAIRS.asItem(),
                 ModBlocks.RED_FUNGAL_STAIRS.asItem(),
                 ModBlocks.SANDY_LIMESTONE_BRICKS_STAIRS.asItem(),
+                ModBlocks.MOSSY_RHYOLITE_BRICKS_STAIRS.asItem(),
+                ModBlocks.CRACKED_RHYOLITE_BRICKS_STAIRS.asItem(),
                 ModBlocks.SILT_BRICKS_STAIRS.asItem(),
                 ModBlocks.SLATE_BRICKS_STAIRS.asItem(),
                 ModBlocks.SLATE_STAIRS.asItem(),
@@ -542,6 +553,10 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 ModBlocks.GRIMROCK_WALL.asItem(),
                 ModBlocks.LIMESTONE_BRICKS_WALL.asItem(),
                 ModBlocks.LIMESTONE_WALL.asItem(),
+                ModBlocks.RHYOLITE_BRICKS_WALL.asItem(),
+                ModBlocks.RHYOLITE_WALL.asItem(),
+                ModBlocks.CRACKED_RHYOLITE_BRICKS_WALL.asItem(),
+                ModBlocks.MOSSY_RHYOLITE_WALL.asItem(),
                 ModBlocks.SCORIA_BRICKS_WALL.asItem(),
                 ModBlocks.MOLTEN_SCORIA_BRICKS_WALL.asItem(),
                 ModBlocks.KYANITE_BRICKS_WALL.asItem(),
@@ -568,6 +583,8 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 ModBlocks.POLISHED_STRATA_WALL.asItem(),
                 ModBlocks.PRISMARINE_TILES_WALL.asItem(),
                 ModBlocks.SANDY_LIMESTONE_BRICKS_WALL.asItem(),
+                ModBlocks.MOSSY_RHYOLITE_BRICKS_WALL.asItem(),
+                ModBlocks.CRACKED_RHYOLITE_BRICKS_WALL.asItem(),
                 ModBlocks.SILT_BRICKS_WALL.asItem(),
                 ModBlocks.SLATE_BRICKS_WALL.asItem(),
                 ModBlocks.SLATE_WALL.asItem(),

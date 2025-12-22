@@ -76,6 +76,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.VERTICAL_WARPED_PLANKS);
         addDrop(ModBlocks.VERTICAL_BAMBOO_PLANKS);
         addDrop(ModBlocks.OAK_PAPER_LANTERN);
+        addDrop(ModBlocks.SHOJI);
         addDrop(ModBlocks.SPRUCE_PAPER_LANTERN);
         addDrop(ModBlocks.BIRCH_PAPER_LANTERN);
         addDrop(ModBlocks.JUNGLE_PAPER_LANTERN);
@@ -445,6 +446,29 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.SANDY_LIMESTONE_BRICKS_SLAB, slabDrops(ModBlocks.SANDY_LIMESTONE_BRICKS_SLAB));
         addDrop(ModBlocks.SANDY_LIMESTONE_BRICKS_WALL);
 
+        addDrop(ModBlocks.RHYOLITE);
+        addDrop(ModBlocks.RHYOLITE_STAIRS);
+        addDrop(ModBlocks.RHYOLITE_SLAB, slabDrops(ModBlocks.RHYOLITE_SLAB));
+        addDrop(ModBlocks.RHYOLITE_WALL);
+        addDrop(ModBlocks.MOSSY_RHYOLITE);
+        addDrop(ModBlocks.MOSSY_RHYOLITE_STAIRS);
+        addDrop(ModBlocks.MOSSY_RHYOLITE_SLAB, slabDrops(ModBlocks.MOSSY_RHYOLITE_SLAB));
+        addDrop(ModBlocks.MOSSY_RHYOLITE_WALL);
+        addDrop(ModBlocks.CHISELED_LIMESTONE);
+        addDrop(ModBlocks.RHYOLITE_BRICKS);
+        addDrop(ModBlocks.RHYOLITE_BRICKS_STAIRS);
+        addDrop(ModBlocks.RHYOLITE_BRICKS_SLAB, slabDrops(ModBlocks.RHYOLITE_BRICKS_SLAB));
+        addDrop(ModBlocks.RHYOLITE_BRICKS_WALL);
+        addDrop(ModBlocks.CRACKED_RHYOLITE_BRICKS);
+        addDrop(ModBlocks.CRACKED_RHYOLITE_BRICKS_STAIRS);
+        addDrop(ModBlocks.CRACKED_RHYOLITE_BRICKS_SLAB, slabDrops(ModBlocks.CRACKED_RHYOLITE_BRICKS_SLAB));
+        addDrop(ModBlocks.CRACKED_RHYOLITE_BRICKS_WALL);
+        addDrop(ModBlocks.POLISHED_LIMESTONE);
+        addDrop(ModBlocks.MOSSY_RHYOLITE_BRICKS);
+        addDrop(ModBlocks.MOSSY_RHYOLITE_BRICKS_STAIRS);
+        addDrop(ModBlocks.MOSSY_RHYOLITE_BRICKS_SLAB, slabDrops(ModBlocks.MOSSY_RHYOLITE_BRICKS_SLAB));
+        addDrop(ModBlocks.MOSSY_RHYOLITE_BRICKS_WALL);
+
         addDrop(ModBlocks.KYANITE);
         addDrop(ModBlocks.KYANITE_STAIRS);
         addDrop(ModBlocks.KYANITE_SLAB, slabDrops(ModBlocks.KYANITE_SLAB));
@@ -556,6 +580,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.DOLOMITE_BRICKS_SLAB, slabDrops(ModBlocks.DOLOMITE_BRICKS_SLAB));
         addDrop(ModBlocks.DOLOMITE_BRICKS_WALL);
         addDrop(ModBlocks.DOLOMITE_PILLAR);
+        addDrop(ModBlocks.RHYOLITE_PILLAR);
         addDrop(ModBlocks.BRITTLE_BONE_BLOCK);
         addDrop(ModBlocks.CARVED_BRITTLE_BONE_BLOCK);
         addDrop(ModBlocks.BLIGHTED_BONE_BLOCK);
@@ -738,6 +763,38 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.CONCRETE_BRICKS_PURPLE);
         addDrop(ModBlocks.CONCRETE_BRICKS_MAGENTA);
         addDrop(ModBlocks.CONCRETE_BRICKS_PINK);
+
+        addDrop(ModBlocks.QUILTED_WOOL_WHITE);
+        addDrop(ModBlocks.QUILTED_WOOL_LIGHT_GRAY);
+        addDrop(ModBlocks.QUILTED_WOOL_GRAY);
+        addDrop(ModBlocks.QUILTED_WOOL_BLACK);
+        addDrop(ModBlocks.QUILTED_WOOL_BROWN);
+        addDrop(ModBlocks.QUILTED_WOOL_RED);
+        addDrop(ModBlocks.QUILTED_WOOL_ORANGE);
+        addDrop(ModBlocks.QUILTED_WOOL_YELLOW);
+        addDrop(ModBlocks.QUILTED_WOOL_LIME);
+        addDrop(ModBlocks.QUILTED_WOOL_GREEN);
+        addDrop(ModBlocks.QUILTED_WOOL_CYAN);
+        addDrop(ModBlocks.QUILTED_WOOL_LIGHT_BLUE);
+        addDrop(ModBlocks.QUILTED_WOOL_BLUE);
+        addDrop(ModBlocks.QUILTED_WOOL_PURPLE);
+        addDrop(ModBlocks.QUILTED_WOOL_MAGENTA);
+        addDrop(ModBlocks.QUILTED_WOOL_PINK);
+
+        addDrop(ModBlocks.CLOSED_WOODEN_CRATE);
+        addDrop(ModBlocks.ENFORCED_WOODEN_CRATE);
+        addDrop(ModBlocks.SLATTED_WOODEN_CRATE);
+        addDrop(ModBlocks.FRAMED_WOODEN_CRATE);
+
+        addDrop(ModBlocks.CARROT_CRATE);
+        addDrop(ModBlocks.POTATO_CRATE);
+        addDrop(ModBlocks.BEET_CRATE);
+        addDrop(ModBlocks.BERRY_BASKET);
+        addDrop(ModBlocks.APPLE_BASKET);
+        addDrop(ModBlocks.BAMBOO_BUNDLE);
+        addDrop(ModBlocks.STICK_BUNDLE);
+        addDrop(ModBlocks.SUGAR_CANE_BUNDLE);
+        addDrop(ModBlocks.CACTUS_BUNDLE);
 
 
         addDrop(ModBlocks.CONCRETE_BRICKS_WHITE_STAIRS);

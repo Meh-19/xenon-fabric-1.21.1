@@ -5,6 +5,8 @@ import net.fabricmc.api.ModInitializer;
 import net.meh.xenon.block.ModBlocks;
 import net.meh.xenon.item.ModItemGroups;
 import net.meh.xenon.item.ModItems;
+import net.minecraft.registry.Registries;
+import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -18,5 +20,17 @@ public class Xenon implements ModInitializer {
 
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
-	}
+
+		logBlockCount();
 }
+		private static void logBlockCount() {
+			long count = Registries.BLOCK.stream()
+					.filter(block -> {
+						Identifier id = Registries.BLOCK.getId(block);
+						return id != null && id.getNamespace().equals(MOD_ID);
+					})
+					.count();
+
+			Xenon.LOGGER.info("Xenon has registered {} blocks.", count);
+		}
+	}

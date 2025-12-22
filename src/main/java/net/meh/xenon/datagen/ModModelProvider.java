@@ -91,6 +91,12 @@ public class ModModelProvider extends FabricModelProvider {
         var scoria_bricks = gen.registerCubeAllModelTexturePool(ModBlocks.SCORIA_BRICKS);
         var molten_scoria_bricks = gen.registerCubeAllModelTexturePool(ModBlocks.MOLTEN_SCORIA_BRICKS);
 
+        var rhyolite = gen.registerCubeAllModelTexturePool(ModBlocks.RHYOLITE);
+        var mossy_rhyolite = gen.registerCubeAllModelTexturePool(ModBlocks.MOSSY_RHYOLITE);
+        var mossy_rhyolite_bricks = gen.registerCubeAllModelTexturePool(ModBlocks.MOSSY_RHYOLITE_BRICKS);
+        var cracked_rhyolite_bricks = gen.registerCubeAllModelTexturePool(ModBlocks.CRACKED_RHYOLITE_BRICKS);
+        var rhyolite_bricks = gen.registerCubeAllModelTexturePool(ModBlocks.RHYOLITE_BRICKS);
+
         scoria_bricks.wall(ModBlocks.SCORIA_BRICKS_WALL);
         scoria_bricks.slab(ModBlocks.SCORIA_BRICKS_SLAB);
         scoria_bricks.stairs(ModBlocks.SCORIA_BRICKS_STAIRS);
@@ -258,6 +264,24 @@ public class ModModelProvider extends FabricModelProvider {
         limestone.slab(ModBlocks.LIMESTONE_SLAB);
         limestone.stairs(ModBlocks.LIMESTONE_STAIRS);
 
+        registerPillar(gen, ModBlocks.RHYOLITE_PILLAR);
+        registerFixedColumn(gen, ModBlocks.CHISELED_RHYOLITE);
+        rhyolite_bricks.wall(ModBlocks.RHYOLITE_BRICKS_WALL);
+        rhyolite_bricks.slab(ModBlocks.RHYOLITE_BRICKS_SLAB);
+        rhyolite_bricks.stairs(ModBlocks.RHYOLITE_BRICKS_STAIRS);
+        mossy_rhyolite_bricks.wall(ModBlocks.MOSSY_RHYOLITE_BRICKS_WALL);
+        mossy_rhyolite_bricks.slab(ModBlocks.MOSSY_RHYOLITE_BRICKS_SLAB);
+        mossy_rhyolite_bricks.stairs(ModBlocks.MOSSY_RHYOLITE_BRICKS_STAIRS);
+        cracked_rhyolite_bricks.wall(ModBlocks.CRACKED_RHYOLITE_BRICKS_WALL);
+        cracked_rhyolite_bricks.slab(ModBlocks.CRACKED_RHYOLITE_BRICKS_SLAB);
+        cracked_rhyolite_bricks.stairs(ModBlocks.CRACKED_RHYOLITE_BRICKS_STAIRS);
+        rhyolite.wall(ModBlocks.RHYOLITE_WALL);
+        rhyolite.slab(ModBlocks.RHYOLITE_SLAB);
+        rhyolite.stairs(ModBlocks.RHYOLITE_STAIRS);
+        mossy_rhyolite.wall(ModBlocks.MOSSY_RHYOLITE_WALL);
+        mossy_rhyolite.slab(ModBlocks.MOSSY_RHYOLITE_SLAB);
+        mossy_rhyolite.stairs(ModBlocks.MOSSY_RHYOLITE_STAIRS);
+
         kyanite_bricks.wall(ModBlocks.KYANITE_BRICKS_WALL);
         kyanite_bricks.slab(ModBlocks.KYANITE_BRICKS_SLAB);
         kyanite_bricks.stairs(ModBlocks.KYANITE_BRICKS_STAIRS);
@@ -326,6 +350,29 @@ public class ModModelProvider extends FabricModelProvider {
         var magenta_concrete_bricks = gen.registerCubeAllModelTexturePool(ModBlocks.CONCRETE_BRICKS_MAGENTA);
         var purple_concrete_bricks = gen.registerCubeAllModelTexturePool(ModBlocks.CONCRETE_BRICKS_PURPLE);
         var pink_concrete_bricks = gen.registerCubeAllModelTexturePool(ModBlocks.CONCRETE_BRICKS_PINK);
+
+        gen.registerCubeAllModelTexturePool(ModBlocks.QUILTED_WOOL_WHITE);
+        gen.registerCubeAllModelTexturePool(ModBlocks.QUILTED_WOOL_LIGHT_GRAY);
+        gen.registerCubeAllModelTexturePool(ModBlocks.QUILTED_WOOL_GRAY);
+        gen.registerCubeAllModelTexturePool(ModBlocks.QUILTED_WOOL_BLACK);
+        gen.registerCubeAllModelTexturePool(ModBlocks.QUILTED_WOOL_BROWN);
+        gen.registerCubeAllModelTexturePool(ModBlocks.QUILTED_WOOL_RED);
+        gen.registerCubeAllModelTexturePool(ModBlocks.QUILTED_WOOL_ORANGE);
+        gen.registerCubeAllModelTexturePool(ModBlocks.QUILTED_WOOL_YELLOW);
+        gen.registerCubeAllModelTexturePool(ModBlocks.QUILTED_WOOL_LIME);
+        gen.registerCubeAllModelTexturePool(ModBlocks.QUILTED_WOOL_GREEN);
+        gen.registerCubeAllModelTexturePool(ModBlocks.QUILTED_WOOL_CYAN);
+        gen.registerCubeAllModelTexturePool(ModBlocks.QUILTED_WOOL_LIGHT_BLUE);
+        gen.registerCubeAllModelTexturePool(ModBlocks.QUILTED_WOOL_BLUE);
+        gen.registerCubeAllModelTexturePool(ModBlocks.QUILTED_WOOL_MAGENTA);
+        gen.registerCubeAllModelTexturePool(ModBlocks.QUILTED_WOOL_PURPLE);
+        gen.registerCubeAllModelTexturePool(ModBlocks.QUILTED_WOOL_PINK);
+
+        gen.registerCubeAllModelTexturePool(ModBlocks.FRAMED_WOODEN_CRATE);
+        gen.registerCubeAllModelTexturePool(ModBlocks.SLATTED_WOODEN_CRATE);
+        gen.registerCubeAllModelTexturePool(ModBlocks.ENFORCED_WOODEN_CRATE);
+        gen.registerCubeAllModelTexturePool(ModBlocks.CLOSED_WOODEN_CRATE);
+
 
         white_concrete_bricks.stairs(ModBlocks.CONCRETE_BRICKS_WHITE_STAIRS);
         light_gray_concrete_bricks.stairs(ModBlocks.CONCRETE_BRICKS_LIGHT_GRAY_STAIRS);
@@ -397,7 +444,17 @@ public class ModModelProvider extends FabricModelProvider {
         magenta_shingles.slab(ModBlocks.TERRACOTTA_SHINGLES_MAGENTA_SLAB);
         pink_shingles.slab(ModBlocks.TERRACOTTA_SHINGLES_PINK_SLAB);
 
+        registerFixedColumn(gen, ModBlocks.POTATO_CRATE);
+        registerFixedColumn(gen, ModBlocks.CARROT_CRATE);
+        registerFixedColumn(gen, ModBlocks.BEET_CRATE);
+        registerFixedColumn(gen, ModBlocks.APPLE_BASKET);
+        registerFixedColumn(gen, ModBlocks.BERRY_BASKET);
+        registerPillar(gen, ModBlocks.CACTUS_BUNDLE);
+        registerPillar(gen, ModBlocks.STICK_BUNDLE);
+        registerPillar(gen, ModBlocks.SUGAR_CANE_BUNDLE);
+        registerPillar(gen, ModBlocks.BAMBOO_BUNDLE);
 
+        registerFixedColumn(gen, ModBlocks.SHOJI);
 
     }
     private void registerPillar(BlockStateModelGenerator gen, Block block) {

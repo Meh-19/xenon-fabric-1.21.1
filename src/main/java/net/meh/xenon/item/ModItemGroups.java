@@ -337,6 +337,7 @@ public static final ItemGroup XENON_ITEMS_GROUP = Registry.register(Registries.I
                         entries.add(ModBlocks.FUNGAL_PAPER_LANTERN);
                         entries.add(ModBlocks.BAOBAB_PAPER_LANTERN);
                         entries.add(ModBlocks.BAMBOO_PAPER_LANTERN);
+                        entries.add(ModBlocks.SHOJI);
                         entries.add(ModBlocks.OAK_PLANKS_CARVED);
                         entries.add(ModBlocks.SPRUCE_PLANKS_CARVED);
                         entries.add(ModBlocks.BIRCH_PLANKS_CARVED);
@@ -347,6 +348,21 @@ public static final ItemGroup XENON_ITEMS_GROUP = Registry.register(Registries.I
                         entries.add(ModBlocks.CHERRY_PLANKS_CARVED);
                         entries.add(ModBlocks.CRIMSON_PLANKS_CARVED);
                         entries.add(ModBlocks.WARPED_PLANKS_CARVED);
+                        entries.add(ModBlocks.CLOSED_WOODEN_CRATE);
+                        entries.add(ModBlocks.ENFORCED_WOODEN_CRATE);
+                        entries.add(ModBlocks.FRAMED_WOODEN_CRATE);
+                        entries.add(ModBlocks.SLATTED_WOODEN_CRATE);
+                        entries.add(ModBlocks.POTATO_CRATE);
+                        entries.add(ModBlocks.CARROT_CRATE);
+                        entries.add(ModBlocks.BEET_CRATE);
+                        entries.add(ModBlocks.APPLE_BASKET);
+                        entries.add(ModBlocks.BERRY_BASKET);
+                        entries.add(ModBlocks.BAMBOO_BUNDLE);
+                        entries.add(ModBlocks.CACTUS_BUNDLE);
+                        entries.add(ModBlocks.SUGAR_CANE_BUNDLE);
+                        entries.add(ModBlocks.STICK_BUNDLE);
+
+
                         entries.add(ModBlocks.TERRACOTTA_SHINGLES);
                         entries.add(ModBlocks.TERRACOTTA_SHINGLES_STAIRS);
                         entries.add(ModBlocks.TERRACOTTA_SHINGLES_SLAB);
@@ -448,6 +464,23 @@ public static final ItemGroup XENON_ITEMS_GROUP = Registry.register(Registries.I
                         entries.add(ModBlocks.CONCRETE_BRICKS_PINK_STAIRS);
                         entries.add(ModBlocks.CONCRETE_BRICKS_PINK_SLAB);
 
+                        entries.add(ModBlocks.QUILTED_WOOL_WHITE);
+                        entries.add(ModBlocks.QUILTED_WOOL_LIGHT_GRAY);
+                        entries.add(ModBlocks.QUILTED_WOOL_GRAY);
+                        entries.add(ModBlocks.QUILTED_WOOL_BLACK);
+                        entries.add(ModBlocks.QUILTED_WOOL_BROWN);
+                        entries.add(ModBlocks.QUILTED_WOOL_RED);
+                        entries.add(ModBlocks.QUILTED_WOOL_ORANGE);
+                        entries.add(ModBlocks.QUILTED_WOOL_YELLOW);
+                        entries.add(ModBlocks.QUILTED_WOOL_LIME);
+                        entries.add(ModBlocks.QUILTED_WOOL_GREEN);
+                        entries.add(ModBlocks.QUILTED_WOOL_CYAN);
+                        entries.add(ModBlocks.QUILTED_WOOL_LIGHT_BLUE);
+                        entries.add(ModBlocks.QUILTED_WOOL_BLUE);
+                        entries.add(ModBlocks.QUILTED_WOOL_PURPLE);
+                        entries.add(ModBlocks.QUILTED_WOOL_MAGENTA);
+                        entries.add(ModBlocks.QUILTED_WOOL_PINK);
+
                         entries.add(ModBlocks.PACKED_DIRT);
                         entries.add(ModBlocks.PACKED_DIRT_SLAB);
                         entries.add(ModBlocks.PACKED_SAND);
@@ -492,6 +525,28 @@ public static final ItemGroup XENON_ITEMS_GROUP = Registry.register(Registries.I
                         entries.add(ModBlocks.SANDY_LIMESTONE_BRICKS_STAIRS);
                         entries.add(ModBlocks.SANDY_LIMESTONE_BRICKS_SLAB);
                         entries.add(ModBlocks.SANDY_LIMESTONE_BRICKS_WALL);
+                        entries.add(ModBlocks.RHYOLITE);
+                        entries.add(ModBlocks.RHYOLITE_STAIRS);
+                        entries.add(ModBlocks.RHYOLITE_SLAB);
+                        entries.add(ModBlocks.RHYOLITE_WALL);
+                        entries.add(ModBlocks.MOSSY_RHYOLITE);
+                        entries.add(ModBlocks.MOSSY_RHYOLITE_STAIRS);
+                        entries.add(ModBlocks.MOSSY_RHYOLITE_SLAB);
+                        entries.add(ModBlocks.MOSSY_RHYOLITE_WALL);
+                        entries.add(ModBlocks.RHYOLITE_PILLAR);
+                        entries.add(ModBlocks.CHISELED_RHYOLITE);
+                        entries.add(ModBlocks.RHYOLITE_BRICKS);
+                        entries.add(ModBlocks.RHYOLITE_BRICKS_STAIRS);
+                        entries.add(ModBlocks.RHYOLITE_BRICKS_SLAB);
+                        entries.add(ModBlocks.RHYOLITE_BRICKS_WALL);
+                        entries.add(ModBlocks.CRACKED_RHYOLITE_BRICKS);
+                        entries.add(ModBlocks.CRACKED_RHYOLITE_BRICKS_STAIRS);
+                        entries.add(ModBlocks.CRACKED_RHYOLITE_BRICKS_SLAB);
+                        entries.add(ModBlocks.CRACKED_RHYOLITE_BRICKS_WALL);
+                        entries.add(ModBlocks.MOSSY_RHYOLITE_BRICKS);
+                        entries.add(ModBlocks.MOSSY_RHYOLITE_BRICKS_STAIRS);
+                        entries.add(ModBlocks.MOSSY_RHYOLITE_BRICKS_SLAB);
+                        entries.add(ModBlocks.MOSSY_RHYOLITE_BRICKS_WALL);
                         entries.add(ModBlocks.KYANITE);
                         entries.add(ModBlocks.KYANITE_STAIRS);
                         entries.add(ModBlocks.KYANITE_SLAB);

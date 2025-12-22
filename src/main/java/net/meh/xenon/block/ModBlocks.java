@@ -3016,6 +3016,158 @@ public class ModBlocks {
                     .strength(1.5F, 6.0F)
                     .sounds(BlockSoundGroup.STONE)));
 
+    public static final Block RHYOLITE = registerBlock("rhyolite",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block MOSSY_RHYOLITE = registerBlock("mossy_rhyolite",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block RHYOLITE_STAIRS = registerBlock("rhyolite_stairs",
+            new StairsBlock(ModBlocks.RHYOLITE.getDefaultState(),
+                    AbstractBlock.Settings.create()
+                            .requiresTool()
+                            .instrument(NoteBlockInstrument.BASEDRUM)
+                            .strength(1.5F, 6.0F)
+                            .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block RHYOLITE_SLAB = registerBlock("rhyolite_slab",
+            new SlabBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block RHYOLITE_WALL = registerBlock("rhyolite_wall",
+            new WallBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block MOSSY_RHYOLITE_STAIRS = registerBlock("mossy_rhyolite_stairs",
+            new StairsBlock(ModBlocks.RHYOLITE.getDefaultState(),
+                    AbstractBlock.Settings.create()
+                            .requiresTool()
+                            .instrument(NoteBlockInstrument.BASEDRUM)
+                            .strength(1.5F, 6.0F)
+                            .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block MOSSY_RHYOLITE_SLAB = registerBlock("mossy_rhyolite_slab",
+            new SlabBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block MOSSY_RHYOLITE_WALL = registerBlock("mossy_rhyolite_wall",
+            new WallBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block CHISELED_RHYOLITE = registerBlock("chiseled_rhyolite",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block RHYOLITE_BRICKS = registerBlock("rhyolite_bricks",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block RHYOLITE_BRICKS_STAIRS = registerBlock("rhyolite_bricks_stairs",
+            new StairsBlock(ModBlocks.RHYOLITE_BRICKS.getDefaultState(),
+                    AbstractBlock.Settings.create()
+                            .requiresTool()
+                            .instrument(NoteBlockInstrument.BASEDRUM)
+                            .strength(1.5F, 6.0F)
+                            .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block RHYOLITE_BRICKS_SLAB = registerBlock("rhyolite_bricks_slab",
+            new SlabBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block RHYOLITE_BRICKS_WALL = registerBlock("rhyolite_bricks_wall",
+            new WallBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block CRACKED_RHYOLITE_BRICKS = registerBlock("cracked_rhyolite_bricks",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block CRACKED_RHYOLITE_BRICKS_STAIRS = registerBlock("cracked_rhyolite_bricks_stairs",
+            new StairsBlock(ModBlocks.CRACKED_RHYOLITE_BRICKS.getDefaultState(),
+                    AbstractBlock.Settings.create()
+                            .requiresTool()
+                            .instrument(NoteBlockInstrument.BASEDRUM)
+                            .strength(1.5F, 6.0F)
+                            .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block CRACKED_RHYOLITE_BRICKS_SLAB = registerBlock("cracked_rhyolite_bricks_slab",
+            new SlabBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block CRACKED_RHYOLITE_BRICKS_WALL = registerBlock("cracked_rhyolite_bricks_wall",
+            new WallBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block MOSSY_RHYOLITE_BRICKS = registerBlock("mossy_rhyolite_bricks",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block MOSSY_RHYOLITE_BRICKS_STAIRS = registerBlock("mossy_rhyolite_bricks_stairs",
+            new StairsBlock(ModBlocks.MOSSY_RHYOLITE_BRICKS.getDefaultState(),
+                    AbstractBlock.Settings.create()
+                            .requiresTool()
+                            .instrument(NoteBlockInstrument.BASEDRUM)
+                            .strength(1.5F, 6.0F)
+                            .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block MOSSY_RHYOLITE_BRICKS_SLAB = registerBlock("mossy_rhyolite_bricks_slab",
+            new SlabBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block MOSSY_RHYOLITE_BRICKS_WALL = registerBlock("mossy_rhyolite_bricks_wall",
+            new WallBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
     public static final Block GRIMROCK = registerBlock("grimrock",
             new Block(AbstractBlock.Settings.create()
                     .requiresTool()
@@ -4376,6 +4528,13 @@ public class ModBlocks {
                     .strength(1.5F, 6.0F)
                     .sounds(BlockSoundGroup.STONE)));
 
+    public static final Block RHYOLITE_PILLAR = registerBlock("rhyolite_pillar",
+            new PillarBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
     public static final Block BRITTLE_BONE_BLOCK = registerBlock("brittle_bone_block",
             new PillarBlock(AbstractBlock.Settings.create()
                     .instrument(NoteBlockInstrument.XYLOPHONE)
@@ -5298,9 +5457,217 @@ public class ModBlocks {
                     .strength(1.8F)
                     .sounds(BlockSoundGroup.STONE)));
 
+    public static final Block QUILTED_WOOL_WHITE = registerBlock("quilted_wool_white",
+            new Block(AbstractBlock.Settings.create()
+                    .burnable()
+                    .instrument(NoteBlockInstrument.GUITAR)
+                    .strength(0.8F)
+                    .sounds(BlockSoundGroup.WOOL)));
+
+    public static final Block QUILTED_WOOL_LIGHT_GRAY = registerBlock("quilted_wool_light_gray",
+            new Block(AbstractBlock.Settings.create()
+                    .burnable()
+                    .instrument(NoteBlockInstrument.GUITAR)
+                    .strength(0.8F)
+                    .sounds(BlockSoundGroup.WOOL)));
+
+    public static final Block QUILTED_WOOL_GRAY = registerBlock("quilted_wool_gray",
+            new Block(AbstractBlock.Settings.create()
+                    .burnable()
+                    .instrument(NoteBlockInstrument.GUITAR)
+                    .strength(0.8F)
+                    .sounds(BlockSoundGroup.WOOL)));
+
+    public static final Block QUILTED_WOOL_BLACK = registerBlock("quilted_wool_black",
+            new Block(AbstractBlock.Settings.create()
+                    .burnable()
+                    .instrument(NoteBlockInstrument.GUITAR)
+                    .strength(0.8F)
+                    .sounds(BlockSoundGroup.WOOL)));
+
+    public static final Block QUILTED_WOOL_BROWN = registerBlock("quilted_wool_brown",
+            new Block(AbstractBlock.Settings.create()
+                    .burnable()
+                    .instrument(NoteBlockInstrument.GUITAR)
+                    .strength(0.8F)
+                    .sounds(BlockSoundGroup.WOOL)));
+
+    public static final Block QUILTED_WOOL_RED = registerBlock("quilted_wool_red",
+            new Block(AbstractBlock.Settings.create()
+                    .burnable()
+                    .instrument(NoteBlockInstrument.GUITAR)
+                    .strength(0.8F)
+                    .sounds(BlockSoundGroup.WOOL)));
+
+    public static final Block QUILTED_WOOL_ORANGE = registerBlock("quilted_wool_orange",
+            new Block(AbstractBlock.Settings.create()
+                    .burnable()
+                    .instrument(NoteBlockInstrument.GUITAR)
+                    .strength(0.8F)
+                    .sounds(BlockSoundGroup.WOOL)));
+
+    public static final Block QUILTED_WOOL_YELLOW = registerBlock("quilted_wool_yellow",
+            new Block(AbstractBlock.Settings.create()
+                    .burnable()
+                    .instrument(NoteBlockInstrument.GUITAR)
+                    .strength(0.8F)
+                    .sounds(BlockSoundGroup.WOOL)));
+
+    public static final Block QUILTED_WOOL_LIME = registerBlock("quilted_wool_lime",
+            new Block(AbstractBlock.Settings.create()
+                    .burnable()
+                    .instrument(NoteBlockInstrument.GUITAR)
+                    .strength(0.8F)
+                    .sounds(BlockSoundGroup.WOOL)));
+
+    public static final Block QUILTED_WOOL_GREEN = registerBlock("quilted_wool_green",
+            new Block(AbstractBlock.Settings.create()
+                    .burnable()
+                    .instrument(NoteBlockInstrument.GUITAR)
+                    .strength(0.8F)
+                    .sounds(BlockSoundGroup.WOOL)));
+
+    public static final Block QUILTED_WOOL_CYAN = registerBlock("quilted_wool_cyan",
+            new Block(AbstractBlock.Settings.create()
+                    .burnable()
+                    .instrument(NoteBlockInstrument.GUITAR)
+                    .strength(0.8F)
+                    .sounds(BlockSoundGroup.WOOL)));
+
+    public static final Block QUILTED_WOOL_LIGHT_BLUE = registerBlock("quilted_wool_light_blue",
+            new Block(AbstractBlock.Settings.create()
+                    .burnable()
+                    .instrument(NoteBlockInstrument.GUITAR)
+                    .strength(0.8F)
+                    .sounds(BlockSoundGroup.WOOL)));
+
+    public static final Block QUILTED_WOOL_BLUE = registerBlock("quilted_wool_blue",
+            new Block(AbstractBlock.Settings.create()
+                    .burnable()
+                    .instrument(NoteBlockInstrument.GUITAR)
+                    .strength(0.8F)
+                    .sounds(BlockSoundGroup.WOOL)));
+
+    public static final Block QUILTED_WOOL_PURPLE = registerBlock("quilted_wool_purple",
+            new Block(AbstractBlock.Settings.create()
+                    .burnable()
+                    .instrument(NoteBlockInstrument.GUITAR)
+                    .strength(0.8F)
+                    .sounds(BlockSoundGroup.WOOL)));
+
+    public static final Block QUILTED_WOOL_MAGENTA = registerBlock("quilted_wool_magenta",
+            new Block(AbstractBlock.Settings.create()
+                    .burnable()
+                    .instrument(NoteBlockInstrument.GUITAR)
+                    .strength(0.8F)
+                    .sounds(BlockSoundGroup.WOOL)));
+
+    public static final Block QUILTED_WOOL_PINK = registerBlock("quilted_wool_pink",
+            new Block(AbstractBlock.Settings.create()
+                    .burnable()
+                    .instrument(NoteBlockInstrument.GUITAR)
+                    .strength(0.8F)
+                    .sounds(BlockSoundGroup.WOOL)));
+
+    public static final Block FRAMED_WOODEN_CRATE = registerBlock("framed_wooden_crate",
+            new Block(AbstractBlock.Settings.create()
+                    .burnable()
+                    .strength(2.0F, 3.0F)
+                    .instrument(NoteBlockInstrument.BASS)
+                    .sounds(BlockSoundGroup.WOOD)));
+
+    public static final Block CLOSED_WOODEN_CRATE = registerBlock("closed_wooden_crate",
+            new Block(AbstractBlock.Settings.create()
+                    .burnable()
+                    .strength(2.0F, 3.0F)
+                    .instrument(NoteBlockInstrument.BASS)
+                    .sounds(BlockSoundGroup.WOOD)));
+
+    public static final Block SLATTED_WOODEN_CRATE = registerBlock("slatted_wooden_crate",
+            new Block(AbstractBlock.Settings.create()
+                    .burnable()
+                    .strength(2.0F, 3.0F)
+                    .instrument(NoteBlockInstrument.BASS)
+                    .sounds(BlockSoundGroup.WOOD)));
+
+    public static final Block ENFORCED_WOODEN_CRATE = registerBlock("enforced_wooden_crate",
+            new Block(AbstractBlock.Settings.create()
+                    .burnable()
+                    .strength(2.0F, 3.0F)
+                    .instrument(NoteBlockInstrument.BASS)
+                    .sounds(BlockSoundGroup.WOOD)));
+
+    public static final Block POTATO_CRATE = registerBlock("potato_crate",
+            new Block(AbstractBlock.Settings.create()
+                    .burnable()
+                    .strength(2.0F, 3.0F)
+                    .instrument(NoteBlockInstrument.BASS)
+                    .sounds(BlockSoundGroup.WOOD)));
+
+    public static final Block CARROT_CRATE = registerBlock("carrot_crate",
+            new Block(AbstractBlock.Settings.create()
+                    .burnable()
+                    .strength(2.0F, 3.0F)
+                    .instrument(NoteBlockInstrument.BASS)
+                    .sounds(BlockSoundGroup.WOOD)));
+
+    public static final Block BEET_CRATE = registerBlock("beet_crate",
+            new Block(AbstractBlock.Settings.create()
+                    .burnable()
+                    .strength(2.0F, 3.0F)
+                    .instrument(NoteBlockInstrument.BASS)
+                    .sounds(BlockSoundGroup.WOOD)));
+
+    public static final Block APPLE_BASKET = registerBlock("apple_basket",
+            new Block(AbstractBlock.Settings.create()
+                    .burnable()
+                    .strength(2.0F, 3.0F)
+                    .instrument(NoteBlockInstrument.BASS)
+                    .sounds(BlockSoundGroup.WOOD)));
+
+    public static final Block BERRY_BASKET = registerBlock("berry_basket",
+            new Block(AbstractBlock.Settings.create()
+                    .burnable()
+                    .strength(2.0F, 3.0F)
+                    .instrument(NoteBlockInstrument.BASS)
+                    .sounds(BlockSoundGroup.WOOD)));
+
+    public static final Block BAMBOO_BUNDLE = registerBlock("bamboo_bundle",
+            new PillarBlock(AbstractBlock.Settings.create()
+                    .burnable()
+                    .strength(2.0F, 3.0F)
+                    .instrument(NoteBlockInstrument.BASS)
+                    .sounds(BlockSoundGroup.WOOD)));
+
+    public static final Block CACTUS_BUNDLE = registerBlock("cactus_bundle",
+            new PillarBlock(AbstractBlock.Settings.create()
+                    .burnable()
+                    .strength(2.0F, 3.0F)
+                    .instrument(NoteBlockInstrument.BASS)
+                    .sounds(BlockSoundGroup.WOOD)));
+
+    public static final Block SUGAR_CANE_BUNDLE = registerBlock("sugar_cane_bundle",
+            new PillarBlock(AbstractBlock.Settings.create()
+                    .burnable()
+                    .strength(2.0F, 3.0F)
+                    .instrument(NoteBlockInstrument.BASS)
+                    .sounds(BlockSoundGroup.WOOD)));
+
+    public static final Block STICK_BUNDLE = registerBlock("stick_bundle",
+            new PillarBlock(AbstractBlock.Settings.create()
+                    .burnable()
+                    .strength(2.0F, 3.0F)
+                    .instrument(NoteBlockInstrument.BASS)
+                    .sounds(BlockSoundGroup.WOOD)));
+
+// AmethystClusterBlock(5.0F, 3.0F, AbstractBlock.Settings.copyShallow(AMETHYST_CLUSTER).sounds(BlockSoundGroup.MEDIUM_AMETHYST_BUD).luminance(state -> 4))
+
+    public static final Block SHOJI = registerBlock("shoji",
+            new Block(AbstractBlock.Settings.create()
+                    .breakInstantly()
+                    .sounds(BlockSoundGroup.SCAFFOLDING)));
 
     //</editor-fold>
-
 
     public static void registerModBlocks() {
         Xenon.LOGGER.info("Registering Mod Blocks for " + Xenon.MOD_ID);
