@@ -1,6 +1,5 @@
 package net.meh.xenon.block;
 
-import net.meh.xenon.block.custom.AquariumGlassBlock;
 import net.meh.xenon.block.custom.PorousDolomiteBlock;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.AbstractBlock;
