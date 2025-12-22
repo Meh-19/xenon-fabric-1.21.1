@@ -3,6 +3,8 @@ package net.meh.xenon.datagen;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.meh.xenon.block.ModBlocks;
+import net.minecraft.block.Block;
+import net.minecraft.data.client.TexturedModel;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 
@@ -78,6 +80,24 @@ public class ModModelProvider extends FabricModelProvider {
 
         var polished_prismarine = gen.registerCubeAllModelTexturePool(ModBlocks.POLISHED_PRISMARINE);
         var prismarine_tiles = gen.registerCubeAllModelTexturePool(ModBlocks.PRISMARINE_TILES);
+
+        registerPillar(gen, ModBlocks.SCORIA);
+        registerPillar(gen, ModBlocks.MOLTEN_SCORIA);
+
+        registerFixedColumn(gen, ModBlocks.CHISELED_SCORIA);
+        registerFixedColumn(gen, ModBlocks.CHISELED_MOLTEN_SCORIA);
+
+
+        var scoria_bricks = gen.registerCubeAllModelTexturePool(ModBlocks.SCORIA_BRICKS);
+        var molten_scoria_bricks = gen.registerCubeAllModelTexturePool(ModBlocks.MOLTEN_SCORIA_BRICKS);
+
+        scoria_bricks.wall(ModBlocks.SCORIA_BRICKS_WALL);
+        scoria_bricks.slab(ModBlocks.SCORIA_BRICKS_SLAB);
+        scoria_bricks.stairs(ModBlocks.SCORIA_BRICKS_STAIRS);
+
+        molten_scoria_bricks.wall(ModBlocks.MOLTEN_SCORIA_BRICKS_WALL);
+        molten_scoria_bricks.slab(ModBlocks.MOLTEN_SCORIA_BRICKS_SLAB);
+        molten_scoria_bricks.stairs(ModBlocks.MOLTEN_SCORIA_BRICKS_STAIRS);
 
         polished_prismarine.wall(ModBlocks.POLISHED_PRISMARINE_WALL);
         polished_prismarine.slab(ModBlocks.POLISHED_PRISMARINE_SLAB);
@@ -272,9 +292,131 @@ public class ModModelProvider extends FabricModelProvider {
         polished_grimrock_bricks.slab(ModBlocks.POLISHED_GRIMROCK_SLAB);
         polished_grimrock_bricks.stairs(ModBlocks.POLISHED_GRIMROCK_STAIRS);
 
+        var shingles = gen.registerCubeAllModelTexturePool(ModBlocks.TERRACOTTA_SHINGLES);
+        var white_shingles = gen.registerCubeAllModelTexturePool(ModBlocks.TERRACOTTA_SHINGLES_WHITE);
+        var light_gray_shingles = gen.registerCubeAllModelTexturePool(ModBlocks.TERRACOTTA_SHINGLES_LIGHT_GRAY);
+        var gray_shingles = gen.registerCubeAllModelTexturePool(ModBlocks.TERRACOTTA_SHINGLES_GRAY);
+        var black_shingles = gen.registerCubeAllModelTexturePool(ModBlocks.TERRACOTTA_SHINGLES_BLACK);
+        var brown_shingles = gen.registerCubeAllModelTexturePool(ModBlocks.TERRACOTTA_SHINGLES_BROWN);
+        var red_shingles = gen.registerCubeAllModelTexturePool(ModBlocks.TERRACOTTA_SHINGLES_RED);
+        var orange_shingles = gen.registerCubeAllModelTexturePool(ModBlocks.TERRACOTTA_SHINGLES_ORANGE);
+        var yellow_shingles = gen.registerCubeAllModelTexturePool(ModBlocks.TERRACOTTA_SHINGLES_YELLOW);
+        var lime_shingles = gen.registerCubeAllModelTexturePool(ModBlocks.TERRACOTTA_SHINGLES_LIME);
+        var green_shingles = gen.registerCubeAllModelTexturePool(ModBlocks.TERRACOTTA_SHINGLES_GREEN);
+        var cyan_shingles = gen.registerCubeAllModelTexturePool(ModBlocks.TERRACOTTA_SHINGLES_CYAN);
+        var light_blue_shingles = gen.registerCubeAllModelTexturePool(ModBlocks.TERRACOTTA_SHINGLES_LIGHT_BLUE);
+        var blue_shingles = gen.registerCubeAllModelTexturePool(ModBlocks.TERRACOTTA_SHINGLES_BLUE);
+        var magenta_shingles = gen.registerCubeAllModelTexturePool(ModBlocks.TERRACOTTA_SHINGLES_MAGENTA);
+        var purple_shingles = gen.registerCubeAllModelTexturePool(ModBlocks.TERRACOTTA_SHINGLES_PURPLE);
+        var pink_shingles = gen.registerCubeAllModelTexturePool(ModBlocks.TERRACOTTA_SHINGLES_PINK);
+
+        var white_concrete_bricks = gen.registerCubeAllModelTexturePool(ModBlocks.CONCRETE_BRICKS_WHITE);
+        var light_gray_concrete_bricks = gen.registerCubeAllModelTexturePool(ModBlocks.CONCRETE_BRICKS_LIGHT_GRAY);
+        var gray_concrete_bricks = gen.registerCubeAllModelTexturePool(ModBlocks.CONCRETE_BRICKS_GRAY);
+        var black_concrete_bricks = gen.registerCubeAllModelTexturePool(ModBlocks.CONCRETE_BRICKS_BLACK);
+        var brown_concrete_bricks = gen.registerCubeAllModelTexturePool(ModBlocks.CONCRETE_BRICKS_BROWN);
+        var red_concrete_bricks = gen.registerCubeAllModelTexturePool(ModBlocks.CONCRETE_BRICKS_RED);
+        var orange_concrete_bricks = gen.registerCubeAllModelTexturePool(ModBlocks.CONCRETE_BRICKS_ORANGE);
+        var yellow_concrete_bricks = gen.registerCubeAllModelTexturePool(ModBlocks.CONCRETE_BRICKS_YELLOW);
+        var lime_concrete_bricks = gen.registerCubeAllModelTexturePool(ModBlocks.CONCRETE_BRICKS_LIME);
+        var green_concrete_bricks = gen.registerCubeAllModelTexturePool(ModBlocks.CONCRETE_BRICKS_GREEN);
+        var cyan_concrete_bricks = gen.registerCubeAllModelTexturePool(ModBlocks.CONCRETE_BRICKS_CYAN);
+        var light_blue_concrete_bricks = gen.registerCubeAllModelTexturePool(ModBlocks.CONCRETE_BRICKS_LIGHT_BLUE);
+        var blue_concrete_bricks = gen.registerCubeAllModelTexturePool(ModBlocks.CONCRETE_BRICKS_BLUE);
+        var magenta_concrete_bricks = gen.registerCubeAllModelTexturePool(ModBlocks.CONCRETE_BRICKS_MAGENTA);
+        var purple_concrete_bricks = gen.registerCubeAllModelTexturePool(ModBlocks.CONCRETE_BRICKS_PURPLE);
+        var pink_concrete_bricks = gen.registerCubeAllModelTexturePool(ModBlocks.CONCRETE_BRICKS_PINK);
+
+        white_concrete_bricks.stairs(ModBlocks.CONCRETE_BRICKS_WHITE_STAIRS);
+        light_gray_concrete_bricks.stairs(ModBlocks.CONCRETE_BRICKS_LIGHT_GRAY_STAIRS);
+        gray_concrete_bricks.stairs(ModBlocks.CONCRETE_BRICKS_GRAY_STAIRS);
+        black_concrete_bricks.stairs(ModBlocks.CONCRETE_BRICKS_BLACK_STAIRS);
+        brown_concrete_bricks.stairs(ModBlocks.CONCRETE_BRICKS_BROWN_STAIRS);
+        red_concrete_bricks.stairs(ModBlocks.CONCRETE_BRICKS_RED_STAIRS);
+        orange_concrete_bricks.stairs(ModBlocks.CONCRETE_BRICKS_ORANGE_STAIRS);
+        yellow_concrete_bricks.stairs(ModBlocks.CONCRETE_BRICKS_YELLOW_STAIRS);
+        lime_concrete_bricks.stairs(ModBlocks.CONCRETE_BRICKS_LIME_STAIRS);
+        green_concrete_bricks.stairs(ModBlocks.CONCRETE_BRICKS_GREEN_STAIRS);
+        cyan_concrete_bricks.stairs(ModBlocks.CONCRETE_BRICKS_CYAN_STAIRS);
+        light_blue_concrete_bricks.stairs(ModBlocks.CONCRETE_BRICKS_LIGHT_BLUE_STAIRS);
+        blue_concrete_bricks.stairs(ModBlocks.CONCRETE_BRICKS_BLUE_STAIRS);
+        purple_concrete_bricks.stairs(ModBlocks.CONCRETE_BRICKS_PURPLE_STAIRS);
+        magenta_concrete_bricks.stairs(ModBlocks.CONCRETE_BRICKS_MAGENTA_STAIRS);
+        pink_concrete_bricks.stairs(ModBlocks.CONCRETE_BRICKS_PINK_STAIRS);
+
+        white_concrete_bricks.slab(ModBlocks.CONCRETE_BRICKS_WHITE_SLAB);
+        light_gray_concrete_bricks.slab(ModBlocks.CONCRETE_BRICKS_LIGHT_GRAY_SLAB);
+        gray_concrete_bricks.slab(ModBlocks.CONCRETE_BRICKS_GRAY_SLAB);
+        black_concrete_bricks.slab(ModBlocks.CONCRETE_BRICKS_BLACK_SLAB);
+        brown_concrete_bricks.slab(ModBlocks.CONCRETE_BRICKS_BROWN_SLAB);
+        red_concrete_bricks.slab(ModBlocks.CONCRETE_BRICKS_RED_SLAB);
+        orange_concrete_bricks.slab(ModBlocks.CONCRETE_BRICKS_ORANGE_SLAB);
+        yellow_concrete_bricks.slab(ModBlocks.CONCRETE_BRICKS_YELLOW_SLAB);
+        lime_concrete_bricks.slab(ModBlocks.CONCRETE_BRICKS_LIME_SLAB);
+        green_concrete_bricks.slab(ModBlocks.CONCRETE_BRICKS_GREEN_SLAB);
+        cyan_concrete_bricks.slab(ModBlocks.CONCRETE_BRICKS_CYAN_SLAB);
+        light_blue_concrete_bricks.slab(ModBlocks.CONCRETE_BRICKS_LIGHT_BLUE_SLAB);
+        blue_concrete_bricks.slab(ModBlocks.CONCRETE_BRICKS_BLUE_SLAB);
+        purple_concrete_bricks.slab(ModBlocks.CONCRETE_BRICKS_PURPLE_SLAB);
+        magenta_concrete_bricks.slab(ModBlocks.CONCRETE_BRICKS_MAGENTA_SLAB);
+        pink_concrete_bricks.slab(ModBlocks.CONCRETE_BRICKS_PINK_SLAB);
+
+        shingles.stairs(ModBlocks.TERRACOTTA_SHINGLES_STAIRS);
+        white_shingles.stairs(ModBlocks.TERRACOTTA_SHINGLES_WHITE_STAIRS);
+        light_gray_shingles.stairs(ModBlocks.TERRACOTTA_SHINGLES_LIGHT_GRAY_STAIRS);
+        gray_shingles.stairs(ModBlocks.TERRACOTTA_SHINGLES_GRAY_STAIRS);
+        black_shingles.stairs(ModBlocks.TERRACOTTA_SHINGLES_BLACK_STAIRS);
+        brown_shingles.stairs(ModBlocks.TERRACOTTA_SHINGLES_BROWN_STAIRS);
+        red_shingles.stairs(ModBlocks.TERRACOTTA_SHINGLES_RED_STAIRS);
+        orange_shingles.stairs(ModBlocks.TERRACOTTA_SHINGLES_ORANGE_STAIRS);
+        yellow_shingles.stairs(ModBlocks.TERRACOTTA_SHINGLES_YELLOW_STAIRS);
+        lime_shingles.stairs(ModBlocks.TERRACOTTA_SHINGLES_LIME_STAIRS);
+        green_shingles.stairs(ModBlocks.TERRACOTTA_SHINGLES_GREEN_STAIRS);
+        cyan_shingles.stairs(ModBlocks.TERRACOTTA_SHINGLES_CYAN_STAIRS);
+        light_blue_shingles.stairs(ModBlocks.TERRACOTTA_SHINGLES_LIGHT_BLUE_STAIRS);
+        blue_shingles.stairs(ModBlocks.TERRACOTTA_SHINGLES_BLUE_STAIRS);
+        purple_shingles.stairs(ModBlocks.TERRACOTTA_SHINGLES_PURPLE_STAIRS);
+        magenta_shingles.stairs(ModBlocks.TERRACOTTA_SHINGLES_MAGENTA_STAIRS);
+        pink_shingles.stairs(ModBlocks.TERRACOTTA_SHINGLES_PINK_STAIRS);
+
+        shingles.slab(ModBlocks.TERRACOTTA_SHINGLES_SLAB);
+        white_shingles.slab(ModBlocks.TERRACOTTA_SHINGLES_WHITE_SLAB);
+        light_gray_shingles.slab(ModBlocks.TERRACOTTA_SHINGLES_LIGHT_GRAY_SLAB);
+        gray_shingles.slab(ModBlocks.TERRACOTTA_SHINGLES_GRAY_SLAB);
+        black_shingles.slab(ModBlocks.TERRACOTTA_SHINGLES_BLACK_SLAB);
+        brown_shingles.slab(ModBlocks.TERRACOTTA_SHINGLES_BROWN_SLAB);
+        red_shingles.slab(ModBlocks.TERRACOTTA_SHINGLES_RED_SLAB);
+        orange_shingles.slab(ModBlocks.TERRACOTTA_SHINGLES_ORANGE_SLAB);
+        yellow_shingles.slab(ModBlocks.TERRACOTTA_SHINGLES_YELLOW_SLAB);
+        lime_shingles.slab(ModBlocks.TERRACOTTA_SHINGLES_LIME_SLAB);
+        green_shingles.slab(ModBlocks.TERRACOTTA_SHINGLES_GREEN_SLAB);
+        cyan_shingles.slab(ModBlocks.TERRACOTTA_SHINGLES_CYAN_SLAB);
+        light_blue_shingles.slab(ModBlocks.TERRACOTTA_SHINGLES_LIGHT_BLUE_SLAB);
+        blue_shingles.slab(ModBlocks.TERRACOTTA_SHINGLES_BLUE_SLAB);
+        purple_shingles.slab(ModBlocks.TERRACOTTA_SHINGLES_PURPLE_SLAB);
+        magenta_shingles.slab(ModBlocks.TERRACOTTA_SHINGLES_MAGENTA_SLAB);
+        pink_shingles.slab(ModBlocks.TERRACOTTA_SHINGLES_PINK_SLAB);
+
 
 
     }
+    private void registerPillar(BlockStateModelGenerator gen, Block block) {
+        gen.registerAxisRotated(
+                block,
+                TexturedModel.CUBE_COLUMN,
+                TexturedModel.CUBE_COLUMN_HORIZONTAL
+
+        );
+    }
+
+    private void registerFixedColumn(BlockStateModelGenerator gen, Block block) {
+        gen.registerSingleton(
+                block,
+                TexturedModel.CUBE_COLUMN
+        );
+    }
+
+
 
 
     @Override

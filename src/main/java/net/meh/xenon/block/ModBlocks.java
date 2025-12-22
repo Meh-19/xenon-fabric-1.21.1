@@ -4514,6 +4514,791 @@ public class ModBlocks {
                     .sounds(BlockSoundGroup.STONE)));
 
 
+    public static final Block SCORIA = registerBlock("scoria",
+            new PillarBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block MOLTEN_SCORIA = registerBlock("molten_scoria",
+            new PillarBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block SCORIA_BRICKS = registerBlock("scoria_bricks",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block SCORIA_BRICKS_STAIRS = registerBlock("scoria_bricks_stairs",
+            new StairsBlock(ModBlocks.SCORIA_BRICKS.getDefaultState(),
+                    AbstractBlock.Settings.create()
+                            .requiresTool()
+                            .instrument(NoteBlockInstrument.BASEDRUM)
+                            .strength(1.5F, 6.0F)
+                            .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block SCORIA_BRICKS_SLAB = registerBlock("scoria_bricks_slab",
+            new SlabBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block SCORIA_BRICKS_WALL = registerBlock("scoria_bricks_wall",
+            new WallBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+
+    public static final Block MOLTEN_SCORIA_BRICKS = registerBlock("molten_scoria_bricks",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block MOLTEN_SCORIA_BRICKS_STAIRS = registerBlock("molten_scoria_bricks_stairs",
+            new StairsBlock(ModBlocks.MOLTEN_SCORIA_BRICKS.getDefaultState(),
+                    AbstractBlock.Settings.create()
+                            .requiresTool()
+                            .instrument(NoteBlockInstrument.BASEDRUM)
+                            .strength(1.5F, 6.0F)
+                            .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block MOLTEN_SCORIA_BRICKS_SLAB = registerBlock("molten_scoria_bricks_slab",
+            new SlabBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block MOLTEN_SCORIA_BRICKS_WALL = registerBlock("molten_scoria_bricks_wall",
+            new WallBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block CHISELED_SCORIA = registerBlock("chiseled_scoria",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block CHISELED_MOLTEN_SCORIA = registerBlock("chiseled_molten_scoria",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+
+    public static final Block TERRACOTTA_SHINGLES = registerBlock("terracotta_shingles",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.25F, 4.2F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block TERRACOTTA_SHINGLES_WHITE = registerBlock("terracotta_shingles_white",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.25F, 4.2F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block TERRACOTTA_SHINGLES_LIGHT_GRAY = registerBlock("terracotta_shingles_light_gray",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.25F, 4.2F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block TERRACOTTA_SHINGLES_GRAY = registerBlock("terracotta_shingles_gray",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.25F, 4.2F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block TERRACOTTA_SHINGLES_BLACK = registerBlock("terracotta_shingles_black",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.25F, 4.2F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block TERRACOTTA_SHINGLES_BROWN = registerBlock("terracotta_shingles_brown",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.25F, 4.2F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block TERRACOTTA_SHINGLES_RED = registerBlock("terracotta_shingles_red",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.25F, 4.2F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block TERRACOTTA_SHINGLES_ORANGE = registerBlock("terracotta_shingles_orange",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.25F, 4.2F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block TERRACOTTA_SHINGLES_YELLOW = registerBlock("terracotta_shingles_yellow",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.25F, 4.2F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block TERRACOTTA_SHINGLES_LIME = registerBlock("terracotta_shingles_lime",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.25F, 4.2F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block TERRACOTTA_SHINGLES_GREEN = registerBlock("terracotta_shingles_green",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.25F, 4.2F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block TERRACOTTA_SHINGLES_CYAN = registerBlock("terracotta_shingles_cyan",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.25F, 4.2F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block TERRACOTTA_SHINGLES_LIGHT_BLUE = registerBlock("terracotta_shingles_light_blue",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.25F, 4.2F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block TERRACOTTA_SHINGLES_BLUE = registerBlock("terracotta_shingles_blue",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.25F, 4.2F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block TERRACOTTA_SHINGLES_PURPLE = registerBlock("terracotta_shingles_purple",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.25F, 4.2F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block TERRACOTTA_SHINGLES_MAGENTA = registerBlock("terracotta_shingles_magenta",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.25F, 4.2F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block TERRACOTTA_SHINGLES_PINK = registerBlock("terracotta_shingles_pink",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.25F, 4.2F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block TERRACOTTA_SHINGLES_STAIRS = registerBlock("terracotta_shingles_stairs",
+            new StairsBlock(ModBlocks.TERRACOTTA_SHINGLES.getDefaultState(),
+                    AbstractBlock.Settings.create()                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.25F, 4.2F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block TERRACOTTA_SHINGLES_WHITE_STAIRS = registerBlock("terracotta_shingles_white_stairs",
+            new StairsBlock(ModBlocks.TERRACOTTA_SHINGLES_WHITE.getDefaultState(),
+                    AbstractBlock.Settings.create()                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.25F, 4.2F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block TERRACOTTA_SHINGLES_LIGHT_GRAY_STAIRS = registerBlock("terracotta_shingles_light_gray_stairs",
+            new StairsBlock(ModBlocks.TERRACOTTA_SHINGLES_LIGHT_GRAY.getDefaultState(),
+                    AbstractBlock.Settings.create()
+                            .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.25F, 4.2F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block TERRACOTTA_SHINGLES_GRAY_STAIRS = registerBlock("terracotta_shingles_gray_stairs",
+            new StairsBlock(ModBlocks.TERRACOTTA_SHINGLES_GRAY.getDefaultState(),
+                    AbstractBlock.Settings.create()                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.25F, 4.2F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block TERRACOTTA_SHINGLES_BLACK_STAIRS = registerBlock("terracotta_shingles_black_stairs",
+            new StairsBlock(ModBlocks.TERRACOTTA_SHINGLES_BLACK.getDefaultState(),
+                    AbstractBlock.Settings.create()                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.25F, 4.2F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block TERRACOTTA_SHINGLES_BROWN_STAIRS = registerBlock("terracotta_shingles_brown_stairs",
+            new StairsBlock(ModBlocks.TERRACOTTA_SHINGLES_BROWN.getDefaultState(),
+                    AbstractBlock.Settings.create()                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.25F, 4.2F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block TERRACOTTA_SHINGLES_RED_STAIRS = registerBlock("terracotta_shingles_red_stairs",
+            new StairsBlock(ModBlocks.TERRACOTTA_SHINGLES_RED.getDefaultState(),
+                    AbstractBlock.Settings.create()                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.25F, 4.2F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block TERRACOTTA_SHINGLES_ORANGE_STAIRS = registerBlock("terracotta_shingles_orange_stairs",
+            new StairsBlock(ModBlocks.TERRACOTTA_SHINGLES_ORANGE.getDefaultState(),
+                    AbstractBlock.Settings.create()                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.25F, 4.2F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block TERRACOTTA_SHINGLES_YELLOW_STAIRS = registerBlock("terracotta_shingles_yellow_stairs",
+            new StairsBlock(ModBlocks.TERRACOTTA_SHINGLES_YELLOW.getDefaultState(),
+                    AbstractBlock.Settings.create()                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.25F, 4.2F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block TERRACOTTA_SHINGLES_LIME_STAIRS = registerBlock("terracotta_shingles_lime_stairs",
+            new StairsBlock(ModBlocks.TERRACOTTA_SHINGLES_LIME.getDefaultState(),
+                    AbstractBlock.Settings.create()                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.25F, 4.2F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block TERRACOTTA_SHINGLES_GREEN_STAIRS = registerBlock("terracotta_shingles_green_stairs",
+            new StairsBlock(ModBlocks.TERRACOTTA_SHINGLES_GREEN.getDefaultState(),
+                    AbstractBlock.Settings.create()                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.25F, 4.2F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block TERRACOTTA_SHINGLES_CYAN_STAIRS = registerBlock("terracotta_shingles_cyan_stairs",
+            new StairsBlock(ModBlocks.TERRACOTTA_SHINGLES_CYAN.getDefaultState(),
+                    AbstractBlock.Settings.create()                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.25F, 4.2F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block TERRACOTTA_SHINGLES_LIGHT_BLUE_STAIRS = registerBlock("terracotta_shingles_light_blue_stairs",
+            new StairsBlock(ModBlocks.TERRACOTTA_SHINGLES_LIGHT_BLUE.getDefaultState(),
+                    AbstractBlock.Settings.create()                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.25F, 4.2F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block TERRACOTTA_SHINGLES_BLUE_STAIRS = registerBlock("terracotta_shingles_blue_stairs",
+            new StairsBlock(ModBlocks.TERRACOTTA_SHINGLES_BLUE.getDefaultState(),
+                    AbstractBlock.Settings.create()                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.25F, 4.2F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block TERRACOTTA_SHINGLES_PURPLE_STAIRS = registerBlock("terracotta_shingles_purple_stairs",
+            new StairsBlock(ModBlocks.TERRACOTTA_SHINGLES_PURPLE.getDefaultState(),
+                    AbstractBlock.Settings.create()                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.25F, 4.2F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block TERRACOTTA_SHINGLES_MAGENTA_STAIRS = registerBlock("terracotta_shingles_magenta_stairs",
+            new StairsBlock(ModBlocks.TERRACOTTA_SHINGLES_MAGENTA.getDefaultState(),
+                    AbstractBlock.Settings.create()                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.25F, 4.2F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block TERRACOTTA_SHINGLES_PINK_STAIRS = registerBlock("terracotta_shingles_pink_stairs",
+            new StairsBlock(ModBlocks.TERRACOTTA_SHINGLES_PINK.getDefaultState(),
+                    AbstractBlock.Settings.create()                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.25F, 4.2F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block TERRACOTTA_SHINGLES_SLAB = registerBlock("terracotta_shingles_slab",
+            new SlabBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.25F, 4.2F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block TERRACOTTA_SHINGLES_WHITE_SLAB = registerBlock("terracotta_shingles_white_slab",
+            new SlabBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.25F, 4.2F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block TERRACOTTA_SHINGLES_LIGHT_GRAY_SLAB = registerBlock("terracotta_shingles_light_gray_slab",
+            new SlabBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.25F, 4.2F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block TERRACOTTA_SHINGLES_GRAY_SLAB = registerBlock("terracotta_shingles_gray_slab",
+            new SlabBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.25F, 4.2F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block TERRACOTTA_SHINGLES_BLACK_SLAB = registerBlock("terracotta_shingles_black_slab",
+            new SlabBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.25F, 4.2F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block TERRACOTTA_SHINGLES_BROWN_SLAB = registerBlock("terracotta_shingles_brown_slab",
+            new SlabBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.25F, 4.2F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block TERRACOTTA_SHINGLES_RED_SLAB = registerBlock("terracotta_shingles_red_slab",
+            new SlabBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.25F, 4.2F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block TERRACOTTA_SHINGLES_ORANGE_SLAB = registerBlock("terracotta_shingles_orange_slab",
+            new SlabBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.25F, 4.2F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block TERRACOTTA_SHINGLES_YELLOW_SLAB = registerBlock("terracotta_shingles_yellow_slab",
+            new SlabBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.25F, 4.2F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block TERRACOTTA_SHINGLES_LIME_SLAB = registerBlock("terracotta_shingles_lime_slab",
+            new SlabBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.25F, 4.2F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block TERRACOTTA_SHINGLES_GREEN_SLAB = registerBlock("terracotta_shingles_green_slab",
+            new SlabBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.25F, 4.2F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block TERRACOTTA_SHINGLES_CYAN_SLAB = registerBlock("terracotta_shingles_cyan_slab",
+            new SlabBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.25F, 4.2F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block TERRACOTTA_SHINGLES_LIGHT_BLUE_SLAB = registerBlock("terracotta_shingles_light_blue_slab",
+            new SlabBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.25F, 4.2F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block TERRACOTTA_SHINGLES_BLUE_SLAB = registerBlock("terracotta_shingles_blue_slab",
+            new SlabBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.25F, 4.2F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block TERRACOTTA_SHINGLES_PURPLE_SLAB = registerBlock("terracotta_shingles_purple_slab",
+            new SlabBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.25F, 4.2F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block TERRACOTTA_SHINGLES_MAGENTA_SLAB = registerBlock("terracotta_shingles_magenta_slab",
+            new SlabBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.25F, 4.2F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block TERRACOTTA_SHINGLES_PINK_SLAB = registerBlock("terracotta_shingles_pink_slab",
+            new SlabBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.25F, 4.2F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+
+    public static final Block CONCRETE_BRICKS_WHITE = registerBlock("concrete_bricks_white",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.8F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block CONCRETE_BRICKS_LIGHT_GRAY = registerBlock("concrete_bricks_light_gray",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.8F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block CONCRETE_BRICKS_GRAY = registerBlock("concrete_bricks_gray",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.8F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block CONCRETE_BRICKS_BLACK = registerBlock("concrete_bricks_black",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.8F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block CONCRETE_BRICKS_BROWN = registerBlock("concrete_bricks_brown",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.8F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block CONCRETE_BRICKS_RED = registerBlock("concrete_bricks_red",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.8F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block CONCRETE_BRICKS_ORANGE = registerBlock("concrete_bricks_orange",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.8F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block CONCRETE_BRICKS_YELLOW = registerBlock("concrete_bricks_yellow",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.8F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block CONCRETE_BRICKS_LIME = registerBlock("concrete_bricks_lime",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.8F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block CONCRETE_BRICKS_GREEN = registerBlock("concrete_bricks_green",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.8F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block CONCRETE_BRICKS_CYAN = registerBlock("concrete_bricks_cyan",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.8F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block CONCRETE_BRICKS_LIGHT_BLUE = registerBlock("concrete_bricks_light_blue",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.8F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block CONCRETE_BRICKS_BLUE = registerBlock("concrete_bricks_blue",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.8F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block CONCRETE_BRICKS_PURPLE = registerBlock("concrete_bricks_purple",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.8F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block CONCRETE_BRICKS_MAGENTA = registerBlock("concrete_bricks_magenta",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.8F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block CONCRETE_BRICKS_PINK = registerBlock("concrete_bricks_pink",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.8F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block CONCRETE_BRICKS_WHITE_STAIRS = registerBlock("concrete_bricks_white_stairs",
+            new StairsBlock(ModBlocks.CONCRETE_BRICKS_WHITE.getDefaultState(),
+                    AbstractBlock.Settings.create()                    .requiresTool()
+                            .instrument(NoteBlockInstrument.BASEDRUM)
+                            .strength(1.8F)
+                            .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block CONCRETE_BRICKS_LIGHT_GRAY_STAIRS = registerBlock("concrete_bricks_light_gray_stairs",
+            new StairsBlock(ModBlocks.CONCRETE_BRICKS_LIGHT_GRAY.getDefaultState(),
+                    AbstractBlock.Settings.create()
+                            .requiresTool()
+                            .instrument(NoteBlockInstrument.BASEDRUM)
+                            .strength(1.8F)
+                            .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block CONCRETE_BRICKS_GRAY_STAIRS = registerBlock("concrete_bricks_gray_stairs",
+            new StairsBlock(ModBlocks.CONCRETE_BRICKS_GRAY.getDefaultState(),
+                    AbstractBlock.Settings.create()                    .requiresTool()
+                            .instrument(NoteBlockInstrument.BASEDRUM)
+                            .strength(1.8F)
+                            .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block CONCRETE_BRICKS_BLACK_STAIRS = registerBlock("concrete_bricks_black_stairs",
+            new StairsBlock(ModBlocks.CONCRETE_BRICKS_BLACK.getDefaultState(),
+                    AbstractBlock.Settings.create()                    .requiresTool()
+                            .instrument(NoteBlockInstrument.BASEDRUM)
+                            .strength(1.8F)
+                            .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block CONCRETE_BRICKS_BROWN_STAIRS = registerBlock("concrete_bricks_brown_stairs",
+            new StairsBlock(ModBlocks.CONCRETE_BRICKS_BROWN.getDefaultState(),
+                    AbstractBlock.Settings.create()                    .requiresTool()
+                            .instrument(NoteBlockInstrument.BASEDRUM)
+                            .strength(1.8F)
+                            .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block CONCRETE_BRICKS_RED_STAIRS = registerBlock("concrete_bricks_red_stairs",
+            new StairsBlock(ModBlocks.CONCRETE_BRICKS_RED.getDefaultState(),
+                    AbstractBlock.Settings.create()                    .requiresTool()
+                            .instrument(NoteBlockInstrument.BASEDRUM)
+                            .strength(1.8F)
+                            .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block CONCRETE_BRICKS_ORANGE_STAIRS = registerBlock("concrete_bricks_orange_stairs",
+            new StairsBlock(ModBlocks.CONCRETE_BRICKS_ORANGE.getDefaultState(),
+                    AbstractBlock.Settings.create()                    .requiresTool()
+                            .instrument(NoteBlockInstrument.BASEDRUM)
+                            .strength(1.8F)
+                            .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block CONCRETE_BRICKS_YELLOW_STAIRS = registerBlock("concrete_bricks_yellow_stairs",
+            new StairsBlock(ModBlocks.CONCRETE_BRICKS_YELLOW.getDefaultState(),
+                    AbstractBlock.Settings.create()                    .requiresTool()
+                            .instrument(NoteBlockInstrument.BASEDRUM)
+                            .strength(1.8F)
+                            .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block CONCRETE_BRICKS_LIME_STAIRS = registerBlock("concrete_bricks_lime_stairs",
+            new StairsBlock(ModBlocks.CONCRETE_BRICKS_LIME.getDefaultState(),
+                    AbstractBlock.Settings.create()                    .requiresTool()
+                            .instrument(NoteBlockInstrument.BASEDRUM)
+                            .strength(1.8F)
+                            .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block CONCRETE_BRICKS_GREEN_STAIRS = registerBlock("concrete_bricks_green_stairs",
+            new StairsBlock(ModBlocks.CONCRETE_BRICKS_GREEN.getDefaultState(),
+                    AbstractBlock.Settings.create()                    .requiresTool()
+                            .instrument(NoteBlockInstrument.BASEDRUM)
+                            .strength(1.8F)
+                            .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block CONCRETE_BRICKS_CYAN_STAIRS = registerBlock("concrete_bricks_cyan_stairs",
+            new StairsBlock(ModBlocks.CONCRETE_BRICKS_CYAN.getDefaultState(),
+                    AbstractBlock.Settings.create()                    .requiresTool()
+                            .instrument(NoteBlockInstrument.BASEDRUM)
+                            .strength(1.8F)
+                            .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block CONCRETE_BRICKS_LIGHT_BLUE_STAIRS = registerBlock("concrete_bricks_light_blue_stairs",
+            new StairsBlock(ModBlocks.CONCRETE_BRICKS_LIGHT_BLUE.getDefaultState(),
+                    AbstractBlock.Settings.create()                    .requiresTool()
+                            .instrument(NoteBlockInstrument.BASEDRUM)
+                            .strength(1.8F)
+                            .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block CONCRETE_BRICKS_BLUE_STAIRS = registerBlock("concrete_bricks_blue_stairs",
+            new StairsBlock(ModBlocks.CONCRETE_BRICKS_BLUE.getDefaultState(),
+                    AbstractBlock.Settings.create()                    .requiresTool()
+                            .instrument(NoteBlockInstrument.BASEDRUM)
+                            .strength(1.8F)
+                            .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block CONCRETE_BRICKS_PURPLE_STAIRS = registerBlock("concrete_bricks_purple_stairs",
+            new StairsBlock(ModBlocks.CONCRETE_BRICKS_PURPLE.getDefaultState(),
+                    AbstractBlock.Settings.create()                    .requiresTool()
+                            .instrument(NoteBlockInstrument.BASEDRUM)
+                            .strength(1.8F)
+                            .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block CONCRETE_BRICKS_MAGENTA_STAIRS = registerBlock("concrete_bricks_magenta_stairs",
+            new StairsBlock(ModBlocks.CONCRETE_BRICKS_MAGENTA.getDefaultState(),
+                    AbstractBlock.Settings.create()                    .requiresTool()
+                            .instrument(NoteBlockInstrument.BASEDRUM)
+                            .strength(1.8F)
+                            .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block CONCRETE_BRICKS_PINK_STAIRS = registerBlock("concrete_bricks_pink_stairs",
+            new StairsBlock(ModBlocks.CONCRETE_BRICKS_PINK.getDefaultState(),
+                    AbstractBlock.Settings.create()                    .requiresTool()
+                            .instrument(NoteBlockInstrument.BASEDRUM)
+                            .strength(1.8F)
+                            .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block CONCRETE_BRICKS_WHITE_SLAB = registerBlock("concrete_bricks_white_slab",
+            new SlabBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.8F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block CONCRETE_BRICKS_LIGHT_GRAY_SLAB = registerBlock("concrete_bricks_light_gray_slab",
+            new SlabBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.8F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block CONCRETE_BRICKS_GRAY_SLAB = registerBlock("concrete_bricks_gray_slab",
+            new SlabBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.8F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block CONCRETE_BRICKS_BLACK_SLAB = registerBlock("concrete_bricks_black_slab",
+            new SlabBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.8F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block CONCRETE_BRICKS_BROWN_SLAB = registerBlock("concrete_bricks_brown_slab",
+            new SlabBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.8F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block CONCRETE_BRICKS_RED_SLAB = registerBlock("concrete_bricks_red_slab",
+            new SlabBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.8F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block CONCRETE_BRICKS_ORANGE_SLAB = registerBlock("concrete_bricks_orange_slab",
+            new SlabBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.8F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block CONCRETE_BRICKS_YELLOW_SLAB = registerBlock("concrete_bricks_yellow_slab",
+            new SlabBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.8F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block CONCRETE_BRICKS_LIME_SLAB = registerBlock("concrete_bricks_lime_slab",
+            new SlabBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.8F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block CONCRETE_BRICKS_GREEN_SLAB = registerBlock("concrete_bricks_green_slab",
+            new SlabBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.8F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block CONCRETE_BRICKS_CYAN_SLAB = registerBlock("concrete_bricks_cyan_slab",
+            new SlabBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.8F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block CONCRETE_BRICKS_LIGHT_BLUE_SLAB = registerBlock("concrete_bricks_light_blue_slab",
+            new SlabBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.8F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block CONCRETE_BRICKS_BLUE_SLAB = registerBlock("concrete_bricks_blue_slab",
+            new SlabBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.8F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block CONCRETE_BRICKS_PURPLE_SLAB = registerBlock("concrete_bricks_purple_slab",
+            new SlabBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.8F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block CONCRETE_BRICKS_MAGENTA_SLAB = registerBlock("concrete_bricks_magenta_slab",
+            new SlabBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.8F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block CONCRETE_BRICKS_PINK_SLAB = registerBlock("concrete_bricks_pink_slab",
+            new SlabBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.8F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+
     //</editor-fold>
 
 

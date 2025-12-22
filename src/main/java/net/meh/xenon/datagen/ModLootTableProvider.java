@@ -562,6 +562,17 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.CARVED_BLIGHTED_BONE_BLOCK);
         addDrop(ModBlocks.SCORCHED_BONE_BLOCK);
         addDrop(ModBlocks.CARVED_SCORCHED_BONE_BLOCK);
+        addDrop(ModBlocks.SCORIA);
+        addDrop(ModBlocks.MOLTEN_SCORIA);
+        addDrop(ModBlocks.SCORIA_BRICKS);
+        addDrop(ModBlocks.SCORIA_BRICKS_SLAB, slabDrops(ModBlocks.SCORIA_BRICKS_SLAB));
+        addDrop(ModBlocks.SCORIA_BRICKS_STAIRS);
+        addDrop(ModBlocks.SCORIA_BRICKS_WALL);
+        addDrop(ModBlocks.MOLTEN_SCORIA_BRICKS_SLAB, slabDrops(ModBlocks.MOLTEN_SCORIA_BRICKS_SLAB));
+        addDrop(ModBlocks.MOLTEN_SCORIA_BRICKS_STAIRS);
+        addDrop(ModBlocks.MOLTEN_SCORIA_BRICKS_WALL);
+        addDrop(ModBlocks.CHISELED_SCORIA);
+        addDrop(ModBlocks.CHISELED_MOLTEN_SCORIA);
 
         addDrop(ModBlocks.ECHO_GLASS, dropsWithSilkTouch(ModBlocks.ECHO_GLASS));
 
@@ -655,6 +666,113 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.PRISMARINE_TILES_STAIRS);
         addDrop(ModBlocks.PRISMARINE_TILES_SLAB, slabDrops(ModBlocks.PRISMARINE_TILES_SLAB));
         addDrop(ModBlocks.PRISMARINE_TILES_WALL);
+
+        addDrop(ModBlocks.TERRACOTTA_SHINGLES);
+        addDrop(ModBlocks.TERRACOTTA_SHINGLES_WHITE);
+        addDrop(ModBlocks.TERRACOTTA_SHINGLES_LIGHT_GRAY);
+        addDrop(ModBlocks.TERRACOTTA_SHINGLES_GRAY);
+        addDrop(ModBlocks.TERRACOTTA_SHINGLES_BLACK);
+        addDrop(ModBlocks.TERRACOTTA_SHINGLES_BROWN);
+        addDrop(ModBlocks.TERRACOTTA_SHINGLES_RED);
+        addDrop(ModBlocks.TERRACOTTA_SHINGLES_ORANGE);
+        addDrop(ModBlocks.TERRACOTTA_SHINGLES_YELLOW);
+        addDrop(ModBlocks.TERRACOTTA_SHINGLES_LIME);
+        addDrop(ModBlocks.TERRACOTTA_SHINGLES_GREEN);
+        addDrop(ModBlocks.TERRACOTTA_SHINGLES_CYAN);
+        addDrop(ModBlocks.TERRACOTTA_SHINGLES_LIGHT_BLUE);
+        addDrop(ModBlocks.TERRACOTTA_SHINGLES_BLUE);
+        addDrop(ModBlocks.TERRACOTTA_SHINGLES_PURPLE);
+        addDrop(ModBlocks.TERRACOTTA_SHINGLES_MAGENTA);
+        addDrop(ModBlocks.TERRACOTTA_SHINGLES_PINK);
+
+
+        addDrop(ModBlocks.TERRACOTTA_SHINGLES_STAIRS);
+        addDrop(ModBlocks.TERRACOTTA_SHINGLES_WHITE_STAIRS);
+        addDrop(ModBlocks.TERRACOTTA_SHINGLES_LIGHT_GRAY_STAIRS);
+        addDrop(ModBlocks.TERRACOTTA_SHINGLES_GRAY_STAIRS);
+        addDrop(ModBlocks.TERRACOTTA_SHINGLES_BLACK_STAIRS);
+        addDrop(ModBlocks.TERRACOTTA_SHINGLES_BROWN_STAIRS);
+        addDrop(ModBlocks.TERRACOTTA_SHINGLES_RED_STAIRS);
+        addDrop(ModBlocks.TERRACOTTA_SHINGLES_ORANGE_STAIRS);
+        addDrop(ModBlocks.TERRACOTTA_SHINGLES_YELLOW_STAIRS);
+        addDrop(ModBlocks.TERRACOTTA_SHINGLES_LIME_STAIRS);
+        addDrop(ModBlocks.TERRACOTTA_SHINGLES_GREEN_STAIRS);
+        addDrop(ModBlocks.TERRACOTTA_SHINGLES_CYAN_STAIRS);
+        addDrop(ModBlocks.TERRACOTTA_SHINGLES_LIGHT_BLUE_STAIRS);
+        addDrop(ModBlocks.TERRACOTTA_SHINGLES_BLUE_STAIRS);
+        addDrop(ModBlocks.TERRACOTTA_SHINGLES_PURPLE_STAIRS);
+        addDrop(ModBlocks.TERRACOTTA_SHINGLES_MAGENTA_STAIRS);
+        addDrop(ModBlocks.TERRACOTTA_SHINGLES_PINK_STAIRS);
+
+        addDrop(ModBlocks.TERRACOTTA_SHINGLES_SLAB);
+        addDrop(ModBlocks.TERRACOTTA_SHINGLES_WHITE_SLAB);
+        addDrop(ModBlocks.TERRACOTTA_SHINGLES_LIGHT_GRAY_SLAB);
+        addDrop(ModBlocks.TERRACOTTA_SHINGLES_GRAY_SLAB);
+        addDrop(ModBlocks.TERRACOTTA_SHINGLES_BLACK_SLAB);
+        addDrop(ModBlocks.TERRACOTTA_SHINGLES_BROWN_SLAB);
+        addDrop(ModBlocks.TERRACOTTA_SHINGLES_RED_SLAB);
+        addDrop(ModBlocks.TERRACOTTA_SHINGLES_ORANGE_SLAB);
+        addDrop(ModBlocks.TERRACOTTA_SHINGLES_YELLOW_SLAB);
+        addDrop(ModBlocks.TERRACOTTA_SHINGLES_LIME_SLAB);
+        addDrop(ModBlocks.TERRACOTTA_SHINGLES_GREEN_SLAB);
+        addDrop(ModBlocks.TERRACOTTA_SHINGLES_CYAN_SLAB);
+        addDrop(ModBlocks.TERRACOTTA_SHINGLES_LIGHT_BLUE_SLAB);
+        addDrop(ModBlocks.TERRACOTTA_SHINGLES_BLUE_SLAB);
+        addDrop(ModBlocks.TERRACOTTA_SHINGLES_PURPLE_SLAB);
+        addDrop(ModBlocks.TERRACOTTA_SHINGLES_MAGENTA_SLAB);
+        addDrop(ModBlocks.TERRACOTTA_SHINGLES_PINK_SLAB);
+
+        addDrop(ModBlocks.CONCRETE_BRICKS_WHITE);
+        addDrop(ModBlocks.CONCRETE_BRICKS_LIGHT_GRAY);
+        addDrop(ModBlocks.CONCRETE_BRICKS_GRAY);
+        addDrop(ModBlocks.CONCRETE_BRICKS_BLACK);
+        addDrop(ModBlocks.CONCRETE_BRICKS_BROWN);
+        addDrop(ModBlocks.CONCRETE_BRICKS_RED);
+        addDrop(ModBlocks.CONCRETE_BRICKS_ORANGE);
+        addDrop(ModBlocks.CONCRETE_BRICKS_YELLOW);
+        addDrop(ModBlocks.CONCRETE_BRICKS_LIME);
+        addDrop(ModBlocks.CONCRETE_BRICKS_GREEN);
+        addDrop(ModBlocks.CONCRETE_BRICKS_CYAN);
+        addDrop(ModBlocks.CONCRETE_BRICKS_LIGHT_BLUE);
+        addDrop(ModBlocks.CONCRETE_BRICKS_BLUE);
+        addDrop(ModBlocks.CONCRETE_BRICKS_PURPLE);
+        addDrop(ModBlocks.CONCRETE_BRICKS_MAGENTA);
+        addDrop(ModBlocks.CONCRETE_BRICKS_PINK);
+
+
+        addDrop(ModBlocks.CONCRETE_BRICKS_WHITE_STAIRS);
+        addDrop(ModBlocks.CONCRETE_BRICKS_LIGHT_GRAY_STAIRS);
+        addDrop(ModBlocks.CONCRETE_BRICKS_GRAY_STAIRS);
+        addDrop(ModBlocks.CONCRETE_BRICKS_BLACK_STAIRS);
+        addDrop(ModBlocks.CONCRETE_BRICKS_BROWN_STAIRS);
+        addDrop(ModBlocks.CONCRETE_BRICKS_RED_STAIRS);
+        addDrop(ModBlocks.CONCRETE_BRICKS_ORANGE_STAIRS);
+        addDrop(ModBlocks.CONCRETE_BRICKS_YELLOW_STAIRS);
+        addDrop(ModBlocks.CONCRETE_BRICKS_LIME_STAIRS);
+        addDrop(ModBlocks.CONCRETE_BRICKS_GREEN_STAIRS);
+        addDrop(ModBlocks.CONCRETE_BRICKS_CYAN_STAIRS);
+        addDrop(ModBlocks.CONCRETE_BRICKS_LIGHT_BLUE_STAIRS);
+        addDrop(ModBlocks.CONCRETE_BRICKS_BLUE_STAIRS);
+        addDrop(ModBlocks.CONCRETE_BRICKS_PURPLE_STAIRS);
+        addDrop(ModBlocks.CONCRETE_BRICKS_MAGENTA_STAIRS);
+        addDrop(ModBlocks.CONCRETE_BRICKS_PINK_STAIRS);
+
+        addDrop(ModBlocks.CONCRETE_BRICKS_WHITE_SLAB);
+        addDrop(ModBlocks.CONCRETE_BRICKS_LIGHT_GRAY_SLAB);
+        addDrop(ModBlocks.CONCRETE_BRICKS_GRAY_SLAB);
+        addDrop(ModBlocks.CONCRETE_BRICKS_BLACK_SLAB);
+        addDrop(ModBlocks.CONCRETE_BRICKS_BROWN_SLAB);
+        addDrop(ModBlocks.CONCRETE_BRICKS_RED_SLAB);
+        addDrop(ModBlocks.CONCRETE_BRICKS_ORANGE_SLAB);
+        addDrop(ModBlocks.CONCRETE_BRICKS_YELLOW_SLAB);
+        addDrop(ModBlocks.CONCRETE_BRICKS_LIME_SLAB);
+        addDrop(ModBlocks.CONCRETE_BRICKS_GREEN_SLAB);
+        addDrop(ModBlocks.CONCRETE_BRICKS_CYAN_SLAB);
+        addDrop(ModBlocks.CONCRETE_BRICKS_LIGHT_BLUE_SLAB);
+        addDrop(ModBlocks.CONCRETE_BRICKS_BLUE_SLAB);
+        addDrop(ModBlocks.CONCRETE_BRICKS_PURPLE_SLAB);
+        addDrop(ModBlocks.CONCRETE_BRICKS_MAGENTA_SLAB);
+        addDrop(ModBlocks.CONCRETE_BRICKS_PINK_SLAB);
 
     }
 
