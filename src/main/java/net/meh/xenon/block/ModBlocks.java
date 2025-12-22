@@ -4375,6 +4375,145 @@ public class ModBlocks {
                     .instrument(NoteBlockInstrument.BASEDRUM)
                     .strength(1.5F, 6.0F)
                     .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block BRITTLE_BONE_BLOCK = registerBlock("brittle_bone_block",
+            new PillarBlock(AbstractBlock.Settings.create()
+                    .instrument(NoteBlockInstrument.XYLOPHONE)
+                    .requiresTool()
+                    .strength(2.0F)
+                    .sounds(BlockSoundGroup.BONE)));
+
+    public static final Block CARVED_BRITTLE_BONE_BLOCK = registerBlock("carved_brittle_bone_block",
+            new PillarBlock(AbstractBlock.Settings.create()
+                    .instrument(NoteBlockInstrument.XYLOPHONE)
+                    .requiresTool()
+                    .strength(2.0F)
+                    .sounds(BlockSoundGroup.BONE)));
+
+    public static final Block BLIGHTED_BONE_BLOCK = registerBlock("blighted_bone_block",
+            new PillarBlock(AbstractBlock.Settings.create()
+                    .instrument(NoteBlockInstrument.XYLOPHONE)
+                    .requiresTool()
+                    .strength(2.0F)
+                    .sounds(BlockSoundGroup.BONE)));
+
+    public static final Block CARVED_BLIGHTED_BONE_BLOCK = registerBlock("carved_blighted_bone_block",
+            new PillarBlock(AbstractBlock.Settings.create()
+                    .instrument(NoteBlockInstrument.XYLOPHONE)
+                    .requiresTool()
+                    .strength(2.0F)
+                    .sounds(BlockSoundGroup.BONE)));
+
+    public static final Block SCORCHED_BONE_BLOCK = registerBlock("scorched_bone_block",
+            new PillarBlock(AbstractBlock.Settings.create()
+                    .instrument(NoteBlockInstrument.XYLOPHONE)
+                    .requiresTool()
+                    .strength(2.0F)
+                    .sounds(BlockSoundGroup.BONE)));
+
+    public static final Block CARVED_SCORCHED_BONE_BLOCK = registerBlock("carved_scorched_bone_block",
+            new PillarBlock(AbstractBlock.Settings.create()
+                    .instrument(NoteBlockInstrument.XYLOPHONE)
+                    .requiresTool()
+                    .strength(2.0F)
+                    .sounds(BlockSoundGroup.BONE)));
+
+
+    public static final Block KYANITE = registerBlock("kyanite",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block KYANITE_STAIRS = registerBlock("kyanite_stairs",
+            new StairsBlock(ModBlocks.KYANITE.getDefaultState(),
+                    AbstractBlock.Settings.create()
+                            .requiresTool()
+                            .instrument(NoteBlockInstrument.BASEDRUM)
+                            .strength(1.5F, 6.0F)
+                            .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block KYANITE_SLAB = registerBlock("kyanite_slab",
+            new SlabBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block KYANITE_WALL = registerBlock("kyanite_wall",
+            new WallBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block CHISELED_KYANITE = registerBlock("chiseled_kyanite",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block KYANITE_BRICKS = registerBlock("kyanite_bricks",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block KYANITE_BRICKS_STAIRS = registerBlock("kyanite_bricks_stairs",
+            new StairsBlock(ModBlocks.KYANITE_BRICKS.getDefaultState(),
+                    AbstractBlock.Settings.create()
+                            .requiresTool()
+                            .instrument(NoteBlockInstrument.BASEDRUM)
+                            .strength(1.5F, 6.0F)
+                            .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block KYANITE_BRICKS_SLAB = registerBlock("kyanite_bricks_slab",
+            new SlabBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block KYANITE_BRICKS_WALL = registerBlock("kyanite_bricks_wall",
+            new WallBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block POLISHED_KYANITE = registerBlock("polished_kyanite",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block POLISHED_KYANITE_STAIRS = registerBlock("polished_kyanite_stairs",
+            new StairsBlock(ModBlocks.POLISHED_KYANITE.getDefaultState(),
+                    AbstractBlock.Settings.create()
+                            .requiresTool()
+                            .instrument(NoteBlockInstrument.BASEDRUM)
+                            .strength(1.5F, 6.0F)
+                            .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block POLISHED_KYANITE_SLAB = registerBlock("polished_kyanite_slab",
+            new SlabBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block POLISHED_KYANITE_WALL = registerBlock("polished_kyanite_wall",
+            new WallBlock(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
+
     //</editor-fold>
 
 

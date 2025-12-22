@@ -19,6 +19,10 @@ public class ModModelProvider extends FabricModelProvider {
         var sandy_limestone = gen.registerCubeAllModelTexturePool(ModBlocks.SANDY_LIMESTONE_BRICKS);
         var limestone_bricks = gen.registerCubeAllModelTexturePool(ModBlocks.LIMESTONE_BRICKS);
 
+        var kyanite = gen.registerCubeAllModelTexturePool(ModBlocks.KYANITE);
+        var polished_kyanite = gen.registerCubeAllModelTexturePool(ModBlocks.POLISHED_KYANITE);
+        var kyanite_bricks = gen.registerCubeAllModelTexturePool(ModBlocks.KYANITE_BRICKS);
+
         var grimrock = gen.registerCubeAllModelTexturePool(ModBlocks.GRIMROCK);
         var cobbled_grimrock = gen.registerCubeAllModelTexturePool(ModBlocks.COBBLED_GRIMROCK);
         var cracked_grimrock_bricks = gen.registerCubeAllModelTexturePool(ModBlocks.CRACKED_GRIMROCK_BRICKS);
@@ -52,7 +56,7 @@ public class ModModelProvider extends FabricModelProvider {
         var polished_gravestone = gen.registerCubeAllModelTexturePool(ModBlocks.POLISHED_GRAVESTONE);
         var gravestone_bricks = gen.registerCubeAllModelTexturePool(ModBlocks.GRAVESTONE_BRICKS);
 
-        gen.registerCubeAllModelTexturePool(ModBlocks.CHISELED_DRIPSTONE); //CHISELED ALWAYS GETS EXPORTED LIKE THIS
+        gen.registerCubeAllModelTexturePool(ModBlocks.CHISELED_DRIPSTONE);
         var dripstone_bricks = gen.registerCubeAllModelTexturePool(ModBlocks.DRIPSTONE_BRICKS);
         var polished_dripstone = gen.registerCubeAllModelTexturePool(ModBlocks.POLISHED_DRIPSTONE);
 
@@ -233,6 +237,16 @@ public class ModModelProvider extends FabricModelProvider {
         limestone.wall(ModBlocks.LIMESTONE_WALL);
         limestone.slab(ModBlocks.LIMESTONE_SLAB);
         limestone.stairs(ModBlocks.LIMESTONE_STAIRS);
+
+        kyanite_bricks.wall(ModBlocks.KYANITE_BRICKS_WALL);
+        kyanite_bricks.slab(ModBlocks.KYANITE_BRICKS_SLAB);
+        kyanite_bricks.stairs(ModBlocks.KYANITE_BRICKS_STAIRS);
+        polished_kyanite.wall(ModBlocks.POLISHED_KYANITE_WALL);
+        polished_kyanite.slab(ModBlocks.POLISHED_KYANITE_SLAB);
+        polished_kyanite.stairs(ModBlocks.POLISHED_KYANITE_STAIRS);
+        kyanite.wall(ModBlocks.KYANITE_WALL);
+        kyanite.slab(ModBlocks.KYANITE_SLAB);
+        kyanite.stairs(ModBlocks.KYANITE_STAIRS);
 
         grimrock.wall(ModBlocks.GRIMROCK_WALL);
         grimrock.slab(ModBlocks.GRIMROCK_SLAB);

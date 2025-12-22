@@ -391,6 +391,19 @@ public static final ItemGroup XENON_ITEMS_GROUP = Registry.register(Registries.I
                         entries.add(ModBlocks.SANDY_LIMESTONE_BRICKS_STAIRS);
                         entries.add(ModBlocks.SANDY_LIMESTONE_BRICKS_SLAB);
                         entries.add(ModBlocks.SANDY_LIMESTONE_BRICKS_WALL);
+                        entries.add(ModBlocks.KYANITE);
+                        entries.add(ModBlocks.KYANITE_STAIRS);
+                        entries.add(ModBlocks.KYANITE_SLAB);
+                        entries.add(ModBlocks.KYANITE_WALL);
+                        entries.add(ModBlocks.CHISELED_KYANITE);
+                        entries.add(ModBlocks.KYANITE_BRICKS);
+                        entries.add(ModBlocks.KYANITE_BRICKS_STAIRS);
+                        entries.add(ModBlocks.KYANITE_BRICKS_SLAB);
+                        entries.add(ModBlocks.KYANITE_BRICKS_WALL);
+                        entries.add(ModBlocks.POLISHED_KYANITE);
+                        entries.add(ModBlocks.POLISHED_KYANITE_STAIRS);
+                        entries.add(ModBlocks.POLISHED_KYANITE_SLAB);
+                        entries.add(ModBlocks.POLISHED_KYANITE_WALL);
                         entries.add(ModBlocks.GRIMROCK);
                         entries.add(ModBlocks.GRIMROCK_STAIRS);
                         entries.add(ModBlocks.GRIMROCK_SLAB);
@@ -485,6 +498,12 @@ public static final ItemGroup XENON_ITEMS_GROUP = Registry.register(Registries.I
                         entries.add(ModBlocks.DOLOMITE_BRICKS_SLAB);
                         entries.add(ModBlocks.DOLOMITE_BRICKS_WALL);
                         entries.add(ModBlocks.DOLOMITE_PILLAR);
+                        entries.add(ModBlocks.BRITTLE_BONE_BLOCK);
+                        entries.add(ModBlocks.CARVED_BRITTLE_BONE_BLOCK);
+                        entries.add(ModBlocks.BLIGHTED_BONE_BLOCK);
+                        entries.add(ModBlocks.CARVED_BLIGHTED_BONE_BLOCK);
+                        entries.add(ModBlocks.SCORCHED_BONE_BLOCK);
+                        entries.add(ModBlocks.CARVED_SCORCHED_BONE_BLOCK);
 
                         entries.add(ModBlocks.GRAVESTONE);
                         entries.add(ModBlocks.GRAVESTONE_SLAB);

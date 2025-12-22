@@ -445,6 +445,20 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.SANDY_LIMESTONE_BRICKS_SLAB, slabDrops(ModBlocks.SANDY_LIMESTONE_BRICKS_SLAB));
         addDrop(ModBlocks.SANDY_LIMESTONE_BRICKS_WALL);
 
+        addDrop(ModBlocks.KYANITE);
+        addDrop(ModBlocks.KYANITE_STAIRS);
+        addDrop(ModBlocks.KYANITE_SLAB, slabDrops(ModBlocks.KYANITE_SLAB));
+        addDrop(ModBlocks.KYANITE_WALL);
+        addDrop(ModBlocks.CHISELED_KYANITE);
+        addDrop(ModBlocks.KYANITE_BRICKS);
+        addDrop(ModBlocks.KYANITE_BRICKS_STAIRS);
+        addDrop(ModBlocks.KYANITE_BRICKS_SLAB, slabDrops(ModBlocks.KYANITE_BRICKS_SLAB));
+        addDrop(ModBlocks.KYANITE_BRICKS_WALL);
+        addDrop(ModBlocks.POLISHED_KYANITE);
+        addDrop(ModBlocks.POLISHED_KYANITE_STAIRS);
+        addDrop(ModBlocks.POLISHED_KYANITE_SLAB, slabDrops(ModBlocks.POLISHED_KYANITE_SLAB));
+        addDrop(ModBlocks.POLISHED_KYANITE_WALL);
+
         addDrop(ModBlocks.GRIMROCK);
         addDrop(ModBlocks.GRIMROCK_STAIRS);
         addDrop(ModBlocks.GRIMROCK_SLAB, slabDrops(ModBlocks.GRIMROCK_SLAB));
@@ -542,6 +556,12 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.DOLOMITE_BRICKS_SLAB, slabDrops(ModBlocks.DOLOMITE_BRICKS_SLAB));
         addDrop(ModBlocks.DOLOMITE_BRICKS_WALL);
         addDrop(ModBlocks.DOLOMITE_PILLAR);
+        addDrop(ModBlocks.BRITTLE_BONE_BLOCK);
+        addDrop(ModBlocks.CARVED_BRITTLE_BONE_BLOCK);
+        addDrop(ModBlocks.BLIGHTED_BONE_BLOCK);
+        addDrop(ModBlocks.CARVED_BLIGHTED_BONE_BLOCK);
+        addDrop(ModBlocks.SCORCHED_BONE_BLOCK);
+        addDrop(ModBlocks.CARVED_SCORCHED_BONE_BLOCK);
 
         addDrop(ModBlocks.ECHO_GLASS, dropsWithSilkTouch(ModBlocks.ECHO_GLASS));
 
