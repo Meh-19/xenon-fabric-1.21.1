@@ -1,5 +1,6 @@
 package net.meh.xenon.block;
 
+import net.meh.xenon.block.custom.AquariumGlassBlock;
 import net.meh.xenon.block.custom.PorousDolomiteBlock;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.AbstractBlock;
@@ -3697,6 +3698,23 @@ public class ModBlocks {
                             .blockVision((s, w, p) -> false)
                             .suffocates((s, w, p) -> false)
 
+            )
+
+    );
+
+    public static final Block AQUARIUM_GLASS = Registry.register(
+            Registries.BLOCK,
+            Identifier.of(Xenon.MOD_ID, "aquarium_glass"),
+            new TransparentBlock(
+                    AbstractBlock.Settings.create()
+                            .mapColor(MapColor.CLEAR)
+                            .nonOpaque()
+                            .allowsSpawning((s, w, p, e) -> false)
+                            .solidBlock((s, w, p) -> false)
+                            .suffocates((s, w, p) -> false)
+                            .blockVision((s, w, p) -> false)
+                            .strength(0.3F)
+                            .sounds(BlockSoundGroup.GLASS)
             )
 
     );

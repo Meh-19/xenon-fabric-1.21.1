@@ -29,7 +29,6 @@ public class EchoGlassBlockEntityRenderer
             int light,
             int overlay
     ) {
-        // Only render when holding the item
         if (!MinecraftClient.getInstance().player
                 .getMainHandStack()
                 .isOf(net.meh.xenon.item.ModItems.ECHO_GLASS_ITEM)) {

@@ -27,8 +27,11 @@ public static final Item PLATINUM = registerItem("platinum", new Item(new Item.S
             new DolomiteDustItem(new Item.Settings())
     );
 
-
-
+    public static final Item AQUARIUM_GLASS = Registry.register(
+            Registries.ITEM,
+            Identifier.of(Xenon.MOD_ID, "aquarium_glass"),
+            new BlockItem(ModBlocks.AQUARIUM_GLASS, new Item.Settings())
+    );
     private static Item registerItem(String name, Item item) {
     return Registry.register(Registries.ITEM, Identifier.of(Xenon.MOD_ID, name), item);
 }

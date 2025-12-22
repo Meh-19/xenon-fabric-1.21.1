@@ -22,8 +22,7 @@
 			"net.meh.xenon.XenonDataGenerator"
 		],
 		"client": [
-			"net.meh.xenon.XenonClient"
-		]
+			"net.meh.xenon.XenonClient"]
 	},
 	"mixins": [
 		"xenon.mixins.json"
