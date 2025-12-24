@@ -27,6 +27,44 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
     @Override
     public void generate() {
 
+        addDrop(ModBlocks.SALVAGING_TABLE);
+        addDrop(ModBlocks.PRISM_LANTERN);
+        addDrop(ModBlocks.WHITE_CRYSTAL_BLOCK);
+        addDrop(ModBlocks.WHITE_CRYSTAL_BRICKS);
+        addDrop(ModBlocks.WHITE_CRYSTAL_LANTERN);
+        addDrop(ModBlocks.CHISELED_WHITE_CRYSTAL_BRICKS);
+        addDrop(ModBlocks.RED_CRYSTAL_BLOCK);
+        addDrop(ModBlocks.RED_CRYSTAL_BRICKS);
+        addDrop(ModBlocks.RED_CRYSTAL_LANTERN);
+        addDrop(ModBlocks.CHISELED_RED_CRYSTAL_BRICKS);
+        addDrop(ModBlocks.RED_CRYSTAL);
+        addDrop(ModBlocks.ORANGE_CRYSTAL_BLOCK);
+        addDrop(ModBlocks.ORANGE_CRYSTAL_BRICKS);
+        addDrop(ModBlocks.ORANGE_CRYSTAL_LANTERN);
+        addDrop(ModBlocks.CHISELED_ORANGE_CRYSTAL_BRICKS);
+        addDrop(ModBlocks.ORANGE_CRYSTAL);
+        addDrop(ModBlocks.YELLOW_CRYSTAL_BLOCK);
+        addDrop(ModBlocks.YELLOW_CRYSTAL_BRICKS);
+        addDrop(ModBlocks.YELLOW_CRYSTAL_LANTERN);
+        addDrop(ModBlocks.CHISELED_YELLOW_CRYSTAL_BRICKS);
+        addDrop(ModBlocks.YELLOW_CRYSTAL);
+        addDrop(ModBlocks.WHITE_CRYSTAL);
+        addDrop(ModBlocks.GREEN_CRYSTAL_BLOCK);
+        addDrop(ModBlocks.GREEN_CRYSTAL_BRICKS);
+        addDrop(ModBlocks.GREEN_CRYSTAL_LANTERN);
+        addDrop(ModBlocks.CHISELED_GREEN_CRYSTAL_BRICKS);
+        addDrop(ModBlocks.GREEN_CRYSTAL);
+        addDrop(ModBlocks.BLUE_CRYSTAL_BLOCK);
+        addDrop(ModBlocks.BLUE_CRYSTAL_BRICKS);
+        addDrop(ModBlocks.BLUE_CRYSTAL_LANTERN);
+        addDrop(ModBlocks.CHISELED_BLUE_CRYSTAL_BRICKS);
+        addDrop(ModBlocks.BLUE_CRYSTAL);
+        addDrop(ModBlocks.PURPLE_CRYSTAL_BLOCK);
+        addDrop(ModBlocks.PURPLE_CRYSTAL_BRICKS);
+        addDrop(ModBlocks.PURPLE_CRYSTAL_LANTERN);
+        addDrop(ModBlocks.CHISELED_PURPLE_CRYSTAL_BRICKS);
+        addDrop(ModBlocks.PURPLE_CRYSTAL);
+
         addDrop(ModBlocks.PLATINUM_BLOCK);
         addDrop(ModBlocks.PLATINUM_BRICKS);
         addDrop(ModBlocks.PLATINUM_PILLAR);

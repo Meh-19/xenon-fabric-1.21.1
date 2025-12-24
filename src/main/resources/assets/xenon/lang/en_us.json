@@ -765,5 +765,52 @@
   "block.xenon.cracked_rhyolite_bricks": "Cracked Rhyolite Bricks",
   "block.xenon.cracked_rhyolite_bricks_slab": "Cracked Rhyolite Bricks Slab",
   "block.xenon.cracked_rhyolite_bricks_stairs": "Cracked Rhyolite Bricks Stairs",
-  "block.xenon.cracked_rhyolite_bricks_wall": "Cracked Rhyolite Bricks Wall"
+  "block.xenon.cracked_rhyolite_bricks_wall": "Cracked Rhyolite Bricks Wall",
+
+  "block.xenon.glowstone_crystal": "Glowstone Crystal",
+
+  "block.xenon.white_crystal": "White Crystal",
+  "block.xenon.white_crystal_block": "White Crystal Block",
+  "block.xenon.white_crystal_bricks": "White Crystal Bricks",
+  "block.xenon.chiseled_white_crystal_bricks": "Chiseled White Crystal Bricks",
+  "block.xenon.white_crystal_lantern": "White Crystal Lantern",
+
+  "block.xenon.red_crystal": "Red Crystal",
+  "block.xenon.red_crystal_block": "Red Crystal Block",
+  "block.xenon.red_crystal_bricks": "Red Crystal Bricks",
+  "block.xenon.chiseled_red_crystal_bricks": "Chiseled Red Crystal Bricks",
+  "block.xenon.red_crystal_lantern": "Red Crystal Lantern",
+
+  "block.xenon.orange_crystal": "Orange Crystal",
+  "block.xenon.orange_crystal_block": "Orange Crystal Block",
+  "block.xenon.orange_crystal_bricks": "Orange Crystal sBricks",
+  "block.xenon.chiseled_orange_crystal_bricks": "Chiseled Orange Crystal Bricks",
+  "block.xenon.orange_crystal_lantern": "Orange Crystal Lantern",
+
+  "block.xenon.yellow_crystal": "Yellow Crystal",
+  "block.xenon.yellow_crystal_block": "Yellow Crystal Block",
+  "block.xenon.yellow_crystal_bricks": "Yellow Crystal Bricks",
+  "block.xenon.chiseled_yellow_crystal_bricks": "Chiseled Yellow Crystal Bricks",
+  "block.xenon.yellow_crystal_lantern": "Yellow Crystal Lantern",
+
+  "block.xenon.green_crystal": "Green Crystal",
+  "block.xenon.green_crystal_block": "Green Crystal Block",
+  "block.xenon.green_crystal_bricks": "Green Crystal Bricks",
+  "block.xenon.chiseled_green_crystal_bricks": "Chiseled Green Crystal Bricks",
+  "block.xenon.green_crystal_lantern": "Green Crystal Lantern",
+
+  "block.xenon.blue_crystal": "Blue Crystal",
+  "block.xenon.blue_crystal_block": "Blue Crystal Block",
+  "block.xenon.blue_crystal_bricks": "Blue Crystal Bricks",
+  "block.xenon.chiseled_blue_crystal_bricks": "Chiseled Blue Crystal Bricks",
+  "block.xenon.blue_crystal_lantern": "Blue Crystal Lantern",
+
+  "block.xenon.purple_crystal": "Purple Crystal",
+  "block.xenon.purple_crystal_block": "Purple Crystal Block",
+  "block.xenon.purple_crystal_bricks": "Purple Crystal Bricks",
+  "block.xenon.chiseled_purple_crystal_bricks": "Chiseled Purple Crystal Bricks",
+  "block.xenon.purple_crystal_lantern": "Purple Crystal Lantern",
+  "block.xenon.prism_lantern": "Prism Lantern",
+  "block.xenon.salvaging_table": "Salvaging Table",
+  "entity.minecraft.villager.scavenger": "Scavenger"
 }

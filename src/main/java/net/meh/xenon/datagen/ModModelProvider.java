@@ -4,9 +4,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.meh.xenon.block.ModBlocks;
 import net.minecraft.block.Block;
-import net.minecraft.data.client.TexturedModel;
-import net.minecraft.data.client.BlockStateModelGenerator;
-import net.minecraft.data.client.ItemModelGenerator;
+import net.minecraft.data.client.*;
 
 public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricDataOutput output) {
@@ -455,6 +453,64 @@ public class ModModelProvider extends FabricModelProvider {
         registerPillar(gen, ModBlocks.BAMBOO_BUNDLE);
 
         registerFixedColumn(gen, ModBlocks.SHOJI);
+
+        gen.registerAmethyst(ModBlocks.WHITE_CRYSTAL);
+        registerFixedColumn(gen, ModBlocks.WHITE_CRYSTAL_BLOCK);
+        gen.registerCubeAllModelTexturePool(ModBlocks.WHITE_CRYSTAL_BRICKS);
+        registerFixedColumn(gen, ModBlocks.CHISELED_WHITE_CRYSTAL_BRICKS);
+        gen.registerCubeAllModelTexturePool(ModBlocks.WHITE_CRYSTAL_LANTERN);
+
+        gen.registerAmethyst(ModBlocks.RED_CRYSTAL);
+        registerFixedColumn(gen, ModBlocks.RED_CRYSTAL_BLOCK);
+        gen.registerCubeAllModelTexturePool(ModBlocks.RED_CRYSTAL_BRICKS);
+        registerFixedColumn(gen, ModBlocks.CHISELED_RED_CRYSTAL_BRICKS);
+        gen.registerCubeAllModelTexturePool(ModBlocks.RED_CRYSTAL_LANTERN);
+
+        gen.registerAmethyst(ModBlocks.ORANGE_CRYSTAL);
+        registerFixedColumn(gen, ModBlocks.ORANGE_CRYSTAL_BLOCK);
+        gen.registerCubeAllModelTexturePool(ModBlocks.ORANGE_CRYSTAL_BRICKS);
+        registerFixedColumn(gen, ModBlocks.CHISELED_ORANGE_CRYSTAL_BRICKS);
+        gen.registerCubeAllModelTexturePool(ModBlocks.ORANGE_CRYSTAL_LANTERN);
+
+        gen.registerAmethyst(ModBlocks.YELLOW_CRYSTAL);
+        registerFixedColumn(gen, ModBlocks.YELLOW_CRYSTAL_BLOCK);
+        gen.registerCubeAllModelTexturePool(ModBlocks.YELLOW_CRYSTAL_BRICKS);
+        registerFixedColumn(gen, ModBlocks.CHISELED_YELLOW_CRYSTAL_BRICKS);
+        gen.registerCubeAllModelTexturePool(ModBlocks.YELLOW_CRYSTAL_LANTERN);
+
+        gen.registerAmethyst(ModBlocks.GREEN_CRYSTAL);
+        registerFixedColumn(gen, ModBlocks.GREEN_CRYSTAL_BLOCK);
+        gen.registerCubeAllModelTexturePool(ModBlocks.GREEN_CRYSTAL_BRICKS);
+        registerFixedColumn(gen, ModBlocks.CHISELED_GREEN_CRYSTAL_BRICKS);
+        gen.registerCubeAllModelTexturePool(ModBlocks.GREEN_CRYSTAL_LANTERN);
+
+        gen.registerAmethyst(ModBlocks.BLUE_CRYSTAL);
+        registerFixedColumn(gen, ModBlocks.BLUE_CRYSTAL_BLOCK);
+        gen.registerCubeAllModelTexturePool(ModBlocks.BLUE_CRYSTAL_BRICKS);
+        registerFixedColumn(gen, ModBlocks.CHISELED_BLUE_CRYSTAL_BRICKS);
+        gen.registerCubeAllModelTexturePool(ModBlocks.BLUE_CRYSTAL_LANTERN);
+
+        gen.registerAmethyst(ModBlocks.PURPLE_CRYSTAL);
+        registerFixedColumn(gen, ModBlocks.PURPLE_CRYSTAL_BLOCK);
+        gen.registerCubeAllModelTexturePool(ModBlocks.PURPLE_CRYSTAL_BRICKS);
+        registerFixedColumn(gen, ModBlocks.CHISELED_PURPLE_CRYSTAL_BRICKS);
+        gen.registerCubeAllModelTexturePool(ModBlocks.PURPLE_CRYSTAL_LANTERN);
+
+        gen.blockStateCollector.accept(
+                BlockStateModelGenerator.createSingletonBlockState(
+                        ModBlocks.SALVAGING_TABLE,
+                        Models.ORIENTABLE_WITH_BOTTOM.upload(
+                                ModBlocks.SALVAGING_TABLE,
+                                TextureMap.of(TextureKey.TOP,    TextureMap.getSubId(ModBlocks.SALVAGING_TABLE, "_top"))
+                                        .put(TextureKey.BOTTOM, TextureMap.getSubId(ModBlocks.SALVAGING_TABLE, "_bottom"))
+                                        .put(TextureKey.FRONT,  TextureMap.getSubId(ModBlocks.SALVAGING_TABLE, "_front"))
+                                        .put(TextureKey.SIDE,   TextureMap.getSubId(ModBlocks.SALVAGING_TABLE, "_side")),
+                                gen.modelCollector
+                        )
+                )
+        );
+
+
 
     }
     private void registerPillar(BlockStateModelGenerator gen, Block block) {

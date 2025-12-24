@@ -25,6 +25,15 @@ public static final ItemGroup XENON_ITEMS_GROUP = Registry.register(Registries.I
                     entries.add(ModItems.DOLOMITE_DUST);
                     entries.add(ModItems.BLIGHT_ESSENCE);
 
+                    entries.add(ModBlocks.WHITE_CRYSTAL);
+                    entries.add(ModBlocks.RED_CRYSTAL);
+                    entries.add(ModBlocks.ORANGE_CRYSTAL);
+                    entries.add(ModBlocks.YELLOW_CRYSTAL);
+                    entries.add(ModBlocks.GREEN_CRYSTAL);
+                    entries.add(ModBlocks.BLUE_CRYSTAL);
+                    entries.add(ModBlocks.PURPLE_CRYSTAL);
+
+
 
                 })
 
@@ -463,7 +472,35 @@ public static final ItemGroup XENON_ITEMS_GROUP = Registry.register(Registries.I
                         entries.add(ModBlocks.CONCRETE_BRICKS_PINK);
                         entries.add(ModBlocks.CONCRETE_BRICKS_PINK_STAIRS);
                         entries.add(ModBlocks.CONCRETE_BRICKS_PINK_SLAB);
-
+                        entries.add(ModBlocks.WHITE_CRYSTAL_BLOCK);
+                        entries.add(ModBlocks.WHITE_CRYSTAL_BRICKS);
+                        entries.add(ModBlocks.WHITE_CRYSTAL_LANTERN);
+                        entries.add(ModBlocks.CHISELED_WHITE_CRYSTAL_BRICKS);
+                        entries.add(ModBlocks.RED_CRYSTAL_BLOCK);
+                        entries.add(ModBlocks.RED_CRYSTAL_BRICKS);
+                        entries.add(ModBlocks.RED_CRYSTAL_LANTERN);
+                        entries.add(ModBlocks.CHISELED_RED_CRYSTAL_BRICKS);
+                        entries.add(ModBlocks.ORANGE_CRYSTAL_BLOCK);
+                        entries.add(ModBlocks.ORANGE_CRYSTAL_BRICKS);
+                        entries.add(ModBlocks.ORANGE_CRYSTAL_LANTERN);
+                        entries.add(ModBlocks.CHISELED_ORANGE_CRYSTAL_BRICKS);
+                        entries.add(ModBlocks.YELLOW_CRYSTAL_BLOCK);
+                        entries.add(ModBlocks.YELLOW_CRYSTAL_BRICKS);
+                        entries.add(ModBlocks.YELLOW_CRYSTAL_LANTERN);
+                        entries.add(ModBlocks.CHISELED_YELLOW_CRYSTAL_BRICKS);
+                        entries.add(ModBlocks.GREEN_CRYSTAL_BLOCK);
+                        entries.add(ModBlocks.GREEN_CRYSTAL_BRICKS);
+                        entries.add(ModBlocks.GREEN_CRYSTAL_LANTERN);
+                        entries.add(ModBlocks.CHISELED_GREEN_CRYSTAL_BRICKS);
+                        entries.add(ModBlocks.BLUE_CRYSTAL_BLOCK);
+                        entries.add(ModBlocks.BLUE_CRYSTAL_BRICKS);
+                        entries.add(ModBlocks.BLUE_CRYSTAL_LANTERN);
+                        entries.add(ModBlocks.CHISELED_BLUE_CRYSTAL_BRICKS);
+                        entries.add(ModBlocks.PURPLE_CRYSTAL_BLOCK);
+                        entries.add(ModBlocks.PURPLE_CRYSTAL_BRICKS);
+                        entries.add(ModBlocks.PURPLE_CRYSTAL_LANTERN);
+                        entries.add(ModBlocks.CHISELED_PURPLE_CRYSTAL_BRICKS);
+                        entries.add(ModBlocks.PRISM_LANTERN);
                         entries.add(ModBlocks.QUILTED_WOOL_WHITE);
                         entries.add(ModBlocks.QUILTED_WOOL_LIGHT_GRAY);
                         entries.add(ModBlocks.QUILTED_WOOL_GRAY);
@@ -771,6 +808,7 @@ public static final ItemGroup XENON_ITEMS_GROUP = Registry.register(Registries.I
                         entries.add(ModBlocks.PRISMARINE_TILES_WALL);
 
 
+                        entries.add(ModBlocks.SALVAGING_TABLE);
                         entries.add(ModBlocks.ECHO_GLASS);
 
 

@@ -1,13 +1,11 @@
 package net.meh.xenon.block;
 
-import net.meh.xenon.block.custom.PorousDolomiteBlock;
+import net.meh.xenon.block.custom.*;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.AbstractBlock;
 import com.mojang.serialization.MapCodec;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.meh.xenon.Xenon;
-import net.meh.xenon.block.custom.EchoGlassBlock;
-import net.meh.xenon.block.custom.DecorationBlock;
 import net.minecraft.block.*;
 import net.minecraft.block.enums.NoteBlockInstrument;
 import net.minecraft.block.piston.PistonBehavior;
@@ -19,6 +17,8 @@ import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
+
+import static net.minecraft.block.Blocks.AMETHYST_CLUSTER;
 
 public class ModBlocks {
 
@@ -5660,12 +5660,348 @@ public class ModBlocks {
                     .instrument(NoteBlockInstrument.BASS)
                     .sounds(BlockSoundGroup.WOOD)));
 
-// AmethystClusterBlock(5.0F, 3.0F, AbstractBlock.Settings.copyShallow(AMETHYST_CLUSTER).sounds(BlockSoundGroup.MEDIUM_AMETHYST_BUD).luminance(state -> 4))
+    public static final Block WHITE_CRYSTAL = registerBlock("white_crystal",
+            new CrystalBlock(
+                    5.0F,
+                    3.0F,
+                    AbstractBlock.Settings.create()
+                            .sounds(BlockSoundGroup.AMETHYST_CLUSTER)
+                            .strength(1.5F)
+                            .noCollision()
+                            .luminance(state -> 5)
+                            .pistonBehavior(PistonBehavior.DESTROY)
+                            .nonOpaque()
+            ));
+
+    public static final Block WHITE_CRYSTAL_BLOCK = registerBlock("white_crystal_block",
+            new AmethystBlock(AbstractBlock.Settings.create()
+                    .ticksRandomly()
+                    .strength(1.5F)
+                    .sounds(BlockSoundGroup.AMETHYST_BLOCK)
+                    .requiresTool()
+            ));
+
+    public static final Block WHITE_CRYSTAL_BRICKS = registerBlock("white_crystal_bricks",
+            new AmethystBlock(AbstractBlock.Settings.create()
+                    .ticksRandomly()
+                    .strength(1.5F)
+                    .sounds(BlockSoundGroup.AMETHYST_BLOCK)
+                    .requiresTool()
+            ));
+
+    public static final Block CHISELED_WHITE_CRYSTAL_BRICKS = registerBlock("chiseled_white_crystal_bricks",
+            new AmethystBlock(AbstractBlock.Settings.create()
+                    .ticksRandomly()
+                    .strength(1.5F)
+                    .sounds(BlockSoundGroup.AMETHYST_BLOCK)
+                    .requiresTool()
+            ));
+
+    public static final Block WHITE_CRYSTAL_LANTERN = registerBlock("white_crystal_lantern",
+            new AmethystBlock(AbstractBlock.Settings.create()
+                    .ticksRandomly()
+                    .strength(1.5F)
+                    .luminance(state -> 15)
+                    .sounds(BlockSoundGroup.AMETHYST_BLOCK)
+                    .requiresTool()
+            ));
+
+    public static final Block RED_CRYSTAL = registerBlock("red_crystal",
+            new CrystalBlock(
+                    5.0F,
+                    3.0F,
+                    AbstractBlock.Settings.create()
+                            .sounds(BlockSoundGroup.AMETHYST_CLUSTER)
+                            .strength(1.5F)
+                            .noCollision()
+                            .luminance(state -> 5)
+                            .pistonBehavior(PistonBehavior.DESTROY)
+                            .nonOpaque()
+            ));
+
+    public static final Block RED_CRYSTAL_BLOCK = registerBlock("red_crystal_block",
+            new AmethystBlock(AbstractBlock.Settings.create()
+                    .ticksRandomly()
+                    .strength(1.5F)
+                    .sounds(BlockSoundGroup.AMETHYST_BLOCK)
+                    .requiresTool()
+            ));
+
+    public static final Block RED_CRYSTAL_BRICKS = registerBlock("red_crystal_bricks",
+            new AmethystBlock(AbstractBlock.Settings.create()
+                    .ticksRandomly()
+                    .strength(1.5F)
+                    .sounds(BlockSoundGroup.AMETHYST_BLOCK)
+                    .requiresTool()
+            ));
+
+    public static final Block CHISELED_RED_CRYSTAL_BRICKS = registerBlock("chiseled_red_crystal_bricks",
+            new AmethystBlock(AbstractBlock.Settings.create()
+                    .ticksRandomly()
+                    .strength(1.5F)
+                    .sounds(BlockSoundGroup.AMETHYST_BLOCK)
+                    .requiresTool()
+            ));
+
+    public static final Block RED_CRYSTAL_LANTERN = registerBlock("red_crystal_lantern",
+            new AmethystBlock(AbstractBlock.Settings.create()
+                    .ticksRandomly()
+                    .strength(1.5F)
+                    .luminance(state -> 15)
+                    .sounds(BlockSoundGroup.AMETHYST_BLOCK)
+                    .requiresTool()
+            ));
+
+    public static final Block ORANGE_CRYSTAL = registerBlock("orange_crystal",
+            new CrystalBlock(
+                    5.0F,
+                    3.0F,
+                    AbstractBlock.Settings.create()
+                            .sounds(BlockSoundGroup.AMETHYST_CLUSTER)
+                            .strength(1.5F)
+                            .noCollision()
+                            .luminance(state -> 5)
+                            .pistonBehavior(PistonBehavior.DESTROY)
+                            .nonOpaque()
+            ));
+
+    public static final Block ORANGE_CRYSTAL_BLOCK = registerBlock("orange_crystal_block",
+            new AmethystBlock(AbstractBlock.Settings.create()
+                    .ticksRandomly()
+                    .strength(1.5F)
+                    .sounds(BlockSoundGroup.AMETHYST_BLOCK)
+                    .requiresTool()
+            ));
+
+    public static final Block ORANGE_CRYSTAL_BRICKS = registerBlock("orange_crystal_bricks",
+            new AmethystBlock(AbstractBlock.Settings.create()
+                    .ticksRandomly()
+                    .strength(1.5F)
+                    .sounds(BlockSoundGroup.AMETHYST_BLOCK)
+                    .requiresTool()
+            ));
+
+    public static final Block CHISELED_ORANGE_CRYSTAL_BRICKS = registerBlock("chiseled_orange_crystal_bricks",
+            new AmethystBlock(AbstractBlock.Settings.create()
+                    .ticksRandomly()
+                    .strength(1.5F)
+                    .sounds(BlockSoundGroup.AMETHYST_BLOCK)
+                    .requiresTool()
+            ));
+
+    public static final Block ORANGE_CRYSTAL_LANTERN = registerBlock("orange_crystal_lantern",
+            new AmethystBlock(AbstractBlock.Settings.create()
+                    .ticksRandomly()
+                    .strength(1.5F)
+                    .luminance(state -> 15)
+                    .sounds(BlockSoundGroup.AMETHYST_BLOCK)
+                    .requiresTool()
+            ));
+
+    public static final Block YELLOW_CRYSTAL = registerBlock("yellow_crystal",
+            new CrystalBlock(
+                    5.0F,
+                    3.0F,
+                    AbstractBlock.Settings.create()
+                            .sounds(BlockSoundGroup.AMETHYST_CLUSTER)
+                            .strength(1.5F)
+                            .noCollision()
+                            .luminance(state -> 5)
+                            .pistonBehavior(PistonBehavior.DESTROY)
+                            .nonOpaque()
+            ));
+
+    public static final Block YELLOW_CRYSTAL_BLOCK = registerBlock("yellow_crystal_block",
+            new AmethystBlock(AbstractBlock.Settings.create()
+                    .ticksRandomly()
+                    .strength(1.5F)
+                    .sounds(BlockSoundGroup.AMETHYST_BLOCK)
+                    .requiresTool()
+            ));
+
+    public static final Block YELLOW_CRYSTAL_BRICKS = registerBlock("yellow_crystal_bricks",
+            new AmethystBlock(AbstractBlock.Settings.create()
+                    .ticksRandomly()
+                    .strength(1.5F)
+                    .sounds(BlockSoundGroup.AMETHYST_BLOCK)
+                    .requiresTool()
+            ));
+
+    public static final Block CHISELED_YELLOW_CRYSTAL_BRICKS = registerBlock("chiseled_yellow_crystal_bricks",
+            new AmethystBlock(AbstractBlock.Settings.create()
+                    .ticksRandomly()
+                    .strength(1.5F)
+                    .sounds(BlockSoundGroup.AMETHYST_BLOCK)
+                    .requiresTool()
+            ));
+
+    public static final Block YELLOW_CRYSTAL_LANTERN = registerBlock("yellow_crystal_lantern",
+            new AmethystBlock(AbstractBlock.Settings.create()
+                    .ticksRandomly()
+                    .strength(1.5F)
+                    .luminance(state -> 15)
+                    .sounds(BlockSoundGroup.AMETHYST_BLOCK)
+                    .requiresTool()
+            ));
+
+    public static final Block GREEN_CRYSTAL = registerBlock("green_crystal",
+            new CrystalBlock(
+                    5.0F,
+                    3.0F,
+                    AbstractBlock.Settings.create()
+                            .sounds(BlockSoundGroup.AMETHYST_CLUSTER)
+                            .strength(1.5F)
+                            .noCollision()
+                            .luminance(state -> 5)
+                            .pistonBehavior(PistonBehavior.DESTROY)
+                            .nonOpaque()
+            ));
+
+    public static final Block GREEN_CRYSTAL_BLOCK = registerBlock("green_crystal_block",
+            new AmethystBlock(AbstractBlock.Settings.create()
+                    .ticksRandomly()
+                    .strength(1.5F)
+                    .sounds(BlockSoundGroup.AMETHYST_BLOCK)
+                    .requiresTool()
+            ));
+
+    public static final Block GREEN_CRYSTAL_BRICKS = registerBlock("green_crystal_bricks",
+            new AmethystBlock(AbstractBlock.Settings.create()
+                    .ticksRandomly()
+                    .strength(1.5F)
+                    .sounds(BlockSoundGroup.AMETHYST_BLOCK)
+                    .requiresTool()
+            ));
+
+    public static final Block CHISELED_GREEN_CRYSTAL_BRICKS = registerBlock("chiseled_green_crystal_bricks",
+            new AmethystBlock(AbstractBlock.Settings.create()
+                    .ticksRandomly()
+                    .strength(1.5F)
+                    .sounds(BlockSoundGroup.AMETHYST_BLOCK)
+                    .requiresTool()
+            ));
+
+    public static final Block GREEN_CRYSTAL_LANTERN = registerBlock("green_crystal_lantern",
+            new AmethystBlock(AbstractBlock.Settings.create()
+                    .ticksRandomly()
+                    .strength(1.5F)
+                    .luminance(state -> 15)
+                    .sounds(BlockSoundGroup.AMETHYST_BLOCK)
+                    .requiresTool()
+            ));
+
+    public static final Block BLUE_CRYSTAL = registerBlock("blue_crystal",
+            new CrystalBlock(
+                    5.0F,
+                    3.0F,
+                    AbstractBlock.Settings.create()
+                            .sounds(BlockSoundGroup.AMETHYST_CLUSTER)
+                            .strength(1.5F)
+                            .noCollision()
+                            .luminance(state -> 5)
+                            .pistonBehavior(PistonBehavior.DESTROY)
+                            .nonOpaque()
+            ));
+
+    public static final Block BLUE_CRYSTAL_BLOCK = registerBlock("blue_crystal_block",
+            new AmethystBlock(AbstractBlock.Settings.create()
+                    .ticksRandomly()
+                    .strength(1.5F)
+                    .sounds(BlockSoundGroup.AMETHYST_BLOCK)
+                    .requiresTool()
+            ));
+
+    public static final Block BLUE_CRYSTAL_BRICKS = registerBlock("blue_crystal_bricks",
+            new AmethystBlock(AbstractBlock.Settings.create()
+                    .ticksRandomly()
+                    .strength(1.5F)
+                    .sounds(BlockSoundGroup.AMETHYST_BLOCK)
+                    .requiresTool()
+            ));
+
+    public static final Block CHISELED_BLUE_CRYSTAL_BRICKS = registerBlock("chiseled_blue_crystal_bricks",
+            new AmethystBlock(AbstractBlock.Settings.create()
+                    .ticksRandomly()
+                    .strength(1.5F)
+                    .sounds(BlockSoundGroup.AMETHYST_BLOCK)
+                    .requiresTool()
+            ));
+
+    public static final Block BLUE_CRYSTAL_LANTERN = registerBlock("blue_crystal_lantern",
+            new AmethystBlock(AbstractBlock.Settings.create()
+                    .ticksRandomly()
+                    .strength(1.5F)
+                    .luminance(state -> 15)
+                    .sounds(BlockSoundGroup.AMETHYST_BLOCK)
+                    .requiresTool()
+            ));
+
+    public static final Block PURPLE_CRYSTAL = registerBlock("purple_crystal",
+            new CrystalBlock(
+                    5.0F,
+                    3.0F,
+                    AbstractBlock.Settings.create()
+                            .sounds(BlockSoundGroup.AMETHYST_CLUSTER)
+                            .strength(1.5F)
+                            .noCollision()
+                            .luminance(state -> 5)
+                            .pistonBehavior(PistonBehavior.DESTROY)
+                            .nonOpaque()
+            ));
+
+    public static final Block PURPLE_CRYSTAL_BLOCK = registerBlock("purple_crystal_block",
+            new AmethystBlock(AbstractBlock.Settings.create()
+                    .ticksRandomly()
+                    .strength(1.5F)
+                    .sounds(BlockSoundGroup.AMETHYST_BLOCK)
+                    .requiresTool()
+            ));
+
+    public static final Block PURPLE_CRYSTAL_BRICKS = registerBlock("purple_crystal_bricks",
+            new AmethystBlock(AbstractBlock.Settings.create()
+                    .ticksRandomly()
+                    .strength(1.5F)
+                    .sounds(BlockSoundGroup.AMETHYST_BLOCK)
+                    .requiresTool()
+            ));
+
+    public static final Block CHISELED_PURPLE_CRYSTAL_BRICKS = registerBlock("chiseled_purple_crystal_bricks",
+            new AmethystBlock(AbstractBlock.Settings.create()
+                    .ticksRandomly()
+                    .strength(1.5F)
+                    .sounds(BlockSoundGroup.AMETHYST_BLOCK)
+                    .requiresTool()
+            ));
+
+    public static final Block PURPLE_CRYSTAL_LANTERN = registerBlock("purple_crystal_lantern",
+            new AmethystBlock(AbstractBlock.Settings.create()
+                    .ticksRandomly()
+                    .strength(1.5F)
+                    .luminance(state -> 15)
+                    .sounds(BlockSoundGroup.AMETHYST_BLOCK)
+                    .requiresTool()
+            ));
+
+    public static final Block PRISM_LANTERN = registerBlock("prism_lantern",
+            new PrismLanternBlock(AbstractBlock.Settings.create()
+                    .ticksRandomly()
+                    .strength(1.5F)
+                    .luminance(state -> 15)
+                    .sounds(BlockSoundGroup.AMETHYST_BLOCK)
+                    .requiresTool()
+            ));
 
     public static final Block SHOJI = registerBlock("shoji",
             new Block(AbstractBlock.Settings.create()
                     .breakInstantly()
                     .sounds(BlockSoundGroup.SCAFFOLDING)));
+
+    public static final Block SALVAGING_TABLE = registerBlock("salvaging_table",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .strength(2.0F, 3.0F)
+                    .instrument(NoteBlockInstrument.BASS)
+                    .sounds(BlockSoundGroup.WOOD)));
 
     //</editor-fold>
 
