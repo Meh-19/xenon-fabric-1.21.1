@@ -2841,6 +2841,7 @@ public class ModBlocks {
             new GroundCoverBlock(AbstractBlock.Settings.create()
                     .instrument(NoteBlockInstrument.BASEDRUM)
                     .strength(0.1F)
+                    .noCollision()
                     .sounds(BlockSoundGroup.SNOW)
                     .pistonBehavior(PistonBehavior.DESTROY)));
 

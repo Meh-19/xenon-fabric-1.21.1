@@ -91,7 +91,8 @@ public class XenonClient implements ClientModInitializer {
                 ModBlocks.DAMP_MOSS,
                 ModBlocks.GRIMOSS,
                 ModBlocks.ASH,
-                ModBlocks.SMALL_LILY
+                ModBlocks.SMALL_LILY,
+                ModBlocks.FROST
         );
     }
 }

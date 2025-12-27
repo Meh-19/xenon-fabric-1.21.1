@@ -5,7 +5,6 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.meh.xenon.block.ModBlocks;
 import net.meh.xenon.item.ModItems;
 import net.minecraft.registry.RegistryWrapper;
-import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.registry.tag.ItemTags;
 
 import java.util.concurrent.CompletableFuture;
@@ -23,6 +22,14 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
         var logs = getOrCreateTagBuilder(ItemTags.LOGS);
         var logsThatBurn = getOrCreateTagBuilder(ItemTags.LOGS_THAT_BURN);
         var planks = getOrCreateTagBuilder(ItemTags.PLANKS);
+
+        var sword = getOrCreateTagBuilder(ItemTags.SWORDS);
+        var pickaxe = getOrCreateTagBuilder(ItemTags.PICKAXES);
+        var axe = getOrCreateTagBuilder(ItemTags.AXES);
+        var shovel = getOrCreateTagBuilder(ItemTags.SHOVELS);
+        var hoe = getOrCreateTagBuilder(ItemTags.HOES);
+
+        var trimmable = getOrCreateTagBuilder(ItemTags.TRIMMABLE_ARMOR);
 
         var fences = getOrCreateTagBuilder(ItemTags.FENCES);
         var fenceGates = getOrCreateTagBuilder(ItemTags.FENCE_GATES);
@@ -654,6 +661,18 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 ModBlocks.STRATA_WALL.asItem(),
                 ModBlocks.TAINTED_NETHER_BRICKS_WALL.asItem()
         );
+
+        sword.add(ModItems.PLATINUM_SWORD);
+        pickaxe.add(ModItems.PLATINUM_PICKAXE);
+        axe.add(ModItems.PLATINUM_AXE);
+        shovel.add(ModItems.PLATINUM_SHOVEL);
+        hoe.add(ModItems.PLATINUM_HOE);
+
+        trimmable.add(ModItems.PLATINUM_HELMET);
+        trimmable.add(ModItems.PLATINUM_CHESTPLATE);
+        trimmable.add(ModItems.PLATINUM_LEGGINGS);
+        trimmable.add(ModItems.PLATINUM_BOOTS);
+
         //endregion\
 
     }

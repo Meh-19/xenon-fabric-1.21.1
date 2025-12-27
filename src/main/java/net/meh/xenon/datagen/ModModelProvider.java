@@ -4,13 +4,11 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.meh.xenon.Xenon;
 import net.meh.xenon.block.ModBlocks;
-import net.minecraft.block.enums.DoubleBlockHalf;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.Models;
 import net.minecraft.block.Block;
 import net.minecraft.data.client.*;
 import net.minecraft.registry.Registries;
-import net.minecraft.state.property.Properties;
 import net.minecraft.util.Identifier;
 
 public class ModModelProvider extends FabricModelProvider {
@@ -560,10 +558,15 @@ public class ModModelProvider extends FabricModelProvider {
                              Identifier.of(Xenon.MOD_ID, "block/" + Registries.BLOCK.getId(block).getPath())
                     )
             );
+
+//            gen.registerItemModel(ModItems.PLATINUM_SWORD);
+//            gen.registerItemModel(ModItems.PLATINUM_PICKAXE);
+//            gen.registerItemModel(ModItems.PLATINUM_AXE);
+//            gen.registerItemModel(ModItems.PLATINUM_SHOVEL);
+//            gen.registerItemModel(ModItems.PLATINUM_HOE);
         }
 
     }
-
     private void registerPillar(BlockStateModelGenerator gen, Block block) {
         gen.registerAxisRotated(
                 block,

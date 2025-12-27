@@ -13,7 +13,7 @@ import net.minecraft.util.Identifier;
 public class ModItemGroups {
 public static final ItemGroup XENON_ITEMS_GROUP = Registry.register(Registries.ITEM_GROUP,
         Identifier.of(Xenon.MOD_ID,"xenon_items"),
-        FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.PLATINUM))
+        FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.RUBY))
                 .displayName(Text.translatable("itemgroup.xenon.xenon_items"))
                 .entries((displayContext, entries) -> {
                     entries.add(ModItems.PLATINUM);
@@ -841,6 +841,25 @@ public static final ItemGroup XENON_ITEMS_GROUP = Registry.register(Registries.I
 
 
 
+                    })
+
+                    .build());
+
+    public static final ItemGroup XENON_TOOLS_GROUP = Registry.register(Registries.ITEM_GROUP,
+            Identifier.of(Xenon.MOD_ID,"xenon_tools"),
+            FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.PLATINUM_HELMET))
+                    .displayName(Text.translatable("itemgroup.xenon.xenon_tools"))
+                    .entries((displayContext, entries) -> {
+                        entries.add(ModItems.PLATINUM_SWORD);
+                        entries.add(ModItems.PLATINUM_PICKAXE);
+                        entries.add(ModItems.PLATINUM_AXE);
+                        entries.add(ModItems.PLATINUM_SHOVEL);
+                        entries.add(ModItems.PLATINUM_HOE);
+
+                        entries.add(ModItems.PLATINUM_HELMET);
+                        entries.add(ModItems.PLATINUM_CHESTPLATE);
+                        entries.add(ModItems.PLATINUM_LEGGINGS);
+                        entries.add(ModItems.PLATINUM_BOOTS);
                     })
 
                     .build());

@@ -4,10 +4,7 @@ import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.meh.xenon.Xenon;
 import net.meh.xenon.block.ModBlocks;
 import net.meh.xenon.item.custom.DolomiteDustItem;
-import net.minecraft.item.BlockItem;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroups;
-import net.minecraft.item.PlaceableOnWaterItem;
+import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
@@ -44,6 +41,35 @@ public static final Item PLATINUM = registerItem("platinum", new Item(new Item.S
                     )
             );
 
+
+    public static final Item PLATINUM_SWORD = registerItem("platinum_sword",
+            new SwordItem(ModToolMaterials.PLATINUM, new Item.Settings()
+                    .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.PLATINUM, 3, -2.4f))));
+    public static final Item PLATINUM_PICKAXE = registerItem("platinum_pickaxe",
+            new PickaxeItem(ModToolMaterials.PLATINUM, new Item.Settings()
+                    .attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.PLATINUM, 1, -2.8f))));
+    public static final Item PLATINUM_SHOVEL = registerItem("platinum_shovel",
+            new ShovelItem(ModToolMaterials.PLATINUM, new Item.Settings()
+                    .attributeModifiers(ShovelItem.createAttributeModifiers(ModToolMaterials.PLATINUM, 1.5f, -3.0f))));
+    public static final Item PLATINUM_AXE = registerItem("platinum_axe",
+            new AxeItem(ModToolMaterials.PLATINUM, new Item.Settings()
+                    .attributeModifiers(AxeItem.createAttributeModifiers(ModToolMaterials.PLATINUM, 6, -3.2f))));
+    public static final Item PLATINUM_HOE = registerItem("platinum_hoe",
+            new HoeItem(ModToolMaterials.PLATINUM, new Item.Settings()
+                    .attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.PLATINUM, 0, -3f))));
+
+    public static final Item PLATINUM_HELMET = registerItem("platinum_helmet",
+            new ArmorItem(ModArmorMaterials.PLATINUM_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(15))));
+    public static final Item PLATINUM_CHESTPLATE = registerItem("platinum_chestplate",
+            new ArmorItem(ModArmorMaterials.PLATINUM_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(15))));
+    public static final Item PLATINUM_LEGGINGS = registerItem("platinum_leggings",
+            new ArmorItem(ModArmorMaterials.PLATINUM_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(15))));
+    public static final Item PLATINUM_BOOTS = registerItem("platinum_boots",
+            new ArmorItem(ModArmorMaterials.PLATINUM_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(15))));
 
     private static Item registerItem(String name, Item item) {
     return Registry.register(Registries.ITEM, Identifier.of(Xenon.MOD_ID, name), item);
