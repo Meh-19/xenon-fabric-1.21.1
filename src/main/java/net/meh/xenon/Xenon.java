@@ -3,6 +3,7 @@ package net.meh.xenon;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
 import net.meh.xenon.block.ModBlocks;
+import net.meh.xenon.block.custom.plants.StickPlacementHandler;
 import net.meh.xenon.config.ConfigManager;
 import net.meh.xenon.item.ModItemGroups;
 import net.meh.xenon.item.ModItems;
@@ -23,7 +24,6 @@ public class Xenon implements ModInitializer {
 	public static final String MOD_ID = "xenon";
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
-	// 🔑 Track day PER WORLD
 	private static final Map<World, Long> LAST_DAY_PER_WORLD = new HashMap<>();
 
 	@Override
@@ -32,6 +32,7 @@ public class Xenon implements ModInitializer {
 		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+		StickPlacementHandler.register();
 		ModVillagers.registerVillagers();
 		ModSounds.registerSounds();
 		ConfigManager.load();

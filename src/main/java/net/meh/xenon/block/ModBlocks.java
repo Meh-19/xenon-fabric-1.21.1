@@ -1,6 +1,8 @@
 package net.meh.xenon.block;
 
 import net.meh.xenon.block.custom.*;
+import net.meh.xenon.block.custom.plants.*;
+import net.meh.xenon.block.custom.vines.*;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.AbstractBlock;
 import com.mojang.serialization.MapCodec;
@@ -18,8 +20,6 @@ import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 
-import static net.minecraft.block.Blocks.AMETHYST_CLUSTER;
-
 public class ModBlocks {
 
     private static Block registerBlock(String name, Block block) {
@@ -31,8 +31,7 @@ public class ModBlocks {
         Registry.register(Registries.ITEM, Identifier.of(Xenon.MOD_ID, name),
                 new BlockItem(block, new Item.Settings()));
     }
-
-
+    //region blocks 1.4.1 and below
 
     //<editor-fold desc="Platinum">
     public static final Block PLATINUM_BLOCK = registerBlock("platinum_block",
@@ -6004,6 +6003,471 @@ public class ModBlocks {
                     .sounds(BlockSoundGroup.WOOD)));
 
     //</editor-fold>
+    //endregion\
+
+    public static final Block AMARYLLIS = registerBlock("amaryllis",
+            new TallFlowerBlock(
+                    AbstractBlock.Settings.create()
+                            .noCollision()
+                            .nonOpaque()
+
+                            .breakInstantly()
+                            .sounds(BlockSoundGroup.GRASS)
+                            .offset(AbstractBlock.OffsetType.XZ)
+                            .burnable()
+                            .pistonBehavior(PistonBehavior.DESTROY)
+            )
+    );
+
+    public static final Block CATTAIL = registerBlock("cattail",
+            new TallFlowerBlock(
+                    AbstractBlock.Settings.create()
+                            .noCollision()
+                            .nonOpaque()
+
+                            .breakInstantly()
+                            .sounds(BlockSoundGroup.GRASS)
+                            .offset(AbstractBlock.OffsetType.XZ)
+                            .burnable()
+                            .pistonBehavior(PistonBehavior.DESTROY)
+            )
+    );
+
+    public static final Block OCULUS_ORCHID = registerBlock("oculus_orchid",
+            new ShortPlantBlock(
+                    AbstractBlock.Settings.create()
+                            .noCollision()
+                            .nonOpaque()
+
+                            .breakInstantly()
+                            .sounds(BlockSoundGroup.GRASS)
+                            .offset(AbstractBlock.OffsetType.XZ)
+                            .burnable()
+                            .pistonBehavior(PistonBehavior.DESTROY)
+            )
+    );
+
+    public static final Block SMALL_LILY = registerBlock("small_lily",
+            new LilyPadBlock(
+                    AbstractBlock.Settings.create()
+                            .mapColor(MapColor.DARK_GREEN)
+                            .breakInstantly()
+                            .sounds(BlockSoundGroup.LILY_PAD)
+                            .nonOpaque()
+                            .pistonBehavior(PistonBehavior.DESTROY)
+            )
+    );
+
+    public static final Block HIBISCUS = registerBlock("hibiscus",
+            new ShortPlantBlock(
+                    AbstractBlock.Settings.create()
+                            .noCollision()
+                            .nonOpaque()
+
+                            .breakInstantly()
+                            .sounds(BlockSoundGroup.GRASS)
+                            .offset(AbstractBlock.OffsetType.XZ)
+                            .burnable()
+                            .pistonBehavior(PistonBehavior.DESTROY)
+            )
+    );
+
+    public static final Block TALL_BEACH_GRASS = registerBlock(
+            "tall_beach_grass",
+            new ModTallPlantBlock(
+                    AbstractBlock.Settings.create()
+                            .noCollision()
+                            .nonOpaque()
+
+                            .breakInstantly()
+                            .sounds(BlockSoundGroup.GRASS)
+                            .offset(AbstractBlock.OffsetType.XZ)
+                            .burnable()
+                            .pistonBehavior(PistonBehavior.DESTROY)
+            )
+    );
+
+    public static final Block BEACH_GRASS = registerBlock(
+            "beach_grass",
+            new ModShortPlantBlock(
+                    AbstractBlock.Settings.create()
+                            .noCollision()
+                            .nonOpaque()
+
+                            .breakInstantly()
+                            .sounds(BlockSoundGroup.GRASS)
+                            .offset(AbstractBlock.OffsetType.XZ)
+                            .burnable()
+                            .pistonBehavior(PistonBehavior.DESTROY),
+                    () -> (TallPlantBlock) TALL_BEACH_GRASS
+            )
+    );
+
+    public static final Block TALL_BRAMBLE = registerBlock(
+            "tall_bramble",
+            new TallBrambleBlock(
+                    AbstractBlock.Settings.create()
+                            .noCollision()
+                            .nonOpaque()
+                            .breakInstantly()
+                            .sounds(BlockSoundGroup.GRASS)
+                            .offset(AbstractBlock.OffsetType.XZ)
+                            .burnable()
+                            .pistonBehavior(PistonBehavior.DESTROY)
+            )
+    );
+
+    public static final Block BRAMBLE = registerBlock(
+            "bramble",
+            new ShortBrambleBlock(
+                    AbstractBlock.Settings.create()
+                            .noCollision()
+                            .nonOpaque()
+
+                            .ticksRandomly()
+                            .breakInstantly()
+                            .sounds(BlockSoundGroup.GRASS)
+                            .offset(AbstractBlock.OffsetType.XZ)
+                            .burnable()
+                            .pistonBehavior(PistonBehavior.DESTROY),
+                    () -> (TallPlantBlock) TALL_BRAMBLE
+            )
+    );
+
+    public static final Block TALL_DRY_GRASS = registerBlock(
+            "tall_dry_grass",
+            new ModTallPlantBlock(
+                    AbstractBlock.Settings.create()
+                            .noCollision()
+                            .nonOpaque()
+
+                            .breakInstantly()
+                            .sounds(BlockSoundGroup.GRASS)
+                            .offset(AbstractBlock.OffsetType.XZ)
+                            .burnable()
+                            .pistonBehavior(PistonBehavior.DESTROY)
+            )
+    );
+
+    public static final Block DRY_GRASS = registerBlock(
+            "dry_grass",
+            new ModShortPlantBlock(
+                    AbstractBlock.Settings.create()
+                            .noCollision()
+                            .nonOpaque()
+
+                            .breakInstantly()
+                            .sounds(BlockSoundGroup.GRASS)
+                            .offset(AbstractBlock.OffsetType.XZ)
+                            .burnable()
+                            .pistonBehavior(PistonBehavior.DESTROY),
+                    () -> (TallPlantBlock) TALL_DRY_GRASS
+            )
+    );
+
+    public static final Block TALL_DRY_BUSH = registerBlock(
+            "tall_dry_bush",
+            new ModTallPlantBlock(
+                    AbstractBlock.Settings.create()
+                            .noCollision()
+                            .nonOpaque()
+
+                            .breakInstantly()
+                            .sounds(BlockSoundGroup.GRASS)
+                            .offset(AbstractBlock.OffsetType.XZ)
+                            .burnable()
+                            .pistonBehavior(PistonBehavior.DESTROY)
+            )
+    );
+
+    public static final Block DRY_BUSH = registerBlock(
+            "dry_bush",
+            new ModShortPlantBlock(
+                    AbstractBlock.Settings.create()
+                            .noCollision()
+                            .nonOpaque()
+
+                            .breakInstantly()
+                            .sounds(BlockSoundGroup.GRASS)
+                            .offset(AbstractBlock.OffsetType.XZ)
+                            .burnable()
+                            .pistonBehavior(PistonBehavior.DESTROY),
+                    () -> (TallPlantBlock) TALL_DRY_BUSH
+            )
+    );
+
+
+    public static final Block TALL_FROSTED_GRASS = registerBlock(
+            "tall_frosted_grass",
+            new ModTallPlantBlock(
+                    AbstractBlock.Settings.create()
+                            .noCollision()
+                            .nonOpaque()
+                            .breakInstantly()
+                            .sounds(BlockSoundGroup.GRASS)
+                            .offset(AbstractBlock.OffsetType.XZ)
+                            .burnable()
+                            .pistonBehavior(PistonBehavior.DESTROY)
+            )
+    );
+
+    public static final Block FROSTED_GRASS = registerBlock(
+            "frosted_grass",
+            new ModShortPlantBlock(
+                    AbstractBlock.Settings.create()
+                            .noCollision()
+                            .nonOpaque()
+
+                            .breakInstantly()
+                            .sounds(BlockSoundGroup.GRASS)
+                            .offset(AbstractBlock.OffsetType.XZ)
+                            .burnable()
+                            .pistonBehavior(PistonBehavior.DESTROY),
+                    () -> (TallPlantBlock) TALL_FROSTED_GRASS
+            )
+    );
+
+    public static final Block TALL_GRIMWEED = registerBlock(
+            "tall_grimweed",
+            new ModTallPlantBlock(
+                    AbstractBlock.Settings.create()
+                            .noCollision()
+                            .nonOpaque()
+
+                            .breakInstantly()
+                            .sounds(BlockSoundGroup.GRASS)
+                            .offset(AbstractBlock.OffsetType.XZ)
+                            .burnable()
+                            .pistonBehavior(PistonBehavior.DESTROY)
+            )
+    );
+
+    public static final Block GRIMWEED = registerBlock(
+            "grimweed",
+            new ModShortPlantBlock(
+                    AbstractBlock.Settings.create()
+                            .noCollision()
+                            .nonOpaque()
+
+                            .breakInstantly()
+                            .sounds(BlockSoundGroup.GRASS)
+                            .offset(AbstractBlock.OffsetType.XZ)
+                            .burnable()
+                            .pistonBehavior(PistonBehavior.DESTROY),
+                    () -> (TallPlantBlock) TALL_GRIMWEED
+            )
+    );
+
+    public static final Block TALL_PALE_GRIMWEED = registerBlock(
+            "tall_pale_grimweed",
+            new ModTallPlantBlock(
+                    AbstractBlock.Settings.create()
+                            .noCollision()
+                            .nonOpaque()
+
+                            .breakInstantly()
+                            .sounds(BlockSoundGroup.GRASS)
+                            .offset(AbstractBlock.OffsetType.XZ)
+                            .burnable()
+                            .pistonBehavior(PistonBehavior.DESTROY)
+            )
+    );
+
+    public static final Block PALE_GRIMWEED = registerBlock(
+            "pale_grimweed",
+            new ModShortPlantBlock(
+                    AbstractBlock.Settings.create()
+                            .noCollision()
+                            .nonOpaque()
+
+                            .breakInstantly()
+                            .sounds(BlockSoundGroup.GRASS)
+                            .offset(AbstractBlock.OffsetType.XZ)
+                            .burnable()
+                            .pistonBehavior(PistonBehavior.DESTROY),
+                    () -> (TallPlantBlock) TALL_PALE_GRIMWEED
+            )
+    );
+
+    public static final Block TALL_HOGWEED = registerBlock(
+            "tall_hogweed",
+            new ModTallPlantBlock(
+                    AbstractBlock.Settings.create()
+                            .noCollision()
+                            .nonOpaque()
+
+                            .breakInstantly()
+                            .sounds(BlockSoundGroup.GRASS)
+                            .offset(AbstractBlock.OffsetType.XZ)
+                            .burnable()
+                            .pistonBehavior(PistonBehavior.DESTROY)
+            )
+    );
+
+    public static final Block HOGWEED = registerBlock(
+            "hogweed",
+            new ModShortPlantBlock(
+                    AbstractBlock.Settings.create()
+                            .noCollision()
+                            .nonOpaque()
+
+                            .breakInstantly()
+                            .sounds(BlockSoundGroup.GRASS)
+                            .offset(AbstractBlock.OffsetType.XZ)
+                            .burnable()
+                            .pistonBehavior(PistonBehavior.DESTROY),
+                    () -> (TallPlantBlock) TALL_PALE_GRIMWEED
+            )
+    );
+
+    public static final Block TALL_ORANGE_MYCENA = registerBlock(
+            "tall_orange_mycena",
+            new ModTallPlantBlock(
+                    AbstractBlock.Settings.create()
+                            .noCollision()
+                            .nonOpaque()
+
+                            .breakInstantly()
+                            .sounds(BlockSoundGroup.GRASS)
+                            .offset(AbstractBlock.OffsetType.XZ)
+                            .burnable()
+                            .pistonBehavior(PistonBehavior.DESTROY)
+            )
+    );
+
+    public static final Block ORANGE_MYCENA = registerBlock(
+            "orange_mycena",
+            new ModShortPlantBlock(
+                    AbstractBlock.Settings.create()
+                            .noCollision()
+                            .nonOpaque()
+
+                            .breakInstantly()
+                            .sounds(BlockSoundGroup.GRASS)
+                            .offset(AbstractBlock.OffsetType.XZ)
+                            .burnable()
+                            .pistonBehavior(PistonBehavior.DESTROY),
+                    () -> (TallPlantBlock) TALL_ORANGE_MYCENA
+            )
+    );
+
+    public static final Block TALL_SOUL_STALKS = registerBlock(
+            "tall_soul_stalks",
+            new ModTallPlantBlock(
+                    AbstractBlock.Settings.create()
+                            .noCollision()
+                            .nonOpaque()
+
+                            .breakInstantly()
+                            .sounds(BlockSoundGroup.GRASS)
+                            .offset(AbstractBlock.OffsetType.XZ)
+                            .burnable()
+                            .pistonBehavior(PistonBehavior.DESTROY)
+            )
+    );
+
+    public static final Block SOUL_STALKS = registerBlock(
+            "soul_stalks",
+            new ModShortPlantBlock(
+                    AbstractBlock.Settings.create()
+                            .noCollision()
+                            .nonOpaque()
+
+                            .breakInstantly()
+                            .sounds(BlockSoundGroup.GRASS)
+                            .offset(AbstractBlock.OffsetType.XZ)
+                            .burnable()
+                            .pistonBehavior(PistonBehavior.DESTROY),
+                    () -> (TallPlantBlock) TALL_SOUL_STALKS
+            )
+    );
+
+    public static final Block CLOVER = registerBlock(
+            "clover",
+            new FlowerbedBlock(
+                    AbstractBlock.Settings.create()
+                            .noCollision()
+                            .breakInstantly()
+                            .nonOpaque()
+                            .sounds(BlockSoundGroup.GRASS)
+                            .offset(AbstractBlock.OffsetType.XZ)
+                            .burnable()
+                            .pistonBehavior(PistonBehavior.DESTROY))
+    );
+
+    public static final Block STICK = registerBlock(
+            "stick",
+            new PlacedStickBlock(
+                    AbstractBlock.Settings.create()
+                            .noCollision()
+                            .nonOpaque()
+                            .breakInstantly()
+                            .sounds(BlockSoundGroup.WOOD)
+            )
+    );
+
+    public static final Block SCULK_VINES =
+            registerBlock("sculk_vines",
+                    new SculkVinesBlock(AbstractBlock.Settings.create()
+                            .noCollision()
+                            .breakInstantly()
+                            .ticksRandomly()
+                            .sounds(BlockSoundGroup.CAVE_VINES)
+                            .nonOpaque()));
+
+    public static final Block SCULK_VINES_END =
+            registerBlock("sculk_vines_end",
+                    new SculkVinesEndBlock(AbstractBlock.Settings.create()
+                            .noCollision()
+                            .breakInstantly()
+                            .ticksRandomly()
+                            .sounds(BlockSoundGroup.CAVE_VINES)
+                            .nonOpaque()));
+
+    public static final Block WARPED_VEIL =
+            registerBlock("warped_veil",
+                    new WarpedVeilBlock(AbstractBlock.Settings.create()
+                            .noCollision()
+                            .breakInstantly()
+                            .ticksRandomly()
+                            .sounds(BlockSoundGroup.CAVE_VINES)
+                            .nonOpaque()));
+
+    public static final Block WARPED_VEIL_BOTTOM =
+            registerBlock("warped_veil_bottom",
+                    new WarpedVeilEndBlock(AbstractBlock.Settings.create()
+                            .noCollision()
+                            .breakInstantly()
+                            .ticksRandomly()
+                            .sounds(BlockSoundGroup.CAVE_VINES)
+                            .nonOpaque()));
+
+    public static final Block ASH = registerBlock("ash",
+            new CarpetBlock(AbstractBlock.Settings.create()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(0.1F)
+                    .sounds(BlockSoundGroup.MOSS_BLOCK)
+                    .pistonBehavior(PistonBehavior.DESTROY)));
+
+
+    public static final Block[] PLANT_BLOCKS = {
+            STICK,
+            OCULUS_ORCHID,
+            HIBISCUS,
+            BRAMBLE,
+            BEACH_GRASS,
+            DRY_BUSH,
+            DRY_GRASS,
+            FROSTED_GRASS,
+            GRIMWEED,
+            PALE_GRIMWEED,
+            HOGWEED,
+            ORANGE_MYCENA,
+            CLOVER,
+            SOUL_STALKS,
+
+    };
+
 
     public static void registerModBlocks() {
         Xenon.LOGGER.info("Registering Mod Blocks for " + Xenon.MOD_ID);

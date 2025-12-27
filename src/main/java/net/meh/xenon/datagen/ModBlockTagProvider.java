@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.meh.xenon.block.ModBlocks;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.BlockTags;
+import net.minecraft.registry.tag.ItemTags;
 
 
 import java.util.concurrent.CompletableFuture;
@@ -47,6 +48,12 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 var wool = getOrCreateTagBuilder(BlockTags.WOOL);
 
                 var natural = getOrCreateTagBuilder(BlockTags.DIRT);
+                var flowers = getOrCreateTagBuilder(BlockTags.FLOWERS);
+                var tallFlowers = getOrCreateTagBuilder(BlockTags.TALL_FLOWERS);
+                var smallFlowers = getOrCreateTagBuilder(BlockTags.SMALL_FLOWERS);
+                var goatHorn = getOrCreateTagBuilder(BlockTags.SNAPS_GOAT_HORN);
+                var climbable = getOrCreateTagBuilder(BlockTags.CLIMBABLE);
+
 
                 //endregion\
                 //region axe
@@ -539,7 +546,12 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 );
                 //endregion\
                 //region hoe
-
+                climbable.add(
+                        ModBlocks.SCULK_VINES_END,
+                        ModBlocks.SCULK_VINES,
+                        ModBlocks.WARPED_VEIL_BOTTOM,
+                        ModBlocks.WARPED_VEIL
+                );
                 hoe.add(
                         ModBlocks.BAOBAB_LEAVES,
                         ModBlocks.BAYOU_LEAVES,
@@ -553,7 +565,122 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                         ModBlocks.WISTERIA_FLOWERS_PINK,
                         ModBlocks.WISTERIA_FLOWERS_PURPLE,
                         ModBlocks.WISTERIA_FLOWERS_WHITE,
-                        ModBlocks.WISTERIA_LEAVES
+                        ModBlocks.WISTERIA_LEAVES,
+
+                        ModBlocks.HOGWEED,
+                        ModBlocks.TALL_HOGWEED,
+                        ModBlocks.FROSTED_GRASS,
+                        ModBlocks.TALL_FROSTED_GRASS,
+                        ModBlocks.DRY_GRASS,
+                        ModBlocks.TALL_DRY_GRASS,
+                        ModBlocks.HIBISCUS,
+                        ModBlocks.OCULUS_ORCHID,
+                        ModBlocks.CATTAIL,
+                        ModBlocks.CLOVER,
+                        ModBlocks.GRIMWEED,
+                        ModBlocks.PALE_GRIMWEED,
+                        ModBlocks.TALL_GRIMWEED,
+                        ModBlocks.TALL_PALE_GRIMWEED,
+                        ModBlocks.DRY_BUSH,
+                        ModBlocks.TALL_DRY_BUSH,
+                        ModBlocks.STICK,
+                        ModBlocks.SOUL_STALKS,
+                        ModBlocks.TALL_SOUL_STALKS,
+                        ModBlocks.SMALL_LILY,
+                        ModBlocks.SCULK_VINES,
+                        ModBlocks.SCULK_VINES_END,
+                        ModBlocks.WARPED_VEIL,
+                        ModBlocks.WARPED_VEIL_BOTTOM,
+                        ModBlocks.ORANGE_MYCENA,
+                        ModBlocks.BEACH_GRASS,
+                        ModBlocks.TALL_BEACH_GRASS,
+                        ModBlocks.AMARYLLIS,
+                        ModBlocks.BRAMBLE,
+                        ModBlocks.TALL_BRAMBLE
+                );
+
+                flowers.add(
+                        ModBlocks.HOGWEED,
+                        ModBlocks.TALL_HOGWEED,
+                        ModBlocks.FROSTED_GRASS,
+                        ModBlocks.TALL_FROSTED_GRASS,
+                        ModBlocks.DRY_GRASS,
+                        ModBlocks.TALL_DRY_GRASS,
+                        ModBlocks.HIBISCUS,
+                        ModBlocks.OCULUS_ORCHID,
+                        ModBlocks.CATTAIL,
+                        ModBlocks.CLOVER,
+                        ModBlocks.GRIMWEED,
+                        ModBlocks.PALE_GRIMWEED,
+                        ModBlocks.TALL_GRIMWEED,
+                        ModBlocks.TALL_PALE_GRIMWEED,
+                        ModBlocks.DRY_BUSH,
+                        ModBlocks.TALL_DRY_BUSH,
+                        ModBlocks.STICK,
+                        ModBlocks.SOUL_STALKS,
+                        ModBlocks.TALL_SOUL_STALKS,
+                        ModBlocks.SMALL_LILY,
+                        ModBlocks.ORANGE_MYCENA,
+                        ModBlocks.BEACH_GRASS,
+                        ModBlocks.TALL_BEACH_GRASS,
+                        ModBlocks.AMARYLLIS,
+                        ModBlocks.BRAMBLE,
+                        ModBlocks.TALL_BRAMBLE
+                );
+                smallFlowers.add(
+                        ModBlocks.HOGWEED,
+                        ModBlocks.FROSTED_GRASS,
+                        ModBlocks.DRY_GRASS,
+                        ModBlocks.HIBISCUS,
+                        ModBlocks.OCULUS_ORCHID,
+                        ModBlocks.CLOVER,
+                        ModBlocks.GRIMWEED,
+                        ModBlocks.DRY_BUSH,
+                        ModBlocks.SOUL_STALKS,
+                        ModBlocks.BEACH_GRASS,
+                        ModBlocks.BRAMBLE
+                );
+                tallFlowers.add(
+                        ModBlocks.TALL_HOGWEED,
+                        ModBlocks.TALL_FROSTED_GRASS,
+                        ModBlocks.TALL_DRY_GRASS,
+                        ModBlocks.CATTAIL,
+                        ModBlocks.TALL_GRIMWEED,
+                        ModBlocks.TALL_PALE_GRIMWEED,
+                        ModBlocks.TALL_DRY_BUSH,
+                        ModBlocks.TALL_SOUL_STALKS,
+                        ModBlocks.ORANGE_MYCENA,
+                        ModBlocks.TALL_BEACH_GRASS,
+                        ModBlocks.AMARYLLIS,
+                        ModBlocks.TALL_BRAMBLE
+                );
+                goatHorn.add(
+                        ModBlocks.HOGWEED,
+                        ModBlocks.TALL_HOGWEED,
+                        ModBlocks.FROSTED_GRASS,
+                        ModBlocks.TALL_FROSTED_GRASS,
+                        ModBlocks.DRY_GRASS,
+                        ModBlocks.TALL_DRY_GRASS,
+                        ModBlocks.HIBISCUS,
+                        ModBlocks.OCULUS_ORCHID,
+                        ModBlocks.CATTAIL,
+                        ModBlocks.CLOVER,
+                        ModBlocks.GRIMWEED,
+                        ModBlocks.PALE_GRIMWEED,
+                        ModBlocks.TALL_GRIMWEED,
+                        ModBlocks.TALL_PALE_GRIMWEED,
+                        ModBlocks.DRY_BUSH,
+                        ModBlocks.TALL_DRY_BUSH,
+                        ModBlocks.STICK,
+                        ModBlocks.SOUL_STALKS,
+                        ModBlocks.TALL_SOUL_STALKS,
+                        ModBlocks.SMALL_LILY,
+                        ModBlocks.ORANGE_MYCENA,
+                        ModBlocks.BEACH_GRASS,
+                        ModBlocks.TALL_BEACH_GRASS,
+                        ModBlocks.AMARYLLIS,
+                        ModBlocks.BRAMBLE,
+                        ModBlocks.TALL_BRAMBLE
                 );
                 //endregion\
                 //region logs
@@ -1661,6 +1788,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                         ModBlocks.DAMP_MOSS,
                         ModBlocks.DAMP_MOSS_BLOCK,
                         ModBlocks.GRIMOSS,
+                        ModBlocks.ASH,
                         ModBlocks.GRIMOSS_BLOCK,
                         ModBlocks.GRIMWEED_BLOCK,
                         ModBlocks.PALE_GRIMWEED_BLOCK,

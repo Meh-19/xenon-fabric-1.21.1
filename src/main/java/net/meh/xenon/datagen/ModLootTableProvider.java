@@ -9,11 +9,15 @@ import net.minecraft.block.Blocks;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.item.Item;
+import net.minecraft.item.Items;
+import net.minecraft.loot.LootPool;
 import net.minecraft.loot.LootTable;
+import net.minecraft.loot.condition.SurvivesExplosionLootCondition;
 import net.minecraft.loot.entry.ItemEntry;
 import net.minecraft.loot.entry.LeafEntry;
 import net.minecraft.loot.function.ApplyBonusLootFunction;
 import net.minecraft.loot.function.SetCountLootFunction;
+import net.minecraft.loot.provider.number.ConstantLootNumberProvider;
 import net.minecraft.loot.provider.number.UniformLootNumberProvider;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.RegistryWrapper;
@@ -456,6 +460,9 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.CUT_ASHEN_SANDSTONE);
         addDrop(ModBlocks.DAMP_MOSS_BLOCK);
         addDrop(ModBlocks.GRIMOSS_BLOCK);
+        addDrop(ModBlocks.GRIMOSS);
+        addDrop(ModBlocks.DAMP_MOSS);
+        addDrop(ModBlocks.ASH);
         addDropWithSilkTouch(ModBlocks.PERMAFROST, Blocks.DIRT);
         addDrop(ModBlocks.GRIMROCK);
         addDrop(ModBlocks.GRIMROCK_BRICKS);
@@ -869,6 +876,36 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.CONCRETE_BRICKS_MAGENTA_SLAB);
         addDrop(ModBlocks.CONCRETE_BRICKS_PINK_SLAB);
 
+        dropsWithShears(ModBlocks.HOGWEED);
+        dropsWithShears(ModBlocks.TALL_HOGWEED);
+        dropsWithShears(ModBlocks.FROSTED_GRASS);
+        dropsWithShears(ModBlocks.TALL_FROSTED_GRASS);
+        dropsWithShears(ModBlocks.DRY_GRASS);
+        dropsWithShears(ModBlocks.TALL_DRY_GRASS);
+        dropsWithShears(ModBlocks.HIBISCUS);
+        dropsWithShears(ModBlocks.OCULUS_ORCHID);
+        dropsWithShears(ModBlocks.CATTAIL);
+        dropsWithShears(ModBlocks.CLOVER);
+        dropsWithShears(ModBlocks.GRIMWEED);
+        dropsWithShears(ModBlocks.PALE_GRIMWEED);
+        dropsWithShears(ModBlocks.TALL_GRIMWEED);
+        dropsWithShears(ModBlocks.TALL_PALE_GRIMWEED);
+        dropsWithShears(ModBlocks.DRY_BUSH);
+        dropsWithShears(ModBlocks.TALL_DRY_BUSH);
+        dropsStick(ModBlocks.STICK);
+        dropsWithShears(ModBlocks.SOUL_STALKS);
+        dropsWithShears(ModBlocks.TALL_SOUL_STALKS);
+        dropsWithShears(ModBlocks.SMALL_LILY);
+        dropsWithShears(ModBlocks.SCULK_VINES);
+                dropsWithShears(ModBlocks.SCULK_VINES_END);
+                dropsWithShears(ModBlocks.WARPED_VEIL);
+                dropsWithShears(ModBlocks.WARPED_VEIL_BOTTOM);
+        dropsWithShears(ModBlocks.ORANGE_MYCENA);
+        dropsWithShears(ModBlocks.BEACH_GRASS);
+        dropsWithShears(ModBlocks.TALL_BEACH_GRASS);
+        dropsWithShears(ModBlocks.AMARYLLIS);
+        dropsWithShears(ModBlocks.BRAMBLE);
+        dropsWithShears(ModBlocks.TALL_BRAMBLE);
     }
 
 
@@ -877,5 +914,14 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         return this.dropsWithSilkTouch(drop, this.applyExplosionDecay(drop, ((LeafEntry.Builder<?>)
                 ItemEntry.builder(item).apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(minDrops, maxDrops))))
                 .apply(ApplyBonusLootFunction.oreDrops(impl.getOrThrow(Enchantments.FORTUNE)))));
+    }
+
+    public LootTable.Builder dropsStick(Block dropPerishes) {
+        return LootTable.builder()
+                .pool(LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .with(ItemEntry.builder(Items.STICK)
+                                .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1))))
+                        .conditionally(SurvivesExplosionLootCondition.builder()));
     }
 }

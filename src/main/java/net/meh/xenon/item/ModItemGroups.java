@@ -33,6 +33,34 @@ public static final ItemGroup XENON_ITEMS_GROUP = Registry.register(Registries.I
                     entries.add(ModBlocks.BLUE_CRYSTAL);
                     entries.add(ModBlocks.PURPLE_CRYSTAL);
 
+                    entries.add(ModBlocks.OCULUS_ORCHID);
+                    entries.add(ModBlocks.SMALL_LILY);
+                    entries.add(ModBlocks.HIBISCUS);
+                    entries.add(ModBlocks.BRAMBLE);
+                    entries.add(ModBlocks.TALL_BRAMBLE);
+                    entries.add(ModBlocks.BEACH_GRASS);
+                    entries.add(ModBlocks.TALL_BEACH_GRASS);
+                    entries.add(ModBlocks.DRY_BUSH);
+                    entries.add(ModBlocks.TALL_DRY_BUSH);
+                    entries.add(ModBlocks.DRY_GRASS);
+                    entries.add(ModBlocks.TALL_DRY_GRASS);
+                    entries.add(ModBlocks.FROSTED_GRASS);
+                    entries.add(ModBlocks.TALL_FROSTED_GRASS);
+                    entries.add(ModBlocks.GRIMWEED);
+                    entries.add(ModBlocks.TALL_GRIMWEED);
+                    entries.add(ModBlocks.PALE_GRIMWEED);
+                    entries.add(ModBlocks.TALL_PALE_GRIMWEED);
+                    entries.add(ModBlocks.HOGWEED);
+                    entries.add(ModBlocks.TALL_HOGWEED);
+                    entries.add(ModBlocks.ORANGE_MYCENA);
+                    entries.add(ModBlocks.TALL_ORANGE_MYCENA);
+                    entries.add(ModBlocks.CLOVER);
+                    entries.add(ModBlocks.SOUL_STALKS);
+                    entries.add(ModBlocks.TALL_SOUL_STALKS);
+                    entries.add(ModBlocks.SCULK_VINES);
+                    entries.add(ModBlocks.WARPED_VEIL);
+                    entries.add(ModBlocks.ASH);
+
 
 
                 })

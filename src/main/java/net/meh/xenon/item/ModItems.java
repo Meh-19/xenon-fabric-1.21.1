@@ -36,15 +36,13 @@ public static final Item PLATINUM = registerItem("platinum", new Item(new Item.S
     return Registry.register(Registries.ITEM, Identifier.of(Xenon.MOD_ID, name), item);
 }
 
+
     public static void registerModItems() {
         Xenon.LOGGER.info("Registering Mod Items for " + Xenon.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
             entries.add(PLATINUM);
             entries.add(RUBY);
-            entries.add(ModBlocks.GRIMOSS);
-            entries.add(ModBlocks.DAMP_MOSS);
-            entries.add(ModBlocks.PERMAFROST);
 
         });
     }

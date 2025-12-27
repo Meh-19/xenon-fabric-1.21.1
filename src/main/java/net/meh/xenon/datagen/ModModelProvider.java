@@ -2,17 +2,60 @@ package net.meh.xenon.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
+import net.meh.xenon.Xenon;
 import net.meh.xenon.block.ModBlocks;
+import net.minecraft.block.enums.DoubleBlockHalf;
+import net.minecraft.data.client.BlockStateModelGenerator;
+import net.minecraft.data.client.Models;
 import net.minecraft.block.Block;
 import net.minecraft.data.client.*;
+import net.minecraft.registry.Registries;
+import net.minecraft.state.property.Properties;
+import net.minecraft.util.Identifier;
 
 public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricDataOutput output) {
         super(output);
     }
 
+    private static void registerTallVisualPlant(BlockStateModelGenerator gen, Block block) {
+        gen.blockStateCollector.accept(
+                BlockStateModelGenerator.createSingletonBlockState(
+                        block,
+                        Identifier.of(
+                                Xenon.MOD_ID,
+                                "block/" + Registries.BLOCK.getId(block).getPath()
+                        )
+                )
+        );
+    }
+
+
+
+
+
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator gen) {
+
+        gen.blockStateCollector.accept(
+                BlockStateModelGenerator.createSingletonBlockState(
+                        ModBlocks.SMALL_LILY,
+                        Identifier.of(Xenon.MOD_ID, "block/small_lily")
+                )
+        );
+
+        registerTallVisualPlant(gen, ModBlocks.TALL_BEACH_GRASS);
+        registerTallVisualPlant(gen, ModBlocks.TALL_SOUL_STALKS);
+        registerTallVisualPlant(gen, ModBlocks.TALL_ORANGE_MYCENA);
+        registerTallVisualPlant(gen, ModBlocks.TALL_HOGWEED);
+        registerTallVisualPlant(gen, ModBlocks.TALL_GRIMWEED);
+        registerTallVisualPlant(gen, ModBlocks.TALL_PALE_GRIMWEED);
+        registerTallVisualPlant(gen, ModBlocks.TALL_FROSTED_GRASS);
+        registerTallVisualPlant(gen, ModBlocks.TALL_DRY_GRASS);
+        registerTallVisualPlant(gen, ModBlocks.TALL_DRY_BUSH);
+        registerTallVisualPlant(gen, ModBlocks.TALL_BRAMBLE);
+        registerTallVisualPlant(gen, ModBlocks.CATTAIL);
+        registerTallVisualPlant(gen, ModBlocks.AMARYLLIS);
 
         var limestone = gen.registerCubeAllModelTexturePool(ModBlocks.LIMESTONE);
         var polished_limestone = gen.registerCubeAllModelTexturePool(ModBlocks.POLISHED_LIMESTONE);
@@ -510,9 +553,17 @@ public class ModModelProvider extends FabricModelProvider {
                 )
         );
 
-
+        for (Block block : ModBlocks.PLANT_BLOCKS) {
+            gen.blockStateCollector.accept(
+                    BlockStateModelGenerator.createSingletonBlockState(
+                            block,
+                             Identifier.of(Xenon.MOD_ID, "block/" + Registries.BLOCK.getId(block).getPath())
+                    )
+            );
+        }
 
     }
+
     private void registerPillar(BlockStateModelGenerator gen, Block block) {
         gen.registerAxisRotated(
                 block,
@@ -528,9 +579,6 @@ public class ModModelProvider extends FabricModelProvider {
                 TexturedModel.CUBE_COLUMN
         );
     }
-
-
-
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {

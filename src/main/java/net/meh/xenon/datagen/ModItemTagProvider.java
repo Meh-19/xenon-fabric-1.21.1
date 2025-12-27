@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.meh.xenon.block.ModBlocks;
 import net.meh.xenon.item.ModItems;
 import net.minecraft.registry.RegistryWrapper;
+import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.registry.tag.ItemTags;
 
 import java.util.concurrent.CompletableFuture;
@@ -35,7 +36,66 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
         var beacon = getOrCreateTagBuilder(ItemTags.BEACON_PAYMENT_ITEMS);
 
         var natural = getOrCreateTagBuilder(ItemTags.DIRT);
+
+        var flowers = getOrCreateTagBuilder(ItemTags.FLOWERS);
+        var tallFlowers = getOrCreateTagBuilder(ItemTags.TALL_FLOWERS);
+        var smallFlowers = getOrCreateTagBuilder(ItemTags.SMALL_FLOWERS);
         //endregion\
+        flowers.add(
+                ModBlocks.HOGWEED.asItem(),
+                ModBlocks.TALL_HOGWEED.asItem(),
+                ModBlocks.FROSTED_GRASS.asItem(),
+                ModBlocks.TALL_FROSTED_GRASS.asItem(),
+                ModBlocks.DRY_GRASS.asItem(),
+                ModBlocks.TALL_DRY_GRASS.asItem(),
+                ModBlocks.HIBISCUS.asItem(),
+                ModBlocks.OCULUS_ORCHID.asItem(),
+                ModBlocks.CATTAIL.asItem(),
+                ModBlocks.CLOVER.asItem(),
+                ModBlocks.GRIMWEED.asItem(),
+                ModBlocks.PALE_GRIMWEED.asItem(),
+                ModBlocks.TALL_GRIMWEED.asItem(),
+                ModBlocks.TALL_PALE_GRIMWEED.asItem(),
+                ModBlocks.DRY_BUSH.asItem(),
+                ModBlocks.TALL_DRY_BUSH.asItem(),
+                ModBlocks.STICK.asItem(),
+                ModBlocks.SOUL_STALKS.asItem(),
+                ModBlocks.TALL_SOUL_STALKS.asItem(),
+                ModBlocks.SMALL_LILY.asItem(),
+                ModBlocks.ORANGE_MYCENA.asItem(),
+                ModBlocks.BEACH_GRASS.asItem(),
+                ModBlocks.TALL_BEACH_GRASS.asItem(),
+                ModBlocks.AMARYLLIS.asItem(),
+                ModBlocks.BRAMBLE.asItem(),
+                ModBlocks.TALL_BRAMBLE.asItem()
+        );
+        smallFlowers.add(
+                ModBlocks.HOGWEED.asItem(),
+                ModBlocks.FROSTED_GRASS.asItem(),
+                ModBlocks.DRY_GRASS.asItem(),
+                ModBlocks.HIBISCUS.asItem(),
+                ModBlocks.OCULUS_ORCHID.asItem(),
+                ModBlocks.CLOVER.asItem(),
+                ModBlocks.GRIMWEED.asItem(),
+                ModBlocks.DRY_BUSH.asItem(),
+                ModBlocks.SOUL_STALKS.asItem(),
+                ModBlocks.BEACH_GRASS.asItem(),
+                ModBlocks.BRAMBLE.asItem()
+        );
+        tallFlowers.add(
+                ModBlocks.TALL_HOGWEED.asItem(),
+                ModBlocks.TALL_FROSTED_GRASS.asItem(),
+                ModBlocks.TALL_DRY_GRASS.asItem(),
+                ModBlocks.CATTAIL.asItem(),
+                ModBlocks.TALL_GRIMWEED.asItem(),
+                ModBlocks.TALL_PALE_GRIMWEED.asItem(),
+                ModBlocks.TALL_DRY_BUSH.asItem(),
+                ModBlocks.TALL_SOUL_STALKS.asItem(),
+                ModBlocks.ORANGE_MYCENA.asItem(),
+                ModBlocks.TALL_BEACH_GRASS.asItem(),
+                ModBlocks.AMARYLLIS.asItem(),
+                ModBlocks.TALL_BRAMBLE.asItem()
+        );
 
         //region beacon
         beacon.add(
