@@ -898,6 +898,10 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         dropsWithShears(ModBlocks.SMALL_LILY);
         dropsWithShears(ModBlocks.SCULK_VINES);
                 dropsWithShears(ModBlocks.SCULK_VINES_END);
+        dropsWithShears(ModBlocks.GRIMOSS_HANG);
+        dropsWithShears(ModBlocks.GRIMOSS_HANG_BOTTOM);
+        dropsWithShears(ModBlocks.DAMP_MOSS_HANG);
+        dropsWithShears(ModBlocks.DAMP_MOSS_HANG_BOTTOM);
                 dropsWithShears(ModBlocks.WARPED_VEIL);
                 dropsWithShears(ModBlocks.WARPED_VEIL_BOTTOM);
         dropsWithShears(ModBlocks.ORANGE_MYCENA);

@@ -2830,13 +2830,6 @@ public class ModBlocks {
                     .sounds(BlockSoundGroup.MOSS_BLOCK)
                     .pistonBehavior(PistonBehavior.DESTROY)));
 
-    public static final Block GRIMOSS = registerBlock("grimoss",
-            new CarpetBlock(AbstractBlock.Settings.create()
-                    .instrument(NoteBlockInstrument.BASEDRUM)
-                    .strength(0.1F)
-                    .sounds(BlockSoundGroup.MOSS_BLOCK)
-                    .pistonBehavior(PistonBehavior.DESTROY)));
-
     public static final Block PERMAFROST = registerBlock("permafrost",
             new Block(AbstractBlock.Settings.create()
                     .instrument(NoteBlockInstrument.BASEDRUM)
@@ -2845,17 +2838,10 @@ public class ModBlocks {
                     .pistonBehavior(PistonBehavior.DESTROY)));
 
     public static final Block FROST = registerBlock("frost",
-            new CarpetBlock(AbstractBlock.Settings.create()
+            new GroundCoverBlock(AbstractBlock.Settings.create()
                     .instrument(NoteBlockInstrument.BASEDRUM)
                     .strength(0.1F)
                     .sounds(BlockSoundGroup.SNOW)
-                    .pistonBehavior(PistonBehavior.DESTROY)));
-
-    public static final Block DAMP_MOSS = registerBlock("damp_moss",
-            new CarpetBlock(AbstractBlock.Settings.create()
-                    .instrument(NoteBlockInstrument.BASEDRUM)
-                    .strength(0.1F)
-                    .sounds(BlockSoundGroup.MOSS_BLOCK)
                     .pistonBehavior(PistonBehavior.DESTROY)));
 
     public static final Block GRIMOSS_BLOCK = registerBlock("grimoss_block",
@@ -6047,17 +6033,20 @@ public class ModBlocks {
             )
     );
 
-    public static final Block SMALL_LILY = registerBlock("small_lily",
-            new LilyPadBlock(
-                    AbstractBlock.Settings.create()
-                            .mapColor(MapColor.DARK_GREEN)
-                            .breakInstantly()
-                            .sounds(BlockSoundGroup.LILY_PAD)
-                            .nonOpaque()
-                            .pistonBehavior(PistonBehavior.DESTROY)
-            )
-    );
-
+    public static final Block SMALL_LILY =
+            Registry.register(
+                    Registries.BLOCK,
+                    Identifier.of("xenon", "small_lily"),
+                    new ModLilyPadBlock(
+                            AbstractBlock.Settings.create()
+                                    .noCollision()
+                                    .mapColor(MapColor.DARK_GREEN)
+                                    .breakInstantly()
+                                    .sounds(BlockSoundGroup.GRASS)
+                                    .nonOpaque()
+                                    .pistonBehavior(PistonBehavior.DESTROY)
+                    )
+            );
     public static final Block HIBISCUS = registerBlock("hibiscus",
             new ShortPlantBlock(
                     AbstractBlock.Settings.create()
@@ -6443,11 +6432,12 @@ public class ModBlocks {
                             .nonOpaque()));
 
     public static final Block ASH = registerBlock("ash",
-            new CarpetBlock(AbstractBlock.Settings.create()
-                    .instrument(NoteBlockInstrument.BASEDRUM)
+            new GroundCoverBlock(AbstractBlock.Settings.create()
                     .strength(0.1F)
                     .sounds(BlockSoundGroup.MOSS_BLOCK)
-                    .pistonBehavior(PistonBehavior.DESTROY)));
+                    .pistonBehavior(PistonBehavior.DESTROY)
+                    .noCollision()
+                    .nonOpaque()));
 
 
     public static final Block[] PLANT_BLOCKS = {
@@ -6467,6 +6457,63 @@ public class ModBlocks {
             SOUL_STALKS,
 
     };
+    public static final Block GRIMOSS_HANG_BOTTOM = registerBlock("grimoss_hang_bottom",
+            new GrimossVineEndBlock(AbstractBlock.Settings.create()
+                    .noCollision()
+                    .breakInstantly()
+                    .ticksRandomly()
+                    .nonOpaque()
+                    .sounds(BlockSoundGroup.CAVE_VINES)
+                    .pistonBehavior(PistonBehavior.DESTROY)
+                    .noCollision()
+            ));
+    public static final Block GRIMOSS_HANG = registerBlock("grimoss_hang",
+            new GrimossVineBlock(AbstractBlock.Settings.create()
+                    .noCollision()
+                    .breakInstantly()
+                    .ticksRandomly()
+                    .nonOpaque()
+                    .sounds(BlockSoundGroup.CAVE_VINES)
+                    .pistonBehavior(PistonBehavior.DESTROY)
+                    .noCollision()
+            ));
+    public static final Block GRIMOSS = registerBlock("grimoss",
+            new GrimossBlock(AbstractBlock.Settings.create()
+                    .strength(0.1F)
+                    .sounds(BlockSoundGroup.MOSS_BLOCK)
+                    .pistonBehavior(PistonBehavior.DESTROY)
+                    .noCollision()
+                    .nonOpaque())
+    );
+    public static final Block DAMP_MOSS_HANG_BOTTOM = registerBlock("damp_moss_hang_bottom",
+            new DampMossVineEndBlock(AbstractBlock.Settings.create()
+                    .noCollision()
+                    .breakInstantly()
+                    .ticksRandomly()
+                    .nonOpaque()
+                    .sounds(BlockSoundGroup.CAVE_VINES)
+                    .pistonBehavior(PistonBehavior.DESTROY)
+                    .noCollision()
+            ));
+    public static final Block DAMP_MOSS_HANG = registerBlock("damp_moss_hang",
+            new DampMossVineBlock(AbstractBlock.Settings.create()
+                    .noCollision()
+                    .breakInstantly()
+                    .ticksRandomly()
+                    .nonOpaque()
+                    .sounds(BlockSoundGroup.CAVE_VINES)
+                    .pistonBehavior(PistonBehavior.DESTROY)
+                    .noCollision()
+            ));
+    public static final Block DAMP_MOSS = registerBlock("damp_moss",
+            new DampMossBlock(AbstractBlock.Settings.create()
+                    .strength(0.1F)
+                    .sounds(BlockSoundGroup.MOSS_BLOCK)
+                    .pistonBehavior(PistonBehavior.DESTROY)
+                    .noCollision()
+                    .nonOpaque()
+            ));
+
 
 
     public static void registerModBlocks() {

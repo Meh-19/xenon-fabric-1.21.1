@@ -46,7 +46,6 @@ public class XenonClient implements ClientModInitializer {
                 ModBlocks.AMARYLLIS,
                 ModBlocks.CATTAIL,
                 ModBlocks.OCULUS_ORCHID,
-                ModBlocks.SMALL_LILY,
                 ModBlocks.HIBISCUS,
 
                 ModBlocks.TALL_BEACH_GRASS,
@@ -85,9 +84,14 @@ public class XenonClient implements ClientModInitializer {
                 ModBlocks.SCULK_VINES_END,
                 ModBlocks.WARPED_VEIL,
                 ModBlocks.WARPED_VEIL_BOTTOM,
+                ModBlocks.DAMP_MOSS_HANG,
+                ModBlocks.DAMP_MOSS_HANG_BOTTOM,
+                ModBlocks.GRIMOSS_HANG,
+                ModBlocks.GRIMOSS_HANG_BOTTOM,
                 ModBlocks.DAMP_MOSS,
                 ModBlocks.GRIMOSS,
-                ModBlocks.ASH
+                ModBlocks.ASH,
+                ModBlocks.SMALL_LILY
         );
     }
 }

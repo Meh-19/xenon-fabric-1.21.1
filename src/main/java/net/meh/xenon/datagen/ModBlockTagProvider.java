@@ -5,7 +5,6 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.meh.xenon.block.ModBlocks;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.BlockTags;
-import net.minecraft.registry.tag.ItemTags;
 
 
 import java.util.concurrent.CompletableFuture;
@@ -550,7 +549,11 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                         ModBlocks.SCULK_VINES_END,
                         ModBlocks.SCULK_VINES,
                         ModBlocks.WARPED_VEIL_BOTTOM,
-                        ModBlocks.WARPED_VEIL
+                        ModBlocks.WARPED_VEIL,
+                        ModBlocks.GRIMOSS_HANG,
+                        ModBlocks.GRIMOSS_HANG_BOTTOM,
+                        ModBlocks.DAMP_MOSS_HANG,
+                        ModBlocks.DAMP_MOSS_HANG_BOTTOM
                 );
                 hoe.add(
                         ModBlocks.BAOBAB_LEAVES,
@@ -589,6 +592,10 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                         ModBlocks.SMALL_LILY,
                         ModBlocks.SCULK_VINES,
                         ModBlocks.SCULK_VINES_END,
+                        ModBlocks.GRIMOSS_HANG,
+                        ModBlocks.GRIMOSS_HANG_BOTTOM,
+                        ModBlocks.DAMP_MOSS_HANG,
+                        ModBlocks.DAMP_MOSS_HANG_BOTTOM,
                         ModBlocks.WARPED_VEIL,
                         ModBlocks.WARPED_VEIL_BOTTOM,
                         ModBlocks.ORANGE_MYCENA,
