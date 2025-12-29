@@ -3,6 +3,7 @@ package net.meh.xenon;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.meh.xenon.block.ModBlocks;
+import net.meh.xenon.network.RocketBootsPackets;
 import net.meh.xenon.trade.ScavengerTradeInteraction;
 import net.minecraft.block.Block;
 import net.minecraft.client.render.RenderLayer;
@@ -20,10 +21,11 @@ public class XenonClient implements ClientModInitializer {
             ModBlocks.BLUE_CRYSTAL,
             ModBlocks.PURPLE_CRYSTAL
     };
+
     @Override
     public void onInitializeClient() {
         ScavengerTradeInteraction.register();
-
+        RocketBootsPackets.register();
         BlockEntityRendererFactories.register(
                 ModBlockEntities.ECHO_GLASS,
                 EchoGlassBlockEntityRenderer::new

@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.meh.xenon.Xenon;
 import net.meh.xenon.block.ModBlocks;
 import net.meh.xenon.item.custom.DolomiteDustItem;
+import net.meh.xenon.item.custom.RocketBootsItem;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -60,16 +61,24 @@ public static final Item PLATINUM = registerItem("platinum", new Item(new Item.S
 
     public static final Item PLATINUM_HELMET = registerItem("platinum_helmet",
             new ArmorItem(ModArmorMaterials.PLATINUM_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Settings()
-                    .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(15))));
+                    .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(11))));
     public static final Item PLATINUM_CHESTPLATE = registerItem("platinum_chestplate",
             new ArmorItem(ModArmorMaterials.PLATINUM_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Settings()
-                    .maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(15))));
+                    .maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(16))));
     public static final Item PLATINUM_LEGGINGS = registerItem("platinum_leggings",
             new ArmorItem(ModArmorMaterials.PLATINUM_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Settings()
                     .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(15))));
     public static final Item PLATINUM_BOOTS = registerItem("platinum_boots",
             new ArmorItem(ModArmorMaterials.PLATINUM_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Settings()
-                    .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(15))));
+                    .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(13))));
+
+    public static final Item ROCKET_BOOTS = registerItem(
+            "rocket_boots",
+            new RocketBootsItem(
+                    ModArmorMaterials.ROCKET_ARMOR_MATERIAL,
+                    new Item.Settings().maxDamage(429)
+            )
+    );
 
     private static Item registerItem(String name, Item item) {
     return Registry.register(Registries.ITEM, Identifier.of(Xenon.MOD_ID, name), item);

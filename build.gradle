@@ -11,7 +11,14 @@ base {
 }
 
 repositories {
-	// Loom already adds the required repositories
+	maven {
+		name "Ladysnake Mods"
+		url "https://maven.ladysnake.org/releases"
+		content {
+			includeGroup "io.github.ladysnake"
+		}
+	}
+	mavenCentral()
 }
 
 fabricApi {
@@ -38,8 +45,8 @@ dependencies {
 	minecraft "com.mojang:minecraft:${project.minecraft_version}"
 	mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
-
-	// Fabric API
+	modImplementation"io.github.ladysnake:PlayerAbilityLib:${pal_version}"
+	include "io.github.ladysnake:PlayerAbilityLib:${pal_version}"
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 }
 
@@ -82,11 +89,6 @@ publishing {
 		}
 	}
 
-	repositories {
-		// Add publishing repositories here if needed
-
-
-	}
 	tasks.withType(Jar).configureEach {
 		duplicatesStrategy = DuplicatesStrategy.EXCLUDE
 	}

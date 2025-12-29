@@ -841,5 +841,8 @@
   "block.xenon.tall_soul_stalks": "Tall Soul Stalks",
   "block.xenon.sculk_vines": "Sculk Vines",
   "block.xenon.warped_veil": "Warped Veil",
-  "block.xenon.ash": "Ash"
+  "block.xenon.ash": "Ash",
+  "item.xenon.rocket_boots": "Rocket Boots",
+  "key.xenon.rocket_jump": "Rocket Jump",
+  "category.xenon": "Xenon"
 }

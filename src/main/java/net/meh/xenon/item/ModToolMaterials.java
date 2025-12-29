@@ -13,6 +13,7 @@ public enum ModToolMaterials implements ToolMaterial {
     PLATINUM(ModTags.Blocks.INCORRECT_FOR_PLATINUM_TOOL,
             1200, 7.0F, 2.5F, 15, () -> Ingredient.ofItems(ModItems.PLATINUM));
 
+
     private final TagKey<Block> inverseTag;
     private final int itemDurability;
     private final float miningSpeed;
@@ -59,4 +60,6 @@ public enum ModToolMaterials implements ToolMaterial {
     public Ingredient getRepairIngredient() {
         return this.repairIngredient.get();
     }
+
+
 }

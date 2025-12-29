@@ -7,8 +7,11 @@ import net.meh.xenon.block.custom.plants.StickPlacementHandler;
 import net.meh.xenon.config.ConfigManager;
 import net.meh.xenon.item.ModItemGroups;
 import net.meh.xenon.item.ModItems;
+import net.meh.xenon.network.ModPayloads;
+import net.meh.xenon.network.RocketBootsPackets;
 import net.meh.xenon.sound.ModSounds;
 import net.meh.xenon.trade.ScavengerTradeRefresher;
+import net.meh.xenon.util.RocketBootsSafety;
 import net.meh.xenon.villager.ModVillagers;
 import net.minecraft.registry.Registries;
 import net.minecraft.util.Identifier;
@@ -28,7 +31,9 @@ public class Xenon implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
+		RocketBootsSafety.register();
+		ModPayloads.register();
+		RocketBootsPackets.register();
 		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();

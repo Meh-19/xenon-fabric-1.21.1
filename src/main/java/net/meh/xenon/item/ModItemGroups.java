@@ -3,6 +3,7 @@ package net.meh.xenon.item;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.meh.xenon.Xenon;
 import net.meh.xenon.block.ModBlocks;
+import net.meh.xenon.item.custom.RocketBootsItem;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
@@ -860,6 +861,7 @@ public static final ItemGroup XENON_ITEMS_GROUP = Registry.register(Registries.I
                         entries.add(ModItems.PLATINUM_CHESTPLATE);
                         entries.add(ModItems.PLATINUM_LEGGINGS);
                         entries.add(ModItems.PLATINUM_BOOTS);
+                        entries.add(RocketBootsItem.createWithFullFuel(ModItems.ROCKET_BOOTS));
                     })
 
                     .build());

@@ -26,6 +26,22 @@ public class ModArmorMaterials {
             }), 20, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, () -> Ingredient.ofItems(ModItems.PLATINUM),
                     List.of(new ArmorMaterial.Layer(Identifier.of(Xenon.MOD_ID, "platinum"))), 0,0));
 
+    public static final RegistryEntry<ArmorMaterial> ROCKET_ARMOR_MATERIAL =
+            registerArmorMaterial("rocket",
+                    () -> new ArmorMaterial(
+                            Util.make(new EnumMap<>(ArmorItem.Type.class), map -> {
+                                map.put(ArmorItem.Type.BOOTS, 1);
+                            }),
+                            5,
+                            SoundEvents.ITEM_ARMOR_EQUIP_IRON,
+                            () -> Ingredient.EMPTY,
+                            List.of(new ArmorMaterial.Layer(
+                                    Identifier.of(Xenon.MOD_ID, "rocket")
+                            )),
+                            0.0F,
+                            0.0F
+                    )
+            );
 
     public static RegistryEntry<ArmorMaterial> registerArmorMaterial(String name, Supplier<ArmorMaterial> material) {
         return Registry.registerReference(Registries.ARMOR_MATERIAL, Identifier.of(Xenon.MOD_ID, name), material.get());

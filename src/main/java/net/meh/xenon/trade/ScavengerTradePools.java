@@ -686,6 +686,8 @@ public final class ScavengerTradePools {
                 random -> tradeRanged(ModItems.RUBY, 24, 48, ModBlocks.BAOBAB_LOG.asItem(), 32, 2, random),
                 20
         ));
+
+
     }
 
 
@@ -714,6 +716,7 @@ public final class ScavengerTradePools {
             int sellCount,
             int xp,
             Random random
+
     ) {
         int buyCount = minBuy + random.nextInt(maxBuy - minBuy + 1);
 
