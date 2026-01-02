@@ -13,6 +13,7 @@ import net.meh.xenon.sound.ModSounds;
 import net.meh.xenon.trade.ScavengerTradeRefresher;
 import net.meh.xenon.util.RocketBootsSafety;
 import net.meh.xenon.villager.ModVillagers;
+import net.meh.xenon.world.ModConfiguredFeatures;
 import net.meh.xenon.world.gen.ModWorldGeneration;
 import net.minecraft.registry.Registries;
 import net.minecraft.util.Identifier;

@@ -16,6 +16,7 @@ public class ModPlacedFeatures {
     public static final RegistryKey<PlacedFeature> PLATINUM_ORE_PLACED_KEY = registerKey("platinum_ore_placed");
     public static final RegistryKey<PlacedFeature> RUBY_ORE_PLACED_KEY = registerKey("ruby_ore_placed");
     public static final RegistryKey<PlacedFeature> SLATE_SHEET =
+
             RegistryKey.of(
                     RegistryKeys.PLACED_FEATURE,
                     Identifier.of(Xenon.MOD_ID, "slate_sheet")
@@ -23,6 +24,14 @@ public class ModPlacedFeatures {
 
     public static void bootstrap(Registerable<PlacedFeature> context) {
         var configuredFeatures = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
+
+        register(context, RUBY_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.RUBY_ORE_KEY),
+                ModOrePlacement.modifiersWithCount(8,
+                        HeightRangePlacementModifier.trapezoid(YOffset.fixed(-80), YOffset.fixed(80))));
+
+        register(context, PLATINUM_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.PLATINUM_ORE_KEY),
+                ModOrePlacement.modifiersWithCount(4,
+                        HeightRangePlacementModifier.trapezoid(YOffset.fixed(-80), YOffset.fixed(30))));
 
         context.register(
                 SLATE_SHEET,
@@ -39,14 +48,6 @@ public class ModPlacedFeatures {
                         )
                 )
         );
-        register(context, RUBY_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.RUBY_ORE_KEY),
-                ModOrePlacement.modifiersWithCount(8,
-                        HeightRangePlacementModifier.trapezoid(YOffset.fixed(-80), YOffset.fixed(80))));
-
-        register(context, PLATINUM_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.PLATINUM_ORE_KEY),
-                ModOrePlacement.modifiersWithCount(4,
-                        HeightRangePlacementModifier.trapezoid(YOffset.fixed(-80), YOffset.fixed(30))));
-
     }
 
     public static final RegistryKey<PlacedFeature> SLATE_SHEET_PLACED =

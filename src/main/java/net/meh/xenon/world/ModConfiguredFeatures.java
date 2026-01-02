@@ -23,6 +23,12 @@ public class ModConfiguredFeatures {
                     Identifier.of(Xenon.MOD_ID, "slate_sheet")
             );
 
+    public static final RegistryKey<ConfiguredFeature<?, ?>> PLATINUM_ORE =
+            RegistryKey.of(
+                    RegistryKeys.CONFIGURED_FEATURE,
+                    Identifier.of(Xenon.MOD_ID, "platinum_ore")
+            );
+
     private static final RuleTest STONE_AND_DEEPSLATE =
             new TagMatchRuleTest(BlockTags.STONE_ORE_REPLACEABLES);
 
@@ -52,14 +58,13 @@ public class ModConfiguredFeatures {
                                                 ModBlocks.SLATE.getDefaultState()
                                         )
                                 ),
-                                48,    // size (large = sheet-like)
-                                0.2F   // discard on air chance (low keeps seams intact)
+                                48,
+                                0.2F
                         )
                 )
         );
 
     }
-
 
     public static RegistryKey<ConfiguredFeature<?, ?>> registerKey(String name) {
         return RegistryKey.of(RegistryKeys.CONFIGURED_FEATURE, Identifier.of(Xenon.MOD_ID, name));

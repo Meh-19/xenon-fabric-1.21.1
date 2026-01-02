@@ -7,6 +7,7 @@ import net.minecraft.world.gen.GenerationStep;
 
 public class ModWorldGeneration {
     public static void generateModWorldGen() {
+        ModOreGeneration.generateOres();
 
         BiomeModifications.addFeature(
                 BiomeSelectors.foundInOverworld(),
@@ -14,7 +15,10 @@ public class ModWorldGeneration {
                 ModPlacedFeatures.SLATE_SHEET
         );
 
-        ModOreGeneration.generateOres();
-
+        BiomeModifications.addFeature(
+                BiomeSelectors.foundInOverworld(),
+                GenerationStep.Feature.UNDERGROUND_ORES,
+                ModPlacedFeatures.PLATINUM_ORE_PLACED_KEY
+        );
     }
 }
