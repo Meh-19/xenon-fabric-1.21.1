@@ -34,6 +34,8 @@ public static final ItemGroup XENON_ITEMS_GROUP = Registry.register(Registries.I
                     entries.add(ModBlocks.BLUE_CRYSTAL);
                     entries.add(ModBlocks.PURPLE_CRYSTAL);
 
+                    entries.add(ModBlocks.AMARYLLIS);
+                    entries.add(ModBlocks.CATTAIL);
                     entries.add(ModBlocks.OCULUS_ORCHID);
                     entries.add(ModItems.SMALL_LILY);
                     entries.add(ModBlocks.HIBISCUS);

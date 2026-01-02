@@ -2,7 +2,9 @@ package net.meh.xenon.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
+import net.meh.xenon.block.ModBlockFamilies;
 import net.meh.xenon.block.ModBlocks;
+import net.minecraft.block.Block;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.BlockTags;
 
@@ -53,6 +55,51 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 var goatHorn = getOrCreateTagBuilder(BlockTags.SNAPS_GOAT_HORN);
                 var climbable = getOrCreateTagBuilder(BlockTags.CLIMBABLE);
 
+                for (ModBlockFamilies.StoneFamily family : ModBlockFamilies.STONES) {
+
+                        for (Block block : family.all()) {
+                                pickaxe.add(block);
+                        }
+                        for (Block block : family.all()) {
+                                needsStone.add(block);
+                        }
+
+                        if (family.stairs() != null) stairs.add(family.stairs());
+                        if (family.polishedStairs() != null) stairs.add(family.polishedStairs());
+                        if (family.bricksStairs() != null) stairs.add(family.bricksStairs());
+                        if (family.tilesStairs() != null) stairs.add(family.tilesStairs());
+                        if (family.crackedBricksStairs() != null) stairs.add(family.crackedBricksStairs());
+                        if (family.mossyBricksStairs() != null) stairs.add(family.mossyBricksStairs());
+                        if (family.sandyBricksStairs() != null) stairs.add(family.sandyBricksStairs());
+                        if (family.mossyStairs() != null) stairs.add(family.mossyStairs());
+                        if (family.moltenBricksStairs() != null) stairs.add(family.moltenBricksStairs());
+                        if (family.cutStairs() != null) stairs.add(family.cutStairs());
+                        if (family.cobbledStairs() != null) stairs.add(family.cobbledStairs());
+
+                        if (family.slab() != null) slabs.add(family.slab());
+                        if (family.polishedSlab() != null) slabs.add(family.polishedSlab());
+                        if (family.bricksSlab() != null) slabs.add(family.bricksSlab());
+                        if (family.tilesSlab() != null) slabs.add(family.tilesSlab());
+                        if (family.crackedBricksSlab() != null) slabs.add(family.crackedBricksSlab());
+                        if (family.mossyBricksSlab() != null) slabs.add(family.mossyBricksSlab());
+                        if (family.sandyBricksSlab() != null) slabs.add(family.sandyBricksSlab());
+                        if (family.mossySlab() != null) slabs.add(family.mossySlab());
+                        if (family.moltenBricksSlab() != null) slabs.add(family.moltenBricksSlab());
+                        if (family.cutSlab() != null) slabs.add(family.cutSlab());
+                        if (family.cobbledSlab() != null) slabs.add(family.cobbledSlab());
+
+                        if (family.wall() != null) walls.add(family.wall());
+                        if (family.polishedWall() != null) walls.add(family.polishedWall());
+                        if (family.bricksWall() != null) walls.add(family.bricksWall());
+                        if (family.tilesWall() != null) walls.add(family.tilesWall());
+                        if (family.crackedBricksWall() != null) walls.add(family.crackedBricksWall());
+                        if (family.mossyBricksWall() != null) walls.add(family.mossyBricksWall());
+                        if (family.sandyBricksWall() != null) walls.add(family.sandyBricksWall());
+                        if (family.mossyWall() != null) walls.add(family.mossyWall());
+                        if (family.moltenBricksWall() != null) walls.add(family.moltenBricksWall());
+                        if (family.cutWall() != null) walls.add(family.cutWall());
+                        if (family.cobbledWall() != null) walls.add(family.cobbledWall());
+                }
 
                 //endregion\
                 //region axe

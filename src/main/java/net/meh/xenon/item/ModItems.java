@@ -2,6 +2,7 @@ package net.meh.xenon.item;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.meh.xenon.Xenon;
+import net.meh.xenon.block.ModBlockItem;
 import net.meh.xenon.block.ModBlocks;
 import net.meh.xenon.item.custom.DolomiteDustItem;
 import net.meh.xenon.item.custom.RocketBootsItem;
@@ -18,7 +19,7 @@ public static final Item PLATINUM = registerItem("platinum", new Item(new Item.S
     public static final Item ECHO_GLASS_ITEM = Registry.register(
             Registries.ITEM,
             Identifier.of(Xenon.MOD_ID, "echo_glass"),
-            new BlockItem(ModBlocks.ECHO_GLASS, new Item.Settings())
+            new ModBlockItem(ModBlocks.ECHO_GLASS, new Item.Settings())
     );
     public static final Item DOLOMITE_DUST = Registry.register(
             Registries.ITEM,
@@ -29,7 +30,7 @@ public static final Item PLATINUM = registerItem("platinum", new Item(new Item.S
     public static final Item AQUARIUM_GLASS = Registry.register(
             Registries.ITEM,
             Identifier.of(Xenon.MOD_ID, "aquarium_glass"),
-            new BlockItem(ModBlocks.AQUARIUM_GLASS, new Item.Settings())
+            new ModBlockItem(ModBlocks.AQUARIUM_GLASS, new Item.Settings())
     );
 
     public static final Item SMALL_LILY =

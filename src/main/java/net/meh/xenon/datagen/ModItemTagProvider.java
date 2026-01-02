@@ -22,7 +22,7 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
         var logs = getOrCreateTagBuilder(ItemTags.LOGS);
         var logsThatBurn = getOrCreateTagBuilder(ItemTags.LOGS_THAT_BURN);
         var planks = getOrCreateTagBuilder(ItemTags.PLANKS);
-
+        var enchantableArmor = getOrCreateTagBuilder(ItemTags.ARMOR_ENCHANTABLE);
         var sword = getOrCreateTagBuilder(ItemTags.SWORDS);
         var pickaxe = getOrCreateTagBuilder(ItemTags.PICKAXES);
         var axe = getOrCreateTagBuilder(ItemTags.AXES);
@@ -48,6 +48,7 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
         var tallFlowers = getOrCreateTagBuilder(ItemTags.TALL_FLOWERS);
         var smallFlowers = getOrCreateTagBuilder(ItemTags.SMALL_FLOWERS);
         //endregion\
+        //region flowers
         flowers.add(
                 ModBlocks.HOGWEED.asItem(),
                 ModBlocks.TALL_HOGWEED.asItem(),
@@ -103,6 +104,7 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 ModBlocks.AMARYLLIS.asItem(),
                 ModBlocks.TALL_BRAMBLE.asItem()
         );
+        //endregion\
 
         //region beacon
         beacon.add(
@@ -672,6 +674,11 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
         trimmable.add(ModItems.PLATINUM_CHESTPLATE);
         trimmable.add(ModItems.PLATINUM_LEGGINGS);
         trimmable.add(ModItems.PLATINUM_BOOTS);
+
+        enchantableArmor.add(ModItems.PLATINUM_HELMET);
+        enchantableArmor.add(ModItems.PLATINUM_CHESTPLATE);
+        enchantableArmor.add(ModItems.PLATINUM_LEGGINGS);
+        enchantableArmor.add(ModItems.PLATINUM_BOOTS);
 
         //endregion\
 

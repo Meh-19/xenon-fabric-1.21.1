@@ -686,7 +686,122 @@ public final class ScavengerTradePools {
                 random -> tradeRanged(ModItems.RUBY, 24, 48, ModBlocks.BAOBAB_LOG.asItem(), 32, 2, random),
                 20
         ));
-
+        ALL_TRADES.add(new WeightedTrade(
+                random -> tradeRanged(ModItems.RUBY, 12, 24, ModBlocks.AMARYLLIS.asItem(), 8, 1, random),
+                20
+        ));
+        ALL_TRADES.add(new WeightedTrade(
+                random -> tradeRanged(ModItems.RUBY, 12, 24, ModBlocks.CATTAIL.asItem(), 8, 1, random),
+                20
+        ));
+        ALL_TRADES.add(new WeightedTrade(
+                random -> tradeRanged(ModItems.RUBY, 12, 24, ModBlocks.OCULUS_ORCHID.asItem(), 8, 1, random),
+                20
+        ));
+        ALL_TRADES.add(new WeightedTrade(
+                random -> tradeRanged(ModItems.RUBY, 12, 24, ModBlocks.SMALL_LILY.asItem(), 8, 1, random),
+                20
+        ));
+        ALL_TRADES.add(new WeightedTrade(
+                random -> tradeRanged(ModItems.RUBY, 12, 24, ModBlocks.HIBISCUS.asItem(), 8, 1, random),
+                20
+        ));
+        ALL_TRADES.add(new WeightedTrade(
+                random -> tradeRanged(ModItems.RUBY, 12, 24, ModBlocks.BRAMBLE.asItem(), 8, 1, random),
+                20
+        ));
+        ALL_TRADES.add(new WeightedTrade(
+                random -> tradeRanged(ModItems.RUBY, 12, 24, ModBlocks.TALL_BRAMBLE.asItem(), 8, 1, random),
+                20
+        ));
+        ALL_TRADES.add(new WeightedTrade(
+                random -> tradeRanged(ModItems.RUBY, 12, 24, ModBlocks.BEACH_GRASS.asItem(), 8, 1, random),
+                20
+        ));
+        ALL_TRADES.add(new WeightedTrade(
+                random -> tradeRanged(ModItems.RUBY, 12, 24, ModBlocks.TALL_BEACH_GRASS.asItem(), 8, 1, random),
+                20
+        ));
+        ALL_TRADES.add(new WeightedTrade(
+                random -> tradeRanged(ModItems.RUBY, 12, 24, ModBlocks.DRY_BUSH.asItem(), 8, 1, random),
+                20
+        ));
+        ALL_TRADES.add(new WeightedTrade(
+                random -> tradeRanged(ModItems.RUBY, 12, 24, ModBlocks.TALL_DRY_BUSH.asItem(), 8, 1, random),
+                20
+        ));
+        ALL_TRADES.add(new WeightedTrade(
+                random -> tradeRanged(ModItems.RUBY, 12, 24, ModBlocks.DRY_GRASS.asItem(), 8, 1, random),
+                20
+        ));
+        ALL_TRADES.add(new WeightedTrade(
+                random -> tradeRanged(ModItems.RUBY, 12, 24, ModBlocks.TALL_DRY_GRASS.asItem(), 8, 1, random),
+                20
+        ));
+        ALL_TRADES.add(new WeightedTrade(
+                random -> tradeRanged(ModItems.RUBY, 12, 24, ModBlocks.FROSTED_GRASS.asItem(), 8, 1, random),
+                20
+        ));
+        ALL_TRADES.add(new WeightedTrade(
+                random -> tradeRanged(ModItems.RUBY, 12, 24, ModBlocks.TALL_FROSTED_GRASS.asItem(), 8, 1, random),
+                20
+        ));
+        ALL_TRADES.add(new WeightedTrade(
+                random -> tradeRanged(ModItems.RUBY, 12, 24, ModBlocks.GRIMWEED.asItem(), 8, 1, random),
+                20
+        ));
+        ALL_TRADES.add(new WeightedTrade(
+                random -> tradeRanged(ModItems.RUBY, 12, 24, ModBlocks.TALL_GRIMWEED.asItem(), 8, 1, random),
+                20
+        ));
+        ALL_TRADES.add(new WeightedTrade(
+                random -> tradeRanged(ModItems.RUBY, 12, 24, ModBlocks.PALE_GRIMWEED.asItem(), 8, 1, random),
+                20
+        ));
+        ALL_TRADES.add(new WeightedTrade(
+                random -> tradeRanged(ModItems.RUBY, 12, 24, ModBlocks.TALL_PALE_GRIMWEED.asItem(), 8, 1, random),
+                20
+        ));
+        ALL_TRADES.add(new WeightedTrade(
+                random -> tradeRanged(ModItems.RUBY, 12, 24, ModBlocks.HOGWEED.asItem(), 8, 1, random),
+                20
+        ));
+        ALL_TRADES.add(new WeightedTrade(
+                random -> tradeRanged(ModItems.RUBY, 12, 24, ModBlocks.TALL_HOGWEED.asItem(), 8, 1, random),
+                20
+        ));
+        ALL_TRADES.add(new WeightedTrade(
+                random -> tradeRanged(ModItems.RUBY, 12, 24, ModBlocks.ORANGE_MYCENA.asItem(), 8, 1, random),
+                20
+        ));
+        ALL_TRADES.add(new WeightedTrade(
+                random -> tradeRanged(ModItems.RUBY, 12, 24, ModBlocks.TALL_ORANGE_MYCENA.asItem(), 8, 1, random),
+                20
+        ));
+        ALL_TRADES.add(new WeightedTrade(
+                random -> tradeRanged(ModItems.RUBY, 12, 24, ModBlocks.CLOVER.asItem(), 8, 1, random),
+                20
+        ));
+        ALL_TRADES.add(new WeightedTrade(
+                random -> tradeRanged(ModItems.RUBY, 12, 24, ModBlocks.SOUL_STALKS.asItem(), 8, 1, random),
+                20
+        ));
+        ALL_TRADES.add(new WeightedTrade(
+                random -> tradeRanged(ModItems.RUBY, 12, 24, ModBlocks.TALL_SOUL_STALKS.asItem(), 8, 1, random),
+                20
+        ));
+        ALL_TRADES.add(new WeightedTrade(
+                random -> tradeRanged(ModItems.RUBY, 12, 24, ModBlocks.SCULK_VINES.asItem(), 8, 1, random),
+                20
+        ));
+        ALL_TRADES.add(new WeightedTrade(
+                random -> tradeRanged(ModItems.RUBY, 12, 24, ModBlocks.WARPED_VEIL.asItem(), 8, 1, random),
+                20
+        ));
+        ALL_TRADES.add(new WeightedTrade(
+                random -> tradeRanged(ModItems.RUBY, 12, 24, ModBlocks.ASH.asItem(), 8, 1, random),
+                20
+        ));
 
     }
 

@@ -13,6 +13,7 @@ import net.meh.xenon.sound.ModSounds;
 import net.meh.xenon.trade.ScavengerTradeRefresher;
 import net.meh.xenon.util.RocketBootsSafety;
 import net.meh.xenon.villager.ModVillagers;
+import net.meh.xenon.world.gen.ModWorldGeneration;
 import net.minecraft.registry.Registries;
 import net.minecraft.util.Identifier;
 import net.minecraft.world.World;
@@ -42,6 +43,7 @@ public class Xenon implements ModInitializer {
 		ModSounds.registerSounds();
 		ConfigManager.load();
 		logBlockCount();
+		ModWorldGeneration.generateModWorldGen();
 
 		ServerTickEvents.END_WORLD_TICK.register(world -> {
 			long currentDay = world.getTimeOfDay() / 24000L;

@@ -2,10 +2,12 @@ package net.meh.xenon.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
+import net.meh.xenon.block.ModBlockFamilies;
 import net.meh.xenon.block.ModBlocks;
 import net.meh.xenon.item.ModItems;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.block.SlabBlock;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.item.Item;
@@ -30,6 +32,15 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
     @Override
     public void generate() {
+        for (var family : ModBlockFamilies.STONES) {
+            for (Block block : family.all()) {
+                if (block instanceof SlabBlock) {
+                    addDrop(block, slabDrops(block));
+                } else {
+                    addDrop(block);
+                }
+            }
+        }
 
         addDrop(ModBlocks.SALVAGING_TABLE);
         addDrop(ModBlocks.PRISM_LANTERN);
