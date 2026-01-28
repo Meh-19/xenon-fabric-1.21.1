@@ -28,10 +28,6 @@ public class ModModelProvider extends FabricModelProvider {
         );
     }
 
-
-
-
-
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator gen) {
 
@@ -559,11 +555,11 @@ public class ModModelProvider extends FabricModelProvider {
                     )
             );
 
-//            gen.registerItemModel(ModItems.PLATINUM_SWORD);
+//       gen.registerItemModel(ModItems.PLATINUM_SWORD);
 //            gen.registerItemModel(ModItems.PLATINUM_PICKAXE);
 //            gen.registerItemModel(ModItems.PLATINUM_AXE);
 //            gen.registerItemModel(ModItems.PLATINUM_SHOVEL);
-//            gen.registerItemModel(ModItems.PLATINUM_HOE);
+ //           gen.registerItemModel(ModItems.PLATINUM_HOE);
         }
 
     }

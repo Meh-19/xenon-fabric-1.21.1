@@ -49,6 +49,7 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
         var smallFlowers = getOrCreateTagBuilder(ItemTags.SMALL_FLOWERS);
         //endregion\
         //region flowers
+
         flowers.add(
                 ModBlocks.HOGWEED.asItem(),
                 ModBlocks.TALL_HOGWEED.asItem(),
