@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "xenon:block/orange_fir_leaves"
-  }
-}

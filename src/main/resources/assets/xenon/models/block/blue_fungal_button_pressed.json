@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/button_pressed",
-  "textures": {
-    "texture": "xenon:block/blue_fungal_planks"
-  }
-}

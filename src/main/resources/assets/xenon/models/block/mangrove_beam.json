@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_column",
-  "textures": {
-    "end": "xenon:block/mangrove_beam_top",
-    "side": "xenon:block/mangrove_beam"
-  }
-}

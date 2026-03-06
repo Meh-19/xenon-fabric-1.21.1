@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/stairs",
-  "textures": {
-    "bottom": "xenon:block/bayou_planks",
-    "side": "xenon:block/bayou_planks",
-    "top": "xenon:block/bayou_planks"
-  }
-}

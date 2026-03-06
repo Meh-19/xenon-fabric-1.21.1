@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_column",
-  "textures": {
-    "end": "xenon:block/platinum_pillar_top",
-    "side": "xenon:block/platinum_pillar_side"
-  }
-}
