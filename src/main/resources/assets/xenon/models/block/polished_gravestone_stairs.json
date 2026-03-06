@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "xenon:block/polished_gravestone",
+    "top": "xenon:block/polished_gravestone",
+    "side": "xenon:block/polished_gravestone"
+  }
+}

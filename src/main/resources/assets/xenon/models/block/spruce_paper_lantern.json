@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "xenon:block/spruce_paper_lantern_top",
+    "side": "xenon:block/spruce_paper_lantern_side"
+  }
+}

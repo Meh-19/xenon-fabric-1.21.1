@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "xenon:block/green_fungal_slab"
+    },
+    "type=double": {
+      "model": "xenon:block/green_fungal_planks"
+    },
+    "type=top": {
+      "model": "xenon:block/green_fungal_slab_top"
+    }
+  }
+}

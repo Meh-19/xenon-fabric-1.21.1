@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "xenon:block/carved_blighted_bone_block_top",
+    "side": "xenon:block/carved_blighted_bone_block_vertical"
+  }
+}

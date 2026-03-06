@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "particle": "xenon:block/sand",
+    "down": "xenon:block/sand",
+    "up": "xenon:block/sand_burrow",
+    "north": "xenon:block/sand",
+    "east": "xenon:block/sand",
+    "south": "xenon:block/sand",
+    "west": "xenon:block/sand"
+  }
+}

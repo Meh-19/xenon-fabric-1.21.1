@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "xenon:block/birch_planks_carved_top",
+    "side": "xenon:block/birch_planks_carved_side"
+  }
+}

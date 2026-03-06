@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "xenon:block/bayou_slab"
+    },
+    "type=double": {
+      "model": "xenon:block/bayou_planks"
+    },
+    "type=top": {
+      "model": "xenon:block/bayou_slab_top"
+    }
+  }
+}

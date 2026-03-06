@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "top": "xenon:block/permafrost_top",
+    "bottom": "xenon:block/dirt",
+    "side": "xenon:block/permafrost_side"
+  }
+}
