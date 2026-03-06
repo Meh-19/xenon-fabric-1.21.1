@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/cube_column",
-  "textures": {
-    "side": "xenon:block/moss_block",
-    "end": "xenon:block/moss_block_top",
-    "particle": "xenon:block/moss_block"
-  }
-}

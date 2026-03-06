@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/outer_stairs",
-  "textures": {
-    "bottom": "xenon:block/gravestone_bricks",
-    "top": "xenon:block/gravestone_bricks",
-    "side": "xenon:block/gravestone_bricks"
-  }
-}

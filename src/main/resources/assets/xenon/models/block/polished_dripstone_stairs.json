@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/stairs",
-  "textures": {
-    "top": "xenon:block/polished_dripstone",
-    "bottom": "xenon:block/polished_dripstone",
-    "side": "xenon:block/polished_dripstone"
-  }
-}

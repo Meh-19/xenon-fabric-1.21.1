@@ -1,6 +1,0 @@
-{
-  "variants": {
-    "lit=false": { "model": "xenon:block/prism_crystal_lantern" },
-    "lit=true":  { "model": "xenon:block/prism_crystal_lantern_blink" }
-  }
-}

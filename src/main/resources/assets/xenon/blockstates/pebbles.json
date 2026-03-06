@@ -1,7 +1,0 @@
-{
-  "variants": {
-    "count=1": { "model": "xenon:block/pebbles_1" },
-    "count=2": { "model": "xenon:block/pebbles_2" },
-    "count=3": { "model": "xenon:block/pebbles_3" }
-  }
-}

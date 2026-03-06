@@ -38,7 +38,3 @@ hs_err_*.log
 replay_*.log
 *.hprof
 *.jfr
-
-git add src/main/resources/
-git commit -m "Add missing assets"
-git push
