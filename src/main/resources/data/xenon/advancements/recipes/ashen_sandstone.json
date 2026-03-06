@@ -1,0 +1,29 @@
+{
+  "criteria": {
+    "has_base": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "xenon:ashen_sandstone"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_base"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "xenon:chiseled_ashen_sandstone"
+    ]
+  },
+  "display": {
+    "hidden": true
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "side": "xenon:block/prismarine_pillar",
+    "end": "xenon:block/prismarine_pillar_top",
+    "particle": "xenon:block/prismarine_pillar"
+  }
+}

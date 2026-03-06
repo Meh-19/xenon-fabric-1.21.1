@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "IPI",
+    "IPI"
+  ],
+  "key": {
+    "P": {
+      "item": "xenon:bayou_planks"
+    },
+    "I": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "xenon:bayou_fence_gate",
+    "count": 1
+  }
+}

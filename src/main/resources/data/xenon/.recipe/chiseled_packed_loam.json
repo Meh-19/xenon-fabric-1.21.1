@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "P",
+    "P"
+  ],
+  "key": {
+    "P": {
+      "item": "xenon:packed_loam_bricks"
+    }
+  },
+  "result": {
+    "item": "xenon:chiseled_packed_loam",
+    "count": 2
+  }
+}

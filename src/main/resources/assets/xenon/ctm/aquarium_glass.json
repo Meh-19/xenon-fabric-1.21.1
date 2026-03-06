@@ -1,0 +1,10 @@
+{
+  "type": "ctm",
+  "matchBlocks": ["xenon:aquarium_glass"],
+  "connect": "block",
+  "tiles": [
+    "xenon:block/aquarium_glass_border",
+    "xenon:block/aquarium_glass"
+  ],
+  "layer": "translucent"
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "P  ",
+    "PP ",
+    "PPP"
+  ],
+  "key": {
+    "P": {
+      "item": "xenon:packed_ice_bricks"
+    }
+  },
+  "result": {
+    "item": "xenon:packed_ice_bricks_stairs",
+    "count": 4
+  }
+}

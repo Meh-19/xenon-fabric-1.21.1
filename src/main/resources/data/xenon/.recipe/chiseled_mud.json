@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "P",
+    "P"
+  ],
+  "key": {
+    "P": {
+      "item": "xenon:polished_mud"
+    }
+  },
+  "result": {
+    "item": "xenon:chiseled_mud",
+    "count": 2
+  }
+}

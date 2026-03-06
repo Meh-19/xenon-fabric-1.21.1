@@ -1,0 +1,31 @@
+{
+  "criteria": {
+    "has_base": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "xenon:dripstone_bricks"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_base"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "xenon:dripstone_bricks_stairs",
+      "xenon:dripstone_bricks_slab",
+      "xenon:dripstone_bricks_wall"
+    ]
+  },
+  "display": {
+    "hidden": true
+  }
+}

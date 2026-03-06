@@ -1,0 +1,32 @@
+{
+  "criteria": {
+    "has_base": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "xenon:silt_bricks"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_base"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "xenon:chiseled_silt_bricks",
+      "xenon:silt_bricks_stairs",
+      "xenon:silt_bricks_slab",
+      "xenon:silt_bricks_wall"
+    ]
+  },
+  "display": {
+    "hidden": true
+  }
+}

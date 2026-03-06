@@ -1,0 +1,31 @@
+{
+  "criteria": {
+    "has_base": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "xenon:limestone_bricks"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_base"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "xenon:limestone_bricks_stairs",
+      "xenon:limestone_bricks_slab",
+      "xenon:limestone_bricks_wall"
+    ]
+  },
+  "display": {
+    "hidden": true
+  }
+}

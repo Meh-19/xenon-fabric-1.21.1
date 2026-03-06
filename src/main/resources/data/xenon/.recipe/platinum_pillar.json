@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "P",
+    "P"
+  ],
+  "key": {
+    "P": {
+      "item": "xenon:platinum_bricks"
+    }
+  },
+  "result": {
+    "item": "xenon:platinum_pillar",
+    "count": 2
+  }
+}

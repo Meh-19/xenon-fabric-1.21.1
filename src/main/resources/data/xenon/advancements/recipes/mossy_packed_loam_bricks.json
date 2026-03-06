@@ -1,0 +1,31 @@
+{
+  "criteria": {
+    "has_base": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "xenon:mossy_packed_loam_bricks"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_base"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "xenon:mossy_packed_loam_bricks_stairs",
+      "xenon:mossy_packed_loam_bricks_slab",
+      "xenon:mossy_packed_loam_bricks_wall"
+    ]
+  },
+  "display": {
+    "hidden": true
+  }
+}

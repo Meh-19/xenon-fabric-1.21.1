@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "xenon:palm_log"
+    }
+  ],
+  "result": {
+    "item": "xenon:palm_planks",
+    "count": 4
+  }
+}

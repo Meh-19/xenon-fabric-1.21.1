@@ -1,0 +1,33 @@
+{
+  "criteria": {
+    "has_base": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "xenon:fungal_planks"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_base"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "xenon:fungal_fence",
+      "xenon:fungal_fence_gate",
+      "xenon:fungal_button",
+      "xenon:fungal_pressure_plate",
+      "xenon:vertical_fungal_planks"
+    ]
+  },
+  "display": {
+    "hidden": true
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "xenon:grimrock_bricks"
+  },
+  "result": {
+    "id": "xenon:grimrock_bricks_wall",
+    "count": 1
+  }
+}

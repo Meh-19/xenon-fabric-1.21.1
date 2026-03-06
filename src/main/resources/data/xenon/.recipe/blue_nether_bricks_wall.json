@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PPP",
+    "PPP"
+  ],
+  "key": {
+    "P": {
+      "item": "xenon:polished_blue_nether_bricks"
+    }
+  },
+  "result": {
+    "item": "xenon:blue_nether_bricks_wall",
+    "count": 6
+  }
+}

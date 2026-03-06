@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PPP"
+  ],
+  "key": {
+    "P": {
+      "item": "xenon:limestone_bricks"
+    }
+  },
+  "result": {
+    "item": "xenon:limestone_bricks_slab",
+    "count": 6
+  }
+}

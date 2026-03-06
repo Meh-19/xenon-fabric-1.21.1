@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "P  ",
+    "PP ",
+    "PPP"
+  ],
+  "key": {
+    "P": {
+      "item": "xenon:cut_polished_basalt"
+    }
+  },
+  "result": {
+    "item": "xenon:cut_polished_basalt_stairs",
+    "count": 4
+  }
+}

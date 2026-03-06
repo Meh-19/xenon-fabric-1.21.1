@@ -1,0 +1,31 @@
+{
+  "criteria": {
+    "has_base": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "xenon:slate_bricks"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_base"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "xenon:slate_bricks_stairs",
+      "xenon:slate_bricks_slab",
+      "xenon:slate_bricks_wall"
+    ]
+  },
+  "display": {
+    "hidden": true
+  }
+}

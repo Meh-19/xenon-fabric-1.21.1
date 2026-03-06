@@ -1,0 +1,34 @@
+{
+  "criteria": {
+    "has_base": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "xenon:grimrock"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_base"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "xenon:polished_grimrock",
+      "xenon:chiseled_grimrock",
+      "xenon:grimrock_bricks",
+      "xenon:grimrock_stairs",
+      "xenon:grimrock_slab",
+      "xenon:grimrock_wall"
+    ]
+  },
+  "display": {
+    "hidden": true
+  }
+}

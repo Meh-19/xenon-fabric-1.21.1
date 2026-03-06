@@ -1,0 +1,34 @@
+{
+  "criteria": {
+    "has_base": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "xenon:strata"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_base"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "xenon:polished_strata",
+      "xenon:chiseled_strata",
+      "xenon:strata_bricks",
+      "xenon:strata_stairs",
+      "xenon:strata_slab",
+      "xenon:strata_wall"
+    ]
+  },
+  "display": {
+    "hidden": true
+  }
+}

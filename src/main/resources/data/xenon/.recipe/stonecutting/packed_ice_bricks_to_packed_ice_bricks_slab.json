@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "xenon:packed_ice_bricks"
+  },
+  "result": {
+    "id": "xenon:packed_ice_bricks_slab",
+    "count": 1
+  }
+}

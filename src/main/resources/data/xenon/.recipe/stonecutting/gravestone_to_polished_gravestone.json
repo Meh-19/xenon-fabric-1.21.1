@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "xenon:gravestone"
+  },
+  "result": {
+    "id": "xenon:polished_gravestone",
+    "count": 1
+  }
+}

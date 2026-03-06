@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "xenon:grimrock"
+  },
+  "result": {
+    "id": "xenon:chiseled_grimrock",
+    "count": 1
+  }
+}

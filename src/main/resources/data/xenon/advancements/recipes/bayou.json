@@ -1,0 +1,36 @@
+{
+  "criteria": {
+    "has_base": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "xenon:bayou_planks"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_base"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "xenon:bayou_fence",
+      "xenon:bayou_fence_gate",
+      "xenon:bayou_button",
+      "xenon:bayou_pressure_plate",
+      "xenon:vertical_bayou_planks",
+      "xenon:bayou_beam",
+      "xenon:bayou_beam_to_planks",
+      "xenon:bayou_planks"
+    ]
+  },
+  "display": {
+    "hidden": true
+  }
+}

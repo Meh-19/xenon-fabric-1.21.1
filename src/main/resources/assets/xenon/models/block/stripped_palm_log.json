@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "xenon:block/stripped_palm_log_top",
+    "side": "xenon:block/stripped_palm_log"
+  }
+}

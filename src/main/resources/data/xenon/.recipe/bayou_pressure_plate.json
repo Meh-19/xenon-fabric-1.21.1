@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PP"
+  ],
+  "key": {
+    "P": {
+      "item": "xenon:bayou_planks"
+    }
+  },
+  "result": {
+    "item": "xenon:bayou_pressure_plate",
+    "count": 1
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "xenon:blue_nether_bricks"
+  },
+  "result": {
+    "id": "xenon:blue_nether_bricks_stairs",
+    "count": 1
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "xenon:gravestone_bricks"
+  },
+  "result": {
+    "id": "xenon:gravestone_bricks_slab",
+    "count": 1
+  }
+}

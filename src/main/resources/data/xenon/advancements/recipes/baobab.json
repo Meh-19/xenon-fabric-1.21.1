@@ -1,0 +1,36 @@
+{
+  "criteria": {
+    "has_base": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "xenon:baobab_planks"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_base"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "xenon:baobab_fence",
+      "xenon:baobab_fence_gate",
+      "xenon:baobab_button",
+      "xenon:baobab_pressure_plate",
+      "xenon:vertical_baobab_planks",
+      "xenon:baobab_beam",
+      "xenon:baobab_beam_to_planks",
+      "xenon:baobab_planks"
+    ]
+  },
+  "display": {
+    "hidden": true
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PPP",
+    "PPP"
+  ],
+  "key": {
+    "P": {
+      "item": "xenon:dripstone_bricks"
+    }
+  },
+  "result": {
+    "item": "xenon:dripstone_bricks_wall",
+    "count": 6
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "xenon:bayou_planks"
+    }
+  ],
+  "result": {
+    "item": "xenon:bayou_button",
+    "count": 1
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "xenon:cobbled_grimrock"
+  },
+  "result": {
+    "id": "xenon:cobbled_grimrock_slab",
+    "count": 1
+  }
+}

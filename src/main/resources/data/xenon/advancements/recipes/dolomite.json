@@ -1,0 +1,35 @@
+{
+  "criteria": {
+    "has_base": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "xenon:dolomite"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_base"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "xenon:polished_dolomite",
+      "xenon:chiseled_dolomite",
+      "xenon:dolomite_bricks",
+      "xenon:dolomite_pillar",
+      "xenon:dolomite_stairs",
+      "xenon:dolomite_slab",
+      "xenon:dolomite_wall"
+    ]
+  },
+  "display": {
+    "hidden": true
+  }
+}

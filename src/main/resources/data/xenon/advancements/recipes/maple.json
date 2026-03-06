@@ -1,0 +1,36 @@
+{
+  "criteria": {
+    "has_base": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "xenon:maple_planks"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_base"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "xenon:maple_fence",
+      "xenon:maple_fence_gate",
+      "xenon:maple_button",
+      "xenon:maple_pressure_plate",
+      "xenon:vertical_maple_planks",
+      "xenon:maple_beam",
+      "xenon:maple_beam_to_planks",
+      "xenon:maple_planks"
+    ]
+  },
+  "display": {
+    "hidden": true
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "xenon:dolomite_bricks"
+  },
+  "result": {
+    "id": "xenon:dolomite_bricks_stairs",
+    "count": 1
+  }
+}

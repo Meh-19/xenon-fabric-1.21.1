@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "xenon:baobab_beam"
+    }
+  ],
+  "result": {
+    "item": "xenon:baobab_planks",
+    "count": 4
+  }
+}

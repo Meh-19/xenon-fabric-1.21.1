@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "xenon:ashen_sandstone"
+  },
+  "result": {
+    "id": "xenon:chiseled_ashen_sandstone",
+    "count": 1
+  }
+}

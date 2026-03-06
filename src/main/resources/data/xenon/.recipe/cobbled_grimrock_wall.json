@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PPP",
+    "PPP"
+  ],
+  "key": {
+    "P": {
+      "item": "xenon:cobbled_grimrock"
+    }
+  },
+  "result": {
+    "item": "xenon:cobbled_grimrock_wall",
+    "count": 6
+  }
+}

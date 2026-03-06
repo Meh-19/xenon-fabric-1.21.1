@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PIP",
+    "PIP"
+  ],
+  "key": {
+    "P": {
+      "item": "xenon:maple_planks"
+    },
+    "I": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "xenon:maple_fence",
+    "count": 3
+  }
+}

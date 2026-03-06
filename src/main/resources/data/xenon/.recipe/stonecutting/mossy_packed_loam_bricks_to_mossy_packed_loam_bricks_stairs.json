@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "xenon:mossy_packed_loam_bricks"
+  },
+  "result": {
+    "id": "xenon:mossy_packed_loam_bricks_stairs",
+    "count": 1
+  }
+}

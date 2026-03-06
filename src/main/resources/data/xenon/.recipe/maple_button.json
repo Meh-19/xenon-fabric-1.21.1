@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "xenon:maple_planks"
+    }
+  ],
+  "result": {
+    "item": "xenon:maple_button",
+    "count": 1
+  }
+}

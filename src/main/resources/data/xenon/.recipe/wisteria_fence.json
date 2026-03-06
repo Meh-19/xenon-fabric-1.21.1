@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PIP",
+    "PIP"
+  ],
+  "key": {
+    "P": {
+      "item": "xenon:wisteria_planks"
+    },
+    "I": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "xenon:wisteria_fence",
+    "count": 3
+  }
+}

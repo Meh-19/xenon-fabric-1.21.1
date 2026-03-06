@@ -1,0 +1,31 @@
+{
+  "criteria": {
+    "has_base": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "xenon:packed_snow"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_base"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "xenon:packed_snow_stairs",
+      "xenon:packed_snow_slab",
+      "xenon:packed_snow_wall"
+    ]
+  },
+  "display": {
+    "hidden": true
+  }
+}

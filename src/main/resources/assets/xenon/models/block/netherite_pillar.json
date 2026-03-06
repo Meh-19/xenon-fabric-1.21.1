@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "xenon:block/netherite_pillar_top",
+    "side": "xenon:block/netherite_pillar"
+  }
+}

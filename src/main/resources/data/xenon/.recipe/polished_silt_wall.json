@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PP",
+    "PP"
+  ],
+  "key": {
+    "P": {
+      "item": "xenon:silt"
+    }
+  },
+  "result": {
+    "item": "xenon:polished_silt_wall",
+    "count": 4
+  }
+}

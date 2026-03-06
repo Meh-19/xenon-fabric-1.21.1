@@ -1,0 +1,31 @@
+{
+  "criteria": {
+    "has_base": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "xenon:gravestone_bricks"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_base"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "xenon:gravestone_bricks_stairs",
+      "xenon:gravestone_bricks_slab",
+      "xenon:gravestone_bricks_wall"
+    ]
+  },
+  "display": {
+    "hidden": true
+  }
+}

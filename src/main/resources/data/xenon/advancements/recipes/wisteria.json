@@ -1,0 +1,36 @@
+{
+  "criteria": {
+    "has_base": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "xenon:wisteria_planks"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_base"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "xenon:wisteria_fence",
+      "xenon:wisteria_fence_gate",
+      "xenon:wisteria_button",
+      "xenon:wisteria_pressure_plate",
+      "xenon:vertical_wisteria_planks",
+      "xenon:wisteria_beam",
+      "xenon:wisteria_beam_to_planks",
+      "xenon:wisteria_planks"
+    ]
+  },
+  "display": {
+    "hidden": true
+  }
+}

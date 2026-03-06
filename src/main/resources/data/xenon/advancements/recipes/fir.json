@@ -1,0 +1,36 @@
+{
+  "criteria": {
+    "has_base": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "xenon:fir_planks"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_base"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "xenon:fir_fence",
+      "xenon:fir_fence_gate",
+      "xenon:fir_button",
+      "xenon:fir_pressure_plate",
+      "xenon:vertical_fir_planks",
+      "xenon:fir_beam",
+      "xenon:fir_beam_to_planks",
+      "xenon:fir_planks"
+    ]
+  },
+  "display": {
+    "hidden": true
+  }
+}

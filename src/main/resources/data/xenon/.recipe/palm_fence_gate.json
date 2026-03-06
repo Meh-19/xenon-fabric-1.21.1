@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "IPI",
+    "IPI"
+  ],
+  "key": {
+    "P": {
+      "item": "xenon:palm_planks"
+    },
+    "I": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "xenon:palm_fence_gate",
+    "count": 1
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "criteria": {
+    "has_base": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "xenon:tainted_nether_bricks"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_base"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "xenon:tainted_nether_bricks_stairs",
+      "xenon:tainted_nether_bricks_slab",
+      "xenon:tainted_nether_bricks_wall"
+    ]
+  },
+  "display": {
+    "hidden": true
+  }
+}

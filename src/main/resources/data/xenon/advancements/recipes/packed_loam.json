@@ -1,0 +1,33 @@
+{
+  "criteria": {
+    "has_base": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "xenon:packed_loam"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_base"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "xenon:chiseled_packed_loam",
+      "xenon:packed_loam_bricks",
+      "xenon:packed_loam_stairs",
+      "xenon:packed_loam_slab",
+      "xenon:packed_loam_wall"
+    ]
+  },
+  "display": {
+    "hidden": true
+  }
+}

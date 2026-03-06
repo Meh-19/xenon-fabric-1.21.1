@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PPP",
+    "PIP",
+    "PPP"
+  ],
+  "key": {
+    "P": {
+      "item": "xenon:fungal_planks"
+    },
+    "I": {
+      "item": "minecraft:light_gray_dye"
+    }
+  },
+  "result": {
+    "item": "xenon:light_gray_fungal_planks",
+    "count": 8
+  }
+}

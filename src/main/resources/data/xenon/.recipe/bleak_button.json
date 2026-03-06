@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "xenon:bleak_planks"
+    }
+  ],
+  "result": {
+    "item": "xenon:bleak_button",
+    "count": 1
+  }
+}

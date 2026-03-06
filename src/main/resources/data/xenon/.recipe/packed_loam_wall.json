@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PPP",
+    "PPP"
+  ],
+  "key": {
+    "P": {
+      "item": "xenon:packed_loam_bricks"
+    }
+  },
+  "result": {
+    "item": "xenon:packed_loam_wall",
+    "count": 6
+  }
+}

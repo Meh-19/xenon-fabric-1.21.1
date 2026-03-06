@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "xenon:meh_poi",
+      "required": false
+    }
+  ]
+}

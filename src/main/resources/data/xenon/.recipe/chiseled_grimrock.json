@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "P",
+    "P"
+  ],
+  "key": {
+    "P": {
+      "item": "xenon:grimrock_bricks"
+    }
+  },
+  "result": {
+    "item": "xenon:chiseled_grimrock",
+    "count": 2
+  }
+}

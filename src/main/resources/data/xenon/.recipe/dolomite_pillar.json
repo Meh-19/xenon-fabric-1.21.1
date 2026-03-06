@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "P",
+    "P"
+  ],
+  "key": {
+    "P": {
+      "item": "xenon:dolomite_bricks"
+    }
+  },
+  "result": {
+    "item": "xenon:dolomite_pillar",
+    "count": 2
+  }
+}

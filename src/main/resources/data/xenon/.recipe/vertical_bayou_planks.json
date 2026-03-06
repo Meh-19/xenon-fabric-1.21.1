@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "P",
+    "P",
+    "P"
+  ],
+  "key": {
+    "P": {
+      "item": "xenon:bayou_planks"
+    }
+  },
+  "result": {
+    "item": "xenon:vertical_bayou_planks",
+    "count": 3
+  }
+}

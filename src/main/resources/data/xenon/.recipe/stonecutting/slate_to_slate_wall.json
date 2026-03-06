@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "xenon:slate"
+  },
+  "result": {
+    "id": "xenon:slate_wall",
+    "count": 1
+  }
+}

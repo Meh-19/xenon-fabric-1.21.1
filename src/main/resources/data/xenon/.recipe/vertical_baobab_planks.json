@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "P",
+    "P",
+    "P"
+  ],
+  "key": {
+    "P": {
+      "item": "xenon:baobab_planks"
+    }
+  },
+  "result": {
+    "item": "xenon:vertical_baobab_planks",
+    "count": 3
+  }
+}

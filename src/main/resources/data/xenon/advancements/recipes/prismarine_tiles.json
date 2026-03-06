@@ -1,0 +1,31 @@
+{
+  "criteria": {
+    "has_base": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "xenon:prismarine_tiles"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_base"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "xenon:prismarine_tiles_stairs",
+      "xenon:prismarine_tiles_slab",
+      "xenon:prismarine_tiles_wall"
+    ]
+  },
+  "display": {
+    "hidden": true
+  }
+}

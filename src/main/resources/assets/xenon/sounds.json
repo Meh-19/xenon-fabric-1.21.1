@@ -1,0 +1,11 @@
+{
+  "ruby_lose": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "xenon:stereo/ruby-lose",
+        "stream": false
+      }
+    ]
+  }
+}

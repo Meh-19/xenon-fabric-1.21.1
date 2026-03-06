@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PIP",
+    "PIP"
+  ],
+  "key": {
+    "P": {
+      "item": "xenon:fungal_planks"
+    },
+    "I": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "xenon:fungal_fence",
+    "count": 3
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "xenon:soul_bricks"
+  },
+  "result": {
+    "id": "xenon:soul_bricks_slab",
+    "count": 1
+  }
+}

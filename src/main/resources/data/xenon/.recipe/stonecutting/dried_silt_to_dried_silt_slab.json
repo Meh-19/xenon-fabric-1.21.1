@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "xenon:dried_silt"
+  },
+  "result": {
+    "id": "xenon:dried_silt_slab",
+    "count": 1
+  }
+}

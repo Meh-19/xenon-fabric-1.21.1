@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "P",
+    "P",
+    "P"
+  ],
+  "key": {
+    "P": {
+      "item": "xenon:fir_planks"
+    }
+  },
+  "result": {
+    "item": "xenon:vertical_fir_planks",
+    "count": 3
+  }
+}

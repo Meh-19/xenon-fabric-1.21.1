@@ -1,0 +1,36 @@
+{
+  "criteria": {
+    "has_base": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "xenon:palm_planks"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_base"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "xenon:palm_fence",
+      "xenon:palm_fence_gate",
+      "xenon:palm_button",
+      "xenon:palm_pressure_plate",
+      "xenon:vertical_palm_planks",
+      "xenon:palm_beam",
+      "xenon:palm_beam_to_planks",
+      "xenon:palm_planks"
+    ]
+  },
+  "display": {
+    "hidden": true
+  }
+}

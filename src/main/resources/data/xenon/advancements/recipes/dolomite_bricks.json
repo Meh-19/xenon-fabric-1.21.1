@@ -1,0 +1,31 @@
+{
+  "criteria": {
+    "has_base": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "xenon:dolomite_bricks"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_base"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "xenon:dolomite_bricks_stairs",
+      "xenon:dolomite_bricks_slab",
+      "xenon:dolomite_bricks_wall"
+    ]
+  },
+  "display": {
+    "hidden": true
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "side": "xenon:block/gravestone",
+    "end": "xenon:block/gravestone_top"
+  }
+}

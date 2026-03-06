@@ -1,0 +1,36 @@
+{
+  "criteria": {
+    "has_base": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "xenon:bleak_planks"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_base"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "xenon:bleak_fence",
+      "xenon:bleak_fence_gate",
+      "xenon:bleak_button",
+      "xenon:bleak_pressure_plate",
+      "xenon:vertical_bleak_planks",
+      "xenon:bleak_beam",
+      "xenon:bleak_beam_to_planks",
+      "xenon:bleak_planks"
+    ]
+  },
+  "display": {
+    "hidden": true
+  }
+}

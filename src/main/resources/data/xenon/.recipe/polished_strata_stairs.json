@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PP",
+    "PP"
+  ],
+  "key": {
+    "P": {
+      "item": "xenon:strata"
+    }
+  },
+  "result": {
+    "item": "xenon:polished_strata_stairs",
+    "count": 4
+  }
+}

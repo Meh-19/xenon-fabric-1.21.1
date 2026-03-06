@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "P",
+    "P"
+  ],
+  "key": {
+    "P": {
+      "item": "xenon:andesite_bricks"
+    }
+  },
+  "result": {
+    "item": "xenon:chiseled_andesite",
+    "count": 2
+  }
+}

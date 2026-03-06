@@ -1,0 +1,32 @@
+{
+  "criteria": {
+    "has_base": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "xenon:packed_ice_bricks"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_base"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "xenon:chiseled_packed_ice_bricks",
+      "xenon:packed_ice_bricks_stairs",
+      "xenon:packed_ice_bricks_slab",
+      "xenon:packed_ice_bricks_wall"
+    ]
+  },
+  "display": {
+    "hidden": true
+  }
+}

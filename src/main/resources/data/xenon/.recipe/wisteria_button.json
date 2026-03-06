@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "xenon:wisteria_planks"
+    }
+  ],
+  "result": {
+    "item": "xenon:wisteria_button",
+    "count": 1
+  }
+}
